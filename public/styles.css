@@ -333,26 +333,37 @@ ul {
   max-width: 600px;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  letter-spacing: -0.03em;
+.hero-sub-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
 }
 
-.hero-content .subtitle {
-  font-size: 1.25rem;
-  font-weight: 700;
+.hero-main-title {
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.04em;
   color: var(--text-primary);
-  margin-bottom: 1.25rem;
+}
+
+.hero-brand-name {
+  font-size: 1.625rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
 }
 
 .hero-content p.lead {
   font-size: 0.95rem;
   color: var(--text-secondary);
-  margin-bottom: 2rem;
-  line-height: 1.65;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
 }
 
 .hero-ctas {
@@ -361,8 +372,11 @@ ul {
 }
 
 @media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: 2.25rem;
+  .hero-main-title {
+    font-size: 2.5rem;
+  }
+  .hero-brand-name {
+    font-size: 1.25rem;
   }
   .hero-ctas {
     flex-direction: column;
