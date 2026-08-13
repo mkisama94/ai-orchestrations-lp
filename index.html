@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Orchestration Inc.は、AIプロダクト設計とAI投資支援を専門とする会社です。AI活用テーマの選定、PoC、要件定義、開発会社の選定・統括、商品化まで、企業のAI投資を構想から実装まで支援します。">
+  <title>AI Orchestration Inc.｜AIプロダクト設計・AI投資コンサルティング</title>
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo-link">
+        <img src="images/logo.png" alt="AI Orchestration Inc." class="logo-img">
+        <span class="logo-text">AI Orchestration</span>
+      </a>
+      
+      <button class="burger" id="burger" aria-label="メニューを開閉する">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav class="nav-menu" id="navMenu">
+        <a href="#projects" class="nav-link">プロジェクト実績</a>
+        <a href="#services" class="nav-link">支援内容</a>
+        <a href="#flow" class="nav-link">支援の進め方</a>
+        <a href="#about" class="nav-link">私たちについて</a>
+        <a href="#contact" class="btn btn-primary nav-cta">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content reveal">
+          <span class="badge">AIプロダクト設計専業</span>
+          <h1>AI Orchestration</h1>
+          <div class="subtitle">企業のAI投資を、構想から実装まで設計する。</div>
+          <p class="lead">
+            AI Orchestration Inc.は、AI活用テーマの選定、事業・プロダクト設計、PoC、要件定義、開発統括を支援するAIコンサルティング会社です。実際にAIプロダクトを設計してきた経験をもとに、社外のAI責任者として、企業のAI投資を前に進めます。
+          </p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">AI活用について相談する</a>
+            <a href="#projects" class="btn btn-secondary">プロジェクト実績を見る</a>
+          </div>
+        </div>
+        
+        <div class="hero-visual reveal reveal-delay-2">
+          <!-- Schematic blueprint SVG -->
+          <svg class="hero-visual-svg" viewBox="0 0 400 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Grid Background Lines -->
+            <path d="M 0 50 L 400 50" class="bp-grid" />
+            <path d="M 0 100 L 400 100" class="bp-grid" />
+            <path d="M 0 150 L 400 150" class="bp-grid" />
+            <path d="M 0 200 L 400 200" class="bp-grid" />
+            <path d="M 0 250 L 400 250" class="bp-grid" />
+            <path d="M 0 300 L 400 300" class="bp-grid" />
+            
+            <path d="M 50 0 L 50 350" class="bp-grid" />
+            <path d="M 100 0 L 100 350" class="bp-grid" />
+            <path d="M 150 0 L 150 350" class="bp-grid" />
+            <path d="M 200 0 L 200 350" class="bp-grid" />
+            <path d="M 250 0 L 250 350" class="bp-grid" />
+            <path d="M 300 0 L 300 350" class="bp-grid" />
+            <path d="M 350 0 L 350 350" class="bp-grid" />
+
+            <!-- Connection lines -->
+            <path d="M 200 60 L 200 110" class="bp-line-active" />
+            <path d="M 200 150 L 200 200" class="bp-line-active" />
+            <path d="M 200 240 L 200 290" class="bp-line-active" />
+
+            <!-- Step 1: Business Needs -->
+            <rect x="100" y="20" width="200" height="40" rx="4" class="bp-box" />
+            <text x="200" y="44" text-anchor="middle" class="bp-text">経営課題・AI投資領域の特定</text>
+
+            <!-- Step 2: Product Design (Highlighted) -->
+            <rect x="80" y="110" width="240" height="40" rx="4" class="bp-box-active" />
+            <text x="200" y="134" text-anchor="middle" class="bp-text bp-text-active">AIプロダクト・PoC要件設計</text>
+
+            <!-- Step 3: Development Management -->
+            <rect x="100" y="200" width="200" height="40" rx="4" class="bp-box" />
+            <text x="200" y="224" text-anchor="middle" class="bp-text">開発会社の選定・実装統括</text>
+
+            <!-- Step 4: Monetization/Operation -->
+            <rect x="120" y="290" width="160" height="40" rx="4" class="bp-box" />
+            <text x="200" y="314" text-anchor="middle" class="bp-text">商品化・運用体制構築</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section (Right after Hero) -->
+  <section class="projects section-padding" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge">PROJECTS</span>
+        <h2>AIプロダクトを、構想から実装まで設計してきました。</h2>
+        <p class="subtitle">エネルギー、医療、広告・顧客接点など、異なる業界におけるAIプロダクトの構想、設計、開発統括、事業化を支援しています。</p>
+      </div>
+      
+      <div class="project-list">
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">エネルギーマネジメント／クラウド／制御システム</span>
+            </div>
+            <h3>SPAQ CORE クラウド</h3>
+            <p class="project-desc">
+              蓄電池、電力設備、需要予測、デマンド制御を統合し、産業施設や集合住宅の電力コスト最適化を支援するエネルギーマネジメント基盤。
+            </p>
+            
+            <div class="project-details">
+              <div class="detail-section">
+                <h4>主な設計領域</h4>
+                <div class="detail-list">
+                  <span class="detail-list-item">プロダクト構想</span>
+                  <span class="detail-list-item">システムアーキテクチャ</span>
+                  <span class="detail-list-item">制御ロジック</span>
+                  <span class="detail-list-item">クラウド基盤</span>
+                  <span class="detail-list-item">セキュリティ</span>
+                  <span class="detail-list-item">運用設計</span>
+                  <span class="detail-list-item">商品化支援</span>
+                </div>
+              </div>
+              
+              <div class="detail-section">
+                <div class="value-highlight">
+                  <h5>AI Orchestrationの役割と価値</h5>
+                  <p>全体のシステムアーキテクチャとバッテリーの充放電制御ロジックを設計。シミュレーション段階から運用監視設計までを一貫して統括し、稼働後の電力基本料金および従量料金の削減に貢献しました。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">越境医療／多言語AI／コンテンツプラットフォーム</span>
+            </div>
+            <h3>AlleyPin 1.Talk</h3>
+            <p class="project-desc">
+              医療従事者や専門家の知識、経験、人柄を、インタビューコンテンツとAI対話へ変換する多言語コミュニケーションプロダクト。
+            </p>
+            
+            <div class="project-details">
+              <div class="detail-section">
+                <h4>主な設計領域</h4>
+                <div class="detail-list">
+                  <span class="detail-list-item">サービスコンセプト</span>
+                  <span class="detail-list-item">インタビュー設計</span>
+                  <span class="detail-list-item">AI対話体験</span>
+                  <span class="detail-list-item">多言語展開</span>
+                  <span class="detail-list-item">医療インバウンド事業</span>
+                  <span class="detail-list-item">海外市場向け商品設計</span>
+                </div>
+              </div>
+              
+              <div class="detail-section">
+                <div class="value-highlight">
+                  <h5>AI Orchestrationの役割と価値</h5>
+                  <p>医師の経験と専門性を海外患者へ正確に伝える対話ロジックを設計。機械翻訳だけでは解決できないニュアンスや医療用語の対訳辞書設計を統括し、訪日外国人患者の信頼獲得と受入体制の円滑化を支援しました。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-tag">AI広告／顧客接点／リレーションマイニング</span>
+            </div>
+            <h3>リレーションマイニングマネージャー</h3>
+            <p class="project-desc">
+              企業や団体が保有する顧客、会員、入居者、視聴者との関係性を活用し、AIチャットを新たな広告・販売チャネルへ変えるプラットフォーム。
+            </p>
+            
+            <div class="project-details">
+              <div class="detail-section">
+                <h4>主な設計領域</h4>
+                <div class="detail-list">
+                  <span class="detail-list-item">事業構想</span>
+                  <span class="detail-list-item">AIチャット</span>
+                  <span class="detail-list-item">認証</span>
+                  <span class="detail-list-item">行動ログ</span>
+                  <span class="detail-list-item">広告配信モデル</span>
+                  <span class="detail-list-item">レベニューシェア</span>
+                  <span class="detail-list-item">管理画面</span>
+                  <span class="detail-list-item">販売戦略</span>
+                </div>
+              </div>
+              
+              <div class="detail-section">
+                <div class="value-highlight">
+                  <h5>AI Orchestrationの役割と価値</h5>
+                  <p>社外CTOの立場で参画し、ユーザー情報と行動ログを突合する特許技術の要件定義からAI推奨モデルの検証までを主導。単なるQ&Aチャットではなく、顧客リレーションを収益化する広告媒体としてのアーキテクチャ設計を統括しました。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Issues Section -->
+  <section class="issues section-padding">
+    <div class="container">
+      <div class="issues-grid">
+        <div class="issues-left reveal">
+          <span class="badge">ISSUES</span>
+          <h2>こんなAI投資の相談から<br>始められます。</h2>
+          <p>技術を導入すること自体が目的化し、事業としての効果やプロダクト要件が曖昧なまま開発が進むと、投資は回収できません。</p>
+          <div class="solution-box">
+            <h4>AI Orchestrationの支援アプローチ</h4>
+            <p>AI Orchestration Inc.は、経営課題とAI技術の間に入り、投資テーマ、優先順位、プロダクト要件、開発体制を整理します。特定のAIツールを販売するのではなく、企業にとって何に投資することが合理的かを設計します。</p>
+          </div>
+        </div>
+        
+        <div class="issues-list reveal reveal-delay-2">
+          <div class="issue-item">
+            <svg class="issue-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+            <span class="issue-text">AIに投資したいが、何から始めるべきか分からない</span>
+          </div>
+          
+          <div class="issue-item">
+            <svg class="issue-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+            <span class="issue-text">自社のどの業務や事業にAIを使うべきか判断できない</span>
+          </div>
+          
+          <div class="issue-item">
+            <svg class="issue-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+            <span class="issue-text">AIベンダーの提案を経営・事業側から評価できない</span>
+          </div>
+          
+          <div class="issue-item">
+            <svg class="issue-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+            <span class="issue-text">PoCを実施したが、本番導入や事業化へ進まない</span>
+          </div>
+          
+          <div class="issue-item">
+            <svg class="issue-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+            <span class="issue-text">AIサービスを企画したいが、要件を整理できない</span>
+          </div>
+          
+          <div class="issue-item">
+            <svg class="issue-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+            <span class="issue-text">開発会社はいるが、プロジェクトを統括する責任者がいない</span>
+          </div>
+
+          <div class="issue-item">
+            <svg class="issue-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+            <span class="issue-text">複数のAIサービスや開発会社から最適なものを選びたい</span>
+          </div>
+
+          <div class="issue-item">
+            <svg class="issue-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+            <span class="issue-text">社内にAI投資の責任者を置くほどの体制がない</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services section-padding" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge">SERVICES</span>
+        <h2>支援内容</h2>
+        <p class="subtitle">AI投資テーマの整理から、設計、開発会社の選定、実装管理まで、各フェーズに応じた専門サービスを提供します。</p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-num">01</div>
+          <h3>AI顧問・経営相談</h3>
+          <p>経営者や事業責任者の相談相手として、AI技術、市場動向、投資判断、プロジェクトの優先順位を継続的に整理します。</p>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-num">02</div>
+          <h3>AI投資テーマ設計</h3>
+          <p>顧客課題、社内業務、保有データ、既存事業を整理し、AIを使って何に投資すべきかを設計します。</p>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-num">03</div>
+          <h3>PoC・AIプロダクト設計</h3>
+          <p>検証すべき仮説、利用者、提供価値、AI機能、データ、評価方法を整理し、PoCやAIプロダクトの設計書を作成します。</p>
+        </div>
+        
+        <!-- Service 4 -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-num">04</div>
+          <h3>開発会社選定・開発統括</h3>
+          <p>開発会社の選定、提案評価、要件定義、アーキテクチャ、品質、セキュリティ、進行管理を事業側の立場から統括します。</p>
+        </div>
+        
+        <!-- Service 5 -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-num">05</div>
+          <h3>商品化・事業化支援</h3>
+          <p>開発したAIプロダクトについて、価格、契約、運用、販売資料、販売チャネル、収益モデルを整理します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process section-padding" id="flow">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge">PROCESS</span>
+        <h2>ご相談から、AI投資を具体化するまで。</h2>
+        <p class="subtitle">初回相談から実行支援まで、段階を踏んでリスクをコントロールしながらプロジェクトを進めます。</p>
+      </div>
+      
+      <div class="process-list reveal">
+        <div class="process-step">
+          <div class="process-step-num">1</div>
+          <h4>初回相談</h4>
+          <p>経営課題、AI活用の検討状況、現在抱えている疑問を伺います。</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="process-step-num">2</div>
+          <h4>現状整理</h4>
+          <p>業務、事業、データ、社内体制、既存システム、予算などを確認します。</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="process-step-num">3</div>
+          <h4>投資テーマと優先順位の設計</h4>
+          <p>どの領域に、どの順番で、どの程度投資するべきかを整理します。</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="process-step-num">4</div>
+          <h4>支援計画の提示</h4>
+          <p>AI顧問、調査・構想設計、PoC、開発統括などから、必要な支援範囲を提案します。</p>
+        </div>
+        
+        <div class="process-step">
+          <div class="process-step-num">5</div>
+          <h4>実行支援</h4>
+          <p>社内担当者、開発会社、専門家と連携し、構想を実際のプロジェクトへ進めます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features section-padding">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge">WHY US</span>
+        <h2>AI Orchestrationの特徴</h2>
+        <p class="subtitle">机上の論理や特定の製品にとらわれず、実務に即したAIプロダクトの成立を支援します。</p>
+      </div>
+      
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card reveal reveal-delay-1">
+          <h3>実際のプロダクト設計経験</h3>
+          <p>提案書だけではなく、エネルギー、医療、広告・顧客接点などの領域で、実際のAIプロダクト設計に携わっています。</p>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-card reveal reveal-delay-2">
+          <h3>経営と技術の間をつなぐ</h3>
+          <p>経営課題を技術要件へ落とし込み、技術上の制約や選択肢を経営判断へ戻します。</p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="feature-card reveal reveal-delay-3">
+          <h3>特定製品に依存しない</h3>
+          <p>特定のAIツールや開発会社を販売することを前提にせず、顧客に必要な技術、サービス、開発体制を選定します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Joint Venture Footnote Section -->
+  <section class="jv-option section-padding">
+    <div class="container">
+      <div class="jv-box reveal">
+        <h3>事業化まで踏み込む選択肢</h3>
+        <p>
+          通常のコンサルティングやプロダクト設計を通じて、双方の役割、提供資産、市場性、収益モデルが明確になったプロジェクトについては、共同開発、販売支援、レベニューシェアなどの提携も個別に検討します。すべての案件を共同事業とするのではなく、プロジェクトの性質と双方の条件を確認したうえで判断します。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="profile section-padding" id="about">
+    <div class="container">
+      <div class="profile-layout">
+        <!-- Representative Profile -->
+        <div class="bio-container reveal">
+          <span class="badge">ABOUT US</span>
+          <h2>AIプロダクトの構想と実装をつなぐ。</h2>
+          <p style="margin-bottom: 2rem;">
+            AI Orchestration Inc.は、AIプロダクト設計とAI投資支援を専門とする会社です。
+            経営課題の整理、AI活用テーマの選定、プロダクト企画、PoC、要件定義、開発統括を通じて、企業のAI投資を支援します。
+            プロジェクトの内容に応じて、開発会社、技術者、業界専門家と連携し、必要な体制を構築します。
+          </p>
+          
+          <div class="bio-card">
+            <div class="bio-header">
+              <span class="bio-name">山本 まさき</span>
+              <span class="bio-title">代表 / AIプロダクト設計リード</span>
+            </div>
+            <div class="bio-body">
+              <h4>略歴</h4>
+              <p>
+                富士通、電通、野村総合研究所を経て独立。金融・公共分野の大規模システム構築、VRプロジェクト、ヘルスケアAIなどのプロダクト開発・設計を主導した経験を持つ。国際基督教大学（ICU）非常勤講師（ソフトウェア工学）等も務める。国家資格キャリアコンサルタント、認定産業カウンセラー。
+              </p>
+              <h4>得意分野</h4>
+              <p>経営課題と技術要件の接続、AIプロダクトのアーキテクチャ設計、PoC要件定義、開発統括。</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Company Profile Table -->
+        <div class="company-container reveal reveal-delay-2" style="margin-top: 3.5rem;">
+          <h3 style="font-size: 1.25rem; margin-bottom: 1.5rem;">会社概要</h3>
+          <table class="company-table">
+            <tbody>
+              <tr>
+                <th>会社名</th>
+                <td>AI Orchestration Inc.</td>
+              </tr>
+              <tr>
+                <th>代表者</th>
+                <td>山本 まさき</td>
+              </tr>
+              <tr>
+                <th>事業内容</th>
+                <td>
+                  1. AIプロダクト設計・PoC策定支援<br>
+                  2. AI投資・IT導入コンサルティング<br>
+                  3. システム要件定義・開発統括業務<br>
+                  4. 商品化・事業化コンサルティング
+                </td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>東京都渋谷区（リモート運営主体）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="section-header reveal" style="text-align: center; margin: 0 auto 3rem;">
+          <span class="badge">CONTACT</span>
+          <h2>AI活用について、まずはご相談ください。</h2>
+          <p class="subtitle">AIに何を任せるべきか決まっていない段階でも構いません。現在の課題や検討状況を伺い、必要な支援を整理します。</p>
+        </div>
+        
+        <form class="contact-form reveal reveal-delay-1" id="contactForm">
+          <div class="form-group">
+            <label for="inquiryType">お問い合わせ内容</label>
+            <select class="form-control select-control" id="inquiryType" required>
+              <option value="" disabled selected>選択してください</option>
+              <option value="advisor">AI顧問について相談したい</option>
+              <option value="theme">AI投資テーマを整理したい</option>
+              <option value="poc">PoC・AIプロダクトを設計したい</option>
+              <option value="management">開発会社の選定・開発統括を相談したい</option>
+              <option value="commercialize">AIサービスの商品化を相談したい</option>
+              <option value="other">その他</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="companyName">貴社名 / 団体名</label>
+            <input type="text" class="form-control" id="companyName" placeholder="株式会社〇〇" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="userName">お名前</label>
+            <input type="text" class="form-control" id="userName" placeholder="山田 太郎" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="userEmail">メールアドレス</label>
+            <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="userPhone">電話番号 (任意)</label>
+            <input type="tel" class="form-control" id="userPhone" placeholder="03-1234-5678">
+          </div>
+          
+          <div class="form-group">
+            <label for="message">ご相談内容（現在の課題や検討状況）</label>
+            <textarea class="form-control" id="message" placeholder="検討されているAI活用イメージや、現在抱えているシステム開発・投資におけるお悩みをご記入ください。" required></textarea>
+          </div>
+          
+          <div class="form-submit-container">
+            <button type="submit" class="btn btn-primary" id="submitBtn">送信する</button>
+          </div>
+          
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="AI Orchestration Inc." class="footer-logo-img">
+            <span class="footer-logo-text">AI Orchestration</span>
+          </div>
+          <p>
+            AI Orchestration Inc.は、AIプロダクト設計とAI投資支援を専門とする会社です。
+          </p>
+        </div>
+        
+        <div class="footer-links-grid">
+          <div class="footer-links-col">
+            <h4>コンテンツ</h4>
+            <ul>
+              <li><a href="#projects">実績紹介</a></li>
+              <li><a href="#services">支援内容</a></li>
+              <li><a href="#flow">支援の進め方</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-links-col">
+            <h4>企業情報</h4>
+            <ul>
+              <li><a href="#about">私たちについて</a></li>
+              <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2026 AI Orchestration Inc. All rights reserved.
+        </div>
+        <div class="footer-legal">
+          <a href="#">プライバシーポリシー</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Script -->
+  <script src="script.js"></script>
+</body>
+</html>
