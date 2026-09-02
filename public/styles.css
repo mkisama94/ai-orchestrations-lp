@@ -431,75 +431,159 @@ ul {
   font-weight: 700;
 }
 
-/* Projects Section (Right under Hero) */
-.projects {
+/* Products Section (Right under Hero) */
+.products, .projects {
   background-color: var(--bg-primary);
 }
 
-.project-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
-.project-card {
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.product-card {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
   border-radius: 12px;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.25rem;
   transition: var(--transition-normal);
 }
 
-.project-card:hover {
+.product-card:hover {
   border-color: var(--accent);
+  transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
 
-.project-body {
-  padding: 2.5rem;
-}
-
-.project-meta {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+.product-card-header {
   margin-bottom: 1rem;
 }
 
-.project-tag {
+.product-tag {
+  display: inline-block;
   font-size: 0.75rem;
   font-weight: 700;
   color: var(--accent);
   background-color: var(--accent-light);
-  padding: 0.2rem 0.6rem;
+  padding: 0.25rem 0.65rem;
   border-radius: 4px;
-}
-
-.project-card h3 {
-  font-size: 1.5rem;
-  font-weight: 800;
   margin-bottom: 0.75rem;
 }
 
-.project-desc {
-  font-size: 0.95rem;
-  margin-bottom: 1.75rem;
+.product-card h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.product-provider {
+  margin-top: 0.7rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.product-provider a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(2, 132, 199, 0.3);
+  text-underline-offset: 0.2em;
+  transition: var(--transition-fast);
+}
+
+.product-provider a:hover {
+  color: var(--accent-hover);
+  text-decoration-color: currentColor;
+}
+
+.product-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-desc {
+  font-size: 0.9rem;
   color: var(--text-secondary);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
 }
 
-.project-details {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 2rem;
+.product-feature-box {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-left: 3px solid var(--accent);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.product-feature-box h4 {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.35rem;
+  letter-spacing: 0.04em;
+}
+
+.product-feature-box p {
+  font-size: 0.825rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.product-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.product-badge-item {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+}
+
+.product-card-footer {
+  margin-top: auto;
   border-top: 1px solid var(--border-color);
-  padding-top: 1.5rem;
+  padding-top: 1.25rem;
 }
 
-@media (max-width: 768px) {
-  .project-details {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
+.product-lp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.7rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(2, 132, 199, 0.12);
+  text-decoration: none;
+}
+
+.product-lp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
 }
 
 .detail-section h4 {
@@ -633,8 +717,20 @@ ul {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .service-card {
