@@ -515,7 +515,7 @@ ul {
 }
 
 .product-desc {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--text-secondary);
   line-height: 1.65;
   margin-bottom: 1.25rem;
@@ -549,11 +549,12 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+  margin-top: auto;
   margin-bottom: 1.5rem;
 }
 
 .product-badge-item {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   color: var(--text-secondary);
   background-color: var(--bg-primary);
   border: 1px solid var(--border-color);
