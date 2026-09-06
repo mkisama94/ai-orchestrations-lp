@@ -1043,7 +1043,7 @@
         <div class="flow-steps">
           <div class="flow-step-item active">
             <div class="flow-num">1</div>
-            <div class="flow-step-name">問い合わせ<br>メール作成・送信</div>
+            <div class="flow-step-name">問い合わせ<br>フォーム送信</div>
           </div>
           <div class="flow-step-item">
             <div class="flow-num">2</div>
@@ -1111,7 +1111,7 @@
             </button>
             <div class="faq-answer">
               <p>
-                可能です。すでに仕様書や要件定義書、開発スコープが明確なプロジェクトについては、個別見積もり（設計・開発・プロジェクト支援）として直接ご相談を承ります。フォームで「設計・開発・プロジェクト支援」を選択してください。
+                可能です。すでに仕様書や要件定義書、開発スコープが明確なプロジェクトについては、個別見積もり（設計・開発・プロジェクト支援）として直接ご相談を承ります。フォームで「新規のご相談」を選択し、ご相談内容をご記入ください。
               </p>
             </div>
           </div>
@@ -1140,92 +1140,21 @@
           </p>
         </div>
 
-        <form id="topContactForm" novalidate>
-          <div class="form-grid">
-            
-            <!-- Type Selector -->
-            <div class="form-group form-group-full">
-              <label class="form-label">
-                ご相談の種別 <span class="required-badge">必須</span>
-              </label>
-              <div class="type-selector-grid">
-                <label class="type-radio-card selected">
-                  <input type="radio" name="inquiryType" value="初回技術診断（50,000円）" checked>
-                  <span class="type-radio-title">初回技術診断</span>
-                  <span class="type-radio-sub">5万円・判断メモ付</span>
-                </label>
-                <label class="type-radio-card">
-                  <input type="radio" name="inquiryType" value="設計・開発・プロジェクト支援">
-                  <span class="type-radio-title">設計・開発支援</span>
-                  <span class="type-radio-sub">個別案件・見積もり</span>
-                </label>
-                <label class="type-radio-card">
-                  <input type="radio" name="inquiryType" value="継続相談・技術リード">
-                  <span class="type-radio-title">継続相談</span>
-                  <span class="type-radio-sub">技術リード・顧問</span>
-                </label>
-                <label class="type-radio-card">
-                  <input type="radio" name="inquiryType" value="その他のお問い合わせ">
-                  <span class="type-radio-title">その他</span>
-                  <span class="type-radio-sub">ご質問・提携など</span>
-                </label>
-              </div>
-            </div>
-
-            <!-- Company -->
-            <div class="form-group">
-              <label for="companyName" class="form-label">
-                貴社名 / 組織名 <span class="required-badge">必須</span>
-              </label>
-              <input type="text" id="companyName" class="form-input" placeholder="例：株式会社〇〇" required>
-            </div>
-
-            <!-- Name -->
-            <div class="form-group">
-              <label for="personName" class="form-label">
-                お名前 <span class="required-badge">必須</span>
-              </label>
-              <input type="text" id="personName" class="form-input" placeholder="例：山田 太郎" required>
-            </div>
-
-            <!-- Email -->
-            <div class="form-group">
-              <label for="email" class="form-label">
-                メールアドレス <span class="required-badge">必須</span>
-              </label>
-              <input type="email" id="email" class="form-input" placeholder="例：name@company.com" required>
-            </div>
-
-            <!-- Phone -->
-            <div class="form-group">
-              <label for="phone" class="form-label">
-                お電話番号 <span class="optional-badge">任意</span>
-              </label>
-              <input type="tel" id="phone" class="form-input" placeholder="例：03-1234-5678">
-            </div>
-
-            <!-- Message -->
-            <div class="form-group form-group-full">
-              <label for="message" class="form-label">
-                ご相談内容・現状の検討状況 <span class="required-badge">必須</span>
-              </label>
-              <textarea id="message" class="form-textarea" placeholder="現在検討されているAI活用の構想や、開発会社とのやり取りで迷っている点、解決したい技術課題などをご自由にご記入ください。" required></textarea>
-            </div>
-
-          </div>
-
-          <p class="form-privacy-note">
-            メールの送信前に<a href="javascript:void(0);" id="openPrivacyModal">プライバシーポリシー</a>をご確認ください。この画面では自動送信されません。メールアプリで内容を確認して送信してください。
-          </p>
-
-          <div class="form-submit-row">
-            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
-              メールを作成する
-            </button>
-          </div>
-
-          <div class="form-feedback" id="formFeedback"></div>
-        </form>
+        <p class="form-privacy-note contact-privacy">
+          送信前に<button type="button" class="privacy-link" id="openPrivacyModal">プライバシーポリシー</button>をご確認ください。
+        </p>
+        <iframe
+          id="contactTallyFrame"
+          class="contact-tally-frame"
+          src="https://tally.so/embed/obPAq1?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+          loading="lazy"
+          width="100%"
+          height="1000"
+          title="ご相談・お問い合わせフォーム"
+        ></iframe>
+        <p class="contact-form-fallback">
+          フォームが表示されない場合は、<a href="https://tally.so/r/obPAq1" target="_blank" rel="noopener noreferrer">お問い合わせフォームを別のタブで開く</a>。
+        </p>
       </div>
 
     </div>
@@ -1310,5 +1239,6 @@
 
   <!-- JavaScript -->
   <script src="script.js"></script>
+  <script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>

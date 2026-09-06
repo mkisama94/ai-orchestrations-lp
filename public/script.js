@@ -60,81 +60,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. Contact Form Type Radio Cards
-  const radioCards = document.querySelectorAll('.type-radio-card');
-  radioCards.forEach(card => {
-    card.addEventListener('click', () => {
-      radioCards.forEach(c => c.classList.remove('selected'));
-      card.classList.add('selected');
-      const input = card.querySelector('input[type="radio"]');
-      if (input) input.checked = true;
-    });
-  });
-
-  // 5. Contact Form Submission
-  const form = document.getElementById('topContactForm');
-  const feedback = document.getElementById('formFeedback');
-  const submitBtn = document.getElementById('submitBtn');
-
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-
-      // Retrieve form values
-      const selectedTypeInput = document.querySelector('input[name="inquiryType"]:checked');
-      const inquiryType = selectedTypeInput ? selectedTypeInput.value : '初回技術診断（50,000円）';
-      const companyName = document.getElementById('companyName').value.trim();
-      const personName = document.getElementById('personName').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const message = document.getElementById('message').value.trim();
-
-      // Reset feedback
-      feedback.style.display = 'none';
-      feedback.className = 'form-feedback';
-      feedback.innerHTML = '';
-
-      // Simple validation
-      if (!companyName || !personName || !email || !message) {
-        showFeedback('error', '必須項目（ご相談種別、貴社名、お名前、メールアドレス、ご相談内容）をすべてご入力ください。');
-        return;
+  // 4. Navigate only after our embedded Tally form confirms submission.
+  const contactFrame = document.getElementById('contactTallyFrame');
+  if (contactFrame) {
+    window.addEventListener('message', (event) => {
+      if (event.origin !== 'https://tally.so' || event.source !== contactFrame.contentWindow) return;
+      let message = event.data;
+      if (typeof message === 'string') {
+        try { message = JSON.parse(message); } catch { return; }
       }
-
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email)) {
-        showFeedback('error', '正しいメールアドレスの形式でご入力ください。');
-        return;
-      }
-
-      // Cloudflare form delivery will be connected later. Create a mail draft only.
-      const recipient = 'yamamoto@ai-orchestration.jp';
-      const mailSubject = encodeURIComponent(`【Web問合せ】${inquiryType} - ${companyName} ${personName}様`);
-      const mailBody = encodeURIComponent(
-        `種別: ${inquiryType}\n貴社名: ${companyName}\nお名前: ${personName}\nメール: ${email}\n電話: ${phone}\n\n相談内容:\n${message}`
-      );
-      const mailtoUrl = `mailto:${recipient}?subject=${mailSubject}&body=${mailBody}`;
-      const tooLong = mailtoUrl.length > 7000;
-      showFeedback('success', tooLong
-        ? '入力内容が長いため、メール本文への自動転記は行いません。入力内容をコピーし、下記の宛先へお送りください。まだ送信されていません。'
-        : 'まだ送信されていません。メールアプリで内容を確認して送信してください。アプリが開かない場合は、入力内容をコピーし、下記の宛先へお送りください。');
-      const addressLink = document.createElement('a');
-      addressLink.href = `mailto:${recipient}`;
-      addressLink.textContent = recipient;
-      addressLink.style.textDecoration = 'underline';
-      feedback.append(document.createElement('br'), addressLink);
-      if (!tooLong) window.location.href = mailtoUrl;
-      // Keep all input intact; opening a mail application does not confirm delivery.
+      if (message?.event !== 'Tally.FormSubmitted' || message.payload?.formId !== 'obPAq1') return;
+      window.location.assign(new URL('thanks.html', window.location.href).href);
     });
   }
 
-  function showFeedback(type, message) {
-    feedback.style.display = 'block';
-    feedback.className = `form-feedback ${type}`;
-    feedback.textContent = message;
-    feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }
-
-  // 6. Privacy Policy Modal
+  // 5. Privacy Policy Modal
   const privacyModal = document.getElementById('privacyModal');
   const openPrivacyBtn = document.getElementById('openPrivacyModal');
   const footerPrivacyBtn = document.getElementById('footerPrivacyLink');

@@ -1621,6 +1621,32 @@ button, input, textarea, select {
   line-height: 1.7;
 }
 
+.contact-tally-frame {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+.contact-privacy { margin-bottom: 1.5rem; }
+.privacy-link {
+  border: 0;
+  background: none;
+  color: var(--accent);
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+}
+.contact-form-fallback {
+  margin-top: 1.5rem;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.contact-form-fallback a { color: var(--accent); text-decoration: underline; }
+.privacy-link:focus-visible, .contact-form-fallback a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
 .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
