@@ -2326,7 +2326,8 @@ button, input, textarea, select {
 }
 
 /* Results Data Table */
-.results-table-wrap {
+.results-table-wrap,
+.article-table-wrap {
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -2334,12 +2335,14 @@ button, input, textarea, select {
   background: #ffffff;
 }
 
-.results-table {
+.results-table,
+.article-table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.results-table th {
+.results-table th,
+.article-table th {
   background: var(--bg-subtle);
   padding: 1rem 1.25rem;
   text-align: left;
@@ -2350,7 +2353,8 @@ button, input, textarea, select {
   border-bottom: 1px solid var(--border-medium);
 }
 
-.results-table td {
+.results-table td,
+.article-table td {
   padding: 1.1rem 1.25rem;
   border-bottom: 1px solid var(--border-subtle);
   font-size: 0.9375rem;
@@ -2358,7 +2362,8 @@ button, input, textarea, select {
   line-height: 1.65;
 }
 
-.results-table tr:last-child td {
+.results-table tr:last-child td,
+.article-table tr:last-child td {
   border-bottom: none;
 }
 

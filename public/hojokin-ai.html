@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="補助金AI 実績詳細｜公式情報の検索から、専門家への相談まで。事業の強みを見極めてAI相互送客へ転換し、その技術を公的制度情報への公平なアクセスへ展開した開発プロセスを解説。">
+  <title>補助金AI 実績詳細｜公式情報の検索から、専門家への相談まで｜AI Orchestration Inc.</title>
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="case-study-page">
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="logo-symbol">AO</div>
+        <div class="logo-meta">
+          <span class="logo-text">AI Orchestration</span>
+          <span class="logo-sub">企業AIの設計事務所</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html#cases" class="nav-link">実績・事例</a>
+        <a href="index.html#diagnosis" class="nav-link">サービス・料金</a>
+        <a href="index.html#about" class="nav-link">会社情報</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-secondary btn-sm" style="display:inline-flex; align-items:center; gap:0.35rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          TOPへ戻る
+        </a>
+        <a href="index.html#contact" class="btn btn-primary btn-sm">お問い合わせ</a>
+        <button class="nav-toggle" id="navToggle" aria-label="メニュー開閉">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section: 案件概要
+       ========================================================================== -->
+  <section class="case-hero-wrap">
+    <div class="container">
+      
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html">ホーム</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="index.html#cases">代表事例</a>
+        <span class="breadcrumb-separator">/</span>
+        <span style="color:var(--text-main); font-weight:600;">補助金AI</span>
+      </nav>
+
+      <div class="case-hero-theme">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+        </svg>
+        CASE STUDY ｜ SUBSIDY SEARCH &amp; AI INTER-SERVICE ORCHESTRATION
+      </div>
+
+      <h1 class="case-hero-title">
+        補助金AI<br>
+        <span style="font-size: 0.72em; font-weight: 700; color: var(--text-secondary); display: block; margin-top: 0.5rem;">
+          公式情報の検索から、専門家への相談まで。
+        </span>
+      </h1>
+
+      <p class="case-hero-lead">
+        補助金AIは、AIとの対話を通じて助成金・補助金の候補を探し、公式情報の確認から専門家への相談準備までを支援するオープンソースのプラグインです。COクリエイト社との協業により、公的機関のAPIと連携し、新着情報の確認や、顧問社労士へ送る照会文の作成につなげる仕組みを開発しました。
+      </p>
+
+      <!-- Project Overview Metadata Box -->
+      <div class="case-meta-box">
+        <table class="case-meta-table">
+          <tbody>
+            <tr>
+              <th>協業先</th>
+              <td><strong><a href="https://cocurie.com/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社CoCreate（COクリエイト社）</a></strong></td>
+            </tr>
+            <tr>
+              <th>対象</th>
+              <td><strong>助成金・補助金を探す事業者（中小企業・個人事業主）</strong></td>
+            </tr>
+            <tr>
+              <th>主な機能</th>
+              <td>対話による検索、公式情報の照合、新着情報の確認、専門家への照会文作成</td>
+            </tr>
+            <tr>
+              <th>公開方針</th>
+              <td><strong>AGPL-v3ライセンスによるオープンソース</strong></td>
+            </tr>
+            <tr>
+              <th>当社の関与</th>
+              <td>事業再構築の提案、AIサービスの構想・要件定義、API連携設計・開発</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Process Flow Strip: 利用者体験 -->
+      <div class="case-flow-strip">
+        <span class="flow-strip-label">User Experience Flow</span>
+        <div class="flow-strip-steps">
+          <span class="flow-strip-item">1. 事業や相談内容を伝える</span>
+          <span class="flow-strip-arrow">→</span>
+          <span class="flow-strip-item">2. 制度の候補を探す</span>
+          <span class="flow-strip-arrow">→</span>
+          <span class="flow-strip-item">3. 公式情報を確認する</span>
+          <span class="flow-strip-arrow">→</span>
+          <span class="flow-strip-item" style="border-color:var(--accent); color:var(--accent-deep); background:var(--accent-light);">4. 顧問社労士への照会文を作る</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Main Content & Sticky Table of Contents Layout
+       ========================================================================== -->
+  <div class="container">
+    <div class="case-content-layout">
+      
+      <!-- Article Main Column -->
+      <main class="article-main">
+
+        <!-- Section 1: 協業の背景 -->
+        <section class="article-section" id="background">
+          <span class="article-sec-badge">CHAPTER 01 / BACKGROUND</span>
+          <h2 class="article-sec-title">
+            支援の出発点は、既存の枠組みを見直すことでした。
+          </h2>
+          
+          <p class="article-p">
+            COクリエイト社との協業は、同社が直面していた事業の転換期における、事業再構築のコンサルティング支援から始まりました。
+          </p>
+          <p class="article-p">
+            当時の同社は、大手企業との取引基盤と確かなソフトウェア技術を持ち、福利厚生アウトソーシングやECサービスを展開していました。しかし、サービスの利用実態や取引先への提供価値を、持続的で高収益な事業モデルにどう結び付けるかが大きな経営課題となっていました。
+          </p>
+
+          <div class="article-quote-box">
+            「支援の出発点は、既存サービスをそのまま拡張することではなく、COクリエイト社が顧客や取引先から選ばれている理由を見直すことでした。福利厚生サービスやECという事業の形をいったん離れ、蓄積された関係と能力のなかに、次の事業の核を探しました。」
+            <span class="quote-author">— 山本 まさき（AI Orchestration 代表）</span>
+          </div>
+
+          <p class="article-p">
+            IT業界や福利厚生市場では、競合他社との価格競争や機能比較に陥りがちです。私たちは他社との比較や形式的なシステム改修に目を奪われるのではなく、<strong>「利用実態と対価の関係」「顧客企業にとっての真の価値」「既存の強みを活かした事業の再構成」</strong>という経営課題の根幹から、事業の棚卸しと再設計を進めました。
+          </p>
+        </section>
+
+        <!-- Section 2: 事業の強みとAIへの展開 -->
+        <section class="article-section" id="strength-to-ai">
+          <span class="article-sec-badge">CHAPTER 02 / BUSINESS RESTRUCTURING</span>
+          <h2 class="article-sec-title">
+            取引関係をつなぐ力を、AIサービスへ。
+          </h2>
+          
+          <p class="article-p">
+            詳細な事業分析と現場ヒアリングを重ねるなかで、同社の本質的な競争力の源泉が浮き彫りになりました。
+          </p>
+          <p class="article-p">
+            それは、単にWebシステムを開発・運用する力ではありませんでした。<strong>「サプライヤーとの良好な関係を築き、独自の取引条件を開拓し、それを顧客企業の事業につなげる力」</strong>——代表者の商社時代からの経験に根ざす、人と企業を有機的に結びつけるネットワーク構築力こそが、COクリエイト社の事業の核でした。
+          </p>
+
+          <p class="article-p">
+            私たちは、この強みを従来の福利厚生の枠組みだけに閉じ込めておくのではなく、台頭しつつあった生成AI技術と掛け合わせることを提案しました。それが<strong>「AI相互送客」</strong>モデルです。
+          </p>
+
+          <div class="article-quote-box" style="background:#f0f7ff; border-left-color:var(--accent);">
+            「A社とB社のAIを連携させ、利用者の要望に応じて企業やサービスをつなぐ。集客・送客から決済へ至る取引の流れを、企業間の連携によって広げる事業モデルを提案しました。」
+          </div>
+
+          <div class="article-table-wrap" style="margin: 2rem 0;">
+            <table class="article-table">
+              <thead>
+                <tr>
+                  <th style="width: 45%;">COクリエイト社が持つ既存の強み</th>
+                  <th style="width: 55%;">AIによる再構成と新サービス</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>サプライヤーとの関係構築</strong><br><span style="font-size:0.8125rem; color:var(--text-secondary);">商社時代から培った信頼関係と提携網</span></td>
+                  <td><strong>連携する企業・サービスのネットワーク</strong><br><span style="font-size:0.8125rem; color:var(--text-secondary);">複数の企業サービス・APIを対話基盤で接続</span></td>
+                </tr>
+                <tr>
+                  <td><strong>独自の取引条件の開拓</strong><br><span style="font-size:0.8125rem; color:var(--text-secondary);">顧客の要望に応える柔軟な条件設定力</span></td>
+                  <td><strong>連携先ならではの商品・サービスの提案</strong><br><span style="font-size:0.8125rem; color:var(--text-secondary);">ユーザーの対話文脈に応じた最適な価値推薦</span></td>
+                </tr>
+                <tr>
+                  <td><strong>顧客企業の事業への接続</strong><br><span style="font-size:0.8125rem; color:var(--text-secondary);">企業の福利厚生・従業員支援の実務支援</span></td>
+                  <td><strong>AIを通じた相互送客と取引への接続</strong><br><span style="font-size:0.8125rem; color:var(--text-secondary);">ユーザーの課題解決から実際の提携先アクションへ</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="article-p">
+            自社の価値を「自前ソフトウェアの保有」だけに限定せず、「取引をつなぐ能力」から事業を設計し直したことで、提案後には新規商談や他社からの提携相談が着実に増加しました。事業の強みを的確に見極め、AIという新しい器に盛り直すことで、ビジネスの可能性が大きく広がったのです。
+          </p>
+        </section>
+
+        <!-- Section 3: 補助金AIの開発 -->
+        <section class="article-section" id="subsidy-ai-origin">
+          <span class="article-sec-badge">CHAPTER 03 / PROJECT GENESIS</span>
+          <h2 class="article-sec-title">
+            相互送客の技術を、制度情報へのアクセスに活かす。
+          </h2>
+          
+          <p class="article-p">
+            AI相互送客のアーキテクチャ設計が進むなかで、新たな展開が訪れました。COクリエイト社の顧客企業である大手会計システム企業との対話から得られた貴重な示唆が、次なるプロジェクトの引き金となったのです。
+          </p>
+          <p class="article-p">
+            相互送客で培った「異なるサービス同士を対話文脈でつなぐ技術」を、ビジネス上の送客だけでなく、より広い社会的な課題解決に活かせないか。その議論から生まれたのが<strong>「補助金AI」</strong>でした。
+          </p>
+
+          <div class="article-quote-box" style="text-align:center; padding: 2rem 1.5rem;">
+            <div style="font-size: 1.25rem; font-weight: 700; color: var(--accent-deep); margin-bottom: 0.5rem;">
+              「誰でも同じスタートラインで、助成金を探せるようにする。」
+            </div>
+            <span style="font-size: 0.875rem; color: var(--text-secondary);">
+              COクリエイト社代表が重視する「共生」の思想を具現化するプロジェクト
+            </span>
+          </div>
+
+          <p class="article-p">
+            国や自治体の助成金・補助金は、中小企業や小規模事業者にとって事業推進の貴重な原動力です。しかし、制度の数が膨大であるうえに情報が分散しており、公募要領の文章も専門的で難解です。結果として、専門家と日常的に付き合いのある一部の企業だけが制度を活用でき、多くの事業者が「自社が対象になるかどうかすら分からない」状態に取り残されていました。
+          </p>
+          <p class="article-p">
+            制度に詳しい専門知識や人脈を持たない事業者であっても、自分の言葉でやりたい事業を相談すれば、該当しそうな制度の候補と確認事項を対等に把握できる。大手会計システム企業からの助言を胸に、私たちはこの「公平なアクセス環境」をつくるための開発に着手しました。
+          </p>
+        </section>
+
+        <!-- Section 4: 公式情報との連携 -->
+        <section class="article-section" id="api-architecture">
+          <span class="article-sec-badge">CHAPTER 04 / ARCHITECTURE &amp; INTEGRATION</span>
+          <h2 class="article-sec-title">
+            公的機関のAPIを、情報の根拠にする。
+          </h2>
+          
+          <p class="article-p">
+            公的制度を扱うAIシステムにおいて、最も重要な要件は<strong>「情報の正確性と根拠の透明性」</strong>です。LLM（大規模言語モデル）の一般的な知識だけに頼って回答を生成させると、古い制度情報や実在しない要件を自信満々に答えてしまう「幻覚（ハルシネーション）」のリスクを避けられません。
+          </p>
+          <p class="article-p">
+            AI Orchestrationは、信頼性を担保するために以下の3つの設計方針を定義・実装しました。
+          </p>
+
+          <!-- 3 Principles Cards -->
+          <div class="feature-matrix-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 2rem 0;">
+            <div class="feature-matrix-card">
+              <div class="feature-matrix-tag">PRINCIPLE 01</div>
+              <h3 class="feature-matrix-name" style="font-size:1.0625rem;">公式情報を直接取得する</h3>
+              <p class="feature-matrix-desc" style="font-size:0.875rem;">
+                民間まとめサイト等の二次情報に依存せず、デジタル庁が主導する「Jグランツ」をはじめとする政府機関APIに直接接続。公式に公開されている最新の公募要領や要件データを一次情報として取得します。
+              </p>
+            </div>
+
+            <div class="feature-matrix-card">
+              <div class="feature-matrix-tag">PRINCIPLE 02</div>
+              <h3 class="feature-matrix-name" style="font-size:1.0625rem;">条件と情報を精緻に照合する</h3>
+              <p class="feature-matrix-desc" style="font-size:0.875rem;">
+                利用者の相談内容（業種・企業規模・投資内容など）と取得した制度情報を照合。公式データの事実、AIによる要約・整理、そして専門家が確認すべき事項を明確に区別して提示します。
+              </p>
+            </div>
+
+            <div class="feature-matrix-card">
+              <div class="feature-matrix-tag">PRINCIPLE 03</div>
+              <h3 class="feature-matrix-name" style="font-size:1.0625rem;">キャッシュで取得を効率化する</h3>
+              <p class="feature-matrix-desc" style="font-size:0.875rem;">
+                頻繁に変更されない制度情報は適切なキャッシュ層に蓄積。政府機関サーバーへのアクセス負荷を最小限に抑えつつ、利用者の待ち時間を短縮し、高レスポンスな対話体験を実現します。
+              </p>
+            </div>
+          </div>
+
+          <!-- Architecture SVG Schematic -->
+          <div class="article-diagram-card">
+            <div class="article-diagram-header">
+              <span class="article-diagram-title">SYSTEM ARCHITECTURE</span>
+              <span class="article-diagram-caption">公的データ照合・キャッシュ連携の全体図</span>
+            </div>
+
+            <svg viewBox="0 0 760 200" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto;">
+              <!-- User -->
+              <rect x="20" y="40" width="140" height="120" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+              <text x="90" y="70" text-anchor="middle" font-size="11" font-family="'JetBrains Mono', monospace" fill="#64748b" font-weight="700">USER INPUT</text>
+              <text x="90" y="100" text-anchor="middle" font-size="13" font-weight="700" fill="#0c1523">利用者の相談</text>
+              <text x="90" y="125" text-anchor="middle" font-size="10" fill="#64748b">事業内容・設備投資</text>
+              <text x="90" y="142" text-anchor="middle" font-size="10" fill="#64748b">雇用・賃上げ計画等</text>
+
+              <!-- Plugin / Orchestration -->
+              <rect x="220" y="25" width="200" height="150" rx="8" fill="#f0f7ff" stroke="#0969da" stroke-width="2"/>
+              <text x="320" y="52" text-anchor="middle" font-size="11" font-family="'JetBrains Mono', monospace" fill="#0969da" font-weight="700">SUBSIDY AI PLUGIN</text>
+              <rect x="235" y="65" width="170" height="28" rx="4" fill="#ffffff" stroke="#bfdbfe" stroke-width="1"/>
+              <text x="320" y="83" text-anchor="middle" font-size="11" fill="#054da3" font-weight="600">相談文脈の条件抽出</text>
+              <rect x="235" y="98" width="170" height="28" rx="4" fill="#ffffff" stroke="#bfdbfe" stroke-width="1"/>
+              <text x="320" y="116" text-anchor="middle" fill="#054da3" font-weight="600">制度要件との照合整理</text>
+              <rect x="235" y="131" width="170" height="28" rx="4" fill="#0969da"/>
+              <text x="320" y="149" text-anchor="middle" font-size="11" fill="#ffffff" font-weight="600">専門家向け照会文生成</text>
+
+              <!-- Cache Layer -->
+              <rect x="480" y="45" width="110" height="110" rx="8" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <text x="535" y="75" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', monospace" fill="#0284c7" font-weight="700">CACHE LAYER</text>
+              <text x="535" y="105" text-anchor="middle" font-size="11" font-weight="600" fill="#0c1523">制度キャッシュ</text>
+              <text x="535" y="125" text-anchor="middle" font-size="9" fill="#64748b">重複リクエスト抑制</text>
+              <text x="535" y="138" text-anchor="middle" font-size="9" fill="#64748b">応答高速化</text>
+
+              <!-- Public API -->
+              <rect x="630" y="40" width="110" height="120" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+              <text x="685" y="70" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', monospace" fill="#64748b" font-weight="700">GOV API</text>
+              <text x="685" y="100" text-anchor="middle" font-size="12" font-weight="700" fill="#0c1523">公的機関API</text>
+              <text x="685" y="120" text-anchor="middle" font-size="10" fill="#64748b">Jグランツ等</text>
+              <text x="685" y="140" text-anchor="middle" font-size="9" fill="#0969da" font-weight="600">最新の公募要領</text>
+
+              <!-- Connection Lines -->
+              <path d="M 160 100 L 220 100" stroke="#0969da" stroke-width="2"/>
+              <polygon points="215,96 223,100 215,104" fill="#0969da"/>
+              <polygon points="165,96 157,100 165,104" fill="#0969da"/>
+
+              <path d="M 420 100 L 480 100" stroke="#0969da" stroke-width="2"/>
+              <polygon points="475,96 483,100 475,104" fill="#0969da"/>
+              <polygon points="425,96 417,100 425,104" fill="#0969da"/>
+
+              <path d="M 590 100 L 630 100" stroke="#0969da" stroke-width="2"/>
+              <polygon points="625,96 633,100 625,104" fill="#0969da"/>
+              <polygon points="595,96 587,100 595,104" fill="#0969da"/>
+            </svg>
+          </div>
+
+          <p class="article-p">
+            設計上の重要なポイントは、<strong>「AIが勝手に採択を断定しない」</strong>ことです。公的機関のデータ取得時点、利用者が入力した前提条件、そしてAIが整理した要約結果を構造化して提示することで、利用者が自信を持って次のステップへ進める土台を整えました。
+          </p>
+        </section>
+
+        <!-- Section 5: 情報収集から専門家への相談まで -->
+        <section class="article-section" id="user-experience">
+          <span class="article-sec-badge">CHAPTER 05 / USER EXPERIENCE</span>
+          <h2 class="article-sec-title">
+            候補を見つけ、いつもの専門家へ相談する。
+          </h2>
+          
+          <p class="article-p">
+            補助金AIの利用体験は、「制度を調べて終わり」ではありません。真のゴールは、<strong>調べた情報を元に、自社の顧問社労士や税理士、認定支援機関などの専門家とスムーズに対話し、確実な申請準備へとバトンをつなぐこと</strong>にあります。
+          </p>
+
+          <!-- 3 Steps Table -->
+          <div class="article-table-wrap" style="margin: 2rem 0;">
+            <table class="article-table">
+              <thead>
+                <tr>
+                  <th style="width: 25%;">利用ステップ</th>
+                  <th style="width: 75%;">利用者が行えること・システムの役割</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>1. 制度を探す</strong></td>
+                  <td>
+                    自社の事業内容や直近で予定している設備投資・採用計画を自然な対話で入力。AIが公的APIから該当する可能性のある制度候補をピックアップし、概要と要件を分かりやすく要約します。
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>2. 新着を確認する</strong></td>
+                  <td>
+                    補助金・助成金は公募期間や年度更新が頻繁に行われます。プラグインの最新情報取得機能と、対話プラットフォーム側の定期実行（スケジュール機能等）を組み合わせることで、関心のある分野の新着制度を定期的に確認・キャッチアップできる運用を可能にしました。
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>3. 専門家へ相談する</strong></td>
+                  <td>
+                    候補となった制度と自社の現状をもとに、<strong>顧問社労士や専門家へそのまま送信できる「照会文（相談用下書き）」をワンクリックで生成</strong>。専門家との初動相談にかかる時間と認識のズレを大幅に圧縮します。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Sample Inquiry Letter Box -->
+          <div style="margin: 2.5rem 0;">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.75rem;">
+              <span style="font-size:0.875rem; font-weight:700; color:var(--text-main);">
+                【照会文の出力見本】※架空の事業者を想定した生成例
+              </span>
+              <span style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono);">INQUIRY DRAFT</span>
+            </div>
+
+            <div style="background:#ffffff; border:1px solid var(--border-medium); border-radius:var(--radius-md); padding:1.75rem; font-family:var(--font-sans); font-size:0.875rem; line-height:1.8; color:var(--text-secondary); box-shadow:var(--shadow-sm);">
+              <div style="padding-bottom:1rem; margin-bottom:1rem; border-bottom:1px dashed var(--border-subtle); color:var(--text-muted); font-size:0.8125rem;">
+                件名：【ご相談】業務改善助成金の活用検討について（株式会社〇〇）
+              </div>
+              <p style="margin-bottom:0.75rem;">
+                〇〇社会保険労務士事務所<br>
+                担当 〇〇様
+              </p>
+              <p style="margin-bottom:0.75rem;">
+                いつも大変お世話になっております。株式会社〇〇の△△です。<br>
+                現在、社内で進めている生産性向上のための設備導入および賃金引き上げ計画に関連し、以下の助成金の活用可否についてご相談させていただきたくご連絡いたしました。
+              </p>
+              <div style="background:var(--bg-subtle); padding:1rem; border-radius:var(--radius-sm); margin:1rem 0; border-left:3px solid var(--accent);">
+                <strong>■ 検討中の助成金制度</strong><br>
+                ・制度名：業務改善助成金（通常コース）<br>
+                ・参照URL（厚生労働省公式）：https://www.mhlw.go.jp/...<br><br>
+                <strong>■ 当社で予定している具体的な取り組み</strong><br>
+                ・受発注管理システムのクラウド化による業務効率化（投資予定額：約120万円）<br>
+                ・事業場内最低賃金を時間額45円引き上げる計画（対象労働者：3名）<br><br>
+                <strong>■ 専門家にご確認いただきたい事項</strong><br>
+                1. 上記のシステム導入内容が助成対象となる設備投資の基準に合致するか<br>
+                2. 対象労働者の雇用形態・就業規則の改定手続きにおける留意点<br>
+                3. 申請締切と交付決定前着工の可否
+              </div>
+              <p>
+                お忙しいところ恐縮ですが、上記要件に照らし合わせ、進め方や必要な事前準備について一度お打ち合わせの機会をいただけますと幸いです。<br>
+                何卒よろしくお願い申し上げます。
+              </p>
+            </div>
+          </div>
+
+          <p class="article-p">
+            このように、補助金AIは申請手続きを自動化するものでも、採択を保証するものでもありません。<strong>「事業者の意図」と「公的制度の要件」を整理したうえで、顧問社労士など信頼できる専門家へとバトンを渡す</strong>——この現実的で誠実な利用体験こそが、実用性を何よりも重んじる当社の設計思想です。
+          </p>
+          <p class="article-p" style="font-size:0.875rem; color:var(--text-muted);">
+            ※なお、公的制度には厚生労働省所管の助成金（社会保険労務士が担当）や、経済産業省所管の補助金（中小企業診断士や認定支援機関が担当）など様々な種類があり、制度の性格に応じた適切な専門家への相談を推奨する案内を組み込んでいます。
+          </p>
+        </section>
+
+        <!-- Section 6: オープンソースとしての公開 -->
+        <section class="article-section" id="open-source">
+          <span class="article-sec-badge">CHAPTER 06 / OPEN SOURCE</span>
+          <h2 class="article-sec-title">
+            誰でも利用・改善に参加できる形で公開する。
+          </h2>
+          
+          <p class="article-p">
+            補助金AIは、特定の企業が独占的に囲い込んで利益を上げるプロプライエタリなツールとしてではなく、<strong>AGPL-v3（GNU Affero General Public License v3）ライセンスのオープンソース・ソフトウェア</strong>として公開されました。
+          </p>
+
+          <div class="article-quote-box">
+            「特定の企業だけが情報への入口を持つのではなく、必要とする人が利用し、改善にも参加できるようにする。その方針から、成果物をAGPL-v3ライセンスのオープンソースとして公開しています。」
+          </div>
+
+          <p class="article-p">
+            この公開方針は、プロジェクトの根底にあるCOクリエイト社の「共生」の思想を体現したものです。制度情報を探す誰もが対等なスタートラインに立てるよう、ソースコードを公開し、開発コミュニティや専門家による継続的な機能改善・API更新への対応を可能にしました。
+          </p>
+          <p class="article-p">
+            ライセンス条件に従うことで、誰でも自身の環境にプラグインを導入し、自社の対話AIや業務基盤に組み込むことができます。オープンソース公開と商用のホスティング運用を適切に切り分けることで、持続可能で透明性の高い公共的エコシステムの構築を目指しています。
+          </p>
+        </section>
+
+        <!-- Section 7: 当社の担当と現在地 -->
+        <section class="article-section" id="our-role">
+          <span class="article-sec-badge">CHAPTER 07 / SCOPE &amp; ROLE</span>
+          <h2 class="article-sec-title">
+            構想から連携設計まで、当社の担当範囲。
+          </h2>
+          
+          <p class="article-p">
+            本案件において、AI Orchestrationは単なる機能実装の外注先ではなく、<strong>事業の根幹にある強みの見直しから、AI相互送客モデルの策定、そして社会的な補助金AIプロジェクトの要件・API連携設計までを一貫して担当</strong>しました。
+          </p>
+
+          <!-- Roles Table -->
+          <div class="article-table-wrap" style="margin: 2rem 0;">
+            <table class="article-table">
+              <thead>
+                <tr>
+                  <th style="width: 25%;">担当領域</th>
+                  <th style="width: 75%;">具体的な当社の貢献内容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>事業分析</strong></td>
+                  <td>
+                    顧客・取引先との関係性や取引条件の開拓力に着目し、COクリエイト社が持つ本質的な強み（取引関係をつなぐ力）を再定義。
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>事業モデルの提案</strong></td>
+                  <td>
+                    従来の福利厚生・EC事業の枠を超え、企業間AI連携によって相互に顧客を紹介し合う「AI相互送客」の枠組みを構想・提案。
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>サービス構想</strong></td>
+                  <td>
+                    会計システム企業からの助言を契機に、相互送客技術を「助成金・補助金情報への公平なアクセス」へと展開する社会的プロジェクトを企画。
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>要件・連携設計</strong></td>
+                  <td>
+                    Jグランツ等の公的API接続仕様、ハルシネーションを抑制するプロンプト設計、重複負荷を低減するキャッシュ構成を定義。
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>利用体験の設計</strong></td>
+                  <td>
+                    単なる検索結果の羅列にとどまらず、顧問社労士等の専門家へそのまま送信できる「照会文生成」までの実践的な対話導線を設計。
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="article-p">
+            事業主体のCOクリエイト社が掲げる「共生」のビジョン、着想に助言をいただいた大手会計システム企業の現場目線、そして当社のアーキテクチャ設計・オーケストレーション技術が組み合わさることで、本プロジェクトは実現に至りました。
+          </p>
+        </section>
+
+        <!-- Section 8: 相談への導線 (CTA) -->
+        <section class="article-section" id="consultation">
+          <div class="article-cta-box">
+            <span class="article-sec-badge" style="color:var(--accent-deep);">CONTACT &amp; NEXT STEPS</span>
+            <h3 class="article-sec-title" style="margin-bottom:0.75rem;">
+              AIサービス設計のご相談
+            </h3>
+            
+            <p class="article-p" style="margin-bottom: 1.5rem;">
+              既存事業のなかにある強みを見極め、AIを使って新しいサービスへ組み直す。COクリエイト社との協業では、事業モデルの提案から、技術の再利用、公式情報との連携、専門家への相談体験までをつなぎました。
+            </p>
+            
+            <div style="margin-bottom: 1.75rem;">
+              <p style="font-size:0.9375rem; font-weight:700; color:var(--text-main); margin-bottom:0.5rem;">
+                御社で以下のような課題をお持ちでしたら、ぜひご相談ください。
+              </p>
+              <ul style="list-style:none; padding:0; display:flex; flex-direction:column; gap:0.5rem;">
+                <li style="display:flex; align-items:flex-start; gap:0.5rem; font-size:0.9375rem; color:var(--text-secondary);">
+                  <span style="color:var(--accent); font-weight:700;">✓</span>
+                  自社の技術・顧客基盤・取引関係を、新しいAIサービスに活かしたい。
+                </li>
+                <li style="display:flex; align-items:flex-start; gap:0.5rem; font-size:0.9375rem; color:var(--text-secondary);">
+                  <span style="color:var(--accent); font-weight:700;">✓</span>
+                  複数企業のサービスや外部APIを、AIを介して有機的に連携させたい。
+                </li>
+                <li style="display:flex; align-items:flex-start; gap:0.5rem; font-size:0.9375rem; color:var(--text-secondary);">
+                  <span style="color:var(--accent); font-weight:700;">✓</span>
+                  単なる情報提供で終わらず、その後の取引や専門家への相談までつながる体験を設計したい。
+                </li>
+              </ul>
+            </div>
+
+            <div class="cta-banner-buttons" style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:2rem;">
+              <a href="index.html#contact" class="btn btn-primary btn-lg">
+                AIサービスの構想・設計を相談する
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="index.html#diagnosis" class="btn btn-secondary">
+                初回技術診断を見る（50,000円）
+              </a>
+              <div style="display:flex; flex-direction:column; gap:0.4rem; margin-left:auto; align-items:flex-end;">
+                <span class="link-arrow" style="font-size:0.8125rem; color:var(--text-muted);">
+                  AGPL-v3 Open Source Project
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Sticky Sidebar Table of Contents -->
+      <aside class="toc-sidebar">
+        <div class="toc-title">CONTENTS ｜ 目次</div>
+        <ul class="toc-list">
+          <li><a href="#background">01. 協業の背景</a></li>
+          <li><a href="#strength-to-ai">02. 事業の強みとAI展開</a></li>
+          <li><a href="#subsidy-ai-origin">03. 補助金AIの開発経緯</a></li>
+          <li><a href="#api-architecture">04. 公式情報連携と設計</a></li>
+          <li><a href="#user-experience">05. 専門家相談への体験</a></li>
+          <li><a href="#open-source">06. オープンソース公開</a></li>
+          <li><a href="#our-role">07. 当社の担当と現在地</a></li>
+          <li><a href="#consultation">08. 相談への接続</a></li>
+        </ul>
+
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+          <div style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono); margin-bottom:0.5rem;">COLLABORATION PARTNER</div>
+          <div style="font-size:0.875rem; font-weight:700; color:var(--text-main);">
+            <a href="https://cocurie.com/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社CoCreate</a>
+          </div>
+          <div style="font-size:0.8125rem; color:var(--text-secondary); margin-top:0.25rem;">
+            福利厚生・相互送客プラットフォーム・オープンイノベーション
+          </div>
+          <div style="margin-top: 1rem; display:flex; flex-direction:column; gap:0.4rem;">
+            <div style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono);">
+              LICENSE: AGPL-v3
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h4>AI Orchestration Inc.</h4>
+          <p>
+            企業AIの設計事務所。AIプロダクト設計専業として、経営課題と技術をつなぎ、構想から実装までのアーキテクチャ設計を支援します。
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>NAVIGATION</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#cases">代表事例</a></li>
+            <li><a href="index.html#otherCases">その他実績</a></li>
+            <li><a href="index.html#situations">相談できること</a></li>
+            <li><a href="index.html#diagnosis">初回技術診断</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>SERVICES</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#services">料金・支援メニュー</a></li>
+            <li><a href="spaq-core.html">SPAQ CORE事例</a></li>
+            <li><a href="hojokin-ai.html" style="color:#ffffff; font-weight:700;">補助金AI事例</a></li>
+            <li><a href="index.html#about">私たちについて</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>CONTACT</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#contact">お問い合わせ</a></li>
+            <li><a href="index.html#contact">ご相談受付</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 AI Orchestration Inc. All rights reserved.</div>
+        <div>企業AIの設計事務所 ｜ AIプロダクト設計専業</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Script -->
+  <script src="script.js"></script>
+  <script>
+    // Highlight active TOC link on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            document.querySelectorAll('.toc-list a').forEach(a => {
+              a.classList.remove('active');
+              if (a.getAttribute('href') === `#${id}`) {
+                a.classList.add('active');
+              }
+            });
+          }
+        });
+      }, { rootMargin: '-20% 0px -70% 0px' });
+
+      document.querySelectorAll('.article-section').forEach(section => {
+        observer.observe(section);
+      });
+    });
+  </script>
+</body>
+</html>
