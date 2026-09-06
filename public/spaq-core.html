@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SPAQ CORE 実績詳細｜マーケティングから仕様を決め、現場で予測制御へ進化させる。SPAQ社に蓄積された電力削減ノウハウを顧客に伝わるAIプロダクトへ昇華させた、商品構想から実装・実設備検証までのプロセスを解説。">
+  <title>SPAQ CORE 実績詳細｜マーケティングから仕様を決め、現場で予測制御へ進化させる｜AI Orchestration Inc.</title>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="blueprint-pattern">
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo">
+        <div class="logo-symbol">AO</div>
+        <div class="logo-meta">
+          <span class="logo-text">AI Orchestration</span>
+          <span class="logo-sub">企業AIの設計事務所</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html#cases" class="nav-link">代表事例</a>
+        <a href="index.html#otherCases" class="nav-link">その他実績</a>
+        <a href="index.html#situations" class="nav-link">相談できること</a>
+        <a href="index.html#diagnosis" class="nav-link">初回技術診断</a>
+        <a href="index.html#services" class="nav-link">支援・料金</a>
+        <a href="index.html#about" class="nav-link">会社情報</a>
+        <a href="index.html#contact" class="btn btn-secondary btn-sm">ご相談受付</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-secondary btn-sm" style="display:inline-flex; align-items:center; gap:0.35rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          TOPへ戻る
+        </a>
+        <a href="index.html#contact" class="btn btn-primary btn-sm">問い合わせ</a>
+        <button class="nav-toggle" id="navToggle" aria-label="メニュー開閉">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section: 案件概要
+       ========================================================================== -->
+  <section class="case-hero-wrap">
+    <div class="container">
+      
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html">ホーム</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="index.html#cases">代表事例</a>
+        <span class="breadcrumb-separator">/</span>
+        <span style="color:var(--text-main); font-weight:600;">SPAQ CORE</span>
+      </nav>
+
+      <div class="case-hero-theme">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+        </svg>
+        CASE STUDY ｜ ENERGY MANAGEMENT &amp; PREDICTIVE CONTROL
+      </div>
+
+      <h1 class="case-hero-title">
+        SPAQ CORE<br>
+        <span style="font-size: 0.72em; font-weight: 700; color: var(--text-secondary); display: block; margin-top: 0.5rem;">
+          マーケティングから仕様を決め、現場で予測制御へ進化させる。
+        </span>
+      </h1>
+
+      <p class="case-hero-lead">
+        SPAQ社に蓄積された電力削減のノウハウを、顧客に伝わるAIプロダクトへ。商品コンセプトと営業訴求の整理から、システムの設計・実装、工場での検証までを担当しました。現場のログ分析とAIを活用した開発を重ねるなかで、当初の計画にはなかった予測充放電機能が生まれました。
+      </p>
+
+      <!-- Project Overview Metadata Box -->
+      <div class="case-meta-box">
+        <table class="case-meta-table">
+          <tbody>
+            <tr>
+              <th>提供主体</th>
+              <td><strong>SPAQ株式会社</strong>（エネルギーマネジメント・産業用蓄電池ソリューション）</td>
+            </tr>
+            <tr>
+              <th>プロダクト</th>
+              <td><strong>SPAQ CORE</strong>（産業用電力の管理・制御を支援するクラウド＆エッジ制御基盤）</td>
+            </tr>
+            <tr>
+              <th>当社の担当</th>
+              <td>商品コンセプト・営業訴求の策定、要件定義、アーキテクチャ設計・実装、設備通信連携、現地検証、運用設計</td>
+            </tr>
+            <tr>
+              <th>主な到達点</th>
+              <td>予測充放電制御の実装、実設備での制御経路・充放電動作の確認、評価・運用基盤の整備</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Process Flow Strip -->
+      <div class="case-flow-strip">
+        <span class="flow-strip-label">Project Progression</span>
+        <div class="flow-strip-steps">
+          <span class="flow-strip-item">1. 既存のノウハウ</span>
+          <span class="flow-strip-arrow">→</span>
+          <span class="flow-strip-item">2. 顧客に伝わる価値</span>
+          <span class="flow-strip-arrow">→</span>
+          <span class="flow-strip-item">3. 商品仕様</span>
+          <span class="flow-strip-arrow">→</span>
+          <span class="flow-strip-item">4. 現場での開発</span>
+          <span class="flow-strip-arrow">→</span>
+          <span class="flow-strip-item" style="border-color:var(--accent); color:var(--accent-deep); background:var(--accent-light);">5. 予測充放電制御</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Main Content & Sticky Table of Contents Layout
+       ========================================================================== -->
+  <div class="container">
+    <div class="case-content-layout">
+      
+      <!-- Article Main Column -->
+      <main class="article-main">
+
+        <!-- Section 1: 出発点 -->
+        <section class="article-section" id="origin">
+          <span class="article-sec-badge">CHAPTER 01 / BACKGROUND</span>
+          <h2 class="article-sec-title">
+            SPAQ COREは、AIから始まったプロダクトではありません。
+          </h2>
+          
+          <p class="article-p">
+            SPAQ社には、長年にわたる現地調査、電気設備設計、そして精緻な電力シミュレーションによって、工場の受電電力を削減する確固たる技術とノウハウが蓄積されていました。
+          </p>
+          <p class="article-p">
+            特別に複雑なAIモデルを用いずとも、ルールベースの適切な設備制御やピーク抑制を行うだけで、現場の電気代を確実に下げられる技術的土台があり、実際の削減実績もすでに数多く存在していました。
+          </p>
+
+          <div class="article-quote-box">
+            「技術的な裏付けが豊富であるほど、その価値を短く伝えることが難しくなる。SPAQが何を行い、なぜ電気代を削減できるのか。その説明の複雑さが、顧客にとっての分かりづらさにつながっていると感じました。」
+            <span class="quote-author">— 山本 まさき（AI Orchestration 代表）</span>
+          </div>
+
+          <p class="article-p">
+            工場の経営層や設備担当者にとって、蓄電池やデマンドコントロールは「専門的すぎて効果が見えにくい」投資になりがちです。どれほど高度なシミュレーションを行っていても、その価値が直感的に伝わらなければ、導入判断は先送りにされてしまいます。
+          </p>
+          <p class="article-p">
+            この<strong>「確かな実績はあるが、価値の伝達が複雑である」</strong>という課題の整理が、プロジェクトの真の出発点でした。
+          </p>
+        </section>
+
+        <!-- Section 2: マーケティングから商品仕様へ -->
+        <section class="article-section" id="marketing-to-spec">
+          <span class="article-sec-badge">CHAPTER 02 / VALUE DESIGN</span>
+          <h2 class="article-sec-title">
+            「AIで電気代を削減する」から、仕様を考える。
+          </h2>
+          
+          <p class="article-p">
+            私たちが最初に行ったのは、複雑な設備構成や計算アルゴリズムをそのまま説明することではなく、顧客にとっての明確な便益を一行に定めることでした。
+          </p>
+          <p class="article-p">
+            そこで定めた中心的な訴求が<strong>「AIで電気代を削減する」</strong>です。複雑な工学原理の細部を理解する前に、「このシステムを導入すれば、AIが判断して電気代が下がる」という約束を一目で理解できるようにしました。
+          </p>
+
+          <div class="article-quote-box">
+            「私たちが先に整理したのは、顧客に何を約束するプロダクトなのか、ということでした。『AIで電気代を削減する』と伝えるなら、その説明に応える機能と体験が必要です。営業訴求と開発要件を同じ流れで設計し、マーケティングと開発の分断を解消しました。」
+          </div>
+
+          <!-- Value-to-Spec Diagram -->
+          <div class="article-diagram-card">
+            <div class="article-diagram-header">
+              <span class="article-diagram-title">VALUE CHAIN ARCHITECTURE</span>
+              <span class="article-diagram-caption">訴求と機能設計の一貫性</span>
+            </div>
+            <svg viewBox="0 0 760 140" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto;">
+              <!-- Step 1 -->
+              <rect x="10" y="25" width="130" height="90" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+              <text x="75" y="55" text-anchor="middle" font-size="11" font-family="'JetBrains Mono', monospace" fill="#64748b" font-weight="700">01. VALUE</text>
+              <text x="75" y="78" text-anchor="middle" font-size="13" font-weight="700" fill="#0c1523">顧客に伝える価値</text>
+              <text x="75" y="98" text-anchor="middle" font-size="10" fill="#64748b">AIで電気代を削減</text>
+
+              <!-- Arrow 1 -->
+              <path d="M 140 70 L 165 70" stroke="#0969da" stroke-width="1.5"/>
+              <polygon points="163,67 169,70 163,73" fill="#0969da"/>
+
+              <!-- Step 2 -->
+              <rect x="165" y="25" width="130" height="90" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+              <text x="230" y="55" text-anchor="middle" font-size="11" font-family="'JetBrains Mono', monospace" fill="#64748b" font-weight="700">02. EXPECTATION</text>
+              <text x="230" y="78" text-anchor="middle" font-size="13" font-weight="700" fill="#0c1523">顧客の期待</text>
+              <text x="230" y="98" text-anchor="middle" font-size="10" fill="#64748b">自律的な最適判断</text>
+
+              <!-- Arrow 2 -->
+              <path d="M 295 70 L 320 70" stroke="#0969da" stroke-width="1.5"/>
+              <polygon points="318,67 324,70 318,73" fill="#0969da"/>
+
+              <!-- Step 3 -->
+              <rect x="320" y="25" width="130" height="90" rx="6" fill="#f0f7ff" stroke="#0969da" stroke-width="2"/>
+              <text x="385" y="55" text-anchor="middle" font-size="11" font-family="'JetBrains Mono', monospace" fill="#0969da" font-weight="700">03. REQUIREMENTS</text>
+              <text x="385" y="78" text-anchor="middle" font-size="13" font-weight="700" fill="#054da3">必要な機能</text>
+              <text x="385" y="98" text-anchor="middle" font-size="10" fill="#054da3">可視化・予測・制御</text>
+
+              <!-- Arrow 3 -->
+              <path d="M 450 70 L 475 70" stroke="#0969da" stroke-width="1.5"/>
+              <polygon points="473,67 479,70 473,73" fill="#0969da"/>
+
+              <!-- Step 4 -->
+              <rect x="475" y="25" width="130" height="90" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+              <text x="540" y="55" text-anchor="middle" font-size="11" font-family="'JetBrains Mono', monospace" fill="#64748b" font-weight="700">04. IMPLEMENTATION</text>
+              <text x="540" y="78" text-anchor="middle" font-size="13" font-weight="700" fill="#0c1523">設計・実装</text>
+              <text x="540" y="98" text-anchor="middle" font-size="10" fill="#64748b">クラウド＋エッジ</text>
+
+              <!-- Arrow 4 -->
+              <path d="M 605 70 L 630 70" stroke="#0969da" stroke-width="1.5"/>
+              <polygon points="628,67 634,70 628,73" fill="#0969da"/>
+
+              <!-- Step 5 -->
+              <rect x="630" y="25" width="120" height="90" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1.5"/>
+              <text x="690" y="55" text-anchor="middle" font-size="11" font-family="'JetBrains Mono', monospace" fill="#64748b" font-weight="700">05. FEEDBACK</text>
+              <text x="690" y="78" text-anchor="middle" font-size="13" font-weight="700" fill="#0c1523">検証結果の反映</text>
+              <text x="690" y="98" text-anchor="middle" font-size="10" fill="#64748b">説明資料の高度化</text>
+            </svg>
+          </div>
+
+          <p class="article-p">
+            これは「単に営業文句をキャッチーにした」ということではありません。掲げた言葉の通りに、顧客が「確かにAIが判断して動いている」と実感できるだけの機能とユーザー体験を、技術的に具現化することを意味します。
+          </p>
+        </section>
+
+        <!-- Section 3: 伝える価値を、機能として実装する -->
+        <section class="article-section" id="implementation">
+          <span class="article-sec-badge">CHAPTER 03 / SYSTEM BUILDING</span>
+          <h2 class="article-sec-title">
+            AIという言葉に、実際の機能で応える。
+          </h2>
+          
+          <p class="article-p">
+            「AIで削減する」という約束を果たすため、従来の閉じた現場制御システムに対し、クラウド連携、管理画面、機械学習の要素を統合。顧客が日常的に成果を確認し、安心して任せられる製品構成へと再設計しました。
+          </p>
+
+          <div class="feature-matrix-grid">
+            <div class="feature-matrix-card">
+              <div class="feature-matrix-tag">ELEMENT 01</div>
+              <h3 class="feature-matrix-name">クラウド連携</h3>
+              <p class="feature-matrix-desc">
+                工場の電力メーター、PCS（パワーコンディショナ）、蓄電池から取得される秒単位のデータを安全にクラウドへ集約し、複数拠点の一括管理を可能にする通信基盤を設計。
+              </p>
+            </div>
+
+            <div class="feature-matrix-card">
+              <div class="feature-matrix-tag">ELEMENT 02</div>
+              <h3 class="feature-matrix-name">管理ダッシュボード</h3>
+              <p class="feature-matrix-desc">
+                「いま蓄電池がどれだけ残量があり、どれだけ放電して電気代を削減しているか」を利用者が直感的に把握できるUI/UXを設計。現場と経営層の両方に刺さる体験を創出。
+              </p>
+            </div>
+
+            <div class="feature-matrix-card">
+              <div class="feature-matrix-tag">ELEMENT 03</div>
+              <h3 class="feature-matrix-name">機械学習の要素</h3>
+              <p class="feature-matrix-desc">
+                天候や過去の稼働実績に応じた電力需要の予測モデルを組み込み、ただ決められたルールで動くだけではない、適応型のインテリジェンスを付与。
+              </p>
+            </div>
+
+            <div class="feature-matrix-card">
+              <div class="feature-matrix-tag">ELEMENT 04</div>
+              <h3 class="feature-matrix-name">商品説明・LP・動画</h3>
+              <p class="feature-matrix-desc">
+                実装した機能と顧客への提供価値を完全にリンクさせた営業資料、製品LP、解説動画を整備。マーケティングと開発が同じ解像度で顧客に対峙できる状態を確立。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 4: 工場の現場で生まれた進化 -->
+        <section class="article-section" id="factory-evolution">
+          <span class="article-sec-badge">CHAPTER 04 / FIELD AGILITY</span>
+          <h2 class="article-sec-title">
+            工場にPCを持ち込み、その場で分析し、実装する。
+          </h2>
+          
+          <p class="article-p">
+            SPAQ COREの最大の特徴は、机上の仕様書作成だけで終わらなかった点にあります。私たちは実際に工場へ赴き、稼働中の設備と電力計にPCを直結して詳細ログを取得・分析しました。
+          </p>
+
+          <div class="article-quote-box">
+            「工場にPCを持ち込み、設備の動作を見ながらログを取得・分析しました。そこから見えてきた課題をもとに、AIを活用してロジックを改良し、新たな予測処理を実装する。この反復から、当初の計画にはなかった予測充放電機能が生まれました。」
+          </div>
+
+          <p class="article-p">
+            この現場密着型の検証環境は、実設備での測定を寛大に受け入れてくださった協力工場の存在があって初めて実現したものです。現場でしか観測できないモーターの起動スパイクや空調負荷の急変データに触れたことで、開発サイクルは劇的に加速しました。
+          </p>
+
+          <!-- Loop Flow Diagram -->
+          <div class="article-diagram-card">
+            <div class="article-diagram-header">
+              <span class="article-diagram-title">FIELD-DRIVEN ITERATION CYCLE</span>
+              <span class="article-diagram-caption">現場観察とAI実装の高速循環</span>
+            </div>
+            <svg viewBox="0 0 760 160" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto;">
+              <!-- Circle node 1 -->
+              <rect x="20" y="50" width="120" height="60" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+              <text x="80" y="75" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', monospace" fill="#64748b" font-weight="700">STEP 1</text>
+              <text x="80" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#0c1523">現場を観察</text>
+
+              <path d="M 140 80 L 165 80" stroke="#0969da" stroke-width="1.5"/>
+              <polygon points="163,77 169,80 163,83" fill="#0969da"/>
+
+              <!-- Circle node 2 -->
+              <rect x="165" y="50" width="120" height="60" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+              <text x="225" y="75" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', monospace" fill="#64748b" font-weight="700">STEP 2</text>
+              <text x="225" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#0c1523">ログ取得</text>
+
+              <path d="M 285 80 L 310 80" stroke="#0969da" stroke-width="1.5"/>
+              <polygon points="308,77 314,80 308,83" fill="#0969da"/>
+
+              <!-- Circle node 3 -->
+              <rect x="310" y="50" width="130" height="60" rx="6" fill="#f0f7ff" stroke="#0969da" stroke-width="1.5"/>
+              <text x="375" y="75" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', monospace" fill="#0969da" font-weight="700">STEP 3</text>
+              <text x="375" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#054da3">分析・仮説化</text>
+
+              <path d="M 440 80 L 465 80" stroke="#0969da" stroke-width="1.5"/>
+              <polygon points="463,77 469,80 463,83" fill="#0969da"/>
+
+              <!-- Circle node 4 -->
+              <rect x="465" y="50" width="140" height="60" rx="6" fill="#0969da" />
+              <text x="535" y="75" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', monospace" fill="#bfdbfe" font-weight="700">STEP 4</text>
+              <text x="535" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">AIを活用し実装</text>
+
+              <path d="M 605 80 L 630 80" stroke="#0969da" stroke-width="1.5"/>
+              <polygon points="628,77 634,80 628,83" fill="#0969da"/>
+
+              <!-- Circle node 5 -->
+              <rect x="630" y="50" width="115" height="60" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+              <text x="687" y="75" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', monospace" fill="#64748b" font-weight="700">STEP 5</text>
+              <text x="687" y="95" text-anchor="middle" font-size="12" font-weight="700" fill="#0c1523">動作・記録確認</text>
+
+              <!-- Return curve -->
+              <path d="M 687 110 C 687 145, 80 145, 80 110" stroke="#0969da" stroke-width="1.5" stroke-dasharray="4 3" fill="none"/>
+              <polygon points="83,113 80,107 77,113" fill="#0969da"/>
+              <text x="380" y="150" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', monospace" fill="#0969da">現場ログをもとに即日ロジック改修・再検証</text>
+            </svg>
+          </div>
+        </section>
+
+        <!-- Section 5: 予測充放電は、何をどう判断するのか -->
+        <section class="article-section" id="predictive-control">
+          <span class="article-sec-badge">CHAPTER 05 / ALGORITHM &amp; LOGIC</span>
+          <h2 class="article-sec-title">
+            需要の変化を先読みし、充電と放電を一体で決める。
+          </h2>
+          
+          <p class="article-p">
+            蓄電池の制御において最も難解なのは、<strong>「放電してピークを抑えること」と「次のピークに備えて充電すること」が表裏一体</strong>である点です。不用意に充電すれば、その充電電力自体が受電電力を押し上げ、新たなピークを作ってしまうからです。
+          </p>
+          <p class="article-p">
+            そこで導入されたのが、過去の推移や直近の稼働傾向から先を読む<strong>時系列予測</strong>に基づき、放電と充電を一体で最適化する制御ロジックです。具体的には次の3つの判断ステップで構成されています。
+          </p>
+
+          <!-- 3 Decisions -->
+          <div style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1.75rem;">
+            
+            <div style="background:#ffffff; border:1px solid var(--border-medium); border-radius:var(--radius-md); padding:1.75rem;">
+              <h3 style="font-size:1.1875rem; font-weight:700; color:var(--text-main); margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;">
+                <span style="font-family:var(--font-mono); color:var(--accent);">判断 ①</span>
+                30分の電力量予算から、充放電を決める
+              </h3>
+              <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.75;">
+                日本の高圧電力料金は「30分ごとの平均電力（デマンド値）」で決まります。本システムでは、30分枠の中での<strong>「許容電力量」「現時点の使用済み電力量」「残り時間の将来需要予測」「安全余裕」</strong>をリアルタイムに計算。許容枠に余裕がある時間帯を特定して充電余力を割り出し、ピークが予測される時間帯には必要な放電量を事前に算出します。
+              </p>
+            </div>
+
+            <!-- Main Diagram: 30min demand & budget timeline -->
+            <div class="article-diagram-card">
+              <div class="article-diagram-header">
+                <span class="article-diagram-title">30-MINUTE DEMAND BUDGET &amp; CONTROL TIMELINE</span>
+                <span class="article-diagram-caption">共通の時間軸による充放電指令の決定</span>
+              </div>
+              <svg viewBox="0 0 760 220" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%; height:auto;">
+                <!-- Time Axis -->
+                <line x1="50" y1="180" x2="720" y2="180" stroke="#94a3b8" stroke-width="1.5"/>
+                <text x="50" y="202" font-size="11" font-family="'JetBrains Mono', monospace" fill="#64748b">00分 (開始)</text>
+                <text x="385" y="202" font-size="11" font-family="'JetBrains Mono', monospace" fill="#64748b" text-anchor="middle">15分 (中間点)</text>
+                <text x="720" y="202" font-size="11" font-family="'JetBrains Mono', monospace" fill="#64748b" text-anchor="end">30分 (締日)</text>
+
+                <!-- Budget Limit Line -->
+                <line x1="50" y1="45" x2="720" y2="45" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 4"/>
+                <text x="720" y="38" font-size="10" font-family="'JetBrains Mono', monospace" fill="#ef4444" text-anchor="end">許容デマンド上限（電力量予算）</text>
+
+                <!-- Safe Zone & Demand curve -->
+                <!-- Early interval: Surplus -> Charging -->
+                <path d="M 50 140 Q 150 150, 250 135" stroke="#0969da" stroke-width="2" fill="none"/>
+                <rect x="80" y="145" width="130" height="28" rx="4" fill="#e0f2fe"/>
+                <text x="145" y="163" text-anchor="middle" font-size="10" font-weight="700" fill="#0369a1">余力ゾーン：安全に充電</text>
+
+                <!-- Mid-Late interval: Peak surge -> Discharging -->
+                <path d="M 250 135 Q 380 60, 520 40" stroke="#0969da" stroke-width="2" stroke-dasharray="3 2" fill="none"/>
+                <text x="420" y="70" font-size="10" fill="#64748b">AI予測需要（放置すると上限突破）</text>
+                
+                <!-- Discharge injection curve -->
+                <path d="M 380 90 Q 520 55, 680 75" stroke="#16a34a" stroke-width="2.5" fill="none"/>
+                <rect x="480" y="85" width="160" height="32" rx="4" fill="#dcfce7" stroke="#86efac"/>
+                <text x="560" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#15803d">先行放電：ピークを平滑化</text>
+
+                <circle cx="520" cy="40" r="4" fill="#ef4444"/>
+              </svg>
+            </div>
+
+            <div style="background:#ffffff; border:1px solid var(--border-medium); border-radius:var(--radius-md); padding:1.75rem;">
+              <h3 style="font-size:1.1875rem; font-weight:700; color:var(--text-main); margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;">
+                <span style="font-family:var(--font-mono); color:var(--accent);">判断 ②</span>
+                制御で変化した観測値を補正する
+              </h3>
+              <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.75;">
+                蓄電池が放電している最中は、電力計の受電値が下がります。しかし、これを「工場の負荷そのものが減った」と誤認すると、AIは需要予測を見誤って放電を早々に停止してしまいます。システムでは、<strong>「観測値＋実際の放電量」を加え戻す補正処理</strong>や、空調デマンドコントローラーによる抑制・復帰の影響を計算モデルに織り込み、真の需要動態を捉え続けます。
+              </p>
+            </div>
+
+            <div style="background:#ffffff; border:1px solid var(--border-medium); border-radius:var(--radius-md); padding:1.75rem;">
+              <h3 style="font-size:1.1875rem; font-weight:700; color:var(--text-main); margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;">
+                <span style="font-family:var(--font-mono); color:var(--accent);">判断 ③</span>
+                予測の要求を、設備の制約内に収める
+              </h3>
+              <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.75;">
+                AIが「今すぐ100kW放電したい」と計算しても、蓄電池の定格出力上限、残容量（SOC）、逆潮流（電力会社への逆流）防止規定、PCSの温度上昇などの物理制約を無視することはできません。また、通信遅延やデータ欠損が発生した場合には、ただちに保護モードや安全停止へ移行するフェールセーフ機構を組み込んでいます。
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Section 6: 実設備での検証と成果 -->
+        <section class="article-section" id="verification-results">
+          <span class="article-sec-badge">CHAPTER 06 / REAL-WORLD VALIDATION</span>
+          <h2 class="article-sec-title">
+            実装し、動かし、確かめられる仕組みまでつくる。
+          </h2>
+          
+          <p class="article-p">
+            ソフトウェアの設計が完璧であっても、現場のハードウェアと接続した瞬間に予期せぬトラブルが発生するのがIoT・制御の世界です。
+          </p>
+          <p class="article-p">
+            実機検証の初期、<strong>「充電指令を出しても数十秒で勝手に充電が停止してしまう」</strong>という重大な問題に直面しました。ソフトウェアのバグを疑うだけでなく、通信プロトコルや現場の配線、他装置の動作まで調査を拡大。結果として、現場に設置されていた別のEMS装置が同一のレジスタへ停止指令を定期的に上書きしていた（制御競合）ことを突き止めました。
+          </p>
+
+          <!-- Problem Solving Flow -->
+          <div class="case-flow-strip" style="margin: 2rem 0;">
+            <span class="flow-strip-label">Troubleshooting</span>
+            <div class="flow-strip-steps">
+              <span class="flow-strip-item">1. 充電停止の発生</span>
+              <span class="flow-strip-arrow">→</span>
+              <span class="flow-strip-item">2. 通信ログ比較試験</span>
+              <span class="flow-strip-arrow">→</span>
+              <span class="flow-strip-item">3. 制御競合の特定</span>
+              <span class="flow-strip-arrow">→</span>
+              <span class="flow-strip-item">4. 制御主体の一本化</span>
+              <span class="flow-strip-arrow">→</span>
+              <span class="flow-strip-item" style="color:var(--accent-deep); font-weight:700;">5. 安定充電を確認</span>
+            </div>
+          </div>
+
+          <p class="article-p">
+            このように、現場の制御権限を整理・一本化することで、机上の理論にとどまらない「真に動く制御」を確立しました。実設備で確認・検証された主な項目は以下の通りです。
+          </p>
+
+          <!-- Results Data Table -->
+          <div class="results-table-wrap">
+            <table class="results-table">
+              <thead>
+                <tr>
+                  <th style="width: 170px;">区分</th>
+                  <th>確認・実装した内容</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="results-category">実機放電</td>
+                  <td>10kWの手動指令に対し、実機PCSから約9.9〜10.6kWの実電力が安定して出力されることを確認。</td>
+                </tr>
+                <tr>
+                  <td class="results-category">自動制御経路</td>
+                  <td>条件判定アルゴリズムによる33kWの放電指令値の算出、およびEMSコントローラーへの正常な書き込み成功を確認。</td>
+                </tr>
+                <tr>
+                  <td class="results-category">実機充電</td>
+                  <td>制御競合の解消後、5kW・120秒間、20kW・600秒間の連続充電試験を実施し、意図通りの継続と停止を確認。</td>
+                </tr>
+                <tr>
+                  <td class="results-category">制御ロジック</td>
+                  <td>時系列需要予測、ピーク予測に基づく先行放電、電力量予算に基づく安全充電、ハード制約ガードを実装。</td>
+                </tr>
+                <tr>
+                  <td class="results-category">評価・運用基盤</td>
+                  <td>秒単位のログ記録基盤、制御影響を与えずに精度を測るシャドーモード、予測誤差評価、設定追跡環境を整備。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="font-size:0.8125rem; color:var(--text-muted); margin-top:-1rem; margin-bottom:1.5rem;">
+            ※上記33kWは自動制御経路の検証における「指令値」です。実測放電量や特定のピーク削減効果量を示すものではありません。
+          </p>
+        </section>
+
+        <!-- Section 7: 現在の展開と次の構想 -->
+        <section class="article-section" id="future-plans">
+          <span class="article-sec-badge">CHAPTER 07 / CURRENT &amp; NEXT</span>
+          <h2 class="article-sec-title">
+            工場への展開から、次のエネルギーマネジメントへ。
+          </h2>
+          
+          <p class="article-p">
+            現場での実証を完了したSPAQ COREは、個別の実証フェーズを超え、本格的な産業普及と次世代技術開発のステージへと進んでいます。
+          </p>
+
+          <div class="future-grid">
+            <div class="future-card">
+              <span class="future-tag current">現在進行形</span>
+              <h4>大手上場企業との提携による工場導入提案</h4>
+              <p>
+                大手上場企業とのアライアンスを締結し、複数の製造業拠点や大規模工場に向けたSPAQ COREの導入提案・試算を精力的に推進しています。標準化されたパッケージとして、短期間での現地導入と効果創出を目指しています。
+              </p>
+            </div>
+
+            <div class="future-card">
+              <span class="future-tag next">今後の構想</span>
+              <h4>AIデータセンター向けマネジメント（産学連携）</h4>
+              <p>
+                急速に増大する生成AI計算インフラを見据え、SPAQ社ではAIデータセンター特有の超大電力・急峻な負荷変動に対応するエネルギーマネジメントシステムの開発を計画。大学等との産学連携を通じて、次世代の脱炭素・電力安定化技術の研究を進めています。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Section 8: この事例から、相談につなぐ -->
+        <section class="article-section" id="consultation">
+          <div class="article-cta-box">
+            <span class="article-sec-badge" style="color:var(--accent-deep);">CONTACT &amp; NEXT STEPS</span>
+            <h3 class="article-sec-title" style="margin-bottom:0.75rem;">
+              伝える価値から、動くプロダクトまで。
+            </h3>
+            
+            <p class="article-p" style="margin-bottom: 1.5rem;">
+              顧客に伝わる価値を定め、必要な仕様へ落とし込み、設計・実装する。そして、現場で得られた知見を製品へ戻す。SPAQ COREでは、マーケティングと開発をつなぎ、この一連の工程を担当しました。
+            </p>
+
+            <p style="font-weight:700; color:var(--text-main); font-size:1rem; margin-bottom:0.5rem;">
+              御社で以下のような課題をお持ちでしたら、ぜひご相談ください。
+            </p>
+
+            <ul class="article-cta-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>優れた技術や設備ノウハウはあるが、顧客に伝わる商品として整理したい。</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>AIを組み込む価値と、実現に必要な機能・開発範囲を具体化したい。</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>既存設備や現場の業務システムと連携し、机上ではなく現場で動くところまで進めたい。</span>
+              </li>
+            </ul>
+
+            <div class="article-cta-actions">
+              <a href="index.html#contact" class="btn btn-primary" style="font-size:1rem; padding:0.9rem 1.8rem;">
+                商品構想・設計について相談する
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="index.html#diagnosis" class="btn btn-secondary">
+                初回技術診断を見る（50,000円）
+              </a>
+              <a href="https://core.spaq.co.jp/" target="_blank" rel="noopener noreferrer" class="link-arrow" style="margin-left:auto;">
+                SPAQ CORE 製品サイトを見る
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Sticky Sidebar Table of Contents -->
+      <aside class="toc-sidebar">
+        <div class="toc-title">CONTENTS ｜ 目次</div>
+        <ul class="toc-list">
+          <li><a href="#origin">01. 出発点：既存の技術</a></li>
+          <li><a href="#marketing-to-spec">02. マーケティングから仕様へ</a></li>
+          <li><a href="#implementation">03. 機能としての実装</a></li>
+          <li><a href="#factory-evolution">04. 工場の現場で生まれた進化</a></li>
+          <li><a href="#predictive-control">05. 予測充放電の判断設計</a></li>
+          <li><a href="#verification-results">06. 実設備での検証と成果</a></li>
+          <li><a href="#future-plans">07. 現在の展開と次の構想</a></li>
+          <li><a href="#consultation">08. 相談への接続</a></li>
+        </ul>
+
+        <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+          <div style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono); margin-bottom:0.5rem;">CLIENT OVERVIEW</div>
+          <div style="font-size:0.875rem; font-weight:700; color:var(--text-main);">SPAQ株式会社</div>
+          <div style="font-size:0.8125rem; color:var(--text-secondary); margin-top:0.25rem;">
+            エネルギーマネジメント・産業用蓄電池クラウドソリューション
+          </div>
+          <div style="margin-top: 1rem;">
+            <a href="https://spaq.co.jp/" target="_blank" rel="noopener noreferrer" class="link-arrow" style="font-size:0.75rem;">
+              公式サイトを開く
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h4>AI Orchestration Inc.</h4>
+          <p>
+            企業AIの設計事務所。AIプロダクト設計専業として、経営課題と技術をつなぎ、構想から実装までのアーキテクチャ設計を支援します。
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>NAVIGATION</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#cases">代表事例</a></li>
+            <li><a href="index.html#otherCases">その他実績</a></li>
+            <li><a href="index.html#situations">相談できること</a></li>
+            <li><a href="index.html#diagnosis">初回技術診断</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>SERVICES</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#services">料金・支援メニュー</a></li>
+            <li><a href="spaq-core.html" style="color:#ffffff; font-weight:700;">SPAQ CORE事例</a></li>
+            <li><a href="hojokin-ai.html">補助金AI事例</a></li>
+            <li><a href="index.html#about">私たちについて</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>CONTACT</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#contact">お問い合わせ</a></li>
+            <li><a href="index.html#contact">ご相談受付</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 AI Orchestration Inc. All rights reserved.</div>
+        <div>企業AIの設計事務所 ｜ AIプロダクト設計専業</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Script -->
+  <script src="script.js"></script>
+  <script>
+    // Highlight active TOC link on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('.article-section');
+      const tocLinks = document.querySelectorAll('.toc-list a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(sec => {
+          const top = sec.offsetTop - 120;
+          if (window.scrollY >= top) {
+            current = sec.getAttribute('id');
+          }
+        });
+
+        tocLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

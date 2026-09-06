@@ -106,65 +106,32 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
-      // Submission UI state
-      submitBtn.disabled = true;
-      submitBtn.textContent = '送信中...';
-
-      // Simulation with robust response
-      setTimeout(() => {
-        submitBtn.disabled = false;
-        submitBtn.textContent = '送信する';
-
-        // Prepare mailto backup link in case direct mail is preferred
-        const mailSubject = encodeURIComponent(`【Web問合せ】${inquiryType} - ${companyName} ${personName}様`);
-        const mailBody = encodeURIComponent(
-          `種別: ${inquiryType}\n貴社名: ${companyName}\nお名前: ${personName}\nメール: ${email}\n電話: ${phone}\n\n相談内容:\n${message}`
-        );
-        const mailtoUrl = `mailto:info@ai-orchestrations.com?subject=${mailSubject}&body=${mailBody}`;
-
-        const successHtml = `
-          <strong>✓ お問い合わせを受け付けました</strong>
-          <p style="margin-top: 0.5rem;">
-            ご入力いただいた内容を承りました。<strong>${escapeHtml(email)}</strong> 宛てに、2営業日以内に代表・山本より事前確認および日程候補のご連絡を差し上げます。
-          </p>
-          <div style="margin-top: 1rem; padding-top: 0.75rem; border-top: 1px dashed rgba(22, 101, 52, 0.3); font-size: 0.8125rem;">
-            ※お急ぎの場合やお控えをメールで直接送信されたい場合は、<a href="${mailtoUrl}" style="color: #166534; font-weight: 700; text-decoration: underline;">こちらをクリックしてメーラーから直接送信</a>することも可能です。
-          </div>
-        `;
-
-        showFeedback('success', successHtml, true);
-        form.reset();
-
-        // Reset radio selection visual
-        radioCards.forEach((c, idx) => {
-          if (idx === 0) {
-            c.classList.add('selected');
-            const radio = c.querySelector('input[type="radio"]');
-            if (radio) radio.checked = true;
-          } else {
-            c.classList.remove('selected');
-          }
-        });
-
-      }, 1000);
+      // Cloudflare form delivery will be connected later. Create a mail draft only.
+      const recipient = 'yamamoto@ai-orchestration.jp';
+      const mailSubject = encodeURIComponent(`【Web問合せ】${inquiryType} - ${companyName} ${personName}様`);
+      const mailBody = encodeURIComponent(
+        `種別: ${inquiryType}\n貴社名: ${companyName}\nお名前: ${personName}\nメール: ${email}\n電話: ${phone}\n\n相談内容:\n${message}`
+      );
+      const mailtoUrl = `mailto:${recipient}?subject=${mailSubject}&body=${mailBody}`;
+      const tooLong = mailtoUrl.length > 7000;
+      showFeedback('success', tooLong
+        ? '入力内容が長いため、メール本文への自動転記は行いません。入力内容をコピーし、下記の宛先へお送りください。まだ送信されていません。'
+        : 'まだ送信されていません。メールアプリで内容を確認して送信してください。アプリが開かない場合は、入力内容をコピーし、下記の宛先へお送りください。');
+      const addressLink = document.createElement('a');
+      addressLink.href = `mailto:${recipient}`;
+      addressLink.textContent = recipient;
+      addressLink.style.textDecoration = 'underline';
+      feedback.append(document.createElement('br'), addressLink);
+      if (!tooLong) window.location.href = mailtoUrl;
+      // Keep all input intact; opening a mail application does not confirm delivery.
     });
   }
 
-  function showFeedback(type, message, isHtml = false) {
+  function showFeedback(type, message) {
     feedback.style.display = 'block';
     feedback.className = `form-feedback ${type}`;
-    if (isHtml) {
-      feedback.innerHTML = message;
-    } else {
-      feedback.textContent = message;
-    }
+    feedback.textContent = message;
     feedback.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-  }
-
-  function escapeHtml(str) {
-    return str.replace(/[&<>'"]/g, 
-      tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
-    );
   }
 
   // 6. Privacy Policy Modal
