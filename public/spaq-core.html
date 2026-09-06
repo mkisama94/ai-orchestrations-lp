@@ -71,7 +71,7 @@
       <h1 class="case-hero-title">
         SPAQ CORE<br>
         <span style="font-size: 0.72em; font-weight: 700; color: var(--text-secondary); display: block; margin-top: 0.5rem;">
-          マーケティングから仕様を決め、現場で予測制御へ進化させる。
+          商品企画から予測充放電制御の実装まで
         </span>
       </h1>
 
@@ -135,7 +135,7 @@
         <section class="article-section" id="origin">
           <span class="article-sec-badge">CHAPTER 01 / BACKGROUND</span>
           <h2 class="article-sec-title">
-            SPAQ COREは、AIから始まったプロダクトではありません。
+            開発の背景
           </h2>
           
           <p class="article-p">
@@ -162,7 +162,7 @@
         <section class="article-section" id="marketing-to-spec">
           <span class="article-sec-badge">CHAPTER 02 / VALUE DESIGN</span>
           <h2 class="article-sec-title">
-            「AIで電気代を削減する」から、仕様を考える。
+            商品コンセプトと要件定義
           </h2>
           
           <p class="article-p">
@@ -240,7 +240,7 @@
         <section class="article-section" id="implementation">
           <span class="article-sec-badge">CHAPTER 03 / SYSTEM BUILDING</span>
           <h2 class="article-sec-title">
-            AIという言葉に、実際の機能で応える。
+            追加した機能と製品構成
           </h2>
           
           <p class="article-p">
@@ -286,7 +286,7 @@
         <section class="article-section" id="factory-evolution">
           <span class="article-sec-badge">CHAPTER 04 / FIELD AGILITY</span>
           <h2 class="article-sec-title">
-            工場にPCを持ち込み、その場で分析し、実装する。
+            現地調査とAIを活用した開発
           </h2>
           
           <p class="article-p">
@@ -357,7 +357,7 @@
         <section class="article-section" id="predictive-control">
           <span class="article-sec-badge">CHAPTER 05 / ALGORITHM &amp; LOGIC</span>
           <h2 class="article-sec-title">
-            需要の変化を先読みし、充電と放電を一体で決める。
+            予測充放電の設計
           </h2>
           
           <p class="article-p">
@@ -373,7 +373,7 @@
             <div style="background:#ffffff; border:1px solid var(--border-medium); border-radius:var(--radius-md); padding:1.75rem;">
               <h3 style="font-size:1.1875rem; font-weight:700; color:var(--text-main); margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;">
                 <span style="font-family:var(--font-mono); color:var(--accent);">判断 ①</span>
-                30分の電力量予算から、充放電を決める
+                30分の電力量予算に基づく充放電
               </h3>
               <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.75;">
                 日本の高圧電力料金は「30分ごとの平均電力（デマンド値）」で決まります。本システムでは、30分枠の中での<strong>「許容電力量」「現時点の使用済み電力量」「残り時間の将来需要予測」「安全余裕」</strong>をリアルタイムに計算。許容枠に余裕がある時間帯を特定して充電余力を割り出し、ピークが予測される時間帯には必要な放電量を事前に算出します。
@@ -419,7 +419,7 @@
             <div style="background:#ffffff; border:1px solid var(--border-medium); border-radius:var(--radius-md); padding:1.75rem;">
               <h3 style="font-size:1.1875rem; font-weight:700; color:var(--text-main); margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;">
                 <span style="font-family:var(--font-mono); color:var(--accent);">判断 ②</span>
-                制御で変化した観測値を補正する
+                制御による観測値の変化を補正
               </h3>
               <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.75;">
                 蓄電池が放電している最中は、電力計の受電値が下がります。しかし、これを「工場の負荷そのものが減った」と誤認すると、AIは需要予測を見誤って放電を早々に停止してしまいます。システムでは、<strong>「観測値＋実際の放電量」を加え戻す補正処理</strong>や、空調デマンドコントローラーによる抑制・復帰の影響を計算モデルに織り込み、真の需要動態を捉え続けます。
@@ -429,7 +429,7 @@
             <div style="background:#ffffff; border:1px solid var(--border-medium); border-radius:var(--radius-md); padding:1.75rem;">
               <h3 style="font-size:1.1875rem; font-weight:700; color:var(--text-main); margin-bottom:0.5rem; display:flex; align-items:center; gap:0.5rem;">
                 <span style="font-family:var(--font-mono); color:var(--accent);">判断 ③</span>
-                予測の要求を、設備の制約内に収める
+                設備の制約と安全制御
               </h3>
               <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.75;">
                 AIが「今すぐ100kW放電したい」と計算しても、蓄電池の定格出力上限、残容量（SOC）、逆潮流（電力会社への逆流）防止規定、PCSの温度上昇などの物理制約を無視することはできません。また、通信遅延やデータ欠損が発生した場合には、ただちに保護モードや安全停止へ移行するフェールセーフ機構を組み込んでいます。
@@ -443,7 +443,7 @@
         <section class="article-section" id="verification-results">
           <span class="article-sec-badge">CHAPTER 06 / REAL-WORLD VALIDATION</span>
           <h2 class="article-sec-title">
-            実装し、動かし、確かめられる仕組みまでつくる。
+            実機検証と確認できた成果
           </h2>
           
           <p class="article-p">
@@ -515,7 +515,7 @@
         <section class="article-section" id="future-plans">
           <span class="article-sec-badge">CHAPTER 07 / CURRENT &amp; NEXT</span>
           <h2 class="article-sec-title">
-            工場への展開から、次のエネルギーマネジメントへ。
+            導入提案と今後の開発計画
           </h2>
           
           <p class="article-p">
@@ -525,7 +525,7 @@
           <div class="future-grid">
             <div class="future-card">
               <span class="future-tag current">現在進行形</span>
-              <h4>大手上場企業との提携による工場導入提案</h4>
+              <h4>工場への導入提案</h4>
               <p>
                 大手上場企業とのアライアンスを締結し、複数の製造業拠点や大規模工場に向けたSPAQ COREの導入提案・試算を精力的に推進しています。標準化されたパッケージとして、短期間での現地導入と効果創出を目指しています。
               </p>
@@ -533,7 +533,7 @@
 
             <div class="future-card">
               <span class="future-tag next">今後の構想</span>
-              <h4>AIデータセンター向けマネジメント（産学連携）</h4>
+              <h4>AIデータセンター向けの開発計画</h4>
               <p>
                 急速に増大する生成AI計算インフラを見据え、<a href="https://spaq.co.jp/" target="_blank" rel="noopener noreferrer" style="color:var(--accent); font-weight:600; text-decoration:underline; text-underline-offset:3px;">SPAQ社</a>ではAIデータセンター特有の超大電力・急峻な負荷変動に対応するエネルギーマネジメントシステムの開発を計画。大学等との産学連携を通じて、次世代の脱炭素・電力安定化技術の研究を進めています。
               </p>
@@ -546,7 +546,7 @@
           <div class="article-cta-box">
             <span class="article-sec-badge" style="color:var(--accent-deep);">CONTACT &amp; NEXT STEPS</span>
             <h3 class="article-sec-title" style="margin-bottom:0.75rem;">
-              伝える価値から、動くプロダクトまで。
+              商品企画・設計のご相談
             </h3>
             
             <p class="article-p" style="margin-bottom: 1.5rem;">
@@ -606,14 +606,14 @@
       <aside class="toc-sidebar">
         <div class="toc-title">CONTENTS ｜ 目次</div>
         <ul class="toc-list">
-          <li><a href="#origin">01. 出発点：既存の技術</a></li>
-          <li><a href="#marketing-to-spec">02. マーケティングから仕様へ</a></li>
-          <li><a href="#implementation">03. 機能としての実装</a></li>
-          <li><a href="#factory-evolution">04. 工場の現場で生まれた進化</a></li>
-          <li><a href="#predictive-control">05. 予測充放電の判断設計</a></li>
-          <li><a href="#verification-results">06. 実設備での検証と成果</a></li>
-          <li><a href="#future-plans">07. 現在の展開と次の構想</a></li>
-          <li><a href="#consultation">08. 相談への接続</a></li>
+          <li><a href="#origin">01. 開発の背景</a></li>
+          <li><a href="#marketing-to-spec">02. 商品コンセプトと要件定義</a></li>
+          <li><a href="#implementation">03. 追加した機能と製品構成</a></li>
+          <li><a href="#factory-evolution">04. 現地調査とAIを活用した開発</a></li>
+          <li><a href="#predictive-control">05. 予測充放電の設計</a></li>
+          <li><a href="#verification-results">06. 実機検証と確認できた成果</a></li>
+          <li><a href="#future-plans">07. 導入提案と今後の開発計画</a></li>
+          <li><a href="#consultation">08. 商品企画・設計のご相談</a></li>
         </ul>
 
         <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
@@ -658,7 +658,7 @@
         </div>
 
         <div class="footer-col">
-          <h5>NAVIGATION</h5>
+          <h5>サイト案内</h5>
           <ul class="footer-links">
             <li><a href="index.html#cases">代表事例</a></li>
             <li><a href="index.html#otherCases">その他実績</a></li>
@@ -668,7 +668,7 @@
         </div>
 
         <div class="footer-col">
-          <h5>SERVICES</h5>
+          <h5>サービス・事例</h5>
           <ul class="footer-links">
             <li><a href="index.html#services">料金・支援メニュー</a></li>
             <li><a href="spaq-core.html" style="color:#ffffff; font-weight:700;">SPAQ CORE事例</a></li>
@@ -679,7 +679,7 @@
         </div>
 
         <div class="footer-col">
-          <h5>CONTACT</h5>
+          <h5>お問い合わせ</h5>
           <ul class="footer-links">
             <li><a href="index.html#contact">お問い合わせ</a></li>
             <li><a href="index.html#contact">ご相談受付</a></li>
