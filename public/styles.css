@@ -296,6 +296,41 @@ button, input, textarea, select {
   color: var(--text-main);
 }
 
+/* Frame the approved logo's artwork without changing the original image. */
+.site-logo:has(.header-logo-frame) {
+  flex: 0 1 300px;
+  min-width: 0;
+  margin-right: 20px;
+}
+.header-logo-frame {
+  display: block;
+  position: relative;
+  width: 300px;
+  max-width: 100%;
+  aspect-ratio: 1820 / 310;
+  overflow: hidden;
+}
+.header-logo-image {
+  position: absolute;
+  width: 112.5275%;
+  max-width: none;
+  height: auto;
+  left: -7.1429%;
+  top: -70.9677%;
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .site-logo:has(.header-logo-frame) { flex-basis: 250px; }
+  .header-inner > .main-nav { gap: 1rem; }
+}
+@media (max-width: 768px) {
+  .site-logo:has(.header-logo-frame) { flex-basis: 260px; margin-right: 12px; }
+}
+@media (max-width: 480px) {
+  .site-logo:has(.header-logo-frame) { flex-basis: 220px; }
+  .header-inner > .nav-actions { gap: 0.5rem; }
+  .header-inner > .nav-actions > .btn { display: none; }
+}
+
 .logo-symbol {
   width: 34px;
   height: 34px;
