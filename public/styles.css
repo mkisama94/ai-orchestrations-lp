@@ -245,6 +245,20 @@ button, input, textarea, select {
   transform: translateX(3px);
 }
 
+.external-client-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.15s ease;
+}
+
+.external-client-link:hover {
+  color: var(--accent);
+}
+
 /* ==========================================================================
    Header & Navigation
    ========================================================================== */
