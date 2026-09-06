@@ -411,8 +411,8 @@ button, input, textarea, select {
    Section 1: Hero (Architectural Portfolio Concept)
    ========================================================================== */
 .hero-section {
-  padding-top: 8.5rem;
-  padding-bottom: 4rem;
+  padding-top: 7rem;
+  padding-bottom: 2.25rem;
   position: relative;
   overflow: hidden;
   background: radial-gradient(circle at 85% 15%, rgba(9, 105, 218, 0.05) 0%, transparent 45%),
@@ -431,7 +431,7 @@ button, input, textarea, select {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   flex-wrap: wrap;
 }
 
@@ -456,27 +456,27 @@ button, input, textarea, select {
 
 .hero-main-title {
   font-family: var(--font-display);
-  font-size: 3.6rem;
+  font-size: 3.5rem;
   font-weight: 800;
   line-height: 1.16;
   letter-spacing: -0.03em;
   color: var(--text-main);
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 .hero-sub-title {
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   font-weight: 600;
   color: var(--text-secondary);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   letter-spacing: -0.01em;
 }
 
 .hero-description {
-  font-size: 1.125rem;
-  line-height: 1.85;
+  font-size: 1.0625rem;
+  line-height: 1.8;
   color: var(--text-secondary);
-  margin-bottom: 2.25rem;
+  margin-bottom: 1.75rem;
   max-width: 840px;
 }
 
@@ -485,7 +485,7 @@ button, input, textarea, select {
   align-items: center;
   gap: 1.25rem;
   flex-wrap: wrap;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0;
 }
 
 .hero-price-note {
@@ -532,7 +532,7 @@ button, input, textarea, select {
    Hero Diagram: 設備・データ・AI・人のオーケストレーション
    ========================================================================== */
 .diagram-banner-section {
-  padding: 0.5rem 0 5rem 0;
+  padding: 0 0 4.5rem 0;
 }
 
 .diagram-card {
