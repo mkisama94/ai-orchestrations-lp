@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>お問い合わせを受け付けました｜AI Orchestration</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .receipt-page { min-height: 100svh; display: flex; flex-direction: column; }
+    .receipt-header { padding: 28px clamp(24px, 6vw, 88px); border-bottom: 1px solid var(--border-subtle); background: white; }
+    .receipt-logo { display: inline-block; }
+    .receipt-logo img { width: 208px; height: 78px; object-fit: contain; }
+    .receipt-main { flex: 1; display: grid; align-items: center; padding: clamp(48px, 9vh, 112px) 24px; }
+    .receipt { width: min(100%, 760px); margin: 0 auto; }
+    .receipt-label { display: flex; align-items: center; gap: 16px; color: var(--accent-deep); font: 500 14px var(--font-mono); letter-spacing: .12em; margin-bottom: 32px; }
+    .receipt-check { display: grid; place-items: center; width: 44px; height: 44px; background: var(--accent-light); border: 1px solid var(--border-blueprint); border-radius: 50%; flex-shrink: 0; }
+    .receipt h1 { font-size: clamp(28px, 4.4vw, 46px); line-height: 1.55; letter-spacing: -.035em; margin-bottom: 24px; }
+    .receipt-copy { color: var(--text-secondary); font-size: 16px; line-height: 2; }
+    .receipt-next { border-top: 1px solid var(--border-medium); padding-top: 28px; margin-top: 36px; }
+    .receipt-next p { margin-bottom: 28px; }
+    .receipt-home { display: inline-flex; align-items: center; gap: 32px; background: var(--accent); color: white; padding: 15px 24px; border-radius: 4px; font-weight: 600; }
+    .receipt-home:hover { background: var(--accent-deep); }
+    .receipt-home:focus-visible, .receipt-logo:focus-visible { outline: 3px solid var(--accent); outline-offset: 5px; }
+    .receipt-footer { padding: 22px 24px; text-align: center; font-size: 14px; color: var(--text-muted); border-top: 1px solid var(--border-subtle); background: white; }
+    @media (max-width: 480px) { .receipt-header { padding: 16px 24px; } .receipt-logo img { width: 176px; height: 66px; } .receipt-label { margin-bottom: 24px; } .receipt h1 { font-size: 28px; } }
+  </style>
+</head>
+<body class="blueprint-pattern receipt-page">
+  <header class="receipt-header">
+    <a class="receipt-logo" href="index.html" aria-label="AI Orchestration トップページ">
+      <img src="images/ai-orchestration-logo.png" alt="AI Orchestration" width="208" height="78">
+    </a>
+  </header>
+  <main class="receipt-main">
+    <section class="receipt" aria-labelledby="receipt-title">
+      <div class="receipt-label">
+        <span class="receipt-check" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="m5 12 4 4L19 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        THANK YOU
+      </div>
+      <h1 id="receipt-title">お問い合わせを<br>受け付けました。</h1>
+      <p class="receipt-copy">AI Orchestrationにご相談いただき、ありがとうございます。<br>内容を確認のうえ、ご入力のメールアドレスへご連絡いたします。</p>
+      <div class="receipt-next">
+        <p class="receipt-copy">ご返信まで、今しばらくお待ちください。</p>
+        <a class="receipt-home" href="index.html">トップページへ戻る <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+  </main>
+  <footer class="receipt-footer">AI Orchestration.</footer>
+</body>
+</html>
