@@ -1,0 +1,148 @@
+
+--- 2026-09-06T23:16:36.238Z debug
+🪵  Writing logs to "C:\git\ai-orchestrations-lp\tmp\wrangler-logs\wrangler-2026-09-06_23-16-35_900.log"
+---
+
+--- 2026-09-06T23:16:36.238Z debug
+.env file not found at "C:\git\ai-orchestrations-lp\.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-09-06T23:16:36.239Z debug
+.env file not found at "C:\git\ai-orchestrations-lp\.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-09-06T23:16:36.251Z log
+
+ ⛅️ wrangler 4.122.0 (update available 4.129.0)
+───────────────────────────────────────────────
+---
+
+--- 2026-09-06T23:16:36.260Z log
+
+Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+---
+
+--- 2026-09-06T23:16:36.262Z debug
+Error sending metrics event Error: EPERM: operation not permitted, open 'C:\Users\yamamotoma\AppData\Roaming\xdg.config\.wrangler\metrics.json'
+    at Object.writeFileSync (node:fs:2422:20)
+    at writeMetricsConfig (C:\git\ai-orchestrations-lp\node_modules\wrangler\wrangler-dist\cli.js:177906:7)
+    at printMetricsBanner (C:\git\ai-orchestrations-lp\node_modules\wrangler\wrangler-dist\cli.js:178130:7)
+    at Object.sendCommandEvent (C:\git\ai-orchestrations-lp\node_modules\wrangler\wrangler-dist\cli.js:178042:11)
+    at C:\git\ai-orchestrations-lp\node_modules\wrangler\wrangler-dist\cli.js:301684:20
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)
+    at run (C:\git\ai-orchestrations-lp\node_modules\wrangler\wrangler-dist\cli.js:251377:61)
+    at Object.handler (C:\git\ai-orchestrations-lp\node_modules\wrangler\wrangler-dist\cli.js:301641:13) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\yamamotoma\\AppData\\Roaming\\xdg.config\\.wrangler\\metrics.json'
+}
+---
+
+--- 2026-09-06T23:16:36.289Z debug
+Running autoconfig detection in C:\git\ai-orchestrations-lp...
+---
+
+--- 2026-09-06T23:16:36.355Z info
+✨ Read 11 files from the assets directory C:\git\ai-orchestrations-lp\public
+---
+
+--- 2026-09-06T23:16:36.355Z debug
+/hojokin-ai.html
+---
+
+--- 2026-09-06T23:16:36.355Z debug
+/images
+---
+
+--- 2026-09-06T23:16:36.355Z debug
+/index.html
+---
+
+--- 2026-09-06T23:16:36.355Z debug
+/script.js
+---
+
+--- 2026-09-06T23:16:36.355Z debug
+/spaq-core.html
+---
+
+--- 2026-09-06T23:16:36.355Z debug
+/styles.css
+---
+
+--- 2026-09-06T23:16:36.355Z debug
+/thanks.html
+---
+
+--- 2026-09-06T23:16:36.355Z debug
+/images\ai-orchestration-logo.png
+---
+
+--- 2026-09-06T23:16:36.355Z debug
+/images\exec-18c4f50f-86b0-4be9-98d1-791ec53fc212.png
+---
+
+--- 2026-09-06T23:16:36.355Z debug
+/images\exec-29869460-881d-4502-81e2-4d19c7b204a0.png
+---
+
+--- 2026-09-06T23:16:36.355Z debug
+/images\logo.png
+---
+
+--- 2026-09-06T23:16:36.385Z log
+Total Upload: 0.31 KiB / gzip: 0.22 KiB
+---
+
+--- 2026-09-06T23:16:36.387Z log
+No bindings found.
+---
+
+--- 2026-09-06T23:16:36.387Z log
+--dry-run: exiting now.
+---
+
+--- 2026-09-06T23:16:36.388Z log
+
+Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+---
+
+--- 2026-09-06T23:16:36.389Z debug
+Error sending metrics event Error: EPERM: operation not permitted, open 'C:\Users\yamamotoma\AppData\Roaming\xdg.config\.wrangler\metrics.json'
+    at Object.writeFileSync (node:fs:2422:20)
+    at writeMetricsConfig (C:\git\ai-orchestrations-lp\node_modules\wrangler\wrangler-dist\cli.js:177906:7)
+    at printMetricsBanner (C:\git\ai-orchestrations-lp\node_modules\wrangler\wrangler-dist\cli.js:178130:7)
+    at Object.sendCommandEvent (C:\git\ai-orchestrations-lp\node_modules\wrangler\wrangler-dist\cli.js:178042:11)
+    at C:\git\ai-orchestrations-lp\node_modules\wrangler\wrangler-dist\cli.js:301718:22
+    at async Object.handler (C:\git\ai-orchestrations-lp\node_modules\wrangler\wrangler-dist\cli.js:301641:7) {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\yamamotoma\\AppData\\Roaming\\xdg.config\\.wrangler\\metrics.json'
+}
+---
+
+--- 2026-09-06T23:16:36.421Z debug
+Metrics dispatcher: Dispatching disabled - would have sent {"deviceId":"805aa31a-2ba1-4924-98fb-26053eed6016","event":"autoconfig_process_started","timestamp":1788736596421,"properties":{"amplitude_session_id":1788736596275,"amplitude_event_id":0,"wranglerVersion":"4.122.0","wranglerMajorVersion":4,"wranglerMinorVersion":122,"wranglerPatchVersion":0,"osPlatform":"Windows","osVersion":"Windows 11 Pro","nodeVersion":24,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":"codex","category":"Workers","os":"win32:x64","autoConfigId":"c86bfbc6-bfec-4d08-abad-c4f710e9f347","command":"wrangler deploy","dryRun":true,"currentAgentSkillsInstalled":false}}.
+---
+
+--- 2026-09-06T23:16:36.422Z debug
+Metrics dispatcher: Dispatching disabled - would have sent {"deviceId":"805aa31a-2ba1-4924-98fb-26053eed6016","event":"autoconfig_detection_started","timestamp":1788736596422,"properties":{"amplitude_session_id":1788736596288,"amplitude_event_id":0,"wranglerVersion":"4.122.0","wranglerMajorVersion":4,"wranglerMinorVersion":122,"wranglerPatchVersion":0,"osPlatform":"Windows","osVersion":"Windows 11 Pro","nodeVersion":24,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":"codex","category":"Workers","os":"win32:x64","autoConfigId":"c86bfbc6-bfec-4d08-abad-c4f710e9f347","command":"wrangler deploy","currentAgentSkillsInstalled":false}}.
+---
+
+--- 2026-09-06T23:16:36.423Z debug
+Metrics dispatcher: Dispatching disabled - would have sent {"deviceId":"805aa31a-2ba1-4924-98fb-26053eed6016","event":"autoconfig_detection_completed","timestamp":1788736596423,"properties":{"amplitude_session_id":1788736596289,"amplitude_event_id":0,"wranglerVersion":"4.122.0","wranglerMajorVersion":4,"wranglerMinorVersion":122,"wranglerPatchVersion":0,"osPlatform":"Windows","osVersion":"Windows 11 Pro","nodeVersion":24,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":"codex","category":"Workers","os":"win32:x64","autoConfigId":"c86bfbc6-bfec-4d08-abad-c4f710e9f347","configured":true,"success":true,"currentAgentSkillsInstalled":false}}.
+---
+
+--- 2026-09-06T23:16:36.423Z debug
+Metrics dispatcher: Dispatching disabled - would have sent {"deviceId":"805aa31a-2ba1-4924-98fb-26053eed6016","event":"autoconfig_process_ended","timestamp":1788736596423,"properties":{"amplitude_session_id":1788736596289,"amplitude_event_id":0,"wranglerVersion":"4.122.0","wranglerMajorVersion":4,"wranglerMinorVersion":122,"wranglerPatchVersion":0,"osPlatform":"Windows","osVersion":"Windows 11 Pro","nodeVersion":24,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":"codex","category":"Workers","os":"win32:x64","autoConfigId":"c86bfbc6-bfec-4d08-abad-c4f710e9f347","command":"wrangler deploy","dryRun":true,"success":true,"currentAgentSkillsInstalled":false}}.
+---
+
+--- 2026-09-06T23:16:36.424Z debug
+Metrics dispatcher: Dispatching disabled - would have sent {"deviceId":"805aa31a-2ba1-4924-98fb-26053eed6016","event":"deploy worker script","timestamp":1788736596424,"properties":{"amplitude_session_id":1788736596387,"amplitude_event_id":0,"wranglerVersion":"4.122.0","wranglerMajorVersion":4,"wranglerMinorVersion":122,"wranglerPatchVersion":0,"osPlatform":"Windows","osVersion":"Windows 11 Pro","nodeVersion":24,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":"codex","category":"Workers","os":"win32:x64","usesTypeScript":false,"durationMs":68,"currentAgentSkillsInstalled":false}}.
+---
+
+--- 2026-09-06T23:16:36.425Z debug
+Metrics dispatcher: Dispatching disabled - would have sent {"deviceId":"805aa31a-2ba1-4924-98fb-26053eed6016","event":"skills_install_skipped","timestamp":1788736596425,"properties":{"amplitude_session_id":1788736596392,"amplitude_event_id":0,"wranglerVersion":"4.122.0","wranglerMajorVersion":4,"wranglerMinorVersion":122,"wranglerPatchVersion":0,"osPlatform":"Windows","osVersion":"Windows 11 Pro","nodeVersion":24,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"agent":"codex","category":"Workers","os":"win32:x64","reason":"Non-interactive terminal","command":"deploy","currentAgentSkillsInstalled":false}}.
+---
