@@ -11,11 +11,34 @@
     gtag('config', 'G-YQHRWTXHLC');
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AI Orchestrationは、企業AIの設計事務所です。AIプロダクト設計専業として、経営課題と技術をつなぎ、初回技術診断（50,000円）からPoC・アーキテクチャ設計・開発統括まで支援します。">
-  <title>AI Orchestration｜企業AIの設計事務所・AI設計一筋</title>
+  <meta name="description" content="AI Orchestrationは、事業課題の整理からAI・システムの設計、開発、運用までを一貫して支援します。自らAIプロダクト（補助金AI等）を開発・提供する実践をもとに、企業の意思決定と事業づくりを支えます。">
+  <title>AI Orchestration｜事業を構想し、AIプロダクトとして実装する。</title>
   
+  <!-- OGP -->
+  <meta property="og:title" content="AI Orchestration｜事業を構想し、AIプロダクトとして実装する。">
+  <meta property="og:description" content="事業課題の整理からAI・システムの設計、開発、運用までを一貫して支援。自社プロダクト開発の実践知見を企業の事業づくりに還元します。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ai-orchestration.jp/">
+  <meta property="og:site_name" content="AI Orchestration">
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AI Orchestration",
+    "url": "https://ai-orchestration.jp/",
+    "logo": "https://ai-orchestration.jp/images/ai-orchestration-logo.png",
+    "description": "事業を構想し、AIプロダクトとして実装する。自社プロダクトの提供・運営と、企業のAI事業・開発支援。",
+    "founder": {
+      "@type": "Person",
+      "name": "山本 匡紀"
+    }
+  }
+  </script>
 </head>
 <body class="blueprint-pattern">
 
@@ -24,17 +47,18 @@
        ========================================================================== -->
   <header class="site-header" id="siteHeader">
     <div class="container header-inner">
-      <a href="#hero" class="site-logo" aria-label="AI Orchestration — 企業AIの設計事務所">
+      <a href="#hero" class="site-logo" aria-label="AI Orchestration — 事業を構想し、AIプロダクトとして実装する。">
         <span class="header-logo-frame">
-          <img class="header-logo-image" src="images/ai-orchestration-logo.png" alt="AI Orchestration — 企業AIの設計事務所" width="2048" height="768" fetchpriority="high">
+          <img class="header-logo-image" src="images/ai-orchestration-logo.png" alt="AI Orchestration" width="2048" height="768" fetchpriority="high">
         </span>
       </a>
 
       <!-- Desktop Nav -->
       <nav class="main-nav" id="mainNav">
-        <a href="#cases" class="nav-link">実績・事例</a>
-        <a href="#diagnosis" class="nav-link">サービス・料金</a>
-        <a href="#about" class="nav-link">私たちについて</a>
+        <a href="#products" class="nav-link">Products</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#consulting" class="nav-link">Consulting</a>
+        <a href="#about" class="nav-link">About</a>
       </nav>
 
       <div class="nav-actions">
@@ -62,13 +86,13 @@
               <path d="M15 9h6"/>
               <path d="M9 15h12"/>
             </svg>
-            企業AIの設計事務所
+            自社プロダクト開発 &amp; 事業・開発支援
           </span>
-          <span class="hero-domain-tag">AI ARCHITECTURE & ORCHESTRATION</span>
+          <span class="hero-domain-tag">AI ARCHITECTURE &amp; ORCHESTRATION</span>
         </div>
 
         <h1 class="hero-main-title">
-          AIプロダクト設計専業
+          事業を構想し、<br class="mobile-only">AIプロダクトとして実装する。
         </h1>
 
         <div class="hero-sub-title">
@@ -76,20 +100,20 @@
         </div>
 
         <p class="hero-description">
-          何にAIを使い、どこに投資し、どのように実装すべきか。経営課題と技術、現場をつなぎ、そして最新のAIモデルを組み合わせて、構想から実運用までのプロダクト設計を伴走します。
+          AI Orchestrationは、事業課題の整理からAI・システムの設計、開発、運用までを支援します。<br>
+          自らプロダクトを開発・提供する実践をもとに、企業の意思決定と事業づくりを支えます。
         </p>
 
         <div class="hero-action-group">
-          <a href="#diagnosis" class="btn btn-primary">
-            初回技術診断を見る
+          <a href="#products" class="btn btn-primary">
+            プロダクトを見る
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
+              <path d="M19 9l-7 7-7-7"/>
             </svg>
           </a>
-          <a href="#cases" class="btn btn-secondary">
-            設計事例を見る
+          <a href="#contact" class="btn btn-secondary">
+            事業・開発について相談する
           </a>
-
         </div>
 
       </div>
@@ -159,7 +183,7 @@
             <text x="480" y="126" text-anchor="middle" font-size="14" font-family="sans-serif" fill="#ffffff" font-weight="700">AIプロダクト設計・制約制御・連携基盤</text>
 
             <rect x="310" y="150" width="340" height="34" rx="4" fill="#ffffff" stroke="#bfdbfe" stroke-width="1"/>
-            <text x="480" y="172" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#054da3" font-weight="700">2. 実装統括 &amp; 外部モデル連携（LLM / 最適化）</text>
+            <text x="480" y="172" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#054da3" font-weight="700">2. 実装統括 &amp; 外部モデル連携（LLM / 最適化 / MCP）</text>
 
             <text x="480" y="218" text-anchor="middle" font-size="11" font-family="'JetBrains Mono', monospace" fill="#62748d">AI Orchestration. DESIGN BOUNDARY</text>
           </g>
@@ -197,19 +221,127 @@
   </section>
 
   <!-- ==========================================================================
-       Section 2: 代表的な2案件（SPAQ CORE & 補助金AIプラグイン 特集）
+       Section 2: Products（私たちが提供しているプロダクト）
        ========================================================================== -->
-  <section class="section-wrap cases-section" id="cases">
+  <section class="section-wrap" id="products">
     <div class="container">
       <div class="section-meta">
-        <span class="section-num">01 / WORKS</span>
-        <span class="section-tag">代表事例 特集</span>
+        <span class="section-num">01 / PRODUCTS</span>
+        <span class="section-tag">自社プロダクト</span>
       </div>
       <h2 class="section-title">
-        設計実績
+        私たちが提供しているプロダクト
       </h2>
       <p class="section-lead">
-        事業の構想から、設計・実装、現場での検証まで。携わったプロジェクトと、当社の担当内容をご紹介します。
+        自らプロダクトを作り、運営しているからこそ、事業構想から技術判断、実装まで一貫して支援できる。<br>
+        AI Orchestrationが企画・設計・運用する自社プロダクトの第一弾をご紹介します。
+      </p>
+
+      <div style="margin-top: 3.5rem;">
+        
+        <!-- Large Horizontal Feature Card: 補助金AI -->
+        <article class="product-feature-card">
+          <div class="product-card-badge-row">
+            <div class="tag-group">
+              <span class="tag-pill accent">AVAILABLE</span>
+              <span class="tag-pill">ChatGPT</span>
+              <span class="tag-pill">MCP</span>
+              <span class="tag-pill">Public Data</span>
+              <span class="tag-pill">Open Source</span>
+            </div>
+            <div style="font-family:var(--font-mono); font-size:0.8125rem; color:var(--text-muted);">
+              First Product / Public Release
+            </div>
+          </div>
+
+          <div class="product-title-row">
+            <h3 class="product-title">補助金AI</h3>
+            <span style="font-family:var(--font-mono); font-size:0.9375rem; color:var(--text-muted); font-weight:600;">- ChatGPT プラグイン &amp; MCP -</span>
+          </div>
+
+          <div class="product-catch">
+            自社に合いそうな補助金を、根拠と確認事項まで。
+          </div>
+
+          <p class="product-desc">
+            Jグランツ等の公的制度情報と企業情報をもとに、自社が利用できそうな補助金・公的支援を探し、条件への適合点や追加確認事項を整理します。<br>
+            経営者や企業担当者はもちろん、社労士・行政書士など専門家の情報収集や相談準備にもご利用いただけます。
+          </p>
+
+          <!-- Channel Status Strip -->
+          <div class="channel-status-strip">
+            <span class="channel-status-label">CHANNELS:</span>
+            <div class="channel-pill">
+              <span class="status-dot available"></span>
+              <span>ChatGPT: Available</span>
+            </div>
+            <div class="channel-pill">
+              <span class="status-dot available"></span>
+              <span>MCP: Available</span>
+            </div>
+            <div class="channel-pill">
+              <span class="status-dot available"></span>
+              <span>Web: Available</span>
+            </div>
+            <div class="channel-pill">
+              <span class="status-dot beta"></span>
+              <span>API: Beta</span>
+            </div>
+            <div class="channel-pill">
+              <span class="status-dot available"></span>
+              <span>GitHub: Available (AGPL-v3)</span>
+            </div>
+          </div>
+
+          <!-- Actions -->
+          <div style="display:flex; flex-wrap:wrap; gap:1.25rem; align-items:center;">
+            <a href="https://chatgpt.com/g/g-675001d29fa8819191d9b4b0253457bf-bu-zhu-jin-ai" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              ChatGPTで使う
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+              </svg>
+            </a>
+            <a href="products/hojokin-ai/index.html" class="btn btn-secondary">
+              製品について詳しく見る
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="hojokin-ai.html" class="link-arrow" style="margin-left:auto;">
+              技術設計・開発事例を見る
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Link to Products List -->
+      <div style="margin-top: 2rem; text-align: right;">
+        <a href="products/index.html" class="link-arrow">
+          すべての自社プロダクト・開発計画を見る ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Section 3: Projects（設計・開発実績）
+       ========================================================================== -->
+  <section class="section-wrap cases-section" id="projects">
+    <div class="container">
+      <div class="section-meta">
+        <span class="section-num">02 / PROJECTS</span>
+        <span class="section-tag">設計・開発実績</span>
+      </div>
+      <h2 class="section-title">
+        設計・開発実績
+      </h2>
+      <p class="section-lead">
+        単なる制作物一覧ではなく、<strong>事業課題 → 技術判断 → 実装</strong> が分かるプロジェクト事例をご紹介します。<br>
+        各プロジェクトで「何を解決したのか」を最初にご確認いただけます。
       </p>
 
       <div style="margin-top: 3.5rem;">
@@ -234,7 +366,7 @@
             </a>
           </h3>
           <p class="case-catch">
-            事業構想から、予測充放電制御の設計・実装、実設備での検証まで。
+            産業用蓄電池を安全かつ効率的に制御し、契約電力のピークを抑制する電力管理システム。
           </p>
 
           <div class="case-details-grid">
@@ -249,7 +381,7 @@
               <div class="case-story-item">
                 <div class="case-story-label">解決した課題</div>
                 <p class="case-story-text">
-                  蓄電池や空調の動作によって、観測される電力需要も変わります。AIによる予測制御を導入し、この問題を解決しました。
+                  蓄電池や空調の動作によって、観測される電力需要も変わります。AIによる予測制御を導入し、この循環依存の問題を解決しました。
                 </p>
               </div>
 
@@ -311,7 +443,7 @@
           <div class="case-footer-row">
             <div class="case-verdict">
               <div class="verdict-icon">✓</div>
-              <span><strong>成果と現在地：</strong>実設備で自動放電指令の書き込みと充放電動作を確認。予測制御・精度評価機能を実装しました。長期的なピーク低減量・料金削減額は、今後の評価対象です。</span>
+              <span><strong>成果と現在地：</strong>実設備で自動放電指令の書き込みと充放電動作を確認。予測制御・精度評価機能を実装しました。</span>
             </div>
             <!-- Case links -->
             <div style="display:flex; flex-wrap:wrap; gap:1.25rem; align-items:center;">
@@ -331,27 +463,27 @@
           </div>
         </article>
 
-        <!-- Case 2: 補助金AIプラグイン -->
+        <!-- Case 2: 補助金AI -->
         <article class="case-feature-block">
           <div class="case-badge-row">
             <div class="case-client-badge">
-              <span>協業主体：<a href="https://cocurie.com/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社CoCreate</a></span>
+              <span>協業開発：<a href="https://cocurie.com/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社CoCreate</a></span>
               <span style="color:var(--text-muted);">｜</span>
               <span>公的制度活用・ナレッジ連携対話基盤</span>
             </div>
-            <span class="case-status-badge">COクリエイトと協業開発</span>
+            <span class="case-status-badge">自社プロダクト / オープンソース</span>
           </div>
 
           <h3 class="case-title">
             <a href="hojokin-ai.html" style="color:inherit; text-decoration:none;">
-              補助金AI -ChatGPTプラグイン-
+              補助金AI -公的データ連携基盤-
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:middle; margin-left:0.35rem; color:var(--accent);">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
               </svg>
             </a>
           </h3>
           <p class="case-catch">
-            対話形式で助成金・補助金を探し、申請要件の確認を支援するAIプラグイン
+            公的機関が公開する制度情報と企業情報を組み合わせ、生成AIから利用できる補助金探索環境を構築。
           </p>
 
           <div class="case-details-grid">
@@ -359,14 +491,14 @@
               <div class="case-story-item">
                 <div class="case-story-label">商品概要</div>
                 <p class="case-story-text">
-                  事業者が活用できる助成金・補助金を、AIとの対話を通じて探すためのChatGPTプラグインです。取り組みたい事業や相談内容をもとに候補となる制度を探し、対象条件や申請要件の確認を支援します。
+                  事業者が活用できる助成金・補助金を、AIとの対話を通じて探すためのChatGPTプラグイン／MCP基盤です。取り組みたい事業や相談内容をもとに候補となる制度を探し、対象条件や申請要件の確認を支援します。
                 </p>
               </div>
 
               <div class="case-story-item">
                 <div class="case-story-label">解決した課題</div>
                 <p class="case-story-text">
-                  補助金は制度が頻繁に変わります。デジタル庁などの公的機関の提供するAPIにアクセスして、公的情報を統合。AIの共通規格『MCP』に変換することで、この課題を解決しました。
+                  補助金は制度が頻繁に改定されます。デジタル庁などの公的機関の提供するAPIにアクセスして公的情報を統合し、AI共通規格『MCP』に変換することで、この課題を解決しました。
                 </p>
               </div>
 
@@ -374,7 +506,7 @@
                 <div class="case-story-label">設計のポイント</div>
                 <p class="case-story-text">
                   <span class="case-story-highlight">制度情報と対話をつなぐ、要件定義・API連携設計。</span>
-                  COクリエイトとの協業で、助成金・補助金を対話形式で探す体験を設計しています。AI Orchestrationは、要件定義、API連携設計、導入支援を担当します。
+                  COクリエイトとの協業で、助成金・補助金を対話形式で探す体験を設計。AI Orchestrationは、要件定義、API連携設計、MCPサーバー実装を担当しました。
                 </p>
               </div>
             </div>
@@ -407,7 +539,7 @@
                     <!-- Data Source -->
                     <rect x="295" y="30" width="70" height="120" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
                     <text x="330" y="55" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', monospace" fill="#64748b" font-weight="700">API/DB</text>
-                    <text x="330" y="85" text-anchor="middle" font-size="10" font-weight="600" fill="#1e293b">制度情報</text>
+                    <text x="330" y="85" text-anchor="middle" font-size="10" font-weight="600" fill="#1e293b">公的制度情報</text>
                     <text x="330" y="100" text-anchor="middle" font-size="10" font-weight="600" fill="#1e293b">※概念図</text>
 
                     <!-- Arrows -->
@@ -421,8 +553,8 @@
                 <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); font-family:var(--font-mono);">当社の担当領域</span>
                 <div class="role-pills-row">
                   <span class="role-pill">協業要件定義</span>
-                  <span class="role-pill">API連携設計</span>
-                  <span class="role-pill">導入支援</span>
+                  <span class="role-pill">API連携・MCP設計</span>
+                  <span class="role-pill">製品開発・運用</span>
                 </div>
               </div>
             </div>
@@ -431,528 +563,283 @@
           <div class="case-footer-row">
             <div class="case-verdict">
               <div class="verdict-icon">✓</div>
-              <span><strong>当社の関与：</strong>COクリエイトと協業し、対話による助成金・補助金の検索と申請要件の確認を支援するプラグインを開発。</span>
+              <span><strong>当社の関与：</strong>COクリエイトと協業し、公的制度の探索と要件確認を支援する対話基盤・MCPを実装・提供しています。</span>
             </div>
-            <!-- Future detail page link -->
-            <a href="hojokin-ai.html" class="link-arrow">
-              補助金AIプラグインの連携設計を詳しく読む
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </a>
+            <!-- Case links -->
+            <div style="display:flex; flex-wrap:wrap; gap:1.25rem; align-items:center;">
+              <a href="hojokin-ai.html" class="link-arrow">
+                補助金AIの連携設計・開発背景を読む
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="products/hojokin-ai/index.html" class="link-arrow" style="color:var(--text-secondary); font-size:0.875rem;">
+                利用者向け製品ページはこちら ↗
+              </a>
+            </div>
           </div>
         </article>
 
       </div>
+
+      <!-- Other Cases Grid -->
+      <div style="margin-top: 4.5rem;">
+        <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main); margin-bottom: 1.5rem;">
+          その他のシステム設計・事業支援実績
+        </h3>
+        <div class="other-cases-grid">
+          <!-- Other Case 1: AlleyPin 1.Talk -->
+          <div class="other-case-card">
+            <div>
+              <div class="other-case-header">
+                <span class="other-case-domain">台湾発 / グローバル連携</span>
+                <span class="other-case-client">提供：<a href="https://alleypin.co.jp/jp" target="_blank" rel="noopener noreferrer" class="external-client-link">アリピン株式会社</a></span>
+              </div>
+              <h4 class="other-case-name">1.Talk（クリニック向け予約システム）</h4>
+              <p class="other-case-desc">
+                台湾発の医療機関・クリニック向け予約システム。海外プロダクトの国内展開において、対話フロー設計、多言語対応、販路開拓の面から支援。
+              </p>
+            </div>
+            <div>
+              <div class="other-case-roles">
+                <span class="other-case-role-tag">対話フロー設計</span>
+                <span class="other-case-role-tag">多言語展開支援</span>
+                <span class="other-case-role-tag">販路開拓</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Case 2: AI相互送客コンソーシアム -->
+          <div class="other-case-card">
+            <div>
+              <div class="other-case-header">
+                <span class="other-case-domain">ADTECH / COMMERCE</span>
+                <span class="other-case-client">提供：<a href="https://cocurie.com/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社CoCreate</a></span>
+              </div>
+              <h4 class="other-case-name">AI相互送客コンソーシアム</h4>
+              <p class="other-case-desc">
+                AIチャットを通じて文脈に合わせた企業・サービス推薦を行う広告配信・顧客接点プラットフォームの設計。
+              </p>
+            </div>
+            <div>
+              <div class="other-case-roles">
+                <span class="other-case-role-tag">事業構想</span>
+                <span class="other-case-role-tag">レコメンド設計</span>
+                <span class="other-case-role-tag">販売戦略</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Case 3: 教AI -->
+          <div class="other-case-card">
+            <div>
+              <div class="other-case-header">
+                <span class="other-case-domain">KNOWLEDGE / ENTERPRISE</span>
+                <span class="other-case-client">提供：<a href="https://pr-i.co.jp/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社ピーアールアイ</a></span>
+              </div>
+              <h4 class="other-case-name">教AI（社内ナレッジ蓄積・引用根拠つきAI）</h4>
+              <p class="other-case-desc">
+                社内のQ&amp;Aや業務のやりとりを知見として蓄積し、活用するためのUX・知見化設計を支援。
+              </p>
+            </div>
+            <div>
+              <div class="other-case-roles">
+                <span class="other-case-role-tag">UX設計</span>
+                <span class="other-case-role-tag">知見化パイプライン設計</span>
+                <span class="other-case-role-tag">導入支援</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Case 4: 採用フローAI化 -->
+          <div class="other-case-card">
+            <div>
+              <div class="other-case-header">
+                <span class="other-case-domain">HR TECH / AUTOMATION</span>
+                <span class="other-case-client">提供：<a href="https://trefac-t.tech/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社トレファクテクノロジーズ</a></span>
+              </div>
+              <h4 class="other-case-name">採用フローAI化</h4>
+              <p class="other-case-desc">
+                応募者への初期対応や選考をAIで支援するため、業務フロー・AI選考の設計と運用定着を支援。
+              </p>
+            </div>
+            <div>
+              <div class="other-case-roles">
+                <span class="other-case-role-tag">業務フロー設計</span>
+                <span class="other-case-role-tag">選考ロジック設計</span>
+                <span class="other-case-role-tag">定着支援</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- ==========================================================================
-       Section 3: 取扱商品・導入支援
+       Section 4: Consulting（事業・開発支援）
        ========================================================================== -->
-  <section class="other-cases-section" id="otherCases">
+  <section class="section-wrap-subtle" id="consulting" style="padding: 6.5rem 0;">
     <div class="container">
       <div class="section-meta">
-        <span class="section-num">02 / PRODUCTS</span>
-        <span class="section-tag">取扱商品</span>
+        <span class="section-num">03 / CONSULTING</span>
+        <span class="section-tag">事業・開発支援</span>
       </div>
       <h2 class="section-title">
-        取扱商品・導入支援
+        事業・開発支援
       </h2>
       <p class="section-lead">
-        当社が設計やマーケティングに携わる商品をご紹介します。各商品の導入相談・サポートも承っています。ご関心のある商品について、お気軽にお問い合わせください。
+        自社プロダクトを自ら企画・開発・運用しているからこそ、机上の提案にとどまらない実践的な技術判断を提供できます。<br>
+        「何を相談できる会社なのか」、私たちが支援している主な4つの領域をご紹介します。
       </p>
 
-      <div class="other-cases-grid">
-        <!-- Other Case 1: AlleyPin 1.Talk -->
-        <div class="other-case-card">
-          <div>
-            <div class="other-case-header">
-              <span class="other-case-domain">台湾発 / グローバル連携</span>
-              <span class="other-case-client">提供：<a href="https://alleypin.co.jp/jp" target="_blank" rel="noopener noreferrer" class="external-client-link">アリピン株式会社</a></span>
-            </div>
-            <h3 class="other-case-name">1.Talk（クリニック向け予約システム）</h3>
-            <p class="other-case-desc">
-              台湾発の、医療機関・クリニック向け予約システム。海外プロダクトの展開に、対話フロー設計、多言語対応、販路開拓の面から携わっています。
-            </p>
-          </div>
-          <div>
-            <div class="other-case-roles">
-              <span class="other-case-role-tag">対話フロー設計</span>
-              <span class="other-case-role-tag">多言語展開支援</span>
-              <span class="other-case-role-tag">販路開拓</span>
-            </div>
-          </div>
-        </div>
+      <!-- 4 Consulting Areas Grid -->
+      <div class="consulting-areas-grid">
 
-        <!-- Other Case 2: AI相互送客コンソーシアム -->
-        <div class="other-case-card">
-          <div>
-            <div class="other-case-header">
-              <span class="other-case-domain">ADTECH / COMMERCE</span>
-              <span class="other-case-client">提供：<a href="https://cocurie.com/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社CoCreate</a></span>
-            </div>
-            <h3 class="other-case-name">AI相互送客コンソーシアム</h3>
-            <p class="other-case-desc">
-              AIチャットを通じて文脈に合わせた企業・サービス推薦を行う広告配信・顧客接点プラットフォームの設計。
-            </p>
-          </div>
-          <div>
-            <div class="other-case-roles">
-              <span class="other-case-role-tag">事業構想</span>
-              <span class="other-case-role-tag">レコメンド設計</span>
-              <span class="other-case-role-tag">販売戦略</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Other Case 3: 教AI -->
-        <div class="other-case-card">
-          <div>
-            <div class="other-case-header">
-              <span class="other-case-domain">KNOWLEDGE / ENTERPRISE</span>
-              <span class="other-case-client">提供：<a href="https://pr-i.co.jp/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社ピーアールアイ</a></span>
-            </div>
-            <h3 class="other-case-name">教AI（社内ナレッジ蓄積・引用根拠つきAI）</h3>
-            <p class="other-case-desc">
-              社内のQ&Aや業務のやりとりを知見として蓄積し、活用するためのUX・知見化設計を支援。
-            </p>
-          </div>
-          <div>
-            <div class="other-case-roles">
-              <span class="other-case-role-tag">UX設計</span>
-              <span class="other-case-role-tag">知見化パイプライン設計</span>
-              <span class="other-case-role-tag">導入支援</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Other Case 4: 採用フローAI化 -->
-        <div class="other-case-card">
-          <div>
-            <div class="other-case-header">
-              <span class="other-case-domain">HR TECH / AUTOMATION</span>
-              <span class="other-case-client">提供：<a href="https://trefac-t.tech/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社トレファクテクノロジーズ</a></span>
-            </div>
-            <h3 class="other-case-name">採用フローAI化</h3>
-            <p class="other-case-desc">
-              応募者への初期対応や選考をAIで支援するため、業務フロー・AI選考の設計と運用定着を支援。
-            </p>
-          </div>
-          <div>
-            <div class="other-case-roles">
-              <span class="other-case-role-tag">業務フロー設計</span>
-              <span class="other-case-role-tag">選考ロジック設計</span>
-              <span class="other-case-role-tag">定着支援</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       Section 4: 相談できること（5つの具体的判断場面）
-       ========================================================================== -->
-  <section class="section-wrap situations-section" id="situations">
-    <div class="container">
-      <div class="section-meta">
-        <span class="section-num">03 / SCENARIOS</span>
-        <span class="section-tag">相談できること</span>
-      </div>
-      <h2 class="section-title">
-        相談できること
-      </h2>
-      <p class="section-lead">
-        抽象的な「AI活用コンサル」ではなく、事業責任者や経営者が直面する意思決定の迷いを、第三者の立場から技術的に評価・整理します。
-      </p>
-
-      <div class="situations-grid">
-        <!-- Situation 1 -->
-        <div class="situation-card">
-          <span class="situation-card-num">SCENARIO 01</span>
-          <div class="situation-voice">
-            「開発会社から提案書と見積もりが届いたが、この設計のまま進めてよいか判断がつかない」
-          </div>
-          <div class="situation-solution">
-            提案されたアーキテクチャの実現性、不要な工数の有無、保守リスクを中立の技術者目線でレビューし、発注前の修正点を洗い出します。
-          </div>
-        </div>
-
-        <!-- Situation 2 -->
-        <div class="situation-card">
-          <span class="situation-card-num">SCENARIO 02</span>
-          <div class="situation-voice">
-            「AIを組み込んだ新規サービスを構想しているが、機能要件の落とし込みがまとまらない」
-          </div>
-          <div class="situation-solution">
-            ユーザーが求める価値、AIが担うべき領域、ルールベースで済む領域を切り分け、開発着手可能な要件定義書に落とし込みます。
-          </div>
-        </div>
-
-        <!-- Situation 3 -->
-        <div class="situation-card">
-          <span class="situation-card-num">SCENARIO 03</span>
-          <div class="situation-voice">
-            「PoC（概念実証）を行うことになったが、何をどう検証すれば次へ進めるか整理したい」
-          </div>
-          <div class="situation-solution">
-            「何が確認できれば成功とするか」の定量的・定性的基準を設計し、無駄な投資を避けるための最小限の検証計画を策定します。
-          </div>
-        </div>
-
-        <!-- Situation 4 -->
-        <div class="situation-card">
-          <span class="situation-card-num">SCENARIO 04</span>
-          <div class="situation-voice">
-            「社内の基幹システムや外部APIと最新のAIモデルをどう組み合わせるべきか迷っている」
-          </div>
-          <div class="situation-solution">
-            既存データの所在、更新頻度、セキュリティ制約を考慮し、最も運用負荷とコストが小さくなる連携構成を導き出します。
-          </div>
-        </div>
-
-        <!-- Situation 5 -->
-        <div class="situation-card">
-          <span class="situation-card-num">SCENARIO 05</span>
-          <div class="situation-voice">
-            「開発中のプロジェクトで、エンジニアとビジネス側の間で技術判断を担うリードが必要になった」
-          </div>
-          <div class="situation-solution">
-            外部の技術リード（CTO / PM補佐）としてプロジェクトに参画し、仕様変更の判断や品質管理、リリース推進を支援します。
-          </div>
-        </div>
-      </div>
-
-      <div class="situation-cta-box">
-        <div class="situation-cta-text">
-          <h4>初回診断で、課題と進め方を整理</h4>
-          <p>まずは「初回技術診断（50,000円）」にて、現在の課題と最適な進め方を客観的に整理します。</p>
-        </div>
-        <a href="#diagnosis" class="btn btn-primary">初回技術診断の詳細を見る</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       Section 5: 初回技術診断 (50,000円) & 判断メモ見本
-       ========================================================================== -->
-  <section class="section-wrap diagnosis-section" id="diagnosis">
-    <div class="container">
-      <div class="section-meta">
-        <span class="section-num">04 / FIRST STEP</span>
-        <span class="section-tag">初回技術診断</span>
-      </div>
-      <h2 class="section-title">
-        初回技術診断
-      </h2>
-      <p class="section-lead">
-        事前に共有いただいた情報と60分の相談をもとに、現時点の推奨方針、判断の理由、追加で確認すべき事項を「判断メモ」にまとめます。
-      </p>
-
-      <div class="diagnosis-offer-grid">
-        <!-- Diagnosis Card -->
-        <div class="diagnosis-card">
-          <span class="diagnosis-badge">公開メニュー 01</span>
-          <h3>初回技術診断</h3>
-          <p style="font-size:0.875rem; color:var(--text-secondary);">
-            事前ヒアリング、60分の相談、判断メモを含みます。詳細な調査・設計・実装は別途ご提案します。
+        <!-- Area 1: 事業構想 -->
+        <div class="consulting-area-card">
+          <div class="consulting-area-num">AREA 01</div>
+          <h3 class="consulting-area-title">事業構想</h3>
+          <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.75; margin-bottom:1rem;">
+            「AIで何かできないか」という曖昧な問いから、事業として成立するプロダクトの姿を明確化します。
           </p>
-
-          <div class="diagnosis-price-box">
-            <span class="price-val">50,000</span>
-            <span class="price-unit">円（税別）</span>
-          </div>
-
-          <ul class="diagnosis-deliverables">
-            <li class="deliverable-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M20 6L9 17l-5-5"/>
-              </svg>
-              <div>
-                <strong>事前ヒアリング・資料確認</strong>
-                <span>ご相談内容と、事前に合意した範囲の資料を確認します</span>
-              </div>
+          <ul class="consulting-item-list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>AIを使った新規事業・サービスの検討</span>
             </li>
-            <li class="deliverable-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M20 6L9 17l-5-5"/>
-              </svg>
-              <div>
-                <strong>60分 オンライン診断セッション</strong>
-                <span>代表の山本が、課題・選択肢・追加で確認すべき事項を整理します</span>
-              </div>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>社内既存業務のプロダクト化・SaaS化</span>
             </li>
-            <li class="deliverable-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M20 6L9 17l-5-5"/>
-              </svg>
-              <div>
-                <strong>成果物：「判断メモ」の送付</strong>
-                <span>推奨方針、判断の理由、未確認事項と次の行動をまとめます</span>
-              </div>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>データ・APIのMCP化によるAIエコシステム参入</span>
             </li>
-            <li class="deliverable-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                <path d="M20 6L9 17l-5-5"/>
-              </svg>
-              <div>
-                <strong>1年間のメンバー登録</strong>
-                <span>背景を把握した状態での追加相談（3万円/60分）が可能になります</span>
-              </div>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>AIサービスの収益モデル・事業性検証</span>
             </li>
           </ul>
-
-          <a href="#contact" class="btn btn-primary" style="width: 100%;">
-            初回技術診断を申し込む
-          </a>
         </div>
 
-        <!-- Sample Decision Memo Mockup -->
-        <div class="memo-mockup">
-          <div class="memo-header">
-            <div>
-              <span class="memo-meta-title">架空の相談例：技術判断メモ（抜粋）</span>
-            </div>
-            <span class="memo-stamp">SAMPLE</span>
-          </div>
-
-          <div class="memo-body">
-            <!-- 1. 今回決めたいこと -->
-            <div class="memo-section">
-              <div class="memo-label">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M12 16v-4M12 8h.01"/>
-                </svg>
-                01. 今回決めたいこと
-              </div>
-              <p class="memo-val">
-                社内業務向けAIアシスタントを、開発会社へ委託してフルスクラッチ開発（見積500万円）すべきか、既存SaaSを活用して小規模に開始すべきか。
-              </p>
-            </div>
-
-            <!-- 2. 現状と制約 -->
-            <div class="memo-section">
-              <div class="memo-label">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                </svg>
-                02. 現状と制約
-              </div>
-              <p class="memo-val">
-                社内にAI専任エンジニア不在。対象となる業務マニュアルは四半期ごとに改定される運用実態があり、改定時のメンテナンス体制が確保されていない。
-              </p>
-            </div>
-
-            <!-- 3. 推奨する方針と理由 -->
-            <div class="memo-section">
-              <div class="memo-label">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                  <path d="M22 4L12 14.01l-3-3"/>
-                </svg>
-                03. 推奨する方針と理由
-              </div>
-              <p class="memo-val">
-                <span class="memo-val-highlight">【情報管理の条件を確認後、既存サービスで小規模な検証を推奨】</span><br>
-                理由：必要な回答品質と文書更新の運用負荷が未確認です。対象業務を絞って検証し、既存サービスで満たせない要件と運用費用を把握してから、独自開発の必要性を判断します。
-              </p>
-            </div>
-
-            <!-- 4. 未確認の事項 -->
-            <div class="memo-section">
-              <div class="memo-label">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="12" cy="12" r="10"/>
-                  <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
-                  <line x1="12" y1="17" x2="12.01" y2="17"/>
-                </svg>
-                04. 未確認の事項
-              </div>
-              <ul class="memo-list">
-                <li>社内機密情報取扱ポリシーにおける、外部LLM APIとの通信許可基準</li>
-                <li>対象部署（営業事務12名）における月間問い合わせ件数の正確な内訳</li>
-              </ul>
-            </div>
-
-            <!-- 5. 次に行う検証 & 判断条件 -->
-            <div class="memo-section">
-              <div class="memo-label">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polygon points="5 3 19 12 5 21 5 3"/>
-                </svg>
-                05. 次に行う検証と判断条件
-              </div>
-              <p class="memo-val">
-                <strong>検証：</strong>代表メンバー3名によるSaaSトライアルを2週間実施し、回答精度ログを採集。<br>
-                <strong>条件：</strong>回答品質、情報管理、更新の運用負荷を確認し、導入・運用費用に見合う効果が見込める場合に、基幹連携の必要性を検討する。
-              </p>
-            </div>
-          </div>
+        <!-- Area 2: 技術設計 -->
+        <div class="consulting-area-card">
+          <div class="consulting-area-num">AREA 02</div>
+          <h3 class="consulting-area-title">技術設計</h3>
+          <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.75; margin-bottom:1rem;">
+            セキュリティ、運用コスト、データ更新性を踏まえた実現性の高いアーキテクチャを設計します。
+          </p>
+          <ul class="consulting-item-list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>AIアーキテクチャ・LLMオーケストレーション設計</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>MCP（Model Context Protocol）サーバー・ツール設計</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>RAG（検索拡張生成）・ナレッジ基盤構築</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>認証・権限管理・クラウド／既存システム統合</span>
+            </li>
+          </ul>
         </div>
+
+        <!-- Area 3: 実装・プロトタイピング -->
+        <div class="consulting-area-card">
+          <div class="consulting-area-num">AREA 03</div>
+          <h3 class="consulting-area-title">実装・プロトタイピング</h3>
+          <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.75; margin-bottom:1rem;">
+            無駄な投資を避け、検証すべき仮説を最短で検証する動くソフトウェアを開発します。
+          </p>
+          <ul class="consulting-item-list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>PoC（概念実証）・MVP（最小限の実用製品）開発</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>Webサービス・API・AIエージェント開発</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>ChatGPT向けアプリ／カスタムGPTs／プラグイン</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>エッジデバイス・産業設備との連携制御ロジック</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Area 4: 継続支援 -->
+        <div class="consulting-area-card">
+          <div class="consulting-area-num">AREA 04</div>
+          <h3 class="consulting-area-title">継続支援</h3>
+          <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.75; margin-bottom:1rem;">
+            開発チームの技術リードや外部ベンダーのコントロールなど、事業の成長に伴走します。
+          </p>
+          <ul class="consulting-item-list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>CTO／技術顧問・技術リード（PM/Tech Lead）</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>プロダクト設計・コードおよびアーキテクチャレビュー</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>技術選定・外部開発会社の提案書・見積もり評価</span>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+              <span>発注側と開発ベンダー間の技術ディレクション</span>
+            </li>
+          </ul>
+        </div>
+
       </div>
+
+      <!-- Pricing Policy Box -->
+      <div style="background:#ffffff; border:1px solid var(--border-blueprint); border-radius:var(--radius-md); padding:2rem 2.5rem; margin-top:3rem; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap;">
+        <div>
+          <h4 style="font-size:1.15rem; font-weight:700; color:var(--text-main); margin-bottom:0.35rem;">
+            ご支援の進め方とお見積もり
+          </h4>
+          <p style="font-size:0.9375rem; color:var(--text-secondary); margin:0; max-width:700px; line-height:1.75;">
+            画一的なパッケージではなく、貴社の課題、開発フェーズ、社内リソースに応じて必要な関わり方を個別にご提案・お見積もりいたします。仕様が固まっていない構想段階からでもお気軽にご相談ください。
+          </p>
+        </div>
+        <a href="#contact" class="btn btn-primary" style="flex-shrink:0;">
+          事業・開発について相談する
+        </a>
+      </div>
+
     </div>
   </section>
 
   <!-- ==========================================================================
-       Section 6: 支援の全体像 & 料金体系
-       ========================================================================== -->
-  <section class="section-wrap services-section" id="services">
-    <div class="container">
-      <div class="section-meta">
-        <span class="section-num">05 / PRICING &amp; MENU</span>
-        <span class="section-tag">サービス・料金</span>
-      </div>
-      <h2 class="section-title">
-        サービス・料金
-      </h2>
-      <p class="section-lead">
-        単発の相談から、設計・開発の支援まで。課題に応じてご利用いただけます。具体的な案件は、初回診断を経ずに直接ご相談いただけます。
-      </p>
-
-      <div class="services-pricing-grid">
-        <!-- Plan 1 -->
-        <div class="pricing-card featured">
-          <span class="pricing-featured-tag">START HERE</span>
-          <div>
-            <h3 class="pricing-name">初回技術診断</h3>
-            <p class="pricing-desc">
-              現在の課題と選択肢を整理し、推奨方針・理由・未確認事項をまとめた「判断メモ」をお渡しします。
-            </p>
-            <div class="pricing-cost">
-              50,000<span>円（税別）</span>
-            </div>
-          </div>
-
-          <div>
-            <ul class="pricing-features-list">
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-                <span>事前ヒアリング・合意した資料の確認</span>
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-                <span>60分オンライン診断セッション</span>
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-                <span>推奨方針と根拠をまとめた判断メモ</span>
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-                <span>1年間のメンバー登録</span>
-              </li>
-            </ul>
-            <a href="#contact" class="btn btn-primary" style="width: 100%;">この内容で相談する</a>
-          </div>
-        </div>
-
-        <!-- Plan 2 -->
-        <div class="pricing-card">
-          <div>
-            <h3 class="pricing-name">追加相談セッション</h3>
-            <p class="pricing-desc">
-              初回診断の背景を引き継ぎ、その後の検証結果や進捗に応じた継続的な助言・整理を行います。
-            </p>
-            <div class="pricing-cost">
-              30,000<span>円／60分（税別）</span>
-            </div>
-          </div>
-
-          <div>
-            <ul class="pricing-features-list">
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-                <span>初回診断登録メンバー限定メニュー</span>
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-                <span>都度60分のオンラインディスカッション</span>
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-                <span>セッション要点メモの送付</span>
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-                <span>必要なタイミングでのスポット利用</span>
-              </li>
-            </ul>
-            <a href="#contact" class="btn btn-secondary" style="width: 100%;">追加相談を問い合わせる</a>
-          </div>
-        </div>
-
-        <!-- Plan 3 -->
-        <div class="pricing-card">
-          <div>
-            <h3 class="pricing-name">設計・開発・プロジェクト支援</h3>
-            <p class="pricing-desc">
-              具体的なPoC要件定義、アーキテクチャ設計、開発会社の選定・技術統括まで本格的に伴走します。
-            </p>
-            <div class="pricing-cost">
-              個別見積もり<span>（内容に応じ提案）</span>
-            </div>
-          </div>
-
-          <div>
-            <ul class="pricing-features-list">
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-                <span>技術・投資判断のレビュー</span>
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-                <span>AIプロダクト・PoCの設計、開発</span>
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-                <span>プロジェクト技術リード・開発統括</span>
-              </li>
-              <li>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
-                <span>初回診断を介さず直接相談可能</span>
-              </li>
-            </ul>
-            <a href="#contact" class="btn btn-secondary" style="width: 100%;">案件の相談をする</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Policy Clarification Box -->
-      <div class="pricing-clarification-box">
-        <div class="clarification-grid">
-          <div class="clarification-item">
-            <h4>料金に含まれる範囲</h4>
-            <p>
-              ご相談の受付、対応範囲の確認、日程調整に料金はかかりません。初回診断・追加相談は、共有情報にもとづく整理・助言が中心です。詳細な資料調査、実現性の検証、設計・実装は範囲と料金を別途ご提案します。メール等での無制限な技術回答は含みません。
-            </p>
-          </div>
-          <div class="clarification-item">
-            <h4>年次レビュー・会員更新</h4>
-            <p>
-              初回診断後のメンバー登録（1年間）は、翌年度以降も任意で更新可能です（年30,000円・税別）。年1回60分の進捗確認セッションと、判断メモの更新が含まれます。自動更新ではありませんのでご安心ください。
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       Section 7: 代表・協業体制 & 会社概要
+       Section 5: About（私たちについて）
        ========================================================================== -->
   <section class="section-wrap about-section" id="about">
     <div class="container">
       <div class="section-meta">
-        <span class="section-num">06 / LEADERSHIP &amp; COMPANY</span>
+        <span class="section-num">04 / ABOUT</span>
         <span class="section-tag">私たちについて</span>
       </div>
       <h2 class="section-title">
         私たちについて
       </h2>
       <p class="section-lead">
-        机上のコンサルティングではなく、大規模システムや先端プロダクトの設計を率いてきた代表の経験をもとに、必要な開発会社や技術者を束ねるオーケストレーション体制を組みます。
+        AI Orchestrationは、AIを単なる業務効率化ツールとしてではなく、事業やソフトウェアそのものを再設計するための技術として扱っています。<br>
+        コンサルティングだけでなく、自らAI・API・MCP・Webサービスを企画、開発、運営し、その過程で得た知見をクライアント企業の事業づくりに還元します。
       </p>
 
       <div class="about-grid" style="margin-top: 3.5rem;">
@@ -994,16 +881,16 @@
           <div class="ecosystem-card">
             <h4>開発・協業体制</h4>
             <p>
-              当社単独での判断にとどまらず、プロジェクトの規模や技術スタックに応じて、信頼できる開発会社、機械学習エンジニア、UI/UXデザイナー、セキュリティ専門家とチームを組成。自社に開発チームを持たない企業様でも、要件定義から納品・運用まで一貫して支援可能です。
+              当社単独での判断にとどまらず、プロジェクトの規模や技術スタックに応じて、信頼できる開発会社、機械学習エンジニア、UI/UXデザイナー、セキュリティ専門家と柔軟にチームを組成。自社に開発チームを持たない企業様でも、要件定義から納品・運用まで一貫して支援可能です。
             </p>
           </div>
 
           <div class="ecosystem-card">
-            <h4>所在地等</h4>
+            <h4>会社概要</h4>
             <table class="company-table">
               <tbody>
                 <tr>
-                  <th>商号</th>
+                  <th>屋号</th>
                   <td>AI Orchestration</td>
                 </tr>
                 <tr>
@@ -1013,10 +900,10 @@
                 <tr>
                   <th>事業内容</th>
                   <td>
-                    1. AIプロダクト設計・PoC策定支援<br>
-                    2. AI投資・IT導入コンサルティング<br>
-                    3. システム要件定義・開発統括（PM/Tech Lead）<br>
-                    4. セキュリティ認証（JC-STAR等）適合支援
+                    1. AIプロダクト・Webサービスの企画・開発・運営<br>
+                    2. AIアーキテクチャ・MCP・API連携の設計・実装<br>
+                    3. 新規事業・AI導入に関する事業・開発支援（PM/Tech Lead）<br>
+                    4. セキュリティ認証・制度適合支援
                   </td>
                 </tr>
                 <tr>
@@ -1032,45 +919,10 @@
   </section>
 
   <!-- ==========================================================================
-       Section 8: FAQ & 問い合わせフォーム (トップ完結)
+       Section 6: FAQ & お問い合わせ (Contact)
        ========================================================================== -->
   <section class="section-wrap contact-faq-section" id="contact">
     <div class="container">
-      
-      <!-- Flow Steps -->
-      <div class="engagement-flow">
-        <div class="flow-title">REQUEST PROCESS ｜ 問い合わせから初回診断までの流れ</div>
-        <div class="flow-steps">
-          <div class="flow-step-item active">
-            <div class="flow-num">1</div>
-            <div class="flow-step-name">問い合わせ<br>フォーム送信</div>
-          </div>
-          <div class="flow-step-item">
-            <div class="flow-num">2</div>
-            <div class="flow-step-name">対象・範囲の<br>確認</div>
-          </div>
-          <div class="flow-step-item">
-            <div class="flow-num">3</div>
-            <div class="flow-step-name">料金・日程の<br>ご案内</div>
-          </div>
-          <div class="flow-step-item">
-            <div class="flow-num">4</div>
-            <div class="flow-step-name">条件への合意・お支払い</div>
-          </div>
-          <div class="flow-step-item">
-            <div class="flow-num">5</div>
-            <div class="flow-step-name">事前ヒアリング<br>資料共有</div>
-          </div>
-          <div class="flow-step-item">
-            <div class="flow-num">6</div>
-            <div class="flow-step-name">60分診断<br>セッション</div>
-          </div>
-          <div class="flow-step-item">
-            <div class="flow-num">7</div>
-            <div class="flow-step-name">判断メモ<br>納品</div>
-          </div>
-        </div>
-      </div>
 
       <!-- FAQ Accordion -->
       <div class="faq-wrap">
@@ -1082,36 +934,36 @@
         <div class="faq-list">
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
-              <span>Q. AIに何を任せればよいか決まっていない段階でも相談できますか？</span>
+              <span>Q. AIに何を任せるべきか決まっていない構想段階でも相談できますか？</span>
               <span class="faq-icon">▼</span>
             </button>
             <div class="faq-answer">
               <p>
-                はい、問題ございません。むしろ開発会社への発注前や要件が固まる前の段階こそ、初回技術診断で「そもそもAIを使うべきか、ルールベースや既存ツールで足りるか」を判断する最適なタイミングです。
+                はい、歓迎いたします。開発会社への発注前や要件が固まる前の段階こそ、「そもそもAIを使うべきか、ルールベースや既存の外部SaaSで足りるか」を中立的に見極め、無駄な投資を回避する最適なタイミングです。
               </p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
-              <span>Q. 既存の開発会社が入っているプロジェクトでも依頼できますか？</span>
+              <span>Q. 既存の開発会社が入っているプロジェクトでも技術レビューを依頼できますか？</span>
               <span class="faq-icon">▼</span>
             </button>
             <div class="faq-answer">
               <p>
-                はい。事業側の立場から、開発会社の提案や設計のレビュー、技術判断、進行・品質の確認などを支援します。既存の体制と役割分担を確認したうえで、対応範囲をご提案します。
+                はい。事業側の立場から、開発会社の提案やアーキテクチャ設計のレビュー、技術判断、進捗や品質管理を支援します。既存の社内体制やベンダーとの関係性を踏まえ、無理のない役割分担をご提案します。
               </p>
             </div>
           </div>
 
           <div class="faq-item">
             <button class="faq-question" aria-expanded="false">
-              <span>Q. 初回診断を受けずに、具体的な開発案件の相談から始めることは可能ですか？</span>
+              <span>Q. 補助金AIのような自社プロダクトのMCP化やAPI開発は依頼できますか？</span>
               <span class="faq-icon">▼</span>
             </button>
             <div class="faq-answer">
               <p>
-                可能です。すでに仕様書や要件定義書、開発スコープが明確なプロジェクトについては、個別見積もり（設計・開発・プロジェクト支援）として直接ご相談を承ります。フォームで「新規のご相談」を選択し、ご相談内容をご記入ください。
+                はい、得意領域の一つです。自社の保有データやWebシステムをAI（ChatGPTやClaude等）から利用可能にするMCPサーバーの設計・実装や、APIの設計・公開を一貫して支援いたします。
               </p>
             </div>
           </div>
@@ -1123,7 +975,7 @@
             </button>
             <div class="faq-answer">
               <p>
-                全国対応可能です。初回技術診断や追加相談はGoogle Meet等のオンラインビデオ会議にて実施しております。必要に応じて対面での打ち合わせや現地視察も対応いたします。
+                全国対応可能です。初回のご相談から要件定義、開発推進までGoogle Meet等のオンラインビデオ会議を中心にスムーズに進行いたします。必要に応じて対面での打ち合わせや現地調査も対応いたします。
               </p>
             </div>
           </div>
@@ -1136,7 +988,10 @@
           <span class="section-tag">CONTACT</span>
           <h3>ご相談・お問い合わせ</h3>
           <p>
-            初回技術診断や設計・開発のご相談を承ります。
+            AI／システム開発、新規事業企画、技術顧問などのご相談を承ります。<br>
+            <span style="font-size:0.875rem; color:var(--text-muted); display:inline-block; margin-top:0.35rem;">
+              ※補助金AI製品に関する操作方法・不具合等のお問い合わせは、<a href="products/hojokin-ai/support/index.html" style="color:var(--accent); text-decoration:underline;">補助金AI サポート窓口</a>よりご連絡ください。
+            </span>
           </p>
         </div>
 
@@ -1169,49 +1024,49 @@
         <div class="footer-brand">
           <h4>AI Orchestration.</h4>
           <p>
-            企業AIの設計事務所。AIプロダクト設計専業として、経営課題と技術をつなぎ、構想から実装までのアーキテクチャ設計を支援します。
+            事業を構想し、AIプロダクトとして実装する。自らプロダクトを開発・提供する実践をもとに、企業の意思決定と事業づくりを支えます。
           </p>
         </div>
 
         <div class="footer-col">
-          <h5>サイト案内</h5>
+          <h5>Company</h5>
           <ul class="footer-links">
-            <li><a href="#cases">代表事例</a></li>
-            <li><a href="#otherCases">取扱商品・導入支援</a></li>
-            <li><a href="#situations">相談できること</a></li>
-            <li><a href="#diagnosis">初回技術診断</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h5>サービス・事例</h5>
-          <ul class="footer-links">
-            <li><a href="#services">料金・支援メニュー</a></li>
-            <li><a href="spaq-core.html">SPAQ CORE事例</a></li>
-            <li><a href="https://spaq.co.jp/" target="_blank" rel="noopener noreferrer">SPAQ株式会社（協業先） ↗</a></li>
-            <li><a href="hojokin-ai.html">補助金AI事例</a></li>
             <li><a href="#about">私たちについて</a></li>
+            <li><a href="#projects">設計・開発実績</a></li>
+            <li><a href="#consulting">事業・開発支援</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h5>お問い合わせ</h5>
+          <h5>Products</h5>
           <ul class="footer-links">
-            <li><a href="#contact">お問い合わせ</a></li>
-            <li><a href="javascript:void(0);" id="footerPrivacyLink">プライバシーポリシー</a></li>
+            <li><a href="products/index.html">プロダクト一覧</a></li>
+            <li><a href="products/hojokin-ai/index.html">補助金AI</a></li>
+            <li><a href="products/hojokin-ai/support/index.html">補助金AI サポート</a></li>
+            <li><a href="hojokin-ai.html">補助金AI 開発事例</a></li>
+            <li><a href="spaq-core.html">SPAQ CORE 開発事例</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul class="footer-links">
+            <li><a href="products/hojokin-ai/privacy/index.html">プライバシーポリシー</a></li>
+            <li><a href="products/hojokin-ai/terms/index.html">利用規約</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
         <div>&copy; 2026 AI Orchestration. All rights reserved.</div>
-        <div>企業AIの設計事務所 ｜ AIプロダクト設計専業</div>
+        <div>事業を構想し、AIプロダクトとして実装する。</div>
       </div>
     </div>
   </footer>
 
   <!-- ==========================================================================
-       Privacy Policy Modal
+       Privacy Policy Modal (Contact Form Confirmation)
        ========================================================================== -->
   <div class="modal-overlay" id="privacyModal">
     <div class="modal-dialog">
@@ -1219,10 +1074,10 @@
       <div class="modal-body">
         <h4>プライバシーポリシー</h4>
         <p>
-          AI Orchestration.（以下「当社」）は、本ウェブサイトのお問い合わせ窓口を通じて取得した個人情報（お名前、貴社名、メールアドレス、電話番号、ご相談内容等）の重要性を認識し、適切に取り扱います。
+          AI Orchestration（以下「当事業者」）は、本ウェブサイトのお問い合わせ窓口を通じて取得した個人情報（お名前、貴社名、メールアドレス、電話番号、ご相談内容等）の重要性を認識し、適切に取り扱います。
         </p>
         <p><strong>1. 利用目的</strong><br>
-          取得した個人情報は、お問い合わせへの回答、技術診断セッションの日程調整・実施、成果物（判断メモ等）の送付、および当社サービスに関するご案内にのみ利用いたします。
+          取得した個人情報は、お問い合わせ・ご相談への回答、日程調整、プロジェクトのご提案、および当社サービスに関するご案内にのみ利用いたします。
         </p>
         <p><strong>2. 第三者提供の禁止</strong><br>
           法令に基づく場合を除き、ご本人の事前の同意なく個人情報を第三者に提供・開示することは一切ございません。
@@ -1231,7 +1086,7 @@
           個人情報の漏洩、滅失または毀損を防止するため、適切なセキュリティ管理を実施いたします。
         </p>
         <p><strong>4. お問い合わせ窓口</strong><br>
-          個人情報の訂正・削除等のご請求につきましては、yamamoto@ai-orchestration.jp までご連絡ください。
+          個人情報の訂正・削除等のご請求につきましては、support@ai-orchestration.jp までご連絡ください。
         </p>
       </div>
     </div>

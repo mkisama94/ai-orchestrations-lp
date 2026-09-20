@@ -23,9 +23,10 @@
 
       <!-- Desktop Nav -->
       <nav class="main-nav" id="mainNav">
-        <a href="index.html#cases" class="nav-link">実績・事例</a>
-        <a href="index.html#diagnosis" class="nav-link">サービス・料金</a>
-        <a href="index.html#about" class="nav-link">会社情報</a>
+        <a href="products/index.html" class="nav-link">Products</a>
+        <a href="index.html#projects" class="nav-link">Projects</a>
+        <a href="index.html#consulting" class="nav-link">Consulting</a>
+        <a href="index.html#about" class="nav-link">About</a>
       </nav>
 
       <div class="nav-actions">
@@ -55,10 +56,22 @@
       <nav class="breadcrumb" aria-label="パンくずリスト">
         <a href="index.html">ホーム</a>
         <span class="breadcrumb-separator">/</span>
-        <a href="index.html#cases">代表事例</a>
+        <a href="index.html#projects">設計・開発実績</a>
         <span class="breadcrumb-separator">/</span>
-        <span style="color:var(--text-main); font-weight:600;">補助金AI</span>
+        <span style="color:var(--text-main); font-weight:600;">補助金AI 開発事例</span>
       </nav>
+
+      <!-- Cross Link Banner to User-Facing Product -->
+      <div class="cross-link-banner" style="margin-bottom: 2rem; margin-top: 1rem;">
+        <div class="cross-link-text">
+          <span style="font-family:var(--font-mono); font-size:0.75rem; font-weight:700; color:var(--accent); letter-spacing:0.06em;">FOR USERS</span>
+          <h4 style="margin-top:0.25rem;">補助金AIを実際にご利用になりたい方はこちら</h4>
+          <p>制度探索の機能、利用例、ChatGPTでの利用手順などは製品ページでご案内しています。</p>
+        </div>
+        <a href="products/hojokin-ai/index.html" class="btn btn-primary btn-sm">
+          補助金AI 製品ページを見る ↗
+        </a>
+      </div>
 
       <div class="case-hero-theme">
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -69,14 +82,14 @@
       </div>
 
       <h1 class="case-hero-title">
-        補助金AI<br>
+        補助金AI 技術設計・開発事例<br>
         <span style="font-size: 0.72em; font-weight: 700; color: var(--text-secondary); display: block; margin-top: 0.5rem;">
           公式情報の検索から、専門家への相談まで。
         </span>
       </h1>
 
       <p class="case-hero-lead">
-        補助金AIは、AIとの対話を通じて助成金・補助金の候補を探し、公式情報の確認から専門家への相談準備までを支援するオープンソースのプラグインです。COクリエイト社との協業により、公的機関のAPIと連携し、新着情報の確認や、顧問社労士へ送る照会文の作成につなげる仕組みを開発しました。
+        補助金AIは、AIとの対話を通じて助成金・補助金の候補を探し、公式情報の確認から専門家への相談準備までを支援するオープンソースのプラグイン／MCP基盤です。COクリエイト社との協業により、公的機関のAPIと連携し、新着情報の確認や、顧問社労士へ送る照会文の作成につなげる仕組みを開発しました。
       </p>
 
       <!-- Project Overview Metadata Box -->
@@ -89,7 +102,7 @@
             </tr>
             <tr>
               <th>対象</th>
-              <td><strong>助成金・補助金を探す事業者（中小企業・個人事業主）</strong></td>
+              <td><strong>助成金・補助金を探す事業者（中小企業・個人事業主）、専門家</strong></td>
             </tr>
             <tr>
               <th>主な機能</th>
@@ -101,7 +114,7 @@
             </tr>
             <tr>
               <th>当社の関与</th>
-              <td>事業再構築の提案、AIサービスの構想・要件定義、API連携設計・開発</td>
+              <td>事業再構築の提案、AIサービスの構想・要件定義、API連携設計・MCPサーバー開発</td>
             </tr>
           </tbody>
         </table>
@@ -553,8 +566,8 @@
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </a>
-              <a href="index.html#diagnosis" class="btn btn-secondary">
-                初回技術診断を見る（50,000円）
+              <a href="products/hojokin-ai/index.html" class="btn btn-secondary">
+                補助金AI 製品ページを見る
               </a>
               <div style="display:flex; flex-direction:column; gap:0.4rem; margin-left:auto; align-items:flex-end;">
                 <span class="link-arrow" style="font-size:0.8125rem; color:var(--text-muted);">
@@ -607,44 +620,45 @@
     <div class="container">
       <div class="footer-top-grid">
         <div class="footer-brand">
-          <h4>AI Orchestration Inc.</h4>
+          <h4>AI Orchestration.</h4>
           <p>
-            企業AIの設計事務所。AIプロダクト設計専業として、経営課題と技術をつなぎ、構想から実装までのアーキテクチャ設計を支援します。
+            事業を構想し、AIプロダクトとして実装する。自らプロダクトを開発・提供する実践をもとに、企業の意思決定と事業づくりを支えます。
           </p>
         </div>
 
         <div class="footer-col">
-          <h5>NAVIGATION</h5>
+          <h5>Company</h5>
           <ul class="footer-links">
-            <li><a href="index.html#cases">代表事例</a></li>
-            <li><a href="index.html#otherCases">取扱商品・導入支援</a></li>
-            <li><a href="index.html#situations">相談できること</a></li>
-            <li><a href="index.html#diagnosis">初回技術診断</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h5>SERVICES</h5>
-          <ul class="footer-links">
-            <li><a href="index.html#services">料金・支援メニュー</a></li>
-            <li><a href="spaq-core.html">SPAQ CORE事例</a></li>
-            <li><a href="hojokin-ai.html" style="color:#ffffff; font-weight:700;">補助金AI事例</a></li>
             <li><a href="index.html#about">私たちについて</a></li>
+            <li><a href="index.html#projects">設計・開発実績</a></li>
+            <li><a href="index.html#consulting">事業・開発支援</a></li>
+            <li><a href="index.html#contact">お問い合わせ</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <h5>CONTACT</h5>
+          <h5>Products</h5>
           <ul class="footer-links">
-            <li><a href="index.html#contact">お問い合わせ</a></li>
-            <li><a href="index.html#contact">ご相談受付</a></li>
+            <li><a href="products/index.html">プロダクト一覧</a></li>
+            <li><a href="products/hojokin-ai/index.html">補助金AI</a></li>
+            <li><a href="products/hojokin-ai/support/index.html">補助金AI サポート</a></li>
+            <li><a href="hojokin-ai.html" style="color:#ffffff; font-weight:700;">補助金AI 開発事例</a></li>
+            <li><a href="spaq-core.html">SPAQ CORE 開発事例</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul class="footer-links">
+            <li><a href="products/hojokin-ai/privacy/index.html">プライバシーポリシー</a></li>
+            <li><a href="products/hojokin-ai/terms/index.html">利用規約</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 AI Orchestration Inc. All rights reserved.</div>
-        <div>企業AIの設計事務所 ｜ AIプロダクト設計専業</div>
+        <div>&copy; 2026 AI Orchestration. All rights reserved.</div>
+        <div>事業を構想し、AIプロダクトとして実装する。</div>
       </div>
     </div>
   </footer>
