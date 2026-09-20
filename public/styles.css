@@ -2905,3 +2905,307 @@ button, input, textarea, select {
     align-items: flex-start;
   }
 }
+
+/* ==========================================================================
+   Project Details & HOT TOPICS Styles
+   (Ishikawa Data Center Project, etc.)
+   ========================================================================== */
+
+/* HOT TOPIC Card for Top Page */
+.hot-topic-block {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%);
+  border: 1.5px solid var(--accent);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-card);
+  margin-bottom: 2.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.hot-topic-block:hover {
+  box-shadow: var(--shadow-accent);
+  border-color: var(--accent-deep);
+}
+
+.hot-topic-badge-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.badge-hot-topic {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #dc2626;
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+}
+
+.badge-status-planning {
+  display: inline-flex;
+  align-items: center;
+  background: var(--accent-light);
+  color: var(--accent-deep);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-blueprint);
+}
+
+/* DC Hero Highlights */
+.dc-hero-summary-box {
+  background: #ffffff;
+  border: 1.5px solid var(--border-blueprint);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  margin: 1.75rem 0 2rem;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.dc-hero-summary-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.65rem;
+}
+
+.dc-hero-summary-text {
+  font-size: 1rem;
+  color: var(--text-main);
+  line-height: 1.75;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Content Grids */
+.dc-grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin: 1.75rem 0 2.5rem;
+}
+
+.dc-card {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-card);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.dc-card:hover {
+  border-color: var(--border-blueprint);
+  box-shadow: var(--shadow-float);
+  transform: translateY(-2px);
+}
+
+.dc-card-num {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.dc-card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.875rem;
+  line-height: 1.45;
+}
+
+.dc-card-text {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0 0 1rem;
+}
+
+.dc-card-text:last-child {
+  margin-bottom: 0;
+}
+
+.dc-card-caution {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  background: var(--bg-subtle);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--border-medium);
+  margin-top: auto;
+  line-height: 1.65;
+}
+
+/* Callout Note */
+.dc-callout {
+  background: var(--bg-accent-soft);
+  border: 1px solid var(--border-blueprint);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.65rem;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  line-height: 1.8;
+}
+
+.dc-callout strong {
+  color: var(--accent-deep);
+}
+
+/* Data Table */
+.dc-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  background: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.dc-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.9375rem;
+}
+
+.dc-data-table th,
+.dc-data-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.dc-data-table thead th {
+  background: var(--bg-subtle);
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.02em;
+  border-bottom: 2px solid var(--border-medium);
+}
+
+.dc-data-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dc-data-table tbody tr:hover {
+  background: #fbfdff;
+}
+
+.dc-data-table .rate-highlight {
+  font-family: var(--font-mono);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+/* Citations & References */
+.ref-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 0.725rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-light);
+  border-radius: var(--radius-sm);
+  padding: 0.05rem 0.35rem;
+  margin: 0 0.15rem;
+  text-decoration: none;
+  vertical-align: baseline;
+  transition: var(--transition);
+}
+
+.ref-badge:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.ref-list-box {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  margin-top: 2rem;
+}
+
+.ref-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.ref-item {
+  font-size: 0.875rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  padding-left: 2rem;
+  position: relative;
+}
+
+.ref-num-tag {
+  position: absolute;
+  left: 0;
+  top: 0.15rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.ref-item a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  word-break: break-all;
+}
+
+.ref-item a:hover {
+  color: var(--accent-deep);
+}
+
+.ref-note {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .dc-grid-2col {
+    grid-template-columns: 1fr;
+  }
+  .dc-hero-summary-box {
+    padding: 1.25rem;
+  }
+}
+

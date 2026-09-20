@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQHRWTXHLC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YQHRWTXHLC');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="なぜ石川県でデータセンターを検討するのか。立地支援、拠点分散、国内外アクセスの可能性と、電力・通信・災害・運用面の課題を整理し、AI Orchestrationの事業・技術コンサルティングを紹介します。">
+  <title>石川県データセンター建設プロジェクト｜立地・事業化支援｜AI Orchestration</title>
+  <link rel="canonical" href="https://ai-orchestration.jp/projects/ishikawa-datacenter/">
+
+  <!-- Favicon / Icons -->
+  <link rel="icon" href="../../images/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="../../images/logo.png">
+
+  <!-- OGP -->
+  <meta property="og:title" content="石川県データセンター建設プロジェクト｜立地・事業化支援｜AI Orchestration">
+  <meta property="og:description" content="なぜ石川県でデータセンターを検討するのか。立地支援、拠点分散、国内外アクセスの可能性と、電力・通信・災害・運用面の課題を整理し、AI Orchestrationの事業・技術コンサルティングを紹介します。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-orchestration.jp/projects/ishikawa-datacenter/">
+  <meta property="og:site_name" content="AI Orchestration">
+  <meta property="og:image" content="https://ai-orchestration.jp/images/ai-orchestration-logo.png">
+  <meta property="og:image:width" content="2048">
+  <meta property="og:image:height" content="768">
+  <meta property="og:image:alt" content="石川県データセンター建設プロジェクト - AI Orchestration">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="石川県データセンター建設プロジェクト｜立地・事業化支援｜AI Orchestration">
+  <meta name="twitter:description" content="なぜ石川県でデータセンターを検討するのか。立地支援、拠点分散、国内外アクセスの可能性と、電力・通信・災害・運用面の課題を整理し、AI Orchestrationの事業・技術コンサルティングを紹介します。">
+  <meta name="twitter:image" content="https://ai-orchestration.jp/images/ai-orchestration-logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../../styles.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "石川県データセンター建設プロジェクト｜立地・事業化支援",
+        "description": "なぜ石川県でデータセンターを検討するのか。立地支援、拠点分散、国内外アクセスの可能性と、電力・通信・災害・運用面の課題を整理し、AI Orchestrationの事業・技術コンサルティングを紹介します。",
+        "image": "https://ai-orchestration.jp/images/ai-orchestration-logo.png",
+        "datePublished": "2026-09-20",
+        "dateModified": "2026-09-20",
+        "author": {
+          "@type": "Person",
+          "name": "山本 匡紀"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "AI Orchestration",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://ai-orchestration.jp/images/ai-orchestration-logo.png"
+          }
+        },
+        "mainEntityOfPage": "https://ai-orchestration.jp/projects/ishikawa-datacenter/"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://ai-orchestration.jp/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "プロジェクト",
+            "item": "https://ai-orchestration.jp/#projects"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "石川県データセンター建設プロジェクト",
+            "item": "https://ai-orchestration.jp/projects/ishikawa-datacenter/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="blueprint-pattern">
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../../index.html" class="site-logo" aria-label="AI Orchestration — 企業AIの設計事務所">
+        <span class="header-logo-frame">
+          <img class="header-logo-image" src="../../images/ai-orchestration-logo.png" alt="AI Orchestration" width="2048" height="768" fetchpriority="high">
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav" id="mainNav">
+        <a href="../../products/index.html" class="nav-link">Products</a>
+        <a href="../../index.html#projects" class="nav-link">Projects</a>
+        <a href="../../index.html#consulting" class="nav-link">Consulting</a>
+        <a href="../../index.html#about" class="nav-link">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="../../index.html" class="btn btn-secondary btn-sm" style="display:inline-flex; align-items:center; gap:0.35rem;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          TOPへ戻る
+        </a>
+        <a href="#contact" class="btn btn-primary btn-sm">お問い合わせ</a>
+        <button class="nav-toggle" id="navToggle" aria-label="メニュー開閉">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Hero Section: 案件概要・ファーストビュー
+       ========================================================================== -->
+  <section class="case-hero-wrap">
+    <div class="container">
+      
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="../../index.html">ホーム</a>
+        <span class="breadcrumb-separator">/</span>
+        <a href="../../index.html#projects">プロジェクト</a>
+        <span class="breadcrumb-separator">/</span>
+        <span style="color:var(--text-main); font-weight:600;">石川県データセンター建設プロジェクト</span>
+      </nav>
+
+      <div class="case-hero-theme">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+          <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+          <line x1="6" y1="6" x2="6.01" y2="6"></line>
+          <line x1="6" y1="18" x2="6.01" y2="18"></line>
+        </svg>
+        PROJECTS ｜ AI INFRASTRUCTURE
+      </div>
+
+      <h1 class="case-hero-title">
+        石川県データセンター建設プロジェクト<br>
+        <span style="font-size: 0.68em; font-weight: 700; color: var(--text-secondary); display: block; margin-top: 0.65rem;">
+          AIを動かす基盤を、石川県から構想する。
+        </span>
+      </h1>
+
+      <p class="case-hero-lead">
+        石川県でのAIデータセンター建設に向け、立地・電力・通信・事業計画を横断的に検討。<br>
+        AI Orchestrationは事業・技術コンサルティングを通じて、計画の具体化を支援します。
+      </p>
+
+      <!-- First View Highlight: なぜ、石川県？ -->
+      <div class="dc-hero-summary-box">
+        <div class="dc-hero-summary-header">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+            <line x1="12" y1="17" x2="12.01" y2="17"></line>
+          </svg>
+          なぜ、石川県？
+        </div>
+        <p class="dc-hero-summary-text">
+          データセンター向けの立地支援、日本海側への拠点分散、国内外のパートナーとの接点。<br>
+          これらを立地検討の出発点に、個々の候補地の条件を確かめます。<a href="#ref-1" class="ref-badge" title="石川県企業立地ガイド">[1]</a><a href="#ref-2" class="ref-badge" title="経産省・総務省 中間とりまとめ3.0">[2]</a><a href="#ref-3" class="ref-badge" title="石川県 国内外アクセス">[3]</a><a href="#ref-4" class="ref-badge" title="小松空港 路線情報">[4]</a>
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:center; margin-top:1.5rem;">
+        <a href="#why-ishikawa" class="btn btn-primary">
+          石川県を検討する理由
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 9l-7 7-7-7"/>
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          本プロジェクトについて相談する
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Main Content Layout (Article + Sticky TOC)
+       ========================================================================== -->
+  <div class="container">
+    <div class="case-content-layout">
+
+      <!-- Main Column -->
+      <main class="article-main">
+
+        <!-- ====================================================================
+             Section 2: なぜ、石川県にデータセンターをつくるのか。
+             ==================================================================== -->
+        <section class="article-section" id="why-ishikawa">
+          <span class="article-sec-badge">WHY ISHIKAWA / 01</span>
+          <h2 class="article-sec-title">
+            なぜ、石川県にデータセンターをつくるのか。
+          </h2>
+
+          <div class="dc-grid-2col">
+            <!-- Reason 1 -->
+            <div class="dc-card">
+              <div class="dc-card-num">REASON 01</div>
+              <h3 class="dc-card-title">建設投資を支える、データセンター向けの制度</h3>
+              <p class="dc-card-text">
+                石川県は、データセンターの新設・増設を対象とする立地促進補助制度を公表しています。立地地域や投資・雇用の条件を確認し、初期投資の計画に織り込める可能性があります。<a href="#ref-1" class="ref-badge">[1]</a>
+              </p>
+              <div class="dc-card-caution">
+                私たちは、補助金の最大額だけでなく、実際の対象経費と採算への影響を検討します。
+              </div>
+            </div>
+
+            <!-- Reason 2 -->
+            <div class="dc-card">
+              <div class="dc-card-num">REASON 02</div>
+              <h3 class="dc-card-title">日本海側へ、計算基盤を分散する選択肢</h3>
+              <p class="dc-card-text">
+                都市部の既存拠点とは異なる地域に計算基盤を配置することで、拠点分散を検討できます。経済産業省・総務省の2024年の整理でも、データセンターの用途と通信遅延の要件を分けて考えることが示されています。<a href="#ref-2" class="ref-badge">[2]</a>
+              </p>
+              <div class="dc-card-caution">
+                本プロジェクトでは、AI学習・バッチ処理・バックアップなどを検討対象の例とし、必要な通信性能や既存拠点との依存関係から、用途との適合性を評価します。「離れていれば安全」とは判断しません。
+              </div>
+            </div>
+
+            <!-- Reason 3 -->
+            <div class="dc-card">
+              <div class="dc-card-num">REASON 03</div>
+              <h3 class="dc-card-title">国内外のパートナーが訪問できるアクセス</h3>
+              <p class="dc-card-text">
+                北陸新幹線や小松空港を利用したアクセスがあり、小松空港には台北路線もあります。<a href="#ref-3" class="ref-badge">[3]</a><a href="#ref-4" class="ref-badge">[4]</a> 海外企業との事業検討や、国内の専門事業者による現地確認を進める際の接点として評価できます。
+              </p>
+              <div class="dc-card-caution">
+                ただし、駅・空港から候補地までの移動と、冬季の移動条件は別途確認します。交通アクセスの良さを、通信回線の性能と同一視しません。
+              </div>
+            </div>
+
+            <!-- Reason 4 -->
+            <div class="dc-card">
+              <div class="dc-card-num">REASON 04</div>
+              <h3 class="dc-card-title">地域の研究・技術基盤とつながる余地</h3>
+              <p class="dc-card-text">
+                石川県には、情報科学・AIなどの教育研究を行う北陸先端科学技術大学院大学（JAIST）が立地しています。<a href="#ref-5" class="ref-badge">[5]</a> 人材育成や技術連携を考えるうえで、地域の研究・産業基盤との接点を探る余地があります。
+              </p>
+              <div class="dc-card-caution">
+                これは連携先が確定しているという意味ではありません。運用人材や保守体制は、事業計画として個別に構築します。
+              </div>
+            </div>
+          </div>
+
+          <div class="dc-callout">
+            <strong>石川県を検討する理由はあります。実際に選ぶかどうかは、電力・通信・防災・運用・事業性を合わせて判断します。</strong>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             Section 3: 同じ石川県でも、立地条件は異なります。
+             ==================================================================== -->
+        <section class="article-section" id="subsidy-conditions">
+          <span class="article-sec-badge">REGIONAL CONDITIONS / 02</span>
+          <h2 class="article-sec-title">
+            同じ石川県でも、立地条件は異なります。
+          </h2>
+
+          <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin: 1.5rem 0 1rem;">
+            データセンター立地促進補助金：新設の概要
+          </h3>
+
+          <div class="dc-table-wrap">
+            <table class="dc-data-table">
+              <thead>
+                <tr>
+                  <th style="width: 70%;">立地地域</th>
+                  <th style="width: 30%;">新設の補助率</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>宝達志水町以北の能登地域、加賀市の旧山中町、白山市の白山麓旧5村</td>
+                  <td><span class="rate-highlight">25%</span></td>
+                </tr>
+                <tr>
+                  <td>かほく市・河北郡</td>
+                  <td><span class="rate-highlight">15%</span></td>
+                </tr>
+                <tr>
+                  <td>金沢市以南のうち、旧山中町・白山麓旧5村を除く地域</td>
+                  <td><span class="rate-highlight">10%</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div style="background:var(--bg-subtle); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1.5rem; margin:1.5rem 0;">
+            <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.75rem;">
+              新設の主な要件は投資額5,000万円以上、常時雇用者数の純増5人以上。県の通常限度額は5億円です。<a href="#ref-1" class="ref-badge">[1]</a>
+            </p>
+            <p style="font-size: 0.9375rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 0.75rem;">
+              特認は投資額100億円以上かつ市町の同等助成等が条件で、県上限10億円、市町分を合わせて最大20億円。県の補助額は市町の助成額を超えません。<a href="#ref-1" class="ref-badge">[1]</a>
+            </p>
+            <div style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.7; border-top: 1px dashed var(--border-subtle); padding-top: 0.75rem; margin-top: 0.75rem;">
+              ※旧5村：旧河内村・旧吉野谷村・旧鳥越村・旧白峰村・旧尾口村。<br>
+              ※上記は新設の概要です。増設には別の補助率・限度額があります。<a href="#ref-1" class="ref-badge">[1]</a>
+            </div>
+          </div>
+
+          <p class="article-p">
+            補助率だけで候補地を決めず、造成、受電、回線、防災対策、運用を含む総費用で比較します。対象経費・申請時期・他制度との併用可否などは、最新の要綱と県・市町への事前相談で確認します。交付や記載上限額の受給を保証するものではありません。
+          </p>
+
+          <div style="margin-top: 1.5rem; font-size: 0.875rem; color: var(--text-muted); display:flex; flex-wrap:wrap; gap:1.5rem; align-items:center;">
+            <span>情報確認日：2026年9月20日</span>
+            <span>出典：<a href="https://www.ishikawa-ritchi.com/subsidy-datacenter/" target="_blank" rel="noopener noreferrer" style="color:var(--accent); text-decoration:underline;">石川県企業立地ガイド「データセンター向け補助金」[1]</a></span>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             Section 4: メリットだけでは、建設は判断できません。
+             ==================================================================== -->
+        <section class="article-section" id="risks-and-feasibility">
+          <span class="article-sec-badge">FEASIBILITY &amp; RISKS / 03</span>
+          <h2 class="article-sec-title">
+            メリットだけでは、建設は判断できません。
+          </h2>
+          <p class="article-p" style="margin-bottom: 2rem;">
+            立地選定においては、支援制度や立地優位性だけでなく、災害リスク、気象特性、電力供給期間、通信コスト、運用体制などの検討課題をあらかじめ洗い出し、客観的な条件として検証します。
+          </p>
+
+          <div style="display:flex; flex-direction:column; gap:1.5rem;">
+            <!-- Risk 1 -->
+            <div class="dc-card">
+              <div class="dc-card-num">CHECK 01</div>
+              <h3 class="dc-card-title">地震・浸水などの災害リスクを、候補地単位で評価する</h3>
+              <p class="dc-card-text">
+                石川県では2024年に能登半島地震が発生し、県は2025年に地震被害想定を公表しています。<a href="#ref-6" class="ref-badge">[6]</a><a href="#ref-7" class="ref-badge">[7]</a> 県全体を「災害が少ない地域」として扱うのではなく、地盤、揺れ、液状化、津波、洪水・土砂災害の想定を候補地ごとに確認します。
+              </p>
+              <div class="dc-card-caution">
+                検討対象は建物だけではありません。電力・通信経路、非常用燃料、保守要員が到達するための道路など、事業継続に関わる条件を合わせて確認します。
+              </div>
+            </div>
+
+            <!-- Risk 2 -->
+            <div class="dc-card">
+              <div class="dc-card-num">CHECK 02</div>
+              <h3 class="dc-card-title">雪・雷・夏季の高温を、設備と運用の条件にする</h3>
+              <p class="dc-card-text">
+                石川県の気象には冬季の降雪や雷といった特徴があります。また、金沢の8月の月平均気温は平年値で27.3℃であり、年間を通じて冷涼な地域という説明は適切ではありません。<a href="#ref-8" class="ref-badge">[8]</a><a href="#ref-9" class="ref-badge">[9]</a>
+              </p>
+              <p class="dc-card-text">
+                外気を利用する冷却の効果は、候補地の気象と設備方式から検証します。夏季の排熱・冷却能力、積雪、落雷、除雪、冬季の保守動線も、費用と設計条件に含めます。
+              </p>
+              <div class="dc-card-caution">
+                ※気温は金沢地点の1991～2020年平年値。県内全域の値ではなく、設備設計用の最高温度でもありません。
+              </div>
+            </div>
+
+            <!-- Risk 3 -->
+            <div class="dc-card">
+              <div class="dc-card-num">CHECK 03</div>
+              <h3 class="dc-card-title">「電力がある地域」と「必要な容量を受電できる土地」を区別する</h3>
+              <p class="dc-card-text">
+                北陸電力送配電は、供給開始までの期間が必要工事によって異なること、事前検討の回答が供給の確約ではないことを明示しています。<a href="#ref-10" class="ref-badge">[10]</a>
+              </p>
+              <div class="dc-card-caution">
+                希望する受電容量、供給開始時期、工事費、冗長性、電気料金の見積もりを具体化し、建設工程と整合させます。「石川県だから電気が安い」「短期に受電できる」といった一律の前提は置きません。
+              </div>
+            </div>
+
+            <!-- Risk 4 -->
+            <div class="dc-card">
+              <div class="dc-card-num">CHECK 04</div>
+              <h3 class="dc-card-title">通信費用と用途の相性を確認する</h3>
+              <p class="dc-card-text">
+                用途によって許容できる通信遅延は異なります。<a href="#ref-2" class="ref-badge">[2]</a> 候補地ごとに、必要帯域、回線費用、開通時期、物理的に分離された経路の確保、既存クラウドや顧客拠点との接続を確認します。
+              </p>
+              <div class="dc-card-caution">
+                AI学習でも、データ搬入や拠点間同期の要件は無視しません。都市部から離すことで生じる追加費用が、他の立地上の利点を上回らないかを評価します。
+              </div>
+            </div>
+
+            <!-- Risk 5 -->
+            <div class="dc-card">
+              <div class="dc-card-num">CHECK 05</div>
+              <h3 class="dc-card-title">運用体制と利用需要を、建設計画と同時に組み立てる</h3>
+              <p class="dc-card-text">
+                確認すべき事業条件として、24時間の監視・現地対応、保守部材、運用事業者の体制、利用者の確保、想定稼働率を整理します。
+              </p>
+              <div class="dc-card-caution">
+                人材や利用需要が既に十分あると決めつけず、契約と運用計画で確かめます。
+              </div>
+            </div>
+          </div>
+
+          <div class="dc-callout" style="margin-top: 2.5rem;">
+            <strong>補助金を含む初期投資だけでなく、運用期間全体の費用と収益から判断します。</strong>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             Section 5: AI Orchestrationの役割
+             ==================================================================== -->
+        <section class="article-section" id="our-role">
+          <span class="article-sec-badge">OUR ROLE / 04</span>
+          <h2 class="article-sec-title">
+            「建てる」の前に、「事業として成立するか」を確かめる。
+          </h2>
+          <p class="article-p">
+            AI Orchestrationは、事業側の視点から、技術・設備・運用の検討をつなぐ役割を担います。
+          </p>
+
+          <div class="dc-grid-2col">
+            <!-- Role 1 -->
+            <div class="dc-card">
+              <div class="dc-card-num">SCOPE 01</div>
+              <h3 class="dc-card-title">事業構想・要件整理</h3>
+              <p class="dc-card-text">
+                どの用途に、どれだけの計算能力を提供するのか。
+              </p>
+              <p class="dc-card-text">
+                利用者、サービス内容、必要容量、段階的な拡張、投資と運用費の考え方を整理します。
+              </p>
+            </div>
+
+            <!-- Role 2 -->
+            <div class="dc-card">
+              <div class="dc-card-num">SCOPE 02</div>
+              <h3 class="dc-card-title">立地・電力・通信条件の比較</h3>
+              <p class="dc-card-text">
+                候補地について、受電、回線、防災、冷却、運用、補助制度の条件を同じ比較軸にそろえます。
+              </p>
+              <p class="dc-card-text">
+                関係事業者への確認事項を整理し、事業判断に必要な情報を具体化します。
+              </p>
+            </div>
+
+            <!-- Role 3 -->
+            <div class="dc-card">
+              <div class="dc-card-num">SCOPE 03</div>
+              <h3 class="dc-card-title">専門事業者との調整・計画具体化</h3>
+              <p class="dc-card-text">
+                建設、電気設備、通信、IT、運用などの専門事業者と、要件や役割分担を整理します。提案・見積もりの比較を通じて、発注側の意思決定を支援します。
+              </p>
+              <div class="dc-card-caution">
+                ※建築・設備の専門設計や施工と、当社の事業・技術コンサルティングは区別して記載・遂行します。
+              </div>
+            </div>
+
+            <!-- Role 4 -->
+            <div class="dc-card">
+              <div class="dc-card-num">SCOPE 04</div>
+              <h3 class="dc-card-title">電力分野の経験</h3>
+              <p class="dc-card-text">
+                AI Orchestrationは、SPAQ COREで電力需要予測・蓄電池制御などの設計・実装に関与しています。<a href="#ref-11" class="ref-badge">[11]</a>
+              </p>
+              <p class="dc-card-text">
+                その経験を踏まえ、供給条件だけでなく、運用時の電力・設備コストにも着目します。
+              </p>
+              <div class="dc-card-caution">
+                ※本データセンターへのSPAQ CORE・蓄電池・蓄熱設備の採用が決定したことを示すものではありません。
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             Section 6: プロジェクト情報
+             ==================================================================== -->
+        <section class="article-section" id="project-info">
+          <span class="article-sec-badge">PROJECT STATUS / 05</span>
+          <h2 class="article-sec-title">
+            プロジェクト情報
+          </h2>
+
+          <div class="case-meta-box">
+            <table class="case-meta-table">
+              <tbody>
+                <tr>
+                  <th>プロジェクト</th>
+                  <td><strong>石川県データセンター建設プロジェクト</strong></td>
+                </tr>
+                <tr>
+                  <th>対象地域</th>
+                  <td>石川県</td>
+                </tr>
+                <tr>
+                  <th>テーマ</th>
+                  <td>AIデータセンターの建設に向けた事業・技術検討</td>
+                </tr>
+                <tr>
+                  <th>当社の関与</th>
+                  <td>事業・技術コンサルティング</td>
+                </tr>
+                <tr>
+                  <th>進捗</th>
+                  <td><span class="badge-status-planning">計画検討段階</span>（公開前に最新状況を確認）</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="article-p" style="font-size: 0.875rem; color: var(--text-muted);">
+            所在地、設備仕様、規模、参画企業、スケジュールについては、公表可能な段階で情報を更新します。<br>
+            ※「計画中」と「建設中」「竣工済み」を混同しない方針に基づき、正式な提携、公認、受注、資金調達、用地・電力確保などは、確認済みの事実だけを掲載します。
+          </p>
+        </section>
+
+        <!-- ====================================================================
+             Section 7: お問い合わせ
+             ==================================================================== -->
+        <section class="article-section" id="contact">
+          <span class="article-sec-badge">CONTACT / 06</span>
+          <h2 class="article-sec-title">
+            石川県でのデータセンター事業を、構想から具体化へ。
+          </h2>
+          <p class="article-p">
+            本プロジェクトやデータセンター事業の検討について、お問い合わせください。
+          </p>
+
+          <div class="contact-container" style="margin-top: 2rem;">
+            <div class="contact-header">
+              <span class="section-tag">INQUIRY</span>
+              <h3>プロジェクトに関するご相談</h3>
+              <p>
+                立地評価、電力・通信要件の整理、事業性検証、専門事業者との連携など、お気軽にお問い合わせください。
+              </p>
+            </div>
+
+            <iframe
+              id="contactTallyFrame"
+              class="contact-tally-frame"
+              src="https://tally.so/embed/obPAq1?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
+              loading="lazy"
+              width="100%"
+              height="800"
+              title="ご相談・お問い合わせフォーム"
+            ></iframe>
+            <p class="contact-form-fallback">
+              フォームが表示されない場合は、<a href="https://tally.so/r/obPAq1" target="_blank" rel="noopener noreferrer">お問い合わせフォームを別のタブで開く</a>。
+            </p>
+          </div>
+        </section>
+
+        <!-- ====================================================================
+             Section 8: 一次資料・出典
+             ==================================================================== -->
+        <section class="article-section" id="references">
+          <span class="article-sec-badge">REFERENCES / 07</span>
+          <h2 class="article-sec-title">
+            一次資料・出典
+          </h2>
+          <p class="article-p" style="font-size: 0.9375rem; color: var(--text-secondary);">
+            本ページで引用・参照している公的情報および一次資料の一覧です。
+          </p>
+
+          <div class="ref-list-box">
+            <ul class="ref-list">
+              <li class="ref-item" id="ref-1">
+                <span class="ref-num-tag">[1]</span>
+                <div>
+                  <strong>石川県企業立地ガイド「データセンター向け補助金」</strong><br>
+                  <a href="https://www.ishikawa-ritchi.com/subsidy-datacenter/" target="_blank" rel="noopener noreferrer">https://www.ishikawa-ritchi.com/subsidy-datacenter/</a>
+                </div>
+              </li>
+
+              <li class="ref-item" id="ref-2">
+                <span class="ref-num-tag">[2]</span>
+                <div>
+                  <strong>経済産業省・総務省「デジタルインフラ（DC等）整備に関する有識者会合 中間とりまとめ3.0」（2024年10月）</strong><br>
+                  <a href="https://www.meti.go.jp/policy/mono_info_service/joho/conference/digital_infrastructure/0011/torimatome3r_honbun.pdf" target="_blank" rel="noopener noreferrer">https://www.meti.go.jp/policy/mono_info_service/joho/conference/digital_infrastructure/0011/torimatome3r_honbun.pdf</a>
+                </div>
+              </li>
+
+              <li class="ref-item" id="ref-3">
+                <span class="ref-num-tag">[3]</span>
+                <div>
+                  <strong>石川県企業立地ガイド「充実した国内外アクセス」</strong><br>
+                  <a href="https://www.ishikawa-ritchi.com/location/" target="_blank" rel="noopener noreferrer">https://www.ishikawa-ritchi.com/location/</a>
+                </div>
+              </li>
+
+              <li class="ref-item" id="ref-4">
+                <span class="ref-num-tag">[4]</span>
+                <div>
+                  <strong>小松空港「小松⇔台北」2026年9月時刻表</strong><br>
+                  <a href="https://www.komatsuairport.jp/flight/taipei202609.html" target="_blank" rel="noopener noreferrer">https://www.komatsuairport.jp/flight/taipei202609.html</a>
+                  <span class="ref-note">※本文では便数・時刻を固定掲載せず、路線の存在を確認する資料として使用。</span>
+                </div>
+              </li>
+
+              <li class="ref-item" id="ref-5">
+                <span class="ref-num-tag">[5]</span>
+                <div>
+                  <strong>北陸先端科学技術大学院大学「情報科学系」</strong><br>
+                  <a href="https://www.jaist.ac.jp/areas/information-science.html" target="_blank" rel="noopener noreferrer">https://www.jaist.ac.jp/areas/information-science.html</a><br>
+                  大学公式サイト：<a href="https://www.jaist.ac.jp/" target="_blank" rel="noopener noreferrer">https://www.jaist.ac.jp/</a>
+                  <span class="ref-note">※本プロジェクトとの連携・協定の根拠ではありません。</span>
+                </div>
+              </li>
+
+              <li class="ref-item" id="ref-6">
+                <span class="ref-num-tag">[6]</span>
+                <div>
+                  <strong>石川県「石川県地震被害想定調査結果（令和7年5月公表）」</strong><br>
+                  <a href="https://www.pref.ishikawa.lg.jp/bousai/jisjinhigaisoutei/higaisoutei.html" target="_blank" rel="noopener noreferrer">https://www.pref.ishikawa.lg.jp/bousai/jisjinhigaisoutei/higaisoutei.html</a>
+                </div>
+              </li>
+
+              <li class="ref-item" id="ref-7">
+                <span class="ref-num-tag">[7]</span>
+                <div>
+                  <strong>気象庁「令和6年能登半島地震」について（第3報）</strong><br>
+                  <a href="https://www.jma.go.jp/jma/press/2401/01c/202401012130.html" target="_blank" rel="noopener noreferrer">https://www.jma.go.jp/jma/press/2401/01c/202401012130.html</a>
+                  <span class="ref-note">※2024年の地震発生を確認する資料。現在の警報情報ではありません。</span>
+                </div>
+              </li>
+
+              <li class="ref-item" id="ref-8">
+                <span class="ref-num-tag">[8]</span>
+                <div>
+                  <strong>金沢地方気象台「石川県の地勢と気象特性」</strong><br>
+                  <a href="https://www.data.jma.go.jp/kanazawa/shosai/tokusei.html" target="_blank" rel="noopener noreferrer">https://www.data.jma.go.jp/kanazawa/shosai/tokusei.html</a>
+                </div>
+              </li>
+
+              <li class="ref-item" id="ref-9">
+                <span class="ref-num-tag">[9]</span>
+                <div>
+                  <strong>気象庁「地点別データ・グラフ」金沢</strong><br>
+                  <a href="https://www.data.jma.go.jp/cpd/monitor/climatview/graph_mkhtml.php?m=05&amp;n=47605" target="_blank" rel="noopener noreferrer">https://www.data.jma.go.jp/cpd/monitor/climatview/graph_mkhtml.php?m=05&amp;n=47605</a>
+                  <span class="ref-note">※本文の27.3℃は1991～2020年の8月の月平均気温平年値。</span>
+                </div>
+              </li>
+
+              <li class="ref-item" id="ref-10">
+                <span class="ref-num-tag">[10]</span>
+                <div>
+                  <strong>北陸電力送配電「接続供給開始の申込み」</strong><br>
+                  <a href="https://www.rikuden.co.jp/nw_soden_overview/setsuzokukaisinagare.html" target="_blank" rel="noopener noreferrer">https://www.rikuden.co.jp/nw_soden_overview/setsuzokukaisinagare.html</a>
+                </div>
+              </li>
+
+              <li class="ref-item" id="ref-11">
+                <span class="ref-num-tag">[11]</span>
+                <div>
+                  <strong>AI Orchestration公式サイト：SPAQ COREの担当領域・実装内容</strong><br>
+                  <a href="https://ai-orchestration.jp/spaq-core.html" target="_blank" rel="noopener noreferrer">https://ai-orchestration.jp/spaq-core.html</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- Sticky Sidebar -->
+      <aside class="case-sidebar">
+        <div class="sidebar-sticky-box">
+          <div class="toc-title">INDEX / 目次</div>
+          <ul class="toc-list">
+            <li><a href="#why-ishikawa">なぜ、石川県？</a></li>
+            <li><a href="#subsidy-conditions">補助制度と地域差</a></li>
+            <li><a href="#risks-and-feasibility">デメリット・検討条件</a></li>
+            <li><a href="#our-role">AI Orchestrationの役割</a></li>
+            <li><a href="#project-info">プロジェクト情報</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+            <li><a href="#references">一次資料・出典</a></li>
+          </ul>
+
+          <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+            <div style="font-size:0.75rem; color:var(--text-muted); font-family:var(--font-mono); margin-bottom:0.5rem;">STATUS</div>
+            <div style="font-size:0.875rem; font-weight:700; color:var(--text-main);">
+              計画検討段階
+            </div>
+            <div style="font-size:0.8125rem; color:var(--text-secondary); margin-top:0.25rem;">
+              立地・電力・通信・事業性の横断的検討を推進中
+            </div>
+            <div style="margin-top: 1.25rem;">
+              <a href="#contact" class="btn btn-primary btn-sm" style="width:100%; justify-content:center;">
+                相談・お問い合わせ
+              </a>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h4>AI Orchestration.</h4>
+          <p>
+            事業を構想し、AIプロダクトとして実装する。自らプロダクトを開発・提供する実践をもとに、企業の意思決定と事業づくりを支えます。
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="../../index.html#about">私たちについて</a></li>
+            <li><a href="../../index.html#projects">プロジェクト</a></li>
+            <li><a href="../../index.html#consulting">事業・開発支援</a></li>
+            <li><a href="../../index.html#contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Products &amp; Projects</h5>
+          <ul class="footer-links">
+            <li><a href="../../products/index.html">プロダクト一覧</a></li>
+            <li><a href="../../products/hojokin-ai/index.html">補助金AI</a></li>
+            <li><a href="../../projects/ishikawa-datacenter/" style="color:#ffffff; font-weight:700;">石川県データセンター</a></li>
+            <li><a href="../../spaq-core.html">SPAQ CORE 開発事例</a></li>
+            <li><a href="../../hojokin-ai.html">補助金AI 開発事例</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul class="footer-links">
+            <li><a href="../../privacy/index.html">プライバシーポリシー</a></li>
+            <li><a href="../../terms/index.html">利用規約</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 AI Orchestration. All rights reserved.</div>
+        <div>事業を構想し、AIプロダクトとして実装する。</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Script -->
+  <script src="../../script.js"></script>
+  <script>
+    // Highlight active TOC link on scroll
+    document.addEventListener('DOMContentLoaded', () => {
+      const sections = document.querySelectorAll('.article-section');
+      const tocLinks = document.querySelectorAll('.toc-list a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(sec => {
+          const top = sec.offsetTop - 140;
+          if (window.scrollY >= top) {
+            current = sec.getAttribute('id');
+          }
+        });
+
+        tocLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
