@@ -13,13 +13,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="AI Orchestrationは、事業課題の整理からAI・システムの設計、開発、運用までを一貫して支援します。自らAIプロダクト（補助金AI等）を開発・提供する実践をもとに、企業の意思決定と事業づくりを支えます。">
   <title>AI Orchestration｜事業を構想し、AIプロダクトとして実装する。</title>
+  <link rel="canonical" href="https://ai-orchestration.jp/">
   
+  <!-- Favicon / Icons -->
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="images/logo.png">
+
   <!-- OGP -->
   <meta property="og:title" content="AI Orchestration｜事業を構想し、AIプロダクトとして実装する。">
   <meta property="og:description" content="事業課題の整理からAI・システムの設計、開発、運用までを一貫して支援。自社プロダクト開発の実践知見を企業の事業づくりに還元します。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ai-orchestration.jp/">
   <meta property="og:site_name" content="AI Orchestration">
+  <meta property="og:image" content="https://ai-orchestration.jp/images/ai-orchestration-logo.png">
+  <meta property="og:image:width" content="2048">
+  <meta property="og:image:height" content="768">
+  <meta property="og:image:alt" content="AI Orchestration">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Orchestration｜事業を構想し、AIプロダクトとして実装する。">
+  <meta name="twitter:description" content="事業課題の整理からAI・システムの設計、開発、運用までを一貫して支援。自社プロダクト開発の実践知見を企業の事業づくりに還元します。">
+  <meta name="twitter:image" content="https://ai-orchestration.jp/images/ai-orchestration-logo.png">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
@@ -28,15 +44,30 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "AI Orchestration",
-    "url": "https://ai-orchestration.jp/",
-    "logo": "https://ai-orchestration.jp/images/ai-orchestration-logo.png",
-    "description": "事業を構想し、AIプロダクトとして実装する。自社プロダクトの提供・運営と、企業のAI事業・開発支援。",
-    "founder": {
-      "@type": "Person",
-      "name": "山本 匡紀"
-    }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://ai-orchestration.jp/#organization",
+        "name": "AI Orchestration",
+        "url": "https://ai-orchestration.jp/",
+        "logo": "https://ai-orchestration.jp/images/ai-orchestration-logo.png",
+        "description": "事業を構想し、AIプロダクトとして実装する。自社プロダクトの提供・運営と、企業のAI事業・開発支援。",
+        "founder": {
+          "@type": "Person",
+          "name": "山本 匡紀"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://ai-orchestration.jp/#website",
+        "url": "https://ai-orchestration.jp/",
+        "name": "AI Orchestration",
+        "publisher": {
+          "@id": "https://ai-orchestration.jp/#organization"
+        },
+        "description": "事業課題の整理からAI・システムの設計、開発、運用までを一貫して支援します。"
+      }
+    ]
   }
   </script>
 </head>
