@@ -104,32 +104,118 @@
   </header>
 
   <!-- ==========================================================================
-       Section 1: Hero
+       Section 1: Hero (Message & Curated Photography)
        ========================================================================== -->
   <section class="hero-section" id="hero">
-    <div class="container">
-      <div class="hero-inner">
-        <div class="hero-badge-row">
-          <span class="hero-concept-pill">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <rect x="3" y="3" width="18" height="18" rx="2"/>
-              <path d="M9 3v18"/>
-              <path d="M15 9h6"/>
-              <path d="M9 15h12"/>
-            </svg>
-            企業AIの設計事務所
-          </span>
-          <span class="hero-domain-tag">AI ARCHITECTURE &amp; ORCHESTRATION</span>
+    <div class="container hero-container">
+      <div class="hero-grid">
+        <!-- Left Column: Copy Area -->
+        <div class="hero-copy-col">
+          <div class="hero-badge-row">
+            <span class="hero-concept-pill">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M9 3v18"/>
+                <path d="M15 9h6"/>
+                <path d="M9 15h12"/>
+              </svg>
+              企業AIの設計事務所
+            </span>
+            <span class="hero-domain-tag">AI ARCHITECTURE &amp; ORCHESTRATION</span>
+          </div>
+
+          <h1 class="hero-main-title">
+            事業を構想し、<br class="mobile-only">AIプロダクトとして実装する。
+          </h1>
+
+          <div class="hero-sub-title">
+            AI Orchestration
+          </div>
         </div>
 
-        <h1 class="hero-main-title">
-          事業を構想し、<br class="mobile-only">AIプロダクトとして実装する。
-        </h1>
+        <!-- Right Column: Curated Photo Work (Slideshow) -->
+        <div class="hero-photo-col">
+          <figure class="hero-photo-figure">
+            <div class="hero-photo-frame" id="heroPhotoFrame" aria-label="代表者撮影作品スライドショー" role="region">
+              <!-- Slide 1: Software archive -->
+              <div class="hero-photo-slide active" data-index="0" style="--hero-photo-pos: 50% 48%;">
+                <picture class="hero-photo-picture">
+                  <source type="image/webp" srcset="images/hero-photos/software-archive.webp">
+                  <img
+                    class="hero-photo-img"
+                    src="images/hero-photos/software-archive.jpg"
+                    alt="ソフトウェアアーカイブ、東京（2024）- レトロPC・Mac・名作ソフトウェア展示"
+                    width="970"
+                    height="730"
+                    fetchpriority="high"
+                    decoding="async"
+                  >
+                </picture>
+              </div>
 
-        <div class="hero-sub-title">
-          AI Orchestration 
+              <!-- Slide 2: Scrap robotics -->
+              <div class="hero-photo-slide" data-index="1" style="--hero-photo-pos: 50% 50%;">
+                <picture class="hero-photo-picture">
+                  <source type="image/webp" srcset="images/hero-photos/scrap-robotics.webp">
+                  <img
+                    class="hero-photo-img"
+                    src="images/hero-photos/scrap-robotics.jpg"
+                    alt="スクラップロボティクスアート（2025）- 金属造形・ロボット彫刻"
+                    width="1095"
+                    height="730"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </picture>
+              </div>
+
+              <!-- Slide 3: Aviation hangar structure -->
+              <div class="hero-photo-slide" data-index="2" style="--hero-photo-pos: 50% 38%;">
+                <picture class="hero-photo-picture">
+                  <source type="image/webp" srcset="images/hero-photos/aviation-hangar.webp">
+                  <img
+                    class="hero-photo-img"
+                    src="images/hero-photos/aviation-hangar.jpg"
+                    alt="航空機とトラス構造（2025）- 初期航空機とハンガー建築構造"
+                    width="1095"
+                    height="730"
+                    loading="lazy"
+                    decoding="async"
+                  >
+                </picture>
+              </div>
+
+              <!-- Subtle Slide Navigation Arrows -->
+              <button class="hero-slide-nav-btn prev" id="heroSlidePrev" aria-label="前の写真">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button>
+              <button class="hero-slide-nav-btn next" id="heroSlideNext" aria-label="次の写真">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+
+              <!-- Subtle Slide Progress Indicator Line -->
+              <div class="hero-slide-progress-track">
+                <div class="hero-slide-progress-bar" id="heroProgressBar"></div>
+              </div>
+            </div>
+
+            <!-- Dynamic Caption & Slide Indicators -->
+            <figcaption class="hero-photo-caption" id="heroPhotoCaption">
+              <div class="hero-photo-caption-main" id="heroCaptionMain">
+                <span class="hero-photo-caption-tag" id="heroCaptionTag">PHOTO / 001</span>
+                <span class="hero-photo-caption-title" id="heroCaptionTitle">Software archive, Tokyo</span>
+                <span class="hero-photo-caption-sep">—</span>
+                <time class="hero-photo-caption-year" id="heroCaptionYear">2024</time>
+                <span class="hero-photo-caption-credit">Photo: M. Yamamoto</span>
+              </div>
+              <div class="hero-photo-indicators" id="heroIndicators" role="tablist" aria-label="写真選択">
+                <button class="hero-indicator-btn active" data-index="0" aria-label="写真 1: Software archive" role="tab" aria-selected="true">01</button>
+                <button class="hero-indicator-btn" data-index="1" aria-label="写真 2: Scrap robotics" role="tab" aria-selected="false">02</button>
+                <button class="hero-indicator-btn" data-index="2" aria-label="写真 3: Aviation engineering" role="tab" aria-selected="false">03</button>
+              </div>
+            </figcaption>
+          </figure>
         </div>
-
       </div>
     </div>
   </section>

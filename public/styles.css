@@ -443,28 +443,27 @@ button, input, textarea, select {
 }
 
 /* ==========================================================================
-   Section 1: Hero (Architectural Portfolio Concept)
+   Section 1: Hero (Architectural Portfolio: Message & Featured Photography)
    ========================================================================== */
 .hero-section {
-  padding-top: 8.5rem;
-  padding-bottom: 5.5rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
   position: relative;
-  overflow: hidden;
   background-color: var(--bg-page);
-  background-image: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 80%, #ffffff 100%),
-    linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.82) 40%, rgba(255, 255, 255, 0.25) 75%, rgba(255, 255, 255, 0) 100%),
-    url('images/hero-bg.photo.png');
-  background-position: right center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
-.hero-inner {
+.hero-grid {
+  display: grid;
+  grid-template-columns: 45fr 55fr;
+  gap: 3.5rem;
+  align-items: center;
+}
+
+/* Left: Copy Area */
+.hero-copy-col {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 980px;
 }
 
 .hero-badge-row {
@@ -496,20 +495,20 @@ button, input, textarea, select {
 
 .hero-main-title {
   font-family: var(--font-display);
-  font-size: 3.5rem;
+  font-size: 3.25rem;
   font-weight: 800;
-  line-height: 1.16;
+  line-height: 1.2;
   letter-spacing: -0.03em;
   color: var(--text-main);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .hero-sub-title {
-  font-size: 1.45rem;
+  font-size: 1.35rem;
   font-weight: 600;
   color: var(--text-secondary);
-  margin-bottom: 1.25rem;
   letter-spacing: -0.01em;
+  margin-bottom: 0;
 }
 
 .hero-description {
@@ -518,6 +517,216 @@ button, input, textarea, select {
   color: var(--text-secondary);
   margin-bottom: 0;
   max-width: 840px;
+}
+
+/* Right: Photography Area (Featured Work) */
+.hero-photo-col {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.hero-photo-figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.hero-photo-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-subtle);
+  background-color: var(--bg-subtle);
+  box-shadow: var(--shadow-card);
+}
+
+/* Slides with calm cross-fade */
+.hero-photo-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.85s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.85s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.hero-photo-slide.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+}
+
+.hero-photo-picture,
+.hero-photo-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-photo-img {
+  object-fit: cover;
+  object-position: var(--hero-photo-pos, 50% 48%);
+}
+
+/* Subtle Slide Navigation Buttons */
+.hero-slide-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(12, 21, 35, 0.4);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.25s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-photo-frame:hover .hero-slide-nav-btn {
+  opacity: 1;
+}
+
+.hero-slide-nav-btn.prev {
+  left: 0.75rem;
+}
+
+.hero-slide-nav-btn.next {
+  right: 0.75rem;
+}
+
+.hero-slide-nav-btn:hover {
+  background: rgba(12, 21, 35, 0.75);
+  transform: translateY(-50%) scale(1.05);
+}
+
+@media (hover: none) {
+  .hero-slide-nav-btn {
+    opacity: 0.75;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Subtle Slide Progress Bar Track */
+.hero-slide-progress-track {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  overflow: hidden;
+}
+
+.hero-slide-progress-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--accent);
+  transition: width 0.1s linear;
+}
+
+/* Caption and Indicator Area */
+.hero-photo-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
+  flex-wrap: wrap;
+}
+
+.hero-photo-caption-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  transition: opacity 0.3s ease;
+}
+
+.hero-photo-caption-main.fade-out {
+  opacity: 0;
+}
+
+.hero-photo-caption-tag {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--accent-deep);
+  background: var(--accent-light);
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.6875rem;
+}
+
+.hero-photo-caption-title {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.hero-photo-caption-sep {
+  color: var(--border-medium);
+}
+
+.hero-photo-caption-year {
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}
+
+.hero-photo-caption-credit {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  padding-left: 0.4rem;
+  border-left: 1px solid var(--border-medium);
+  letter-spacing: 0.03em;
+}
+
+/* Indicators (01 / 02 / 03 Tabs) */
+.hero-photo-indicators {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.hero-indicator-btn {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.hero-indicator-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.hero-indicator-btn.active {
+  background: var(--accent-deep);
+  border-color: var(--accent-deep);
+  color: #ffffff;
+  font-weight: 600;
 }
 
 /* ==========================================================================
@@ -2026,8 +2235,12 @@ button, input, textarea, select {
    Responsive Adaptations
    ========================================================================== */
 @media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 46fr 54fr;
+    gap: 2.25rem;
+  }
   .hero-main-title {
-    font-size: 2.75rem;
+    font-size: 2.5rem;
   }
   .case-details-grid {
     grid-template-columns: 1fr;
@@ -2057,18 +2270,26 @@ button, input, textarea, select {
     padding: 4.5rem 0;
   }
   .hero-section {
-    padding-top: 6.5rem;
-    padding-bottom: 3.5rem;
-    background-image: 
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.85) 100%),
-      url('images/hero-bg.photo.png');
-    background-position: right 15% center;
+    padding-top: 5.75rem;
+    padding-bottom: 2rem;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
   .hero-main-title {
-    font-size: 2.125rem;
+    font-size: 2rem;
+    line-height: 1.25;
   }
   .hero-sub-title {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+  }
+  .hero-photo-frame {
+    aspect-ratio: 4 / 3;
+  }
+  .hero-photo-caption {
+    align-items: flex-start;
+    gap: 0.65rem;
   }
   .section-title {
     font-size: 1.625rem;
