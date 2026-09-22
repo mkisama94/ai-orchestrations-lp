@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQHRWTXHLC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YQHRWTXHLC');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Orchestrationの事業・設計・開発事例一覧。石川県AIデータセンター構想、産業用蓄電池IoT「SPAQ CORE」、公的制度連携「補助金AI」をはじめ、事業課題の整理から技術設計・実装までの事例をご紹介します。">
+  <title>Projects（事業・設計・開発事例）｜AI Orchestration</title>
+  <link rel="canonical" href="https://ai-orchestration.jp/projects/">
+  
+  <!-- Favicon / Icons -->
+  <link rel="icon" href="../images/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/logo.png">
+
+  <!-- OGP -->
+  <meta property="og:title" content="Projects（事業・設計・開発事例）｜AI Orchestration">
+  <meta property="og:description" content="AI Orchestrationの事業・設計・開発事例一覧。事業構想から技術設計、実装・検証までの取り組み。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ai-orchestration.jp/projects/">
+  <meta property="og:site_name" content="AI Orchestration">
+  <meta property="og:image" content="https://ai-orchestration.jp/images/ai-orchestration-logo.png">
+  <meta property="og:image:width" content="2048">
+  <meta property="og:image:height" content="768">
+  <meta property="og:image:alt" content="AI Orchestration Projects">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects（事業・設計・開発事例）｜AI Orchestration">
+  <meta name="twitter:description" content="AI Orchestrationの事業・設計・開発事例一覧。事業構想から技術設計、実装・検証までの取り組み。">
+  <meta name="twitter:image" content="https://ai-orchestration.jp/images/ai-orchestration-logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "name": "Projects | AI Orchestration",
+        "description": "AI Orchestrationの事業・設計・開発事例一覧",
+        "url": "https://ai-orchestration.jp/projects/",
+        "publisher": {
+          "@type": "Organization",
+          "name": "AI Orchestration",
+          "url": "https://ai-orchestration.jp/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://ai-orchestration.jp/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "プロジェクト一覧",
+            "item": "https://ai-orchestration.jp/projects/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="blueprint-pattern">
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-logo" aria-label="AI Orchestration — 事業を構想し、AIプロダクトとして実装する。">
+        <span class="header-logo-frame">
+          <img class="header-logo-image" src="../images/ai-orchestration-logo.png" alt="AI Orchestration" width="2048" height="768" fetchpriority="high">
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav" id="mainNav">
+        <a href="../products/index.html" class="nav-link">Products</a>
+        <a href="../projects/index.html" class="nav-link" style="color:var(--accent-deep); font-weight:700;">Projects</a>
+        <a href="../consulting/index.html" class="nav-link">Consulting</a>
+        <a href="../about/index.html" class="nav-link">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="../index.html#contact" class="btn btn-primary btn-sm">お問い合わせ</a>
+        <button class="nav-toggle" id="navToggle" aria-label="メニュー開閉">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="section-wrap" style="padding-top: 5rem; padding-bottom: 3.5rem;">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="../index.html">ホーム</a>
+        <span class="breadcrumb-separator">/</span>
+        <span style="color:var(--text-main); font-weight:600;">Projects</span>
+      </nav>
+
+      <div class="section-meta">
+        <span class="section-num">PROJECTS</span>
+        <span class="section-tag">事業・設計・開発事例</span>
+      </div>
+      <h1 class="section-title" style="font-size: clamp(2rem, 3.8vw, 2.75rem);">
+        事業・設計・開発事例
+      </h1>
+      <p class="section-lead">
+        単なる制作物の一覧ではなく、<strong>事業課題 → 技術判断 → 実装・検証</strong> のプロセスが分かる事例をご紹介します。<br>
+        自社プロダクト開発から、顧客・パートナーとの共同プロジェクト、先行検討段階のインフラ構想まで横断して掲載しています。
+      </p>
+
+      <!-- Category Filter Tags -->
+      <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:2rem;">
+        <span class="tag-pill accent">ALL CASES</span>
+        <span class="tag-pill">PRODUCT DEVELOPMENT</span>
+        <span class="tag-pill">AI / SOFTWARE</span>
+        <span class="tag-pill">ENERGY / IoT</span>
+        <span class="tag-pill">BUSINESS DEVELOPMENT</span>
+        <span class="tag-pill">INFRASTRUCTURE</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Projects List Section -->
+  <section style="padding-bottom: 6rem;">
+    <div class="container">
+      <div style="display: flex; flex-direction: column; gap: 3.5rem;">
+
+        <!-- Case 1: 石川県データセンター建設プロジェクト -->
+        <article class="hot-topic-block">
+          <div class="hot-topic-badge-row">
+            <span class="badge-hot-topic">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+              </svg>
+              HOT TOPIC
+            </span>
+            <span class="tag-pill accent">INFRASTRUCTURE</span>
+            <span class="badge-status-planning">計画検討段階</span>
+            <span class="tag-pill">AIインフラ</span>
+            <span class="tag-pill">立地・事業化支援</span>
+          </div>
+
+          <h2 class="case-title" style="margin-bottom: 0.5rem; font-size:1.5rem;">
+            <a href="ishikawa-datacenter/index.html" style="color:inherit; text-decoration:none;">
+              石川県データセンター建設プロジェクト
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:middle; margin-left:0.35rem; color:var(--accent);">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </h2>
+          <p class="case-catch">
+            AIを動かす基盤を、石川県から構想する。立地・電力・通信・事業計画の横断的検討。
+          </p>
+
+          <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.8; margin-top:0.75rem; margin-bottom:1.5rem;">
+            石川県でのAIデータセンター建設に向け、立地支援・日本海側への拠点分散・国内外アクセス等の可能性と、電力供給・通信コスト・災害リスク・運用体制などの現実的課題を横断的に検証。AI Orchestrationは事業・技術コンサルティングを通じて、構想の具体化を支援します。
+          </p>
+
+          <div style="background:rgba(255,255,255,0.75); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1rem 1.25rem; margin-bottom:1.5rem;">
+            <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); font-family:var(--font-mono); display:block; margin-bottom:0.5rem;">当社の関与・検討領域</span>
+            <div class="role-pills-row">
+              <span class="role-pill">事業構想・要件整理</span>
+              <span class="role-pill">立地・電力・通信条件の比較</span>
+              <span class="role-pill">専門事業者との調整・計画具体化</span>
+              <span class="role-pill">電力分野の実装知見</span>
+            </div>
+          </div>
+
+          <div style="display:flex; flex-wrap:wrap; gap:1.25rem; align-items:center;">
+            <a href="ishikawa-datacenter/index.html" class="btn btn-primary">
+              プロジェクト詳細を見る
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="ishikawa-datacenter/index.html#why-ishikawa" class="link-arrow" style="margin-left:auto;">
+              なぜ石川県なのか？検討理由を読む
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- Case 2: SPAQ CORE -->
+        <article class="case-feature-block">
+          <div class="case-badge-row">
+            <div class="case-client-badge">
+              <span>提供主体：<a href="https://spaq.co.jp/" target="_blank" rel="noopener noreferrer" class="external-client-link">SPAQ株式会社<svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg></a></span>
+              <span style="color:var(--text-muted);">｜</span>
+              <span>ENERGY / IoT</span>
+            </div>
+            <span class="case-status-badge">予測制御を実装・実機動作を確認</span>
+          </div>
+
+          <h2 class="case-title" style="font-size:1.5rem;">
+            <a href="../spaq-core.html" style="color:inherit; text-decoration:none;">
+              SPAQ CORE -産業用電力IoT-
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:middle; margin-left:0.35rem; color:var(--accent);">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </h2>
+          <p class="case-catch">
+            産業用蓄電池を安全かつ効率的に制御し、契約電力のピークを抑制する電力管理システム。
+          </p>
+
+          <div class="case-details-grid">
+            <div class="case-story-col">
+              <div class="case-story-item">
+                <div class="case-story-label">商品概要</div>
+                <p class="case-story-text">
+                  SPAQ COREは、AIで工場などの電気代削減を支援するエネルギーマネジメントシステムです。電力の使用状況を監視・予測。電力需要のピークを抑えながら、次の需要増に備えて蓄電池の残容量を確保します。
+                </p>
+              </div>
+
+              <div class="case-story-item">
+                <div class="case-story-label">解決した課題</div>
+                <p class="case-story-text">
+                  蓄電池や空調の動作によって、観測される電力需要も変わります。AIによる予測制御を導入し、この循環依存の問題を解決しました。
+                </p>
+              </div>
+
+              <div class="case-story-item">
+                <div class="case-story-label">設計のポイント</div>
+                <p class="case-story-text">
+                  <span class="case-story-highlight">30分の電力量予算と需要予測から、放電量と充電余力を判断。</span>
+                  制御で変化した観測値を補正し、設備の制約内で充放電を行うロジックを設計・実装。商品コンセプトと要件の整理から、設備接続、現地検証、障害分析、運用設計まで担当しました。
+                </p>
+              </div>
+            </div>
+
+            <!-- Case Architecture Box -->
+            <div class="case-arch-col">
+              <div>
+                <div class="arch-header">
+                  <span class="arch-title">CONTROL OVERVIEW</span>
+                  <span style="font-size:0.6875rem; color:var(--text-muted); font-family:var(--font-mono);">制御概念図</span>
+                </div>
+                <div class="arch-diagram-wrapper">
+                  <svg viewBox="0 0 380 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="15" y="20" width="150" height="140" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+                    <text x="30" y="42" font-size="11" font-family="'JetBrains Mono', monospace" fill="#0969da" font-weight="700">EQUIPMENT</text>
+                    <rect x="25" y="55" width="130" height="30" rx="4" fill="#f1f5f9"/>
+                    <text x="90" y="74" text-anchor="middle" font-size="11" fill="#1e293b" font-weight="600">蓄電池・EMS</text>
+                    <rect x="25" y="95" width="130" height="30" rx="4" fill="#e0f2fe"/>
+                    <text x="90" y="114" text-anchor="middle" font-size="11" fill="#0369a1" font-weight="600">計測・充放電指令</text>
+                    <text x="90" y="148" text-anchor="middle" font-size="9" fill="#64748b">制御権限・障害時の動作を整理</text>
+
+                    <rect x="215" y="20" width="150" height="140" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="1.5"/>
+                    <text x="230" y="42" font-size="11" font-family="'JetBrains Mono', monospace" fill="#0969da" font-weight="700">SPAQ CORE</text>
+                    <rect x="225" y="55" width="130" height="30" rx="4" fill="#f0f7ff"/>
+                    <text x="290" y="74" text-anchor="middle" font-size="11" fill="#054da3" font-weight="600">需要予測・電力量予算</text>
+                    <rect x="225" y="95" width="130" height="30" rx="4" fill="#f0f7ff"/>
+                    <text x="290" y="114" text-anchor="middle" font-size="11" fill="#054da3" font-weight="600">制約内で充放電を判断</text>
+                    <text x="290" y="148" text-anchor="middle" font-size="9" fill="#64748b">判断根拠の記録・予測性能の評価</text>
+
+                    <path d="M 165 110 L 215 110" stroke="#0969da" stroke-width="1.5" stroke-dasharray="3 3"/>
+                    <polygon points="212,107 218,110 212,113" fill="#0969da" />
+                    <polygon points="168,107 162,110 168,113" fill="#0969da" />
+                  </svg>
+                </div>
+              </div>
+
+              <div>
+                <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); font-family:var(--font-mono);">当社の担当領域</span>
+                <div class="role-pills-row">
+                  <span class="role-pill">事業・商品設計／要件定義</span>
+                  <span class="role-pill">制御設計・実装／設備連携</span>
+                  <span class="role-pill">実機検証・障害分析／運用設計</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-footer-row">
+            <div class="case-verdict">
+              <div class="verdict-icon">✓</div>
+              <span><strong>成果と現在地：</strong>実設備で自動放電指令の書き込みと充放電動作を確認。予測制御・精度評価機能を実装しました。</span>
+            </div>
+            <div style="display:flex; flex-wrap:wrap; gap:1.25rem; align-items:center;">
+              <a href="../spaq-core.html" class="link-arrow">
+                SPAQ COREの設計判断を詳しく読む
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="https://spaq.co.jp/" target="_blank" rel="noopener noreferrer" class="link-arrow" style="color:var(--text-secondary); font-size:0.875rem;">
+                SPAQ株式会社 公式サイト ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case 3: 補助金AI 開発事例 -->
+        <article class="case-feature-block">
+          <div class="case-badge-row">
+            <div class="case-client-badge">
+              <span>協業開発：<a href="https://cocurie.com/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社CoCreate</a></span>
+              <span style="color:var(--text-muted);">｜</span>
+              <span>PRODUCT DEVELOPMENT</span>
+            </div>
+            <span class="case-status-badge">自社プロダクト / オープンソース</span>
+          </div>
+
+          <h2 class="case-title" style="font-size:1.5rem;">
+            <a href="../hojokin-ai.html" style="color:inherit; text-decoration:none;">
+              補助金AI -公的データ連携基盤の開発-
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block; vertical-align:middle; margin-left:0.35rem; color:var(--accent);">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </h2>
+          <p class="case-catch">
+            公的機関が公開する制度情報と企業情報を組み合わせ、生成AIから利用できる補助金探索環境を構築。
+          </p>
+
+          <div class="case-details-grid">
+            <div class="case-story-col">
+              <div class="case-story-item">
+                <div class="case-story-label">商品概要</div>
+                <p class="case-story-text">
+                  事業者が活用できる助成金・補助金を、AIとの対話を通じて探すためのChatGPTプラグイン／MCP基盤です。取り組みたい事業や相談内容をもとに候補となる制度を探し、対象条件や申請要件の確認を支援します。
+                </p>
+              </div>
+
+              <div class="case-story-item">
+                <div class="case-story-label">解決した課題</div>
+                <p class="case-story-text">
+                  補助金は制度が頻繁に改定されます。デジタル庁などの公的機関の提供するAPIにアクセスして公的情報を統合し、AI共通規格『MCP』に変換することで、この課題を解決しました。
+                </p>
+              </div>
+
+              <div class="case-story-item">
+                <div class="case-story-label">設計のポイント</div>
+                <p class="case-story-text">
+                  <span class="case-story-highlight">制度情報と対話をつなぐ、要件定義・API連携設計。</span>
+                  COクリエイトとの協業で、助成金・補助金を対話形式で探す体験を設計。AI Orchestrationは、要件定義、API連携設計、MCPサーバー実装を担当しました。
+                </p>
+              </div>
+            </div>
+
+            <!-- Case Architecture Box -->
+            <div class="case-arch-col">
+              <div>
+                <div class="arch-header">
+                  <span class="arch-title">ARCHITECTURE OVERVIEW</span>
+                  <span style="font-size:0.6875rem; color:var(--text-muted); font-family:var(--font-mono);">SERVICE CONCEPT</span>
+                </div>
+                <div class="arch-diagram-wrapper">
+                  <svg viewBox="0 0 380 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="15" y="30" width="90" height="120" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+                    <text x="60" y="55" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', monospace" fill="#64748b" font-weight="700">USER</text>
+                    <text x="60" y="85" text-anchor="middle" font-size="11" font-weight="600" fill="#1e293b">対話入力</text>
+                    <text x="60" y="105" text-anchor="middle" font-size="9" fill="#64748b">ご相談の内容</text>
+
+                    <rect x="135" y="20" width="130" height="140" rx="6" fill="#f0f7ff" stroke="#0969da" stroke-width="2"/>
+                    <text x="200" y="42" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', monospace" fill="#0969da" font-weight="700">ORCHESTRATION</text>
+                    <rect x="145" y="55" width="110" height="28" rx="4" fill="#ffffff" stroke="#bfdbfe" stroke-width="1"/>
+                    <text x="200" y="73" text-anchor="middle" font-size="10" fill="#054da3" font-weight="600">検索条件の整理</text>
+                    <rect x="145" y="90" width="110" height="28" rx="4" fill="#ffffff" stroke="#bfdbfe" stroke-width="1"/>
+                    <text x="200" y="108" text-anchor="middle" font-size="10" fill="#054da3" font-weight="600">制度情報との連携</text>
+                    <rect x="145" y="125" width="110" height="25" rx="4" fill="#0969da"/>
+                    <text x="200" y="141" text-anchor="middle" font-size="9" fill="#ffffff" font-weight="600">検索・要件確認の支援</text>
+
+                    <rect x="295" y="30" width="70" height="120" rx="6" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+                    <text x="330" y="55" text-anchor="middle" font-size="10" font-family="'JetBrains Mono', monospace" fill="#64748b" font-weight="700">API/DB</text>
+                    <text x="330" y="85" text-anchor="middle" font-size="10" font-weight="600" fill="#1e293b">公的制度情報</text>
+                    <text x="330" y="100" text-anchor="middle" font-size="10" font-weight="600" fill="#1e293b">※概念図</text>
+
+                    <path d="M 105 85 L 135 85" stroke="#0969da" stroke-width="1.5"/>
+                    <path d="M 265 85 L 295 85" stroke="#0969da" stroke-width="1.5"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div>
+                <span style="font-size:0.75rem; font-weight:700; color:var(--text-muted); font-family:var(--font-mono);">当社の担当領域</span>
+                <div class="role-pills-row">
+                  <span class="role-pill">協業要件定義</span>
+                  <span class="role-pill">API連携・MCP設計</span>
+                  <span class="role-pill">製品開発・運用</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="case-footer-row">
+            <div class="case-verdict">
+              <div class="verdict-icon">✓</div>
+              <span><strong>当社の関与：</strong>COクリエイトと協業し、公的制度の探索と要件確認を支援する対話基盤・MCPを実装・提供しています。</span>
+            </div>
+            <div style="display:flex; flex-wrap:wrap; gap:1.25rem; align-items:center;">
+              <a href="../hojokin-ai.html" class="link-arrow">
+                補助金AIの連携設計・開発背景を読む
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <a href="../products/hojokin-ai/index.html" class="link-arrow" style="color:var(--text-secondary); font-size:0.875rem;">
+                利用者向け製品ページはこちら ↗
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Other Cases Grid -->
+      <div style="margin-top: 5rem;">
+        <div class="section-meta">
+          <span class="section-num">MORE CASES</span>
+          <span class="section-tag">共同開発・事業支援事例</span>
+        </div>
+        <h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-main); margin-bottom: 2rem;">
+          その他のプロジェクト・事業支援事例
+        </h2>
+        <div class="other-cases-grid">
+          <!-- Other Case 1: AlleyPin 1.Talk -->
+          <div class="other-case-card">
+            <div>
+              <div class="other-case-header">
+                <span class="other-case-domain">AI / GLOBAL</span>
+                <span class="other-case-client">提供：<a href="https://alleypin.co.jp/jp" target="_blank" rel="noopener noreferrer" class="external-client-link">アリピン株式会社</a></span>
+              </div>
+              <h3 class="other-case-name">1.Talk（クリニック向け予約システム）</h3>
+              <p class="other-case-desc">
+                台湾発の医療機関・クリニック向け予約システム。海外プロダクトの国内展開において、対話フロー設計、多言語対応、販路開拓の面から支援。
+              </p>
+            </div>
+            <div>
+              <div class="other-case-roles">
+                <span class="other-case-role-tag">対話フロー設計</span>
+                <span class="other-case-role-tag">多言語展開支援</span>
+                <span class="other-case-role-tag">販路開拓</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Case 2: AI相互送客コンソーシアム -->
+          <div class="other-case-card">
+            <div>
+              <div class="other-case-header">
+                <span class="other-case-domain">ADTECH / COMMERCE</span>
+                <span class="other-case-client">提供：<a href="https://cocurie.com/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社CoCreate</a></span>
+              </div>
+              <h3 class="other-case-name">AI相互送客コンソーシアム</h3>
+              <p class="other-case-desc">
+                AIチャットを通じて文脈に合わせた企業・サービス推薦を行う広告配信・顧客接点プラットフォームの設計。
+              </p>
+            </div>
+            <div>
+              <div class="other-case-roles">
+                <span class="other-case-role-tag">事業構想</span>
+                <span class="other-case-role-tag">レコメンド設計</span>
+                <span class="other-case-role-tag">販売戦略</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Case 3: 教AI -->
+          <div class="other-case-card">
+            <div>
+              <div class="other-case-header">
+                <span class="other-case-domain">KNOWLEDGE / ENTERPRISE</span>
+                <span class="other-case-client">提供：<a href="https://pr-i.co.jp/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社ピーアールアイ</a></span>
+              </div>
+              <h3 class="other-case-name">教AI（社内ナレッジ蓄積・引用根拠つきAI）</h3>
+              <p class="other-case-desc">
+                社内のQ&amp;Aや業務のやりとりを知見として蓄積し、活用するためのUX・知見化設計を支援。
+              </p>
+            </div>
+            <div>
+              <div class="other-case-roles">
+                <span class="other-case-role-tag">UX設計</span>
+                <span class="other-case-role-tag">知見化パイプライン設計</span>
+                <span class="other-case-role-tag">導入支援</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Case 4: 採用フローAI化 -->
+          <div class="other-case-card">
+            <div>
+              <div class="other-case-header">
+                <span class="other-case-domain">HR TECH / AUTOMATION</span>
+                <span class="other-case-client">提供：<a href="https://trefac-t.tech/" target="_blank" rel="noopener noreferrer" class="external-client-link">株式会社トレファクテクノロジーズ</a></span>
+              </div>
+              <h3 class="other-case-name">採用フローAI化</h3>
+              <p class="other-case-desc">
+                応募者への初期対応や選考をAIで支援するため、業務フロー・AI選考の設計と運用定着を支援。
+              </p>
+            </div>
+            <div>
+              <div class="other-case-roles">
+                <span class="other-case-role-tag">業務フロー設計</span>
+                <span class="other-case-role-tag">選考ロジック設計</span>
+                <span class="other-case-role-tag">定着支援</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cross Consultation Banner -->
+      <div class="cross-link-banner" style="margin-top: 5rem;">
+        <div class="cross-link-text">
+          <h4>まだ仕様が決まっていない段階からご相談いただけます</h4>
+          <p>新規事業、AIプロダクト、システム設計・開発について、お気軽にお問い合わせください。</p>
+        </div>
+        <a href="../index.html#contact" class="btn btn-primary">
+          事業・開発について相談する
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h4>AI Orchestration.</h4>
+          <p>
+            事業を構想し、AIプロダクトとして実装する。自らプロダクトを開発・提供する実践をもとに、企業の意思決定と事業づくりを支えます。
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="../about/index.html">私たちについて</a></li>
+            <li><a href="../projects/index.html">プロジェクト事例</a></li>
+            <li><a href="../consulting/index.html">事業・開発支援</a></li>
+            <li><a href="../index.html#contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Products &amp; Projects</h5>
+          <ul class="footer-links">
+            <li><a href="../products/index.html">プロダクト一覧</a></li>
+            <li><a href="../products/hojokin-ai/index.html">補助金AI</a></li>
+            <li><a href="ishikawa-datacenter/index.html">石川県データセンター</a></li>
+            <li><a href="../spaq-core.html">SPAQ CORE</a></li>
+            <li><a href="../hojokin-ai.html">補助金AI 開発事例</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul class="footer-links">
+            <li><a href="../privacy/index.html">プライバシーポリシー</a></li>
+            <li><a href="../terms/index.html">利用規約</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 AI Orchestration. All rights reserved.</div>
+        <div>事業を構想し、AIプロダクトとして実装する。</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
