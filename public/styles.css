@@ -520,22 +520,112 @@ button, input, textarea, select {
   max-width: 840px;
 }
 
-.hero-price-note {
-  display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-  padding: 0.65rem 1.1rem;
-  background: var(--bg-subtle);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  font-size: 0.8125rem;
-  color: var(--text-secondary);
+/* ==========================================================================
+   News Ticker Bar (Directly below Hero)
+   ========================================================================== */
+.news-ticker-bar {
+  background: var(--bg-surface);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+  padding: 0.85rem 0;
+  position: relative;
+  z-index: 10;
 }
 
-.hero-price-note strong {
-  color: var(--accent-deep);
+.news-ticker-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.news-ticker-main {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+  flex: 1;
+}
+
+.news-ticker-badge {
   font-family: var(--font-mono);
-  font-size: 1rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+  background: var(--accent);
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.news-ticker-date {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  letter-spacing: 0.02em;
+}
+
+.news-ticker-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-main);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.news-ticker-link:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.news-ticker-more {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.news-ticker-more:hover {
+  color: var(--accent);
+  transform: translateX(2px);
+}
+
+@media (max-width: 768px) {
+  .news-ticker-bar {
+    padding: 0.75rem 0;
+  }
+  .news-ticker-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .news-ticker-main {
+    flex-wrap: wrap;
+    gap: 0.4rem 0.65rem;
+    width: 100%;
+  }
+  .news-ticker-link {
+    white-space: normal;
+    display: block;
+    width: 100%;
+    line-height: 1.45;
+  }
+  .news-ticker-more {
+    align-self: flex-end;
+    font-size: 0.75rem;
+  }
 }
 
 .hero-trust-bar {
@@ -3215,9 +3305,15 @@ button, input, textarea, select {
    Top Page Renewal Sections
    ========================================================================== */
 
-/* 01 / WHAT WE DO: Layout & Spacing */
-.section-what-we-do {
+/* 01 / HOT TOPICS: Layout & Spacing */
+.section-hot-topics {
   padding-top: 4.25rem;
+  padding-bottom: 5.5rem;
+}
+
+/* 02 / WHAT WE DO: Layout & Spacing */
+.section-what-we-do {
+  padding-top: 5.5rem;
   padding-bottom: 5.5rem;
 }
 
