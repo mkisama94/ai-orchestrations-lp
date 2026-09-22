@@ -454,7 +454,7 @@ button, input, textarea, select {
   background-image: 
     linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 80%, #ffffff 100%),
     linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.82) 40%, rgba(255, 255, 255, 0.25) 75%, rgba(255, 255, 255, 0) 100%),
-    url('images/hero-bg.png');
+    url('images/hero-bg.photo.png');
   background-position: right center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -2061,7 +2061,7 @@ button, input, textarea, select {
     padding-bottom: 3.5rem;
     background-image: 
       linear-gradient(to bottom, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.85) 100%),
-      url('images/hero-bg.png');
+      url('images/hero-bg.photo.png');
     background-position: right 15% center;
   }
   .hero-main-title {
