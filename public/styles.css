@@ -3766,6 +3766,35 @@ button, input, textarea, select {
   line-height: 1.75;
 }
 
+.why-ao-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-deep);
+  background: var(--accent-light);
+  border: 1px solid var(--border-blueprint);
+  border-radius: var(--radius-sm);
+  padding: 0.2rem 0.6rem;
+  margin-bottom: 0.85rem;
+  width: fit-content;
+  letter-spacing: 0.02em;
+}
+
+.consulting-lead-banner {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  background: #ffffff;
+  border: 1px solid var(--border-blueprint);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 2.25rem;
+  box-shadow: var(--shadow-sm);
+}
+
 /* 04 / CONSULTING COMPACT */
 .consulting-compact-grid {
   display: grid;
@@ -3848,6 +3877,191 @@ button, input, textarea, select {
   line-height: 1.85;
 }
 
+/* ==========================================================================
+   03 / PRODUCTS & SOLUTIONS Styles
+   ========================================================================== */
+.section-products-solutions {
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+}
+
+.products-main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 3rem;
+}
+
+.product-card-large {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.product-card-large:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.product-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.35;
+  margin-bottom: 0.65rem;
+}
+
+.product-provider {
+  margin-bottom: 1.15rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.product-provider-label {
+  display: block;
+  font-size: 0.6875rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.2rem;
+}
+
+.product-provider-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.15s ease;
+}
+
+.product-provider-link:hover {
+  color: var(--accent-deep);
+}
+
+.product-desc {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.product-role-block {
+  margin-top: auto;
+  padding-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.product-role-heading {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.product-role-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.role-tag-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  background: var(--accent-light);
+  border: 1px solid var(--border-blueprint);
+  border-radius: var(--radius-sm);
+  color: var(--accent-deep);
+  letter-spacing: 0.01em;
+}
+
+.product-cta-action {
+  padding-top: 0.25rem;
+}
+
+/* OTHER SOLUTIONS Sub-section */
+.other-solutions-heading-wrap {
+  margin-top: 4rem;
+  margin-bottom: 1.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--border-medium);
+}
+
+.other-solutions-heading {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.other-solutions-heading::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border-subtle);
+}
+
+.products-other-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.75rem;
+}
+
+.product-card-compact {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.product-card-compact:hover {
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.product-card-compact .product-card-title {
+  font-size: 1.1875rem;
+}
+
+.product-card-compact .role-tag-pill {
+  background: var(--bg-subtle);
+  border-color: var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.products-footer-action {
+  margin-top: 2.75rem;
+  text-align: right;
+}
+
 /* Responsive Overrides */
 @media (max-width: 1024px) {
   .consulting-compact-grid {
@@ -3858,7 +4072,9 @@ button, input, textarea, select {
 @media (max-width: 860px) {
   .what-we-do-grid,
   .hot-topics-grid,
-  .why-ao-grid {
+  .why-ao-grid,
+  .products-main-grid,
+  .products-other-grid {
     grid-template-columns: 1fr;
     gap: 1.25rem;
   }
@@ -3875,5 +4091,6 @@ button, input, textarea, select {
     grid-template-columns: 1fr;
   }
 }
+
 
 
