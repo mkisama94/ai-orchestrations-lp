@@ -10,8 +10,8 @@ const HERO_WORKS = [
   {
     id: "001",
     tag: "PHOTO / 001",
-    title: "Software archive, Tokyo",
-    titleJa: "ソフトウェアアーカイブ / 東京",
+    title: "Extinct Media Museum Tokyo",
+    titleJa: "絶滅メディア博物館",
     year: "2024",
     imageWebp: "images/hero-photos/software-archive.webp",
     imageJpg: "images/hero-photos/software-archive.jpg",
@@ -23,8 +23,8 @@ const HERO_WORKS = [
   {
     id: "002",
     tag: "PHOTO / 002",
-    title: "Scrap robotics art",
-    titleJa: "スクラップロボティクスアート",
+    title: "Showa no Mori Museum",
+    titleJa: "昭和の杜博物館",
     year: "2025",
     imageWebp: "images/hero-photos/scrap-robotics.webp",
     imageJpg: "images/hero-photos/scrap-robotics.jpg",
@@ -36,8 +36,8 @@ const HERO_WORKS = [
   {
     id: "003",
     tag: "PHOTO / 003",
-    title: "Aviation engineering structure",
-    titleJa: "航空機とトラス構造",
+    title: "Nippon Institute of Technology",
+    titleJa: "日本工業大学 工業技術博物館",
     year: "2025",
     imageWebp: "images/hero-photos/aviation-hangar.webp",
     imageJpg: "images/hero-photos/aviation-hangar.jpg",
