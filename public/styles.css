@@ -446,13 +446,18 @@ button, input, textarea, select {
    Section 1: Hero (Architectural Portfolio Concept)
    ========================================================================== */
 .hero-section {
-  padding-top: 7rem;
-  padding-bottom: 3rem;
+  padding-top: 8.5rem;
+  padding-bottom: 5.5rem;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 85% 15%, rgba(9, 105, 218, 0.05) 0%, transparent 45%),
-              radial-gradient(circle at 10% 80%, rgba(2, 132, 199, 0.04) 0%, transparent 40%),
-              var(--bg-page);
+  background-color: var(--bg-page);
+  background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8) 80%, #ffffff 100%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.82) 40%, rgba(255, 255, 255, 0.25) 75%, rgba(255, 255, 255, 0) 100%),
+    url('images/hero-bg.jpg');
+  background-position: right center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-inner {
@@ -1962,7 +1967,12 @@ button, input, textarea, select {
     padding: 4.5rem 0;
   }
   .hero-section {
-    padding-top: 7rem;
+    padding-top: 6.5rem;
+    padding-bottom: 3.5rem;
+    background-image: 
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.92) 0%, rgba(255, 255, 255, 0.85) 100%),
+      url('images/hero-bg.jpg');
+    background-position: right 15% center;
   }
   .hero-main-title {
     font-size: 2.125rem;
