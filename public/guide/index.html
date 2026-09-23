@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQHRWTXHLC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YQHRWTXHLC');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI Orchestrationの私たちの考え方・はじめての方へ。現場の努力を、事業の成果につなぐ。事業構想・技術設計・実装・検証をつなぎ、現場に無理な努力を押しつけず使い続けられる仕組みを設計します。">
+  <title>はじめての方へ（私たちの考え方）｜AI Orchestration</title>
+  <link rel="canonical" href="https://ai-orchestration.jp/guide/">
+
+  <!-- Favicon / Icons -->
+  <link rel="icon" href="../images/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/icon.png">
+
+  <!-- OGP -->
+  <meta property="og:title" content="はじめての方へ（私たちの考え方）｜AI Orchestration">
+  <meta property="og:description" content="現場の努力を、事業の成果につなぐ。実行の難しさを現場に押しつけず、現場の努力が成果につながるように設計する。AI Orchestrationの思想とアプローチ。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-orchestration.jp/guide/">
+  <meta property="og:site_name" content="AI Orchestration">
+  <meta property="og:image" content="https://ai-orchestration.jp/images/ai-orchestration-logo.png">
+  <meta property="og:image:width" content="2048">
+  <meta property="og:image:height" content="768">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="はじめての方へ（私たちの考え方）｜AI Orchestration">
+  <meta name="twitter:description" content="現場の努力を、事業の成果につなぐ。実行の難しさを現場に押しつけず、現場の努力が成果につながるように設計する。AI Orchestrationの思想とアプローチ。">
+  <meta name="twitter:image" content="https://ai-orchestration.jp/images/ai-orchestration-logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://ai-orchestration.jp/guide/#webpage",
+        "url": "https://ai-orchestration.jp/guide/",
+        "name": "はじめての方へ（私たちの考え方）｜AI Orchestration",
+        "description": "現場の努力を、事業の成果につなぐ。AI Orchestrationの私たちの考え方とご支援のアプローチ。"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ホーム",
+            "item": "https://ai-orchestration.jp/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "はじめての方へ",
+            "item": "https://ai-orchestration.jp/guide/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="blueprint-pattern">
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-logo" aria-label="AI Orchestration — 事業を構想し、AIプロダクトとして実装する。">
+        <span class="header-logo-frame">
+          <img class="header-logo-image" src="../images/ai-orchestration-logo.png" alt="AI Orchestration" width="2048" height="768" fetchpriority="high">
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html" class="nav-link" style="color:var(--accent-deep); font-weight:700;">はじめての方へ</a>
+        <a href="../products/index.html" class="nav-link">Products</a>
+        <a href="../projects/index.html" class="nav-link">Projects</a>
+        <a href="../consulting/index.html" class="nav-link">Consulting</a>
+        <a href="../about/index.html" class="nav-link">About</a>
+        <a href="../index.html#contact" class="nav-link mobile-only-link" style="display:none;">お問い合わせ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="../index.html#contact" class="nav-contact-link">お問い合わせ</a>
+        <a href="index.html" class="btn btn-primary btn-sm">はじめての方へ</a>
+        <button class="nav-toggle" id="navToggle" aria-label="メニュー開閉">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Page Hero
+       ========================================================================== -->
+  <section class="section-wrap" style="padding-top: 5.5rem; padding-bottom: 3.5rem;">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="../index.html">ホーム</a>
+        <span class="breadcrumb-separator">/</span>
+        <span style="color:var(--text-main); font-weight:600;">はじめての方へ</span>
+      </nav>
+
+      <div class="section-meta">
+        <span class="section-num">PHILOSOPHY &amp; APPROACH</span>
+        <span class="section-tag">私たちの考え方</span>
+      </div>
+      <h1 class="section-title" style="font-size: clamp(2.1rem, 4vw, 3rem); margin-bottom: 1.25rem;">
+        現場の努力を、<br class="mobile-only">事業の成果につなぐ。
+      </h1>
+      <p class="section-lead" style="font-size: 1.125rem; font-weight: 600; color: var(--accent-deep); margin-bottom: 1.5rem;">
+        実行の難しさを現場に押しつけず、現場の努力が成果につながるように設計する。
+      </p>
+      <div style="font-size: 1rem; color: var(--text-secondary); line-height: 1.85; max-width: 820px;">
+        <p style="margin-bottom: 1rem;">
+          方針は決まった。提案書もある。システムも導入した。<br>
+          それでも、現場の負担は減らず、事業が前に進まない。
+        </p>
+        <p style="margin-bottom: 1rem;">
+          そんなとき、必要なのは「もっと頑張ること」なのでしょうか。
+        </p>
+        <p style="margin-bottom: 0;">
+          私たちは、現場にさらなる努力を求める前に、計画や仕組みの側を見直します。実行できる条件が整っているか。日々の業務の中で無理なく使えるか。投入する時間や費用に見合う価値があるか。<br>
+          AI Orchestrationは、事業構想・技術設計・実装・検証をつなぎ、現場の取り組みが事業の成果につながる仕組みをつくります。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Step 1: 顧客の状況（こんな局面なら、私たちの出番です）
+       ========================================================================== -->
+  <section class="section-wrap-subtle" style="padding-top: 4.5rem; padding-bottom: 4.5rem;">
+    <div class="container">
+      <div class="section-meta">
+        <span class="section-num">STEP 01</span>
+        <span class="section-tag">顧客の状況</span>
+      </div>
+      <h2 class="section-title" style="font-size: clamp(1.6rem, 3vw, 2.15rem);">
+        こんな局面なら、私たちの出番です
+      </h2>
+      <p class="section-lead">
+        多くのプロジェクトが立ち止まるのは、技術の高度さではなく、「構想」と「現場の実行」の間に横たわる断絶が原因です。
+      </p>
+
+      <div class="guide-situation-grid">
+        <div class="guide-situation-card">
+          <span class="guide-situation-label">SITUATION 01</span>
+          <h3 class="guide-situation-title">方針やシステムは導入されたが、現場の負担が増えている</h3>
+          <p class="guide-situation-desc">
+            「運用で対応する」「現場で調整する」と書かれたまま導入され、日々の例外処理や二重管理に現場が追われ、業務改善や事業成長につながっていない局面。
+          </p>
+        </div>
+
+        <div class="guide-situation-card">
+          <span class="guide-situation-label">SITUATION 02</span>
+          <h3 class="guide-situation-title">提案書やPoC（試作）はあるが、本番の業務で使えない</h3>
+          <p class="guide-situation-desc">
+            デモ環境では動いたものの、既存システムや設備、運用体制の制約をクリアできず、本番業務への組み込みや継続的な運用設計が立ち止まっている局面。
+          </p>
+        </div>
+
+        <div class="guide-situation-card">
+          <span class="guide-situation-label">SITUATION 03</span>
+          <h3 class="guide-situation-title">発注側と開発ベンダーの間で、技術判断が噛み合わない</h3>
+          <p class="guide-situation-desc">
+            仕様書の項目や提案書の言葉は揃っていても、現場の事実や責任分界に根ざした設計になっておらず、障害や変更のたびに議論が空回りしている局面。
+          </p>
+        </div>
+
+        <div class="guide-situation-card">
+          <span class="guide-situation-label">SITUATION 04</span>
+          <h3 class="guide-situation-title">結果が出ない原因が「現場の努力不足」と片付けられている</h3>
+          <p class="guide-situation-desc">
+            個人の意欲や能力だけに解決を求め、そもそも努力が成果に結びつく前提条件（目標・権限・技術・業務フロー）の設計不備が見直されていない局面。
+          </p>
+        </div>
+      </div>
+
+      <!-- Core Short Stance Banner -->
+      <div class="guide-quote-box">
+        <h3 style="font-size: 1.3rem; font-weight: 700; color: var(--accent-deep); margin-bottom: 0.75rem;">
+          提案と実行を、分断しない。
+        </h3>
+        <p class="guide-quote-text" style="font-size: 1rem; font-weight: 500; color: var(--text-main); margin-bottom: 0.75rem;">
+          私たちは、現場に「もっと頑張ってもらう」ことを、解決策にはしません。<br>
+          事業の目的と現場の制約を捉え、実行できる計画を立て、使い続けられる仕組みをつくる。そして、期待した変化が生まれているかを確かめ、必要なら設計から見直す。
+        </p>
+        <p style="font-size: 0.9375rem; color: var(--text-secondary); margin: 0; line-height: 1.7;">
+          実行段階で生じる難しさまで、構想と設計の課題として扱う。それが、AI Orchestrationの仕事への姿勢です。
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Step 2: 私たちの考え方（4つの柱）
+       ========================================================================== -->
+  <section class="section-wrap" style="padding-top: 5rem; padding-bottom: 5rem;">
+    <div class="container">
+      <div class="section-meta">
+        <span class="section-num">STEP 02</span>
+        <span class="section-tag">私たちの向き合い方</span>
+      </div>
+      <h2 class="section-title" style="font-size: clamp(1.6rem, 3vw, 2.15rem);">
+        私たちの考え方
+      </h2>
+      <p class="section-lead">
+        現場に努力を求める前に、成果につながる条件を整える。私たちは4つの原則に基づいて設計と実装を行います。
+      </p>
+
+      <div class="guide-principle-grid">
+
+        <!-- Principle 1 -->
+        <div class="guide-principle-card">
+          <div class="guide-principle-num">PRINCIPLE 01</div>
+          <h3 class="guide-principle-title">努力を求める前に、<br>成果につながる条件を整える。</h3>
+          <p class="guide-principle-desc">
+            人が力を発揮するには、目指すものが明確であり、必要な情報や権限があり、取り組みの結果を確かめられることが大切です。<br><br>
+            目的が曖昧なまま業務を増やしたり、実行に必要な条件を整えずに目標だけを掲げたりしても、現場の負担は増えるばかりです。<br><br>
+            私たちは、個人の意欲や能力だけに解決を求めません。目標、業務、役割分担、技術を一緒に見直し、努力が成果に結びつく条件を整えることを、経営と設計の重要な役割だと考えています。
+          </p>
+        </div>
+
+        <!-- Principle 2 -->
+        <div class="guide-principle-card">
+          <div class="guide-principle-num">PRINCIPLE 02</div>
+          <h3 class="guide-principle-title">実行の難しさを、<br>現場だけに残さない。</h3>
+          <p class="guide-principle-desc">
+            現場には、既存システム、設備の制約、業務上の例外、限られた人員や予算など、構想段階では見えにくい条件があります。<br><br>
+            「運用で対応する」「現場で調整する」と書くだけでは、その難しさを解決したことにはなりません。<br><br>
+            誰が、何を、どのような手順で実行するのか。既存の業務と衝突しないか。想定どおりに動かないとき、どう対応するのか。私たちは、こうした問いを設計の外に置きません。現場の事実を確かめ、実装や検証を通じて、実行できる形まで具体化します。
+          </p>
+        </div>
+
+        <!-- Principle 3 -->
+        <div class="guide-principle-card">
+          <div class="guide-principle-num">PRINCIPLE 03</div>
+          <h3 class="guide-principle-title">「動く」だけでなく、<br>「使い続けられる」を設計する。</h3>
+          <p class="guide-principle-desc">
+            試作品が動くことと、日々の業務で使えることは同じではありません。<br><br>
+            運用を担う人が扱えるか。不具合に対応できるか。必要な更新や機能追加ができるか。維持費や運用負担が、得られる価値に見合っているか。<br><br>
+            私たちは、開発時の完成形だけでなく、導入後の使われ方まで考えます。運用や保守、引き継ぎを含め、顧客自身が継続して活用できる仕組みを目指します。
+          </p>
+        </div>
+
+        <!-- Principle 4 -->
+        <div class="guide-principle-card">
+          <div class="guide-principle-num">PRINCIPLE 04</div>
+          <h3 class="guide-principle-title">提案の価値を、<br>実際の変化で確かめる。</h3>
+          <p class="guide-principle-desc">
+            専門知識や分析、提案書は、意思決定を支える大切な手段です。しかし、それらを提供すること自体が、私たちの目的ではありません。<br><br>
+            売上や収益性がどう変わるのか。業務負担やリスクをどれだけ減らせるのか。次の投資を判断するために、何を明らかにできるのか。<br><br>
+            支援の目的に応じて、目指す変化と確認方法をあらかじめ共有します。そして、想定どおりの結果が得られなければ、現場の努力不足と決めつけず、仮説や設計から見直します。AIやシステムの導入もそれ自体を目的とせず、導入しない判断や計画変更も、事業に必要なら選択します。
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Sincerity Box -->
+      <div style="background:#ffffff; border:1px solid var(--border-blueprint); border-radius:var(--radius-md); padding:2.25rem 2.5rem; margin-top:3rem; box-shadow:var(--shadow-sm);">
+        <h4 style="font-size:1.15rem; font-weight:700; color:var(--text-main); margin-bottom:0.75rem;">
+          成果への誠実さ｜「成果に向き合う」と「必ず利益が出ると保証する」を混同させない
+        </h4>
+        <p style="font-size:0.9375rem; color:var(--text-secondary); line-height:1.8; margin-bottom:0.75rem;">
+          構想整理や技術評価だけを担う仕事にも十分な価値があります。私たちが問題にしているのは担当範囲の広さではなく、<strong>自分たちの提案が実行可能か、その先で何に役立つかを問わなくなる姿勢</strong>です。
+        </p>
+        <p style="font-size:0.95rem; font-weight:700; color:var(--accent-deep); margin:0;">
+          大切なのは、提案を守ることではなく、事業を前に進めることです。
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Step 3: 具体的な実践事例（制約・変化・検証結果）
+       ========================================================================== -->
+  <section class="section-wrap-subtle" style="padding-top: 5rem; padding-bottom: 5rem;">
+    <div class="container">
+      <div class="section-meta">
+        <span class="section-num">STEP 03</span>
+        <span class="section-tag">具体的な事例</span>
+      </div>
+      <h2 class="section-title" style="font-size: clamp(1.6rem, 3vw, 2.15rem);">
+        言葉を裏付ける、現場での実践事例
+      </h2>
+      <p class="section-lead">
+        完成物だけでなく、「現場のどんな制約を見つけ、何を変え、どこまで確認できたか」を誠実に開示します。
+      </p>
+
+      <div class="guide-case-grid">
+
+        <!-- Case 1: SPAQ CORE -->
+        <div class="guide-case-card">
+          <div class="guide-case-tag-row">
+            <span class="tag-pill" style="font-size:0.7rem;">ENERGY &amp; IoT</span>
+            <span class="guide-case-status ongoing">実機検証中</span>
+          </div>
+          <h3 class="guide-case-title">SPAQ CORE｜産業用蓄電池の充放電予測制御</h3>
+          
+          <div class="guide-case-subblock">
+            <span class="guide-case-sublabel">現場の制約</span>
+            <p class="guide-case-subtext">
+              既存のデマンドコントローラー、EMS、蓄電池、空調が独立制御。通信仕様や遅延、書き込み競合、放電による観測値変化など、現場特有の制約。
+            </p>
+          </div>
+
+          <div class="guide-case-subblock">
+            <span class="guide-case-sublabel">何を変えたか</span>
+            <p class="guide-case-subtext">
+              事業価値から開発要件へ変換。責任分界と運用条件を整理し、30分電力量予算とEWMA複数時間軸による予測充放電制御ロジックを設計・実装。
+            </p>
+          </div>
+
+          <div class="guide-case-subblock">
+            <span class="guide-case-sublabel">どこまで確認できたか</span>
+            <p class="guide-case-subtext">
+              実設備での通信制御経路・充放電動作を確認。シャドーモードによる予測制御・精度評価機能を実装し、現在も継続評価中。
+            </p>
+          </div>
+
+          <div class="guide-case-action">
+            <a href="../spaq-core.html" class="link-arrow">
+              詳細事例を見る
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Case 2: 補助金検索 AI -->
+        <div class="guide-case-card">
+          <div class="guide-case-tag-row">
+            <span class="tag-pill" style="font-size:0.7rem;">AI PRODUCT</span>
+            <span class="guide-case-status">自社運営中</span>
+          </div>
+          <h3 class="guide-case-title">ChatGPTプラグイン - 日本の補助金・公的支援検索</h3>
+          
+          <div class="guide-case-subblock">
+            <span class="guide-case-sublabel">現場の制約</span>
+            <p class="guide-case-subtext">
+              自治体ごとに形式が異なる膨大な公的支援データ、自然言語での曖昧な検索要求、LLMのトークン制約とAPI応答速度の壁。
+            </p>
+          </div>
+
+          <div class="guide-case-subblock">
+            <span class="guide-case-sublabel">何を変えたか</span>
+            <p class="guide-case-subtext">
+              データ収集・正規化パイプラインを構築し、LLMと外部データベースを安全かつ高速に連携するオーケストレーションアーキテクチャを実装。
+            </p>
+          </div>
+
+          <div class="guide-case-subblock">
+            <span class="guide-case-sublabel">どこまで確認できたか</span>
+            <p class="guide-case-subtext">
+              国内初の公的支援検索プラグインとして公開・商用運用。実際の利用者行動とログ分析に基づき、継続的な改善を実施。
+            </p>
+          </div>
+
+          <div class="guide-case-action">
+            <a href="../products/hojokin-ai/index.html" class="link-arrow">
+              プロダクトを見る
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Case 3: データセンター構想 -->
+        <div class="guide-case-card">
+          <div class="guide-case-tag-row">
+            <span class="tag-pill" style="font-size:0.7rem;">INFRASTRUCTURE</span>
+            <span class="guide-case-status">構想検証</span>
+          </div>
+          <h3 class="guide-case-title">石川県データセンター構想｜事業・技術フィジビリティ</h3>
+          
+          <div class="guide-case-subblock">
+            <span class="guide-case-sublabel">現場の制約</span>
+            <p class="guide-case-subtext">
+              地方都市での分散型データセンター誘致に伴う、電力供給、通信インフラ、災害リスク、採算性といった多面的な前提条件。
+            </p>
+          </div>
+
+          <div class="guide-case-subblock">
+            <span class="guide-case-sublabel">何を変えたか</span>
+            <p class="guide-case-subtext">
+              抽象的な誘致構想から、地域性・技術的制約・運用コストを突き合わせた実現可能性の評価基準と設計シナリオを具体化。
+            </p>
+          </div>
+
+          <div class="guide-case-subblock">
+            <span class="guide-case-sublabel">どこまで確認できたか</span>
+            <p class="guide-case-subtext">
+              技術・事業両面でのフィジビリティスタディを完了。意思決定に必要な客観的判断材料を整理。
+            </p>
+          </div>
+
+          <div class="guide-case-action">
+            <a href="../projects/ishikawa-datacenter/index.html" class="link-arrow">
+              プロジェクトを見る
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Step 4: ご相談・お問い合わせ（相談）
+       ========================================================================== -->
+  <section class="section-wrap" style="padding-top: 5rem; padding-bottom: 6rem;">
+    <div class="container">
+      <div class="section-meta">
+        <span class="section-num">STEP 04</span>
+        <span class="section-tag">ご相談について</span>
+      </div>
+      
+      <div class="consulting-lead-banner" style="margin-top: 1rem;">
+        <div style="max-width: 680px;">
+          <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--text-main); margin-bottom: 0.75rem;">
+            まだ仕様が決まっていない段階からご相談いただけます
+          </h3>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.8; margin: 0;">
+            「何から手をつければいいか分からない」「既存の提案書をセカンドオピニオンとして見てほしい」状態こそ、無駄な投資を回避する絶好のタイミングです。現場の事実と制約を踏まえ、実行できる道筋を一緒に見出します。
+          </p>
+        </div>
+        <div style="display:flex; flex-direction:column; gap:0.75rem; align-items:flex-start;">
+          <a href="../index.html#contact" class="btn btn-primary" style="padding: 0.85rem 1.75rem; font-size: 1rem;">
+            ご相談・お問い合わせ
+          </a>
+          <span style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">
+            オンライン相談対応・秘密保持遵守
+          </span>
+        </div>
+      </div>
+
+      <!-- Quick Links to other pages -->
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1.25rem; margin-top:2.5rem;">
+        <a href="../consulting/index.html" class="consulting-compact-card" style="text-decoration:none;">
+          <div class="consulting-compact-num">SERVICE</div>
+          <div class="consulting-compact-title">事業・開発支援</div>
+          <div class="consulting-compact-desc">構想、技術設計、実装・プロトタイピング、継続支援の領域詳細。</div>
+        </a>
+        <a href="../projects/index.html" class="consulting-compact-card" style="text-decoration:none;">
+          <div class="consulting-compact-num">PROJECTS</div>
+          <div class="consulting-compact-title">プロジェクト事例一覧</div>
+          <div class="consulting-compact-desc">課題・技術判断・実装検証の全プロジェクト事例。</div>
+        </a>
+        <a href="../about/index.html" class="consulting-compact-card" style="text-decoration:none;">
+          <div class="consulting-compact-num">COMPANY</div>
+          <div class="consulting-compact-title">私たちについて</div>
+          <div class="consulting-compact-desc">代表プロフィール、会社概要、活動実績のご案内。</div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h4>AI Orchestration.</h4>
+          <p>
+            事業を構想し、AIプロダクトとして実装する。自らプロダクトを開発・提供する実践をもとに、企業の意思決定と事業づくりを支えます。
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">はじめての方へ</a></li>
+            <li><a href="../about/index.html">私たちについて</a></li>
+            <li><a href="../projects/index.html">プロジェクト事例</a></li>
+            <li><a href="../consulting/index.html">事業・開発支援</a></li>
+            <li><a href="../index.html#contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Products &amp; Projects</h5>
+          <ul class="footer-links">
+            <li><a href="../products/index.html">プロダクト一覧</a></li>
+            <li><a href="../products/hojokin-ai/index.html">ChatGPTプラグイン - 日本の補助金・公的支援検索</a></li>
+            <li><a href="../products/hojokin-ai/support/index.html">ChatGPTプラグイン - 日本の補助金・公的支援検索 サポート</a></li>
+            <li><a href="../projects/ishikawa-datacenter/index.html">石川県データセンター</a></li>
+            <li><a href="../spaq-core.html">SPAQ CORE</a></li>
+            <li><a href="../hojokin-ai.html">ChatGPTプラグイン - 日本の補助金・公的支援検索 開発事例</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul class="footer-links">
+            <li><a href="../privacy/index.html">プライバシーポリシー</a></li>
+            <li><a href="../terms/index.html">利用規約</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 AI Orchestration. All rights reserved.</div>
+        <div>現場の努力を、事業の成果につなぐ。</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
