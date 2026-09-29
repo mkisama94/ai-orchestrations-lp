@@ -1,0 +1,24 @@
+{
+  "pages": 9,
+  "characters_per_page": [
+    778,
+    994,
+    1079,
+    1090,
+    1014,
+    1005,
+    976,
+    1078,
+    1232
+  ],
+  "changed_pages": [],
+  "source_links": [
+    "https://www.rikuden.co.jp/nw_youchi/ishikawa_ss01.html",
+    "https://www.rikuden.co.jp/nw_youchi/ishikawa_ss03.html",
+    "https://www.meti.go.jp/policy/energy_environment/global_warming/gx_strategy_area/gx_strategic_zone_type3_japanese_set2.pdf",
+    "https://www.meti.go.jp/policy/energy_environment/global_warming/gx_strategy_area/gx_strategic_zone_type3_japanese_set2.pdf",
+    "https://www.tokio-dr.jp/service/due_dili/eq_pml/"
+  ],
+  "pdf_sha256": "1a266f6efb176b7066b379f25d0c9c11e682f9a096a6f772fd5c6f031010d9b6",
+  "render": "Microsoft Word and PDFium"
+}

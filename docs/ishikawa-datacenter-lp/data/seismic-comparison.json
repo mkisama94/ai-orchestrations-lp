@@ -1,0 +1,2664 @@
+{
+  "schemaVersion": 1,
+  "preparedAt": "2026-09-28",
+  "source": "NIED J-SHIS",
+  "model": "Y2024",
+  "modelBasis": "2020 model with probability reference date updated to January 2024",
+  "baselineDate": "2024-01-01",
+  "case": "AVR",
+  "earthquakes": "TTL_MTTL",
+  "meshResolution": "250m",
+  "pointCount": 22,
+  "validSampleCount": 194,
+  "attemptedSampleCount": 198,
+  "probabilityStorageUnit": "fraction (0 to 1); multiply by 100 once for percent display",
+  "coordinateMeaning": "GSI address representative query point, not necessarily mesh center or actual DC parcel",
+  "limitations": [
+    "Not PML, downtime, or a national site safety ranking",
+    "Does not establish parcel availability or 50MW receiving feasibility",
+    "Power equipment locations and seismic representative points are independent",
+    "Not a new nationwide recalculation incorporating the 2025 offshore fault assessment"
+  ],
+  "points": [
+    {
+      "id": "point-01",
+      "region": "能登・志賀",
+      "address": "石川県羽咋郡志賀町若葉台",
+      "selectionNote": "能登中核工業団地の所在町",
+      "queryLatitude": 37.076885,
+      "queryLongitude": 136.754227,
+      "meshCode": "5536469012",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5536469012 37.0760N,136.7547E 石川県羽咋郡志賀町若葉台 付近 117m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E7%BE%BD%E5%92%8B%E9%83%A1%E5%BF%97%E8%B3%80%E7%94%BA%E8%8B%A5%E8%91%89%E5%8F%B0",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.754227,37.076885&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5536469012/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:29.587Z",
+      "probability6Weak30Years": 0.015979,
+      "probability6Strong30Years": 0.001835,
+      "pgvSurface50Year10PercentCms": 20.8,
+      "amplification": 1.1,
+      "landform": "丘陵",
+      "vs30Ms": 358,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.008328,
+        "maxProbability6Weak30Years": 0.025513,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 37.07239344412504,
+            "longitude": 136.74859726492133,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.7485973,37.0723934&epsg=4326",
+            "meshCode": "5536458942",
+            "status": "available",
+            "probability6Weak30Years": 0.010501
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 37.07239344412504,
+            "longitude": 136.754227,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.7542270,37.0723934&epsg=4326",
+            "meshCode": "5536468032",
+            "status": "available",
+            "probability6Weak30Years": 0.011107
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 37.07239344412504,
+            "longitude": 136.75985673507864,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.7598567,37.0723934&epsg=4326",
+            "meshCode": "5536468042",
+            "status": "available",
+            "probability6Weak30Years": 0.008915
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 37.076885,
+            "longitude": 136.74859726492133,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.7485973,37.0768850&epsg=4326",
+            "meshCode": "5536459922",
+            "status": "available",
+            "probability6Weak30Years": 0.025513
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 37.076885,
+            "longitude": 136.754227,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.7542270,37.0768850&epsg=4326",
+            "meshCode": "5536469012",
+            "status": "available",
+            "probability6Weak30Years": 0.015979
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 37.076885,
+            "longitude": 136.75985673507864,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.7598567,37.0768850&epsg=4326",
+            "meshCode": "5536469022",
+            "status": "available",
+            "probability6Weak30Years": 0.008738
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 37.081376555874954,
+            "longitude": 136.74859726492133,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.7485973,37.0813766&epsg=4326",
+            "meshCode": "5536459944",
+            "status": "available",
+            "probability6Weak30Years": 0.021936
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 37.081376555874954,
+            "longitude": 136.754227,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.7542270,37.0813766&epsg=4326",
+            "meshCode": "5536469034",
+            "status": "available",
+            "probability6Weak30Years": 0.014549
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 37.081376555874954,
+            "longitude": 136.75985673507864,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.7598567,37.0813766&epsg=4326",
+            "meshCode": "5536469044",
+            "status": "available",
+            "probability6Weak30Years": 0.008328
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-02",
+      "region": "能登・輪島",
+      "address": "石川県輪島市三井町三洲穂",
+      "selectionNote": "輪島市臨空産業団地の所在町",
+      "queryLatitude": 37.301277,
+      "queryLongitude": 136.958832,
+      "meshCode": "5536776621",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5536776621 37.3010N,136.9578E 石川県輪島市三井町三洲穂 付近 211m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E8%BC%AA%E5%B3%B6%E5%B8%82%E4%B8%89%E4%BA%95%E7%94%BA%E4%B8%89%E6%B4%B2%E7%A9%82",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.958832,37.301277&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5536776621/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:33.578Z",
+      "probability6Weak30Years": 0.013546,
+      "probability6Strong30Years": 0.001709,
+      "pgvSurface50Year10PercentCms": 19.3,
+      "amplification": 1.12,
+      "landform": "丘陵",
+      "vs30Ms": 351,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.008886,
+        "maxProbability6Weak30Years": 0.014253,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 37.29678544412504,
+            "longitude": 136.95318551115193,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9531855,37.2967854&epsg=4326",
+            "meshCode": "5536775632",
+            "status": "available",
+            "probability6Weak30Years": 0.008886
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 37.29678544412504,
+            "longitude": 136.958832,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9588320,37.2967854&epsg=4326",
+            "meshCode": "5536775641",
+            "status": "available",
+            "probability6Weak30Years": 0.012368
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 37.29678544412504,
+            "longitude": 136.96447848884807,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9644785,37.2967854&epsg=4326",
+            "meshCode": "5536775731",
+            "status": "available",
+            "probability6Weak30Years": 0.013356
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 37.301277,
+            "longitude": 136.95318551115193,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9531855,37.3012770&epsg=4326",
+            "meshCode": "5536776612",
+            "status": "available",
+            "probability6Weak30Years": 0.013624
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 37.301277,
+            "longitude": 136.958832,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9588320,37.3012770&epsg=4326",
+            "meshCode": "5536776621",
+            "status": "available",
+            "probability6Weak30Years": 0.013546
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 37.301277,
+            "longitude": 136.96447848884807,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9644785,37.3012770&epsg=4326",
+            "meshCode": "5536776711",
+            "status": "available",
+            "probability6Weak30Years": 0.010058
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 37.305768555874955,
+            "longitude": 136.95318551115193,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9531855,37.3057686&epsg=4326",
+            "meshCode": "5536776632",
+            "status": "available",
+            "probability6Weak30Years": 0.011888
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 37.305768555874955,
+            "longitude": 136.958832,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9588320,37.3057686&epsg=4326",
+            "meshCode": "5536776641",
+            "status": "available",
+            "probability6Weak30Years": 0.014253
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 37.305768555874955,
+            "longitude": 136.96447848884807,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9644785,37.3057686&epsg=4326",
+            "meshCode": "5536776731",
+            "status": "available",
+            "probability6Weak30Years": 0.011958
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-03",
+      "region": "能登・七尾",
+      "address": "石川県七尾市西三階町",
+      "selectionNote": "工業地区の比較点",
+      "queryLatitude": 37.022678,
+      "queryLongitude": 136.898682,
+      "meshCode": "5536472142",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5536472142 37.0219N,136.8984E 石川県七尾市西三階町 付近 42m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E4%B8%83%E5%B0%BE%E5%B8%82%E8%A5%BF%E4%B8%89%E9%9A%8E%E7%94%BA",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.898682,37.022678&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5536472142/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:37.244Z",
+      "probability6Weak30Years": 0.020182,
+      "probability6Strong30Years": 0.004548,
+      "pgvSurface50Year10PercentCms": 18.8,
+      "amplification": 0.92,
+      "landform": "丘陵",
+      "vs30Ms": 439,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.020182,
+        "maxProbability6Weak30Years": 0.044081,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 37.01818644412504,
+            "longitude": 136.89305628435596,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.8930563,37.0181864&epsg=4326",
+            "meshCode": "5536472112",
+            "status": "available",
+            "probability6Weak30Years": 0.023667
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 37.01818644412504,
+            "longitude": 136.898682,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.8986820,37.0181864&epsg=4326",
+            "meshCode": "5536472122",
+            "status": "available",
+            "probability6Weak30Years": 0.020424
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 37.01818644412504,
+            "longitude": 136.90430771564405,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9043077,37.0181864&epsg=4326",
+            "meshCode": "5536472212",
+            "status": "available",
+            "probability6Weak30Years": 0.044081
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 37.022678,
+            "longitude": 136.89305628435596,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.8930563,37.0226780&epsg=4326",
+            "meshCode": "5536472132",
+            "status": "available",
+            "probability6Weak30Years": 0.022456
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 37.022678,
+            "longitude": 136.898682,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.8986820,37.0226780&epsg=4326",
+            "meshCode": "5536472142",
+            "status": "available",
+            "probability6Weak30Years": 0.020182
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 37.022678,
+            "longitude": 136.90430771564405,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9043077,37.0226780&epsg=4326",
+            "meshCode": "5536472232",
+            "status": "available",
+            "probability6Weak30Years": 0.043677
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 37.027169555874956,
+            "longitude": 136.89305628435596,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.8930563,37.0271696&epsg=4326",
+            "meshCode": "5536473114",
+            "status": "available",
+            "probability6Weak30Years": 0.040469
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 37.027169555874956,
+            "longitude": 136.898682,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.8986820,37.0271696&epsg=4326",
+            "meshCode": "5536473124",
+            "status": "available",
+            "probability6Weak30Years": 0.022836
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 37.027169555874956,
+            "longitude": 136.90430771564405,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9043077,37.0271696&epsg=4326",
+            "meshCode": "5536473214",
+            "status": "available",
+            "probability6Weak30Years": 0.042764
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-04",
+      "region": "能登・中能登",
+      "address": "石川県鹿島郡中能登町井田",
+      "selectionNote": "工業用地の所在地区",
+      "queryLatitude": 36.957989,
+      "queryLongitude": 136.915115,
+      "meshCode": "5536374333",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5536374333 36.9573N,136.9141E 石川県鹿島郡中能登町井田 付近 103m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E9%B9%BF%E5%B3%B6%E9%83%A1%E4%B8%AD%E8%83%BD%E7%99%BB%E7%94%BA%E4%BA%95%E7%94%B0",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.915115,36.957989&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5536374333/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:40.912Z",
+      "probability6Weak30Years": 0.023913,
+      "probability6Strong30Years": 0.007319,
+      "pgvSurface50Year10PercentCms": 18.2,
+      "amplification": 0.84,
+      "landform": "砂礫質台地",
+      "vs30Ms": 493,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.015716,
+        "maxProbability6Weak30Years": 0.035244,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 36.95349744412504,
+            "longitude": 136.9094940669436,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9094941,36.9534974&epsg=4326",
+            "meshCode": "5536374224",
+            "status": "available",
+            "probability6Weak30Years": 0.015716
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 36.95349744412504,
+            "longitude": 136.915115,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9151150,36.9534974&epsg=4326",
+            "meshCode": "5536374313",
+            "status": "available",
+            "probability6Weak30Years": 0.016747
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 36.95349744412504,
+            "longitude": 136.92073593305636,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9207359,36.9534974&epsg=4326",
+            "meshCode": "5536374323",
+            "status": "available",
+            "probability6Weak30Years": 0.016747
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 36.957989,
+            "longitude": 136.9094940669436,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9094941,36.9579890&epsg=4326",
+            "meshCode": "5536374244",
+            "status": "available",
+            "probability6Weak30Years": 0.023249
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 36.957989,
+            "longitude": 136.915115,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9151150,36.9579890&epsg=4326",
+            "meshCode": "5536374333",
+            "status": "available",
+            "probability6Weak30Years": 0.023913
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 36.957989,
+            "longitude": 136.92073593305636,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9207359,36.9579890&epsg=4326",
+            "meshCode": "5536374343",
+            "status": "available",
+            "probability6Weak30Years": 0.016747
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 36.962480555874954,
+            "longitude": 136.9094940669436,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9094941,36.9624806&epsg=4326",
+            "meshCode": "5536375224",
+            "status": "available",
+            "probability6Weak30Years": 0.035244
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 36.962480555874954,
+            "longitude": 136.915115,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9151150,36.9624806&epsg=4326",
+            "meshCode": "5536375313",
+            "status": "available",
+            "probability6Weak30Years": 0.035232
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 36.962480555874954,
+            "longitude": 136.92073593305636,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9207359,36.9624806&epsg=4326",
+            "meshCode": "5536375323",
+            "status": "available",
+            "probability6Weak30Years": 0.016239
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-05",
+      "region": "石川・能美",
+      "address": "石川県能美市旭台2丁目",
+      "selectionNote": "いしかわサイエンスパーク周辺",
+      "queryLatitude": 36.449108,
+      "queryLongitude": 136.594009,
+      "meshCode": "5436543743",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5436543743 36.4490N,136.5953E 石川県能美市旭台２丁目 付近 112m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%9F%B3%E5%B7%9D%E7%9C%8C%E8%83%BD%E7%BE%8E%E5%B8%82%E6%97%AD%E5%8F%B02%E4%B8%81%E7%9B%AE",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.594009,36.449108&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5436543743/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:44.455Z",
+      "probability6Weak30Years": 0.048913,
+      "probability6Strong30Years": 0.016531,
+      "pgvSurface50Year10PercentCms": 30.3,
+      "amplification": 1.02,
+      "landform": "丘陵",
+      "vs30Ms": 392,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.042179,
+        "maxProbability6Weak30Years": 0.058649,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 36.444616444125046,
+            "longitude": 136.58842516076996,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.5884252,36.4446164&epsg=4326",
+            "meshCode": "5436543713",
+            "status": "available",
+            "probability6Weak30Years": 0.05079
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 36.444616444125046,
+            "longitude": 136.594009,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.5940090,36.4446164&epsg=4326",
+            "meshCode": "5436543723",
+            "status": "available",
+            "probability6Weak30Years": 0.045963
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 36.444616444125046,
+            "longitude": 136.59959283923004,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.5995928,36.4446164&epsg=4326",
+            "meshCode": "5436543724",
+            "status": "available",
+            "probability6Weak30Years": 0.044793
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 36.449108,
+            "longitude": 136.58842516076996,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.5884252,36.4491080&epsg=4326",
+            "meshCode": "5436543733",
+            "status": "available",
+            "probability6Weak30Years": 0.042179
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 36.449108,
+            "longitude": 136.594009,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.5940090,36.4491080&epsg=4326",
+            "meshCode": "5436543743",
+            "status": "available",
+            "probability6Weak30Years": 0.048913
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 36.449108,
+            "longitude": 136.59959283923004,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.5995928,36.4491080&epsg=4326",
+            "meshCode": "5436543744",
+            "status": "available",
+            "probability6Weak30Years": 0.046994
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 36.45359955587496,
+            "longitude": 136.58842516076996,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.5884252,36.4535996&epsg=4326",
+            "meshCode": "5436544713",
+            "status": "available",
+            "probability6Weak30Years": 0.058649
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 36.45359955587496,
+            "longitude": 136.594009,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.5940090,36.4535996&epsg=4326",
+            "meshCode": "5436544723",
+            "status": "available",
+            "probability6Weak30Years": 0.057559
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 36.45359955587496,
+            "longitude": 136.59959283923004,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.5995928,36.4535996&epsg=4326",
+            "meshCode": "5436544724",
+            "status": "available",
+            "probability6Weak30Years": 0.057526
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-06",
+      "region": "北海道・石狩",
+      "address": "北海道石狩市新港中央1丁目",
+      "selectionNote": "石狩湾新港DC集積地区",
+      "queryLatitude": 43.179714,
+      "queryLongitude": 141.294754,
+      "meshCode": "6441621341",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 6441621341 43.1802N,141.2953E 北海道石狩市新港中央１丁目 付近 5m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8C%97%E6%B5%B7%E9%81%93%E7%9F%B3%E7%8B%A9%E5%B8%82%E6%96%B0%E6%B8%AF%E4%B8%AD%E5%A4%AE1%E4%B8%81%E7%9B%AE",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.294754,43.179714&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/6441621341/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:48.234Z",
+      "probability6Weak30Years": 0.026079,
+      "probability6Strong30Years": 0.002598,
+      "pgvSurface50Year10PercentCms": 32.7,
+      "amplification": 1.44,
+      "landform": "砂州・砂礫州",
+      "vs30Ms": 260,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.02581,
+        "maxProbability6Weak30Years": 0.026534,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 43.17522244412504,
+            "longitude": 141.288594526023,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.2885945,43.1752224&epsg=4326",
+            "meshCode": "6441621311",
+            "status": "available",
+            "probability6Weak30Years": 0.026079
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 43.17522244412504,
+            "longitude": 141.294754,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.2947540,43.1752224&epsg=4326",
+            "meshCode": "6441621321",
+            "status": "available",
+            "probability6Weak30Years": 0.026079
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 43.17522244412504,
+            "longitude": 141.30091347397703,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.3009135,43.1752224&epsg=4326",
+            "meshCode": "6441621411",
+            "status": "available",
+            "probability6Weak30Years": 0.026534
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 43.179714,
+            "longitude": 141.288594526023,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.2885945,43.1797140&epsg=4326",
+            "meshCode": "6441621331",
+            "status": "available",
+            "probability6Weak30Years": 0.026079
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 43.179714,
+            "longitude": 141.294754,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.2947540,43.1797140&epsg=4326",
+            "meshCode": "6441621341",
+            "status": "available",
+            "probability6Weak30Years": 0.026079
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 43.179714,
+            "longitude": 141.30091347397703,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.3009135,43.1797140&epsg=4326",
+            "meshCode": "6441621431",
+            "status": "available",
+            "probability6Weak30Years": 0.026534
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 43.184205555874954,
+            "longitude": 141.288594526023,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.2885945,43.1842056&epsg=4326",
+            "meshCode": "6441622311",
+            "status": "available",
+            "probability6Weak30Years": 0.02581
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 43.184205555874954,
+            "longitude": 141.294754,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.2947540,43.1842056&epsg=4326",
+            "meshCode": "6441622321",
+            "status": "available",
+            "probability6Weak30Years": 0.02581
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 43.184205555874954,
+            "longitude": 141.30091347397703,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.3009135,43.1842056&epsg=4326",
+            "meshCode": "6441622411",
+            "status": "available",
+            "probability6Weak30Years": 0.026261
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-07",
+      "region": "北海道・苫小牧",
+      "address": "北海道苫小牧市字柏原",
+      "selectionNote": "苫小牧東部のDC開発地区",
+      "queryLatitude": 42.677711,
+      "queryLongitude": 141.760132,
+      "meshCode": "6441061024",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 6441061024 42.6781N,141.7609E 北海道苫小牧市字柏原 付近 8m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8C%97%E6%B5%B7%E9%81%93%E8%8B%AB%E5%B0%8F%E7%89%A7%E5%B8%82%E5%AD%97%E6%9F%8F%E5%8E%9F",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.760132,42.677711&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/6441061024/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:52.296Z",
+      "probability6Weak30Years": 0.130836,
+      "probability6Strong30Years": 0.015247,
+      "pgvSurface50Year10PercentCms": 59.6,
+      "amplification": 1.48,
+      "landform": "火山山麓地",
+      "vs30Ms": 253,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.126169,
+        "maxProbability6Weak30Years": 0.327941,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 42.673219444125046,
+            "longitude": 141.75402252214926,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.7540225,42.6732194&epsg=4326",
+            "meshCode": "6441060034",
+            "status": "available",
+            "probability6Weak30Years": 0.325697
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 42.673219444125046,
+            "longitude": 141.760132,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.7601320,42.6732194&epsg=4326",
+            "meshCode": "6441060044",
+            "status": "available",
+            "probability6Weak30Years": 0.324157
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 42.673219444125046,
+            "longitude": 141.76624147785074,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.7662415,42.6732194&epsg=4326",
+            "meshCode": "6441060134",
+            "status": "available",
+            "probability6Weak30Years": 0.327941
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 42.677711,
+            "longitude": 141.75402252214926,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.7540225,42.6777110&epsg=4326",
+            "meshCode": "6441061014",
+            "status": "available",
+            "probability6Weak30Years": 0.158925
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 42.677711,
+            "longitude": 141.760132,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.7601320,42.6777110&epsg=4326",
+            "meshCode": "6441061024",
+            "status": "available",
+            "probability6Weak30Years": 0.130836
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 42.677711,
+            "longitude": 141.76624147785074,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.7662415,42.6777110&epsg=4326",
+            "meshCode": "6441061114",
+            "status": "available",
+            "probability6Weak30Years": 0.16701
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 42.68220255587496,
+            "longitude": 141.75402252214926,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.7540225,42.6822026&epsg=4326",
+            "meshCode": "6441061034",
+            "status": "available",
+            "probability6Weak30Years": 0.173708
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 42.68220255587496,
+            "longitude": 141.760132,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.7601320,42.6822026&epsg=4326",
+            "meshCode": "6441061044",
+            "status": "available",
+            "probability6Weak30Years": 0.126169
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 42.68220255587496,
+            "longitude": 141.76624147785074,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=141.7662415,42.6822026&epsg=4326",
+            "meshCode": "6441061134",
+            "status": "available",
+            "probability6Weak30Years": 0.16587
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-08",
+      "region": "宮城・仙台",
+      "address": "宮城県仙台市泉区明通2丁目",
+      "selectionNote": "泉パークタウンの産業地区",
+      "queryLatitude": 38.355267,
+      "queryLongitude": 140.845673,
+      "meshCode": "5740462741",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5740462741 38.3552N,140.8453E 宮城県仙台市泉区明通２丁目 付近 85m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%AE%AE%E5%9F%8E%E7%9C%8C%E4%BB%99%E5%8F%B0%E5%B8%82%E6%B3%89%E5%8C%BA%E6%98%8E%E9%80%9A2%E4%B8%81%E7%9B%AE",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.845673,38.355267&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5740462741/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:52.765Z",
+      "probability6Weak30Years": 0.055607,
+      "probability6Strong30Years": 0.005356,
+      "pgvSurface50Year10PercentCms": 41.1,
+      "amplification": 0.99,
+      "landform": "火山性丘陵",
+      "vs30Ms": 406,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.054823,
+        "maxProbability6Weak30Years": 0.087578,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 38.35077544412504,
+            "longitude": 140.8399452763343,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.8399453,38.3507754&epsg=4326",
+            "meshCode": "5740462711",
+            "status": "available",
+            "probability6Weak30Years": 0.055607
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 38.35077544412504,
+            "longitude": 140.845673,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.8456730,38.3507754&epsg=4326",
+            "meshCode": "5740462721",
+            "status": "available",
+            "probability6Weak30Years": 0.055607
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 38.35077544412504,
+            "longitude": 140.8514007236657,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.8514007,38.3507754&epsg=4326",
+            "meshCode": "5740462811",
+            "status": "available",
+            "probability6Weak30Years": 0.057459
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 38.355267,
+            "longitude": 140.8399452763343,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.8399453,38.3552670&epsg=4326",
+            "meshCode": "5740462731",
+            "status": "available",
+            "probability6Weak30Years": 0.055607
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 38.355267,
+            "longitude": 140.845673,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.8456730,38.3552670&epsg=4326",
+            "meshCode": "5740462741",
+            "status": "available",
+            "probability6Weak30Years": 0.055607
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 38.355267,
+            "longitude": 140.8514007236657,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.8514007,38.3552670&epsg=4326",
+            "meshCode": "5740462831",
+            "status": "available",
+            "probability6Weak30Years": 0.057459
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 38.359758555874954,
+            "longitude": 140.8399452763343,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.8399453,38.3597586&epsg=4326",
+            "meshCode": "5740463711",
+            "status": "available",
+            "probability6Weak30Years": 0.054823
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 38.359758555874954,
+            "longitude": 140.845673,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.8456730,38.3597586&epsg=4326",
+            "meshCode": "5740463721",
+            "status": "available",
+            "probability6Weak30Years": 0.087578
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 38.359758555874954,
+            "longitude": 140.8514007236657,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.8514007,38.3597586&epsg=4326",
+            "meshCode": "5740463811",
+            "status": "available",
+            "probability6Weak30Years": 0.056665
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-09",
+      "region": "千葉・印西",
+      "address": "千葉県印西市大塚2丁目",
+      "selectionNote": "千葉ニュータウンのDC集積地区",
+      "queryLatitude": 35.808285,
+      "queryLongitude": 140.117874,
+      "meshCode": "5340506934",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5340506934 35.8073N,140.1172E 千葉県印西市大塚２丁目 付近 22m 650～700人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E5%8D%B0%E8%A5%BF%E5%B8%82%E5%A4%A7%E5%A1%9A2%E4%B8%81%E7%9B%AE",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.117874,35.808285&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5340506934/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:53.078Z",
+      "probability6Weak30Years": 0.592304,
+      "probability6Strong30Years": 0.1405,
+      "pgvSurface50Year10PercentCms": 109.7,
+      "amplification": 1.52,
+      "landform": "火山灰台地",
+      "vs30Ms": 244,
+      "vs30Source": "浅部地盤",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.516932,
+        "maxProbability6Weak30Years": 0.800404,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 35.80379344412504,
+            "longitude": 140.11233556481608,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.1123356,35.8037934&epsg=4326",
+            "meshCode": "5340506824",
+            "status": "available",
+            "probability6Weak30Years": 0.549894
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 35.80379344412504,
+            "longitude": 140.117874,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.1178740,35.8037934&epsg=4326",
+            "meshCode": "5340506914",
+            "status": "available",
+            "probability6Weak30Years": 0.57577
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 35.80379344412504,
+            "longitude": 140.12341243518392,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.1234124,35.8037934&epsg=4326",
+            "meshCode": "5340506924",
+            "status": "available",
+            "probability6Weak30Years": 0.667671
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 35.808285,
+            "longitude": 140.11233556481608,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.1123356,35.8082850&epsg=4326",
+            "meshCode": "5340506844",
+            "status": "available",
+            "probability6Weak30Years": 0.516932
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 35.808285,
+            "longitude": 140.117874,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.1178740,35.8082850&epsg=4326",
+            "meshCode": "5340506934",
+            "status": "available",
+            "probability6Weak30Years": 0.592304
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 35.808285,
+            "longitude": 140.12341243518392,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.1234124,35.8082850&epsg=4326",
+            "meshCode": "5340506944",
+            "status": "available",
+            "probability6Weak30Years": 0.650589
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 35.812776555874954,
+            "longitude": 140.11233556481608,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.1123356,35.8127766&epsg=4326",
+            "meshCode": "5340507842",
+            "status": "available",
+            "probability6Weak30Years": 0.800404
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 35.812776555874954,
+            "longitude": 140.117874,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.1178740,35.8127766&epsg=4326",
+            "meshCode": "5340507932",
+            "status": "available",
+            "probability6Weak30Years": 0.596591
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 35.812776555874954,
+            "longitude": 140.12341243518392,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.1234124,35.8127766&epsg=4326",
+            "meshCode": "5340507942",
+            "status": "available",
+            "probability6Weak30Years": 0.575944
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-10",
+      "region": "千葉・白井",
+      "address": "千葉県白井市復",
+      "selectionNote": "白井DC開発地区",
+      "queryLatitude": 35.783794,
+      "queryLongitude": 140.065918,
+      "meshCode": "5340504512",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5340504512 35.7844N,140.0672E 千葉県船橋市小室町 付近 12m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%8D%83%E8%91%89%E7%9C%8C%E7%99%BD%E4%BA%95%E5%B8%82%E5%BE%A9",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.065918,35.783794&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5340504512/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:56.765Z",
+      "probability6Weak30Years": 0.362154,
+      "probability6Strong30Years": 0.054002,
+      "pgvSurface50Year10PercentCms": 82.2,
+      "amplification": 1.16,
+      "landform": "谷底低地",
+      "vs30Ms": 335,
+      "vs30Source": "浅部地盤",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.362154,
+        "maxProbability6Weak30Years": 0.637973,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 35.779302444125044,
+            "longitude": 140.06038127172434,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.0603813,35.7793024&epsg=4326",
+            "meshCode": "5340503442",
+            "status": "available",
+            "probability6Weak30Years": 0.537219
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 35.779302444125044,
+            "longitude": 140.065918,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.0659180,35.7793024&epsg=4326",
+            "meshCode": "5340503532",
+            "status": "available",
+            "probability6Weak30Years": 0.563917
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 35.779302444125044,
+            "longitude": 140.07145472827568,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.0714547,35.7793024&epsg=4326",
+            "meshCode": "5340503541",
+            "status": "available",
+            "probability6Weak30Years": 0.574119
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 35.783794,
+            "longitude": 140.06038127172434,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.0603813,35.7837940&epsg=4326",
+            "meshCode": "5340504422",
+            "status": "available",
+            "probability6Weak30Years": 0.566417
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 35.783794,
+            "longitude": 140.065918,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.0659180,35.7837940&epsg=4326",
+            "meshCode": "5340504512",
+            "status": "available",
+            "probability6Weak30Years": 0.362154
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 35.783794,
+            "longitude": 140.07145472827568,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.0714547,35.7837940&epsg=4326",
+            "meshCode": "5340504521",
+            "status": "available",
+            "probability6Weak30Years": 0.602676
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 35.78828555587496,
+            "longitude": 140.06038127172434,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.0603813,35.7882856&epsg=4326",
+            "meshCode": "5340504442",
+            "status": "available",
+            "probability6Weak30Years": 0.582786
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 35.78828555587496,
+            "longitude": 140.065918,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.0659180,35.7882856&epsg=4326",
+            "meshCode": "5340504532",
+            "status": "available",
+            "probability6Weak30Years": 0.559599
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 35.78828555587496,
+            "longitude": 140.07145472827568,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=140.0714547,35.7882856&epsg=4326",
+            "meshCode": "5340504541",
+            "status": "available",
+            "probability6Weak30Years": 0.637973
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-11",
+      "region": "東京・多摩",
+      "address": "東京都多摩市唐木田3丁目",
+      "selectionNote": "多摩のDC集積地区",
+      "queryLatitude": 35.610413,
+      "queryLongitude": 139.402588,
+      "meshCode": "5339333211",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5339333211 35.6094N,139.4016E 東京都町田市 付近 153m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%A4%9A%E6%91%A9%E5%B8%82%E5%94%90%E6%9C%A8%E7%94%B03%E4%B8%81%E7%9B%AE",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.402588,35.610413&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5339333211/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:57.129Z",
+      "probability6Weak30Years": 0.227378,
+      "probability6Strong30Years": 0.024487,
+      "pgvSurface50Year10PercentCms": 66.1,
+      "amplification": 0.99,
+      "landform": "丘陵",
+      "vs30Ms": 402,
+      "vs30Source": "浅部地盤",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.212962,
+        "maxProbability6Weak30Years": 0.240177,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 35.605921444125045,
+            "longitude": 139.3970632967232,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.3970633,35.6059214&epsg=4326",
+            "meshCode": "5339332142",
+            "status": "available",
+            "probability6Weak30Years": 0.240177
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 35.605921444125045,
+            "longitude": 139.402588,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.4025880,35.6059214&epsg=4326",
+            "meshCode": "5339332231",
+            "status": "available",
+            "probability6Weak30Years": 0.236774
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 35.605921444125045,
+            "longitude": 139.40811270327683,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.4081127,35.6059214&epsg=4326",
+            "meshCode": "5339332241",
+            "status": "available",
+            "probability6Weak30Years": 0.233921
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 35.610413,
+            "longitude": 139.3970632967232,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.3970633,35.6104130&epsg=4326",
+            "meshCode": "5339333122",
+            "status": "available",
+            "probability6Weak30Years": 0.230995
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 35.610413,
+            "longitude": 139.402588,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.4025880,35.6104130&epsg=4326",
+            "meshCode": "5339333211",
+            "status": "available",
+            "probability6Weak30Years": 0.227378
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 35.610413,
+            "longitude": 139.40811270327683,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.4081127,35.6104130&epsg=4326",
+            "meshCode": "5339333221",
+            "status": "available",
+            "probability6Weak30Years": 0.223511
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 35.61490455587496,
+            "longitude": 139.3970632967232,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.3970633,35.6149046&epsg=4326",
+            "meshCode": "5339333144",
+            "status": "available",
+            "probability6Weak30Years": 0.223136
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 35.61490455587496,
+            "longitude": 139.402588,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.4025880,35.6149046&epsg=4326",
+            "meshCode": "5339333233",
+            "status": "available",
+            "probability6Weak30Years": 0.218962
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 35.61490455587496,
+            "longitude": 139.40811270327683,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.4081127,35.6149046&epsg=4326",
+            "meshCode": "5339333243",
+            "status": "available",
+            "probability6Weak30Years": 0.212962
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-12",
+      "region": "神奈川・相模原",
+      "address": "神奈川県相模原市中央区宮下1丁目",
+      "selectionNote": "相模原のDC集積地区",
+      "queryLatitude": 35.588322,
+      "queryLongitude": 139.361664,
+      "meshCode": "5339320842",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5339320842 35.5885N,139.3609E 神奈川県相模原市中央区宮下１丁目 付近 133m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E7%9B%B8%E6%A8%A1%E5%8E%9F%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%AE%AE%E4%B8%8B1%E4%B8%81%E7%9B%AE",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.361664,35.588322&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5339320842/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:57.440Z",
+      "probability6Weak30Years": 0.461714,
+      "probability6Strong30Years": 0.094485,
+      "pgvSurface50Year10PercentCms": 94,
+      "amplification": 1.4,
+      "landform": "火山灰台地",
+      "vs30Ms": 270,
+      "vs30Source": "浅部地盤",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.422883,
+        "maxProbability6Weak30Years": 0.476597,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 35.58383044412504,
+            "longitude": 139.356140821485,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.3561408,35.5838304&epsg=4326",
+            "meshCode": "5339320812",
+            "status": "available",
+            "probability6Weak30Years": 0.422883
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 35.58383044412504,
+            "longitude": 139.361664,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.3616640,35.5838304&epsg=4326",
+            "meshCode": "5339320822",
+            "status": "available",
+            "probability6Weak30Years": 0.46182
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 35.58383044412504,
+            "longitude": 139.36718717851497,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.3671872,35.5838304&epsg=4326",
+            "meshCode": "5339320912",
+            "status": "available",
+            "probability6Weak30Years": 0.476597
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 35.588322,
+            "longitude": 139.356140821485,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.3561408,35.5883220&epsg=4326",
+            "meshCode": "5339320832",
+            "status": "available",
+            "probability6Weak30Years": 0.435388
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 35.588322,
+            "longitude": 139.361664,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.3616640,35.5883220&epsg=4326",
+            "meshCode": "5339320842",
+            "status": "available",
+            "probability6Weak30Years": 0.461714
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 35.588322,
+            "longitude": 139.36718717851497,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.3671872,35.5883220&epsg=4326",
+            "meshCode": "5339320932",
+            "status": "available",
+            "probability6Weak30Years": 0.472248
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 35.592813555874955,
+            "longitude": 139.356140821485,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.3561408,35.5928136&epsg=4326",
+            "meshCode": "5339321812",
+            "status": "available",
+            "probability6Weak30Years": 0.461162
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 35.592813555874955,
+            "longitude": 139.361664,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.3616640,35.5928136&epsg=4326",
+            "meshCode": "5339321822",
+            "status": "available",
+            "probability6Weak30Years": 0.447009
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 35.592813555874955,
+            "longitude": 139.36718717851497,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=139.3671872,35.5928136&epsg=4326",
+            "meshCode": "5339321912",
+            "status": "available",
+            "probability6Weak30Years": 0.453549
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-13",
+      "region": "大阪・茨木",
+      "address": "大阪府茨木市彩都あかね",
+      "selectionNote": "彩都の産業地区",
+      "queryLatitude": 34.860527,
+      "queryLongitude": 135.535034,
+      "meshCode": "5235243224",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5235243224 34.8615N,135.5359E 大阪府茨木市彩都あかね 付近 194m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E8%8C%A8%E6%9C%A8%E5%B8%82%E5%BD%A9%E9%83%BD%E3%81%82%E3%81%8B%E3%81%AD",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.535034,34.860527&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5235243224/meshinfo.html",
+      "collectedAt": "2026-09-28T05:47:57.991Z",
+      "probability6Weak30Years": 0.075149,
+      "probability6Strong30Years": 0.020829,
+      "pgvSurface50Year10PercentCms": 42.2,
+      "amplification": 0.89,
+      "landform": "丘陵",
+      "vs30Ms": 460,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.068074,
+        "maxProbability6Weak30Years": 0.173141,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 34.85603544412504,
+            "longitude": 135.5295601366384,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5295601,34.8560354&epsg=4326",
+            "meshCode": "5235242232",
+            "status": "available",
+            "probability6Weak30Years": 0.080391
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 34.85603544412504,
+            "longitude": 135.535034,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5350340,34.8560354&epsg=4326",
+            "meshCode": "5235242242",
+            "status": "available",
+            "probability6Weak30Years": 0.084374
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 34.85603544412504,
+            "longitude": 135.5405078633616,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5405079,34.8560354&epsg=4326",
+            "meshCode": "5235242331",
+            "status": "available",
+            "probability6Weak30Years": 0.088661
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 34.860527,
+            "longitude": 135.5295601366384,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5295601,34.8605270&epsg=4326",
+            "meshCode": "5235243214",
+            "status": "available",
+            "probability6Weak30Years": 0.112944
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 34.860527,
+            "longitude": 135.535034,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5350340,34.8605270&epsg=4326",
+            "meshCode": "5235243224",
+            "status": "available",
+            "probability6Weak30Years": 0.075149
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 34.860527,
+            "longitude": 135.5405078633616,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5405079,34.8605270&epsg=4326",
+            "meshCode": "5235243313",
+            "status": "available",
+            "probability6Weak30Years": 0.070112
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 34.865018555874954,
+            "longitude": 135.5295601366384,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5295601,34.8650186&epsg=4326",
+            "meshCode": "5235243234",
+            "status": "available",
+            "probability6Weak30Years": 0.1004
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 34.865018555874954,
+            "longitude": 135.535034,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5350340,34.8650186&epsg=4326",
+            "meshCode": "5235243244",
+            "status": "available",
+            "probability6Weak30Years": 0.068074
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 34.865018555874954,
+            "longitude": 135.5405078633616,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5405079,34.8650186&epsg=4326",
+            "meshCode": "5235243333",
+            "status": "available",
+            "probability6Weak30Years": 0.173141
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-14",
+      "region": "大阪・箕面",
+      "address": "大阪府箕面市彩都粟生北2丁目",
+      "selectionNote": "彩都のDC集積地区",
+      "queryLatitude": 34.857738,
+      "queryLongitude": 135.509857,
+      "meshCode": "5235242044",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5235242044 34.8573N,135.5109E 大阪府箕面市彩都粟生北２丁目 付近 184m 50～100人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E7%AE%95%E9%9D%A2%E5%B8%82%E5%BD%A9%E9%83%BD%E7%B2%9F%E7%94%9F%E5%8C%972%E4%B8%81%E7%9B%AE",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.509857,34.857738&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5235242044/meshinfo.html",
+      "collectedAt": "2026-09-28T05:48:01.454Z",
+      "probability6Weak30Years": 0.031328,
+      "probability6Strong30Years": 0.008509,
+      "pgvSurface50Year10PercentCms": 27.2,
+      "amplification": 0.57,
+      "landform": "山地",
+      "vs30Ms": 776,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.02985,
+        "maxProbability6Weak30Years": 0.041557,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 34.85324644412504,
+            "longitude": 135.5043833222327,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5043833,34.8532464&epsg=4326",
+            "meshCode": "5235242014",
+            "status": "available",
+            "probability6Weak30Years": 0.031328
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 34.85324644412504,
+            "longitude": 135.509857,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5098570,34.8532464&epsg=4326",
+            "meshCode": "5235242024",
+            "status": "available",
+            "probability6Weak30Years": 0.031328
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 34.85324644412504,
+            "longitude": 135.5153306777673,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5153307,34.8532464&epsg=4326",
+            "meshCode": "5235242113",
+            "status": "available",
+            "probability6Weak30Years": 0.030957
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 34.857738,
+            "longitude": 135.5043833222327,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5043833,34.8577380&epsg=4326",
+            "meshCode": "5235242034",
+            "status": "available",
+            "probability6Weak30Years": 0.031328
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 34.857738,
+            "longitude": 135.509857,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5098570,34.8577380&epsg=4326",
+            "meshCode": "5235242044",
+            "status": "available",
+            "probability6Weak30Years": 0.031328
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 34.857738,
+            "longitude": 135.5153306777673,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5153307,34.8577380&epsg=4326",
+            "meshCode": "5235242133",
+            "status": "available",
+            "probability6Weak30Years": 0.041557
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 34.862229555874954,
+            "longitude": 135.5043833222327,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5043833,34.8622296&epsg=4326",
+            "meshCode": "5235243014",
+            "status": "available",
+            "probability6Weak30Years": 0.030088
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 34.862229555874954,
+            "longitude": 135.509857,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5098570,34.8622296&epsg=4326",
+            "meshCode": "5235243024",
+            "status": "available",
+            "probability6Weak30Years": 0.030088
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 34.862229555874954,
+            "longitude": 135.5153306777673,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.5153307,34.8622296&epsg=4326",
+            "meshCode": "5235243113",
+            "status": "available",
+            "probability6Weak30Years": 0.02985
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-15",
+      "region": "大阪・堺",
+      "address": "大阪府堺市堺区匠町",
+      "selectionNote": "大規模AI DC開発地区",
+      "queryLatitude": 34.596886,
+      "queryLongitude": 135.433594,
+      "meshCode": "5135731441",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5135731441 34.5969N,135.4328E 大阪府堺市堺区匠町 付近 7m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%A4%A7%E9%98%AA%E5%BA%9C%E5%A0%BA%E5%B8%82%E5%A0%BA%E5%8C%BA%E5%8C%A0%E7%94%BA",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.433594,34.596886&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5135731441/meshinfo.html",
+      "collectedAt": "2026-09-28T05:48:04.777Z",
+      "probability6Weak30Years": 0.586536,
+      "probability6Strong30Years": 0.15198,
+      "pgvSurface50Year10PercentCms": 105.5,
+      "amplification": 2.03,
+      "landform": "埋立地",
+      "vs30Ms": 174,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 8,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.581998,
+        "maxProbability6Weak30Years": 0.590334,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 34.59239444412504,
+            "longitude": 135.4281375681661,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.4281376,34.5923944&epsg=4326",
+            "meshCode": "5135731412",
+            "status": "available",
+            "probability6Weak30Years": 0.583861
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 34.59239444412504,
+            "longitude": 135.433594,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.4335940,34.5923944&epsg=4326",
+            "meshCode": "5135731421",
+            "status": "available",
+            "probability6Weak30Years": 0.583861
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 34.59239444412504,
+            "longitude": 135.4390504318339,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.4390504,34.5923944&epsg=4326",
+            "meshCode": "5135731511",
+            "status": "available",
+            "probability6Weak30Years": 0.587682
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 34.596886,
+            "longitude": 135.4281375681661,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.4281376,34.5968860&epsg=4326",
+            "meshCode": "5135731432",
+            "status": "available",
+            "probability6Weak30Years": 0.586536
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 34.596886,
+            "longitude": 135.433594,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.4335940,34.5968860&epsg=4326",
+            "meshCode": "5135731441",
+            "status": "available",
+            "probability6Weak30Years": 0.586536
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 34.596886,
+            "longitude": 135.4390504318339,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.4390504,34.5968860&epsg=4326",
+            "meshCode": "5135731531",
+            "status": "available",
+            "probability6Weak30Years": 0.590334
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 34.601377555874954,
+            "longitude": 135.4281375681661,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.4281376,34.6013776&epsg=4326",
+            "meshCode": "5135732412",
+            "status": "available",
+            "probability6Weak30Years": 0.581998
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 34.601377555874954,
+            "longitude": 135.433594,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.4335940,34.6013776&epsg=4326",
+            "meshCode": "5135732421",
+            "status": "available",
+            "probability6Weak30Years": 0.583294
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 34.601377555874954,
+            "longitude": 135.4390504318339,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.4390504,34.6013776&epsg=4326",
+            "meshCode": null,
+            "status": "no_data",
+            "probability6Weak30Years": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-16",
+      "region": "京都・精華",
+      "address": "京都府相楽郡精華町精華台7丁目",
+      "selectionNote": "けいはんなのDC集積地区",
+      "queryLatitude": 34.74699,
+      "queryLongitude": 135.781693,
+      "meshCode": "5235069241",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5235069241 34.7469N,135.7828E 京都府木津川市木津川台９丁目 付近 78m 300～350人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E7%9B%B8%E6%A5%BD%E9%83%A1%E7%B2%BE%E8%8F%AF%E7%94%BA%E7%B2%BE%E8%8F%AF%E5%8F%B07%E4%B8%81%E7%9B%AE",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.781693,34.74699&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5235069241/meshinfo.html",
+      "collectedAt": "2026-09-28T05:48:08.324Z",
+      "probability6Weak30Years": 0.202592,
+      "probability6Strong30Years": 0.032558,
+      "pgvSurface50Year10PercentCms": 60.1,
+      "amplification": 1.07,
+      "landform": "丘陵",
+      "vs30Ms": 371,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.169979,
+        "maxProbability6Weak30Years": 0.234459,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 34.74249844412504,
+            "longitude": 135.7762266713525,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.7762267,34.7424984&epsg=4326",
+            "meshCode": "5235069211",
+            "status": "available",
+            "probability6Weak30Years": 0.228987
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 34.74249844412504,
+            "longitude": 135.781693,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.7816930,34.7424984&epsg=4326",
+            "meshCode": "5235069221",
+            "status": "available",
+            "probability6Weak30Years": 0.234459
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 34.74249844412504,
+            "longitude": 135.78715932864748,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.7871593,34.7424984&epsg=4326",
+            "meshCode": "5235069222",
+            "status": "available",
+            "probability6Weak30Years": 0.191869
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 34.74699,
+            "longitude": 135.7762266713525,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.7762267,34.7469900&epsg=4326",
+            "meshCode": "5235069231",
+            "status": "available",
+            "probability6Weak30Years": 0.199428
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 34.74699,
+            "longitude": 135.781693,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.7816930,34.7469900&epsg=4326",
+            "meshCode": "5235069241",
+            "status": "available",
+            "probability6Weak30Years": 0.202592
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 34.74699,
+            "longitude": 135.78715932864748,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.7871593,34.7469900&epsg=4326",
+            "meshCode": "5235069242",
+            "status": "available",
+            "probability6Weak30Years": 0.204247
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 34.75148155587495,
+            "longitude": 135.7762266713525,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.7762267,34.7514816&epsg=4326",
+            "meshCode": "5235160211",
+            "status": "available",
+            "probability6Weak30Years": 0.169979
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 34.75148155587495,
+            "longitude": 135.781693,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.7816930,34.7514816&epsg=4326",
+            "meshCode": "5235160221",
+            "status": "available",
+            "probability6Weak30Years": 0.200933
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 34.75148155587495,
+            "longitude": 135.78715932864748,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.7871593,34.7514816&epsg=4326",
+            "meshCode": "5235160222",
+            "status": "available",
+            "probability6Weak30Years": 0.182106
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-17",
+      "region": "兵庫・神戸",
+      "address": "兵庫県神戸市西区高塚台1丁目",
+      "selectionNote": "西神のDC集積地区",
+      "queryLatitude": 34.733944,
+      "queryLongitude": 135.027924,
+      "meshCode": "5235008211",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5235008211 34.7344N,135.0266E 兵庫県神戸市西区高塚台１丁目 付近 106m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%85%B5%E5%BA%AB%E7%9C%8C%E7%A5%9E%E6%88%B8%E5%B8%82%E8%A5%BF%E5%8C%BA%E9%AB%98%E5%A1%9A%E5%8F%B01%E4%B8%81%E7%9B%AE",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.027924,34.733944&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5235008211/meshinfo.html",
+      "collectedAt": "2026-09-28T05:48:08.845Z",
+      "probability6Weak30Years": 0.145811,
+      "probability6Strong30Years": 0.013734,
+      "pgvSurface50Year10PercentCms": 51.2,
+      "amplification": 1.14,
+      "landform": "丘陵",
+      "vs30Ms": 343,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.097206,
+        "maxProbability6Weak30Years": 0.371302,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 34.729452444125045,
+            "longitude": 135.02245853442855,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.0224585,34.7294524&epsg=4326",
+            "meshCode": "5235007142",
+            "status": "available",
+            "probability6Weak30Years": 0.118551
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 34.729452444125045,
+            "longitude": 135.027924,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.0279240,34.7294524&epsg=4326",
+            "meshCode": "5235007231",
+            "status": "available",
+            "probability6Weak30Years": 0.119909
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 34.729452444125045,
+            "longitude": 135.03338946557147,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.0333895,34.7294524&epsg=4326",
+            "meshCode": "5235007241",
+            "status": "available",
+            "probability6Weak30Years": 0.371302
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 34.733944,
+            "longitude": 135.02245853442855,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.0224585,34.7339440&epsg=4326",
+            "meshCode": "5235008122",
+            "status": "available",
+            "probability6Weak30Years": 0.159279
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 34.733944,
+            "longitude": 135.027924,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.0279240,34.7339440&epsg=4326",
+            "meshCode": "5235008211",
+            "status": "available",
+            "probability6Weak30Years": 0.145811
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 34.733944,
+            "longitude": 135.03338946557147,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.0333895,34.7339440&epsg=4326",
+            "meshCode": "5235008221",
+            "status": "available",
+            "probability6Weak30Years": 0.097206
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 34.73843555587496,
+            "longitude": 135.02245853442855,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.0224585,34.7384356&epsg=4326",
+            "meshCode": "5235008142",
+            "status": "available",
+            "probability6Weak30Years": 0.1507
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 34.73843555587496,
+            "longitude": 135.027924,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.0279240,34.7384356&epsg=4326",
+            "meshCode": "5235008231",
+            "status": "available",
+            "probability6Weak30Years": 0.169324
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 34.73843555587496,
+            "longitude": 135.03338946557147,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=135.0333895,34.7384356&epsg=4326",
+            "meshCode": "5235008241",
+            "status": "available",
+            "probability6Weak30Years": 0.099475
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-18",
+      "region": "島根・松江",
+      "address": "島根県松江市北陵町",
+      "selectionNote": "松江のDC立地地区",
+      "queryLatitude": 35.497936,
+      "queryLongitude": 133.061066,
+      "meshCode": "5333109444",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5333109444 35.4990N,133.0609E 島根県松江市北陵町 付近 61m 0～50人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%B3%B6%E6%A0%B9%E7%9C%8C%E6%9D%BE%E6%B1%9F%E5%B8%82%E5%8C%97%E9%99%B5%E7%94%BA",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=133.061066,35.497936&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5333109444/meshinfo.html",
+      "collectedAt": "2026-09-28T05:48:09.222Z",
+      "probability6Weak30Years": 0.012641,
+      "probability6Strong30Years": 0.002733,
+      "pgvSurface50Year10PercentCms": 15.1,
+      "amplification": 0.67,
+      "landform": "山地",
+      "vs30Ms": 641,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.012641,
+        "maxProbability6Weak30Years": 0.036975,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 35.493444444125046,
+            "longitude": 133.0555490428025,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=133.0555490,35.4934444&epsg=4326",
+            "meshCode": "5333109412",
+            "status": "available",
+            "probability6Weak30Years": 0.036975
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 35.493444444125046,
+            "longitude": 133.061066,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=133.0610660,35.4934444&epsg=4326",
+            "meshCode": "5333109422",
+            "status": "available",
+            "probability6Weak30Years": 0.025741
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 35.493444444125046,
+            "longitude": 133.0665829571975,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=133.0665830,35.4934444&epsg=4326",
+            "meshCode": "5333109512",
+            "status": "available",
+            "probability6Weak30Years": 0.025441
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 35.497936,
+            "longitude": 133.0555490428025,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=133.0555490,35.4979360&epsg=4326",
+            "meshCode": "5333109434",
+            "status": "available",
+            "probability6Weak30Years": 0.012641
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 35.497936,
+            "longitude": 133.061066,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=133.0610660,35.4979360&epsg=4326",
+            "meshCode": "5333109444",
+            "status": "available",
+            "probability6Weak30Years": 0.012641
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 35.497936,
+            "longitude": 133.0665829571975,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=133.0665830,35.4979360&epsg=4326",
+            "meshCode": "5333109534",
+            "status": "available",
+            "probability6Weak30Years": 0.025428
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 35.50242755587496,
+            "longitude": 133.0555490428025,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=133.0555490,35.5024276&epsg=4326",
+            "meshCode": "5333200414",
+            "status": "available",
+            "probability6Weak30Years": 0.01396
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 35.50242755587496,
+            "longitude": 133.061066,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=133.0610660,35.5024276&epsg=4326",
+            "meshCode": "5333200424",
+            "status": "available",
+            "probability6Weak30Years": 0.01396
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 35.50242755587496,
+            "longitude": 133.0665829571975,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=133.0665830,35.5024276&epsg=4326",
+            "meshCode": "5333200514",
+            "status": "available",
+            "probability6Weak30Years": 0.013815
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-19",
+      "region": "福岡・福岡",
+      "address": "福岡県福岡市早良区百道浜2丁目",
+      "selectionNote": "福岡のDC立地地区",
+      "queryLatitude": 33.594448,
+      "queryLongitude": 130.353806,
+      "meshCode": "5030321814",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5030321814 33.5948N,130.3547E 福岡県福岡市早良区百道浜２丁目 付近 0m 50～100人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E6%97%A9%E8%89%AF%E5%8C%BA%E7%99%BE%E9%81%93%E6%B5%9C2%E4%B8%81%E7%9B%AE",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.353806,33.594448&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5030321814/meshinfo.html",
+      "collectedAt": "2026-09-28T05:48:13.111Z",
+      "probability6Weak30Years": 0.066927,
+      "probability6Strong30Years": 0.027315,
+      "pgvSurface50Year10PercentCms": 38.9,
+      "amplification": 1.52,
+      "landform": "埋立地",
+      "vs30Ms": 246,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 6,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.062978,
+        "maxProbability6Weak30Years": 0.066927,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 33.58995644412504,
+            "longitude": 130.34841381340922,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.3484138,33.5899564&epsg=4326",
+            "meshCode": "5030320744",
+            "status": "available",
+            "probability6Weak30Years": 0.062978
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 33.58995644412504,
+            "longitude": 130.353806,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.3538060,33.5899564&epsg=4326",
+            "meshCode": "5030320834",
+            "status": "available",
+            "probability6Weak30Years": 0.06615
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 33.58995644412504,
+            "longitude": 130.35919818659076,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.3591982,33.5899564&epsg=4326",
+            "meshCode": "5030320843",
+            "status": "available",
+            "probability6Weak30Years": 0.06615
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 33.594448,
+            "longitude": 130.34841381340922,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.3484138,33.5944480&epsg=4326",
+            "meshCode": "5030321724",
+            "status": "available",
+            "probability6Weak30Years": 0.063834
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 33.594448,
+            "longitude": 130.353806,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.3538060,33.5944480&epsg=4326",
+            "meshCode": "5030321814",
+            "status": "available",
+            "probability6Weak30Years": 0.066927
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 33.594448,
+            "longitude": 130.35919818659076,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.3591982,33.5944480&epsg=4326",
+            "meshCode": "5030321823",
+            "status": "available",
+            "probability6Weak30Years": 0.066927
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 33.598939555874956,
+            "longitude": 130.34841381340922,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.3484138,33.5989396&epsg=4326",
+            "meshCode": null,
+            "status": "no_data",
+            "probability6Weak30Years": null
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 33.598939555874956,
+            "longitude": 130.353806,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.3538060,33.5989396&epsg=4326",
+            "meshCode": null,
+            "status": "no_data",
+            "probability6Weak30Years": null
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 33.598939555874956,
+            "longitude": 130.35919818659076,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.3591982,33.5989396&epsg=4326",
+            "meshCode": null,
+            "status": "no_data",
+            "probability6Weak30Years": null
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-20",
+      "region": "福岡・北九州",
+      "address": "福岡県北九州市若松区ひびきの北",
+      "selectionNote": "学術研究都市のDC開発地区",
+      "queryLatitude": 33.891644,
+      "queryLongitude": 130.709869,
+      "meshCode": "5030656644",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5030656644 33.8906N,130.7109E 福岡県北九州市若松区ひびきの 付近 27m 50～100人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E7%A6%8F%E5%B2%A1%E7%9C%8C%E5%8C%97%E4%B9%9D%E5%B7%9E%E5%B8%82%E8%8B%A5%E6%9D%BE%E5%8C%BA%E3%81%B2%E3%81%B3%E3%81%8D%E3%81%AE%E5%8C%97",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.709869,33.891644&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5030656644/meshinfo.html",
+      "collectedAt": "2026-09-28T05:48:16.468Z",
+      "probability6Weak30Years": 0.024306,
+      "probability6Strong30Years": 0.005236,
+      "pgvSurface50Year10PercentCms": 26.6,
+      "amplification": 1.12,
+      "landform": "丘陵",
+      "vs30Ms": 349,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.018665,
+        "maxProbability6Weak30Years": 0.027307,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 33.88715244412504,
+            "longitude": 130.7044580972061,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.7044581,33.8871524&epsg=4326",
+            "meshCode": "5030656614",
+            "status": "available",
+            "probability6Weak30Years": 0.022328
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 33.88715244412504,
+            "longitude": 130.709869,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.7098690,33.8871524&epsg=4326",
+            "meshCode": "5030656624",
+            "status": "available",
+            "probability6Weak30Years": 0.022928
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 33.88715244412504,
+            "longitude": 130.7152799027939,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.7152799,33.8871524&epsg=4326",
+            "meshCode": "5030656713",
+            "status": "available",
+            "probability6Weak30Years": 0.027307
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 33.891644,
+            "longitude": 130.7044580972061,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.7044581,33.8916440&epsg=4326",
+            "meshCode": "5030656634",
+            "status": "available",
+            "probability6Weak30Years": 0.021946
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 33.891644,
+            "longitude": 130.709869,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.7098690,33.8916440&epsg=4326",
+            "meshCode": "5030656644",
+            "status": "available",
+            "probability6Weak30Years": 0.024306
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 33.891644,
+            "longitude": 130.7152799027939,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.7152799,33.8916440&epsg=4326",
+            "meshCode": "5030656733",
+            "status": "available",
+            "probability6Weak30Years": 0.020545
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 33.896135555874956,
+            "longitude": 130.7044580972061,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.7044581,33.8961356&epsg=4326",
+            "meshCode": "5030657632",
+            "status": "available",
+            "probability6Weak30Years": 0.020409
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 33.896135555874956,
+            "longitude": 130.709869,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.7098690,33.8961356&epsg=4326",
+            "meshCode": "5030657642",
+            "status": "available",
+            "probability6Weak30Years": 0.018738
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 33.896135555874956,
+            "longitude": 130.7152799027939,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=130.7152799,33.8961356&epsg=4326",
+            "meshCode": "5030657731",
+            "status": "available",
+            "probability6Weak30Years": 0.018665
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-21",
+      "region": "愛知・名古屋",
+      "address": "愛知県名古屋市中区栄2丁目",
+      "selectionNote": "名古屋都心の比較点",
+      "queryLatitude": 35.165447,
+      "queryLongitude": 136.900757,
+      "meshCode": "5236579233",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5236579233 35.1656N,136.9016E 愛知県名古屋市中区栄２丁目 付近 10m 300～350人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E6%84%9B%E7%9F%A5%E7%9C%8C%E5%90%8D%E5%8F%A4%E5%B1%8B%E5%B8%82%E4%B8%AD%E5%8C%BA%E6%A0%842%E4%B8%81%E7%9B%AE",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.900757,35.165447&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5236579233/meshinfo.html",
+      "collectedAt": "2026-09-28T05:50:37.270Z",
+      "probability6Weak30Years": 0.480398,
+      "probability6Strong30Years": 0.101329,
+      "pgvSurface50Year10PercentCms": 90,
+      "amplification": 1.28,
+      "landform": "砂礫質台地",
+      "vs30Ms": 298,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.47372,
+        "maxProbability6Weak30Years": 0.500256,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 35.160955444125044,
+            "longitude": 136.8952626908029,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.8952627,35.1609554&epsg=4326",
+            "meshCode": "5236579123",
+            "status": "available",
+            "probability6Weak30Years": 0.500256
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 35.160955444125044,
+            "longitude": 136.900757,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9007570,35.1609554&epsg=4326",
+            "meshCode": "5236579213",
+            "status": "available",
+            "probability6Weak30Years": 0.47372
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 35.160955444125044,
+            "longitude": 136.9062513091971,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9062513,35.1609554&epsg=4326",
+            "meshCode": "5236579223",
+            "status": "available",
+            "probability6Weak30Years": 0.481648
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 35.165447,
+            "longitude": 136.8952626908029,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.8952627,35.1654470&epsg=4326",
+            "meshCode": "5236579143",
+            "status": "available",
+            "probability6Weak30Years": 0.497216
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 35.165447,
+            "longitude": 136.900757,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9007570,35.1654470&epsg=4326",
+            "meshCode": "5236579233",
+            "status": "available",
+            "probability6Weak30Years": 0.480398
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 35.165447,
+            "longitude": 136.9062513091971,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9062513,35.1654470&epsg=4326",
+            "meshCode": "5236579243",
+            "status": "available",
+            "probability6Weak30Years": 0.491474
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 35.16993855587496,
+            "longitude": 136.8952626908029,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.8952627,35.1699386&epsg=4326",
+            "meshCode": "5236670123",
+            "status": "available",
+            "probability6Weak30Years": 0.487513
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 35.16993855587496,
+            "longitude": 136.900757,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9007570,35.1699386&epsg=4326",
+            "meshCode": "5236670213",
+            "status": "available",
+            "probability6Weak30Years": 0.485316
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 35.16993855587496,
+            "longitude": 136.9062513091971,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=136.9062513,35.1699386&epsg=4326",
+            "meshCode": "5236670223",
+            "status": "available",
+            "probability6Weak30Years": 0.476301
+          }
+        ]
+      }
+    },
+    {
+      "id": "point-22",
+      "region": "広島・広島",
+      "address": "広島県広島市安佐南区伴南1丁目",
+      "selectionNote": "西風新都のDC立地地区",
+      "queryLatitude": 34.449436,
+      "queryLongitude": 132.384033,
+      "meshCode": "5132533043",
+      "karteLocationText": "メッシュコード 中心緯度、経度 住所 標高 メッシュ内人口 5132533043 34.4490N,132.3828E 広島県広島市安佐南区伴南１丁目 付近 232m 50～100人",
+      "geocodeUrl": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E5%BA%83%E5%B3%B6%E7%9C%8C%E5%BA%83%E5%B3%B6%E5%B8%82%E5%AE%89%E4%BD%90%E5%8D%97%E5%8C%BA%E4%BC%B4%E5%8D%971%E4%B8%81%E7%9B%AE",
+      "apiUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=132.384033,34.449436&epsg=4326",
+      "karteUrl": "https://www.j-shis.bosai.go.jp/labs/karte/Y2024/5132533043/meshinfo.html",
+      "collectedAt": "2026-09-28T05:50:37.674Z",
+      "probability6Weak30Years": 0.010625,
+      "probability6Strong30Years": 0.001175,
+      "pgvSurface50Year10PercentCms": 22.2,
+      "amplification": 0.57,
+      "landform": "山地",
+      "vs30Ms": 776,
+      "vs30Source": "微地形",
+      "nearby": {
+        "method": "3x3 grid, approximately 500 m spacing east-west and north-south",
+        "validCount": 9,
+        "attemptedCount": 9,
+        "minProbability6Weak30Years": 0.010108,
+        "maxProbability6Weak30Years": 0.011041,
+        "samples": [
+          {
+            "offsetX": -1,
+            "offsetY": -1,
+            "latitude": 34.44494444412504,
+            "longitude": 132.37858621883095,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=132.3785862,34.4449444&epsg=4326",
+            "meshCode": "5132533014",
+            "status": "available",
+            "probability6Weak30Years": 0.010625
+          },
+          {
+            "offsetX": 0,
+            "offsetY": -1,
+            "latitude": 34.44494444412504,
+            "longitude": 132.384033,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=132.3840330,34.4449444&epsg=4326",
+            "meshCode": "5132533023",
+            "status": "available",
+            "probability6Weak30Years": 0.010625
+          },
+          {
+            "offsetX": 1,
+            "offsetY": -1,
+            "latitude": 34.44494444412504,
+            "longitude": 132.38947978116903,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=132.3894798,34.4449444&epsg=4326",
+            "meshCode": "5132533113",
+            "status": "available",
+            "probability6Weak30Years": 0.011041
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 0,
+            "latitude": 34.449436,
+            "longitude": 132.37858621883095,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=132.3785862,34.4494360&epsg=4326",
+            "meshCode": "5132533034",
+            "status": "available",
+            "probability6Weak30Years": 0.010625
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "latitude": 34.449436,
+            "longitude": 132.384033,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=132.3840330,34.4494360&epsg=4326",
+            "meshCode": "5132533043",
+            "status": "available",
+            "probability6Weak30Years": 0.010625
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 0,
+            "latitude": 34.449436,
+            "longitude": 132.38947978116903,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=132.3894798,34.4494360&epsg=4326",
+            "meshCode": "5132533133",
+            "status": "available",
+            "probability6Weak30Years": 0.011041
+          },
+          {
+            "offsetX": -1,
+            "offsetY": 1,
+            "latitude": 34.453927555874955,
+            "longitude": 132.37858621883095,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=132.3785862,34.4539276&epsg=4326",
+            "meshCode": "5132534014",
+            "status": "available",
+            "probability6Weak30Years": 0.010108
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 1,
+            "latitude": 34.453927555874955,
+            "longitude": 132.384033,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=132.3840330,34.4539276&epsg=4326",
+            "meshCode": "5132534023",
+            "status": "available",
+            "probability6Weak30Years": 0.010108
+          },
+          {
+            "offsetX": 1,
+            "offsetY": 1,
+            "latitude": 34.453927555874955,
+            "longitude": 132.38947978116903,
+            "sourceUrl": "https://www.j-shis.bosai.go.jp/map/api/pshm/Y2024/AVR/TTL_MTTL/meshinfo.geojson?position=132.3894798,34.4539276&epsg=4326",
+            "meshCode": "5132534113",
+            "status": "available",
+            "probability6Weak30Years": 0.010523
+          }
+        ]
+      }
+    }
+  ]
+}

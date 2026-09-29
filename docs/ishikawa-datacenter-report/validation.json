@@ -1,0 +1,69 @@
+{
+  "pages": 12,
+  "table_rows_source_verified": 22,
+  "bounds": [
+    {
+      "page": 1,
+      "left": 46.0,
+      "right": 557.58
+    },
+    {
+      "page": 2,
+      "left": 46.0,
+      "right": 549.28
+    },
+    {
+      "page": 3,
+      "left": 46.0,
+      "right": 556.0
+    },
+    {
+      "page": 4,
+      "left": 46.0,
+      "right": 549.28
+    },
+    {
+      "page": 5,
+      "left": 46.0,
+      "right": 550.74
+    },
+    {
+      "page": 6,
+      "left": 46.0,
+      "right": 553.39
+    },
+    {
+      "page": 7,
+      "left": 46.0,
+      "right": 549.28
+    },
+    {
+      "page": 8,
+      "left": 46.0,
+      "right": 549.28
+    },
+    {
+      "page": 9,
+      "left": 46.0,
+      "right": 556.0
+    },
+    {
+      "page": 10,
+      "left": 46.0,
+      "right": 549.28
+    },
+    {
+      "page": 11,
+      "left": 46.0,
+      "right": 549.28
+    },
+    {
+      "page": 12,
+      "left": 46.0,
+      "right": 549.28
+    }
+  ],
+  "pdf_sha256": "462dc0170b4e6c6f81df4efb822adbd46fe72f9412cb3068d4376765461d994e",
+  "bytes": 398980,
+  "links": 45
+}
