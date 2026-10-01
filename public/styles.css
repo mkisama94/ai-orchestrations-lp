@@ -5337,3 +5337,377 @@ button, input, textarea, select {
     gap: 1.5rem;
   }
 }
+
+/* ==========================================================================
+   Section: SOLUTIONS (Top Page & Consulting Details)
+   ========================================================================== */
+
+/* Section wrapper */
+.section-solutions {
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+}
+
+/* 5 Cards Grid on Top Page */
+.solutions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 3rem;
+}
+
+.solution-card {
+  background: var(--bg-surface, #ffffff);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.solution-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+.solution-card-trigger {
+  background: var(--bg-subtle);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.solution-trigger-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.25rem;
+}
+
+.solution-trigger-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.solution-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-main);
+  line-height: 1.4;
+  margin-bottom: 0.85rem;
+  word-break: break-word;
+}
+
+.solution-card-desc {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.solution-card-deliverables {
+  background: var(--bg-subtle);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.solution-deliverables-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+}
+
+.solution-deliverables-text {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.solution-card-action {
+  margin-top: auto;
+  padding-top: 0.5rem;
+}
+
+/* Solutions Section Footer */
+.solutions-footer {
+  margin-top: 3.5rem;
+  text-align: center;
+}
+
+.solutions-note {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.solutions-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.solutions-subtext {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/* Responsive Grid for Solutions */
+@media (max-width: 1023px) and (min-width: 640px) {
+  .solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 639px) {
+  .solutions-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .solution-card {
+    padding: 1.75rem 1.5rem;
+  }
+  .solutions-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .solutions-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ==========================================================================
+   Consulting Page: Service Detail Blocks & In-page Nav
+   ========================================================================== */
+
+/* Menu In-page Nav */
+.consulting-menu-nav-wrap {
+  margin-bottom: 3.5rem;
+}
+
+.consulting-menu-nav-heading {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.85rem;
+}
+
+.consulting-menu-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.consulting-menu-nav-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  color: var(--text-main);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.consulting-menu-nav-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-light);
+  transform: translateY(-1px);
+}
+
+/* Detail Service Cards */
+.consulting-services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.consulting-service-card {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 2.75rem 2.5rem;
+  box-shadow: var(--shadow-sm);
+  scroll-margin-top: 6rem;
+  transition: var(--transition);
+  position: relative;
+}
+
+.consulting-service-card:hover {
+  border-color: var(--border-blueprint);
+  box-shadow: var(--shadow-card);
+}
+
+.consulting-service-header {
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.consulting-service-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+.consulting-service-title {
+  font-size: clamp(1.4rem, 2.8vw, 1.85rem);
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.35;
+  margin: 0;
+}
+
+.consulting-problem-box {
+  background: var(--bg-subtle);
+  border-left: 4px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.consulting-problem-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.35rem;
+}
+
+.consulting-problem-text {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.consulting-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.consulting-detail-item {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 1.25rem;
+}
+
+.consulting-detail-item:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.consulting-detail-item-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.consulting-detail-item-title svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.consulting-detail-item-text {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.consulting-premise-box {
+  background: var(--bg-memo, #f8fafc);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.consulting-premise-label {
+  display: block;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+.consulting-premise-text {
+  font-size: 0.84375rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+.consulting-service-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.consulting-case-link {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .consulting-service-card {
+    padding: 1.75rem 1.25rem;
+  }
+  .consulting-service-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .consulting-service-footer .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
