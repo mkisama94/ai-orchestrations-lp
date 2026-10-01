@@ -5345,7 +5345,8 @@ button, input, textarea, select {
 /* Section wrapper */
 .section-solutions {
   padding-top: 5.5rem;
-  padding-bottom: 5.5rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid var(--border-light);
 }
 
 /* 5 Cards Grid on Top Page */
@@ -5473,10 +5474,17 @@ button, input, textarea, select {
   margin: 0;
 }
 
-/* Responsive Grid for Solutions */
+/* Responsive Grid & Padding for Solutions */
 @media (max-width: 1023px) and (min-width: 640px) {
   .solutions-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-solutions {
+    padding-top: 4.5rem;
+    padding-bottom: 4rem;
   }
 }
 
