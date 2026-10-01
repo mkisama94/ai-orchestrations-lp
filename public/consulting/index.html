@@ -11,7 +11,7 @@
     gtag('config', 'G-YQHRWTXHLC');
   </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AI Orchestrationの事業・開発支援（Consulting）。事業構想、AIアーキテクチャ設計、PoC・MVP実装から継続的なCTO・技術リード支援まで、自社プロダクト開発の実践知見をもとに一貫して支援します。">
+  <meta name="description" content="AI Orchestrationの事業・開発支援（Consulting）。JC-STAR取得・対応設計支援、ChatGPTプラグインストア申請支援、MCP/API化支援、AIプロダクト事業化支援、AI開発セカンドオピニオンなど、課題別の具体メニューから包括的な構想・設計・実装・継続支援まで一貫して支援します。">
   <title>Consulting（事業・開発支援）｜AI Orchestration</title>
   <link rel="canonical" href="https://ai-orchestration.jp/consulting/">
   
@@ -21,7 +21,7 @@
 
   <!-- OGP -->
   <meta property="og:title" content="Consulting（事業・開発支援）｜AI Orchestration">
-  <meta property="og:description" content="事業構想、AIアーキテクチャ設計、実装から継続支援まで。自らプロダクトを作る実践をもとに、机上の空論にとどまらない支援を提供します。">
+  <meta property="og:description" content="JC-STAR取得対応、ChatGPTプラグイン公開申請、MCP/API化、AIプロダクト事業化、AI開発セカンドオピニオンなど。課題整理・設計・開発・評価のうち必要な範囲をご提案します。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://ai-orchestration.jp/consulting/">
   <meta property="og:site_name" content="AI Orchestration">
@@ -34,7 +34,7 @@
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Consulting（事業・開発支援）｜AI Orchestration">
-  <meta name="twitter:description" content="事業構想、AIアーキテクチャ設計、実装から継続支援まで。自らプロダクトを作る実践をもとに、机上の空論にとどまらない支援を提供します。">
+  <meta name="twitter:description" content="JC-STAR取得対応、ChatGPTプラグイン公開申請、MCP/API化、AIプロダクト事業化、AI開発セカンドオピニオンなど。課題整理・設計・開発・評価のうち必要な範囲をご提案します。">
   <meta name="twitter:image" content="https://ai-orchestration.jp/images/ai-orchestration-logo.png">
 
   <!-- Stylesheet -->
@@ -46,19 +46,65 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebPage",
+        "@id": "https://ai-orchestration.jp/consulting/#webpage",
+        "url": "https://ai-orchestration.jp/consulting/",
+        "name": "Consulting（事業・開発支援）｜AI Orchestration",
+        "description": "実現したいことや、いま判断に迷っていることから支援を選べます。JC-STAR対応、ChatGPTプラグイン公開、MCP/API化、事業化、セカンドオピニオン等の支援メニューと4つの包括支援領域。",
+        "breadcrumb": { "@id": "https://ai-orchestration.jp/consulting/#breadcrumb" }
+      },
+      {
         "@type": "Service",
+        "@id": "https://ai-orchestration.jp/consulting/#service",
         "name": "AI Orchestration 事業・開発支援",
         "serviceType": "AI Consulting & Development",
-        "description": "事業構想からAI・システムの設計、開発、運用までを一貫して支援",
+        "description": "課題整理・設計・開発・評価のうち、必要な範囲をご提案。課題別支援メニューから包括的E2E支援まで対応。",
         "url": "https://ai-orchestration.jp/consulting/",
         "provider": {
           "@type": "Organization",
           "name": "AI Orchestration",
           "url": "https://ai-orchestration.jp/"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Consulting Services",
+          "itemListElement": [
+            {
+              "@type": "Service",
+              "name": "JC-STAR取得・対応設計支援",
+              "description": "対象製品と適合要件を整理し、現状との差分を確認。アクセス管理や更新機構などの対応設計から、証跡整理・申請準備まで支援します。",
+              "url": "https://ai-orchestration.jp/consulting/#jc-star"
+            },
+            {
+              "@type": "Service",
+              "name": "ChatGPTプラグインストア申請支援",
+              "description": "提供する機能と利用体験を整理し、MCP連携や認証・権限を設計。開発・接続検証から、申請準備と審査指摘への対応まで支援します。",
+              "url": "https://ai-orchestration.jp/consulting/#chatgpt-plugin"
+            },
+            {
+              "@type": "Service",
+              "name": "MCP/API化支援",
+              "description": "既存システムの機能・データをAIから利用できる形に整理。認証・権限と実行時の制御を設計し、MCPサーバー・APIの開発と接続検証を支援します。",
+              "url": "https://ai-orchestration.jp/consulting/#mcp-api"
+            },
+            {
+              "@type": "Service",
+              "name": "AIプロダクト事業化支援",
+              "description": "想定顧客・提供価値・採算を整理し、必要な機能と検証方法を具体化。試作から、公開・運用を見据えた開発計画まで支援します。",
+              "url": "https://ai-orchestration.jp/consulting/#ai-product"
+            },
+            {
+              "@type": "Service",
+              "name": "AI開発セカンドオピニオン",
+              "description": "提案書・見積・設計・試作品を発注者側の立場でレビュー。技術的な妥当性、費用の前提、見落としを整理し、進める・見直す判断を支援します。",
+              "url": "https://ai-orchestration.jp/consulting/#second-opinion"
+            }
+          ]
         }
       },
       {
         "@type": "BreadcrumbList",
+        "@id": "https://ai-orchestration.jp/consulting/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
