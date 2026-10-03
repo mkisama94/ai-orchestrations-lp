@@ -5724,51 +5724,308 @@ button, input, textarea, select {
    ChatGPTプラグイン - 日本の補助金・公的支援検索 専用スタイル (.hojokin-*)
    ========================================================================== */
 
+/* Hero: 2-column layout (Left ~55%, Right ~45%) */
 .hojokin-hero-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 3.5rem;
+  gap: 3rem;
   align-items: center;
   margin-top: 1.5rem;
 }
 
 .hojokin-hero-content {
-  max-width: 640px;
+  max-width: 620px;
 }
 
-.hojokin-store-badge-row {
+/* Concept Card (ファーストビュー右側の利用イメージ図解カード) */
+.hojokin-concept-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-float);
+  padding: 1.75rem 1.85rem;
+  position: relative;
+}
+
+.hojokin-concept-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 0.75rem;
-  margin-top: 2rem;
-  padding: 0.75rem 1rem;
-  background: var(--bg-subtle);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  font-size: 0.84375rem;
-  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
-.hojokin-hero-preview {
+.hojokin-concept-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.04em;
+}
+
+.hojokin-concept-sub {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+.hojokin-concept-query-box {
+  background: var(--bg-subtle);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 0.85rem 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.hojokin-concept-query-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  margin-bottom: 0.35rem;
+}
+
+.hojokin-concept-query-text {
+  font-size: 0.9375rem;
+  color: var(--text-main);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.hojokin-concept-results {
+  margin-bottom: 1.25rem;
+}
+
+.hojokin-concept-results-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.6rem;
+}
+
+.hojokin-concept-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.hojokin-concept-list li {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 0.75rem;
+  align-items: baseline;
+  padding: 0.55rem 0.75rem;
+  background: #fbfcfe;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  font-size: 0.84375rem;
+}
+
+.hojokin-concept-item-title {
+  font-weight: 700;
+  color: var(--text-main);
   position: relative;
-  max-width: 390px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
+  padding-left: 0.85rem;
+}
+
+.hojokin-concept-item-title::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.hojokin-concept-item-desc {
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.hojokin-concept-note {
+  font-size: 0.78125rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+/* Use Cases: 2 columns x 2 rows (desktop), 1 column (mobile) */
+.hojokin-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.hojokin-case-card {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hojokin-case-card:hover {
+  border-color: var(--border-medium);
+  box-shadow: var(--shadow-card);
+}
+
+.hojokin-case-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.85rem;
+}
+
+.hojokin-case-prompt-box {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 0.95rem 1.1rem;
+  margin-bottom: 0.85rem;
+  position: relative;
+}
+
+.hojokin-case-prompt-text {
+  font-size: 0.9375rem;
+  color: var(--text-main);
+  line-height: 1.65;
+  margin: 0 0 0.75rem 0;
+  user-select: text;
+}
+
+.hojokin-case-desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin-top: auto;
+}
+
+/* Copy Button Styling */
+.hojokin-copy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #ffffff;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-sm);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  min-height: 34px;
+}
+
+.hojokin-copy-btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-light);
+}
+
+.hojokin-copy-btn.copied {
+  color: #065f46;
+  border-color: #a7f3d0;
+  background: #ecfdf5;
+}
+
+/* Steps (はじめ方) */
+.hojokin-steps-container {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 3rem;
+  align-items: start;
+  margin-top: 2.5rem;
+}
+
+.hojokin-steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hojokin-step-item {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.hojokin-step-badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.05em;
+}
+
+.hojokin-step-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.5rem;
+}
+
+.hojokin-step-desc {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.hojokin-initial-prompt-card {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-blueprint);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.hojokin-initial-prompt-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.hojokin-initial-prompt-text {
+  font-size: 0.96875rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+/* Steps Screenshot Frame */
+.hojokin-step-preview {
+  position: sticky;
+  top: 6rem;
 }
 
 .hojokin-preview-frame {
   background: #ffffff;
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-lg);
-  box-shadow: 0 16px 36px -8px rgba(15, 23, 42, 0.12), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+  box-shadow: var(--shadow-float);
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.hojokin-preview-frame:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 20px 42px -10px rgba(9, 105, 218, 0.18), 0 6px 16px -3px rgba(15, 23, 42, 0.06);
 }
 
 .hojokin-preview-browser-bar {
@@ -5809,17 +6066,6 @@ button, input, textarea, select {
   max-width: 220px;
 }
 
-.hojokin-status-badge {
-  background: rgba(16, 185, 129, 0.15);
-  color: #34d399;
-  border: 1px solid rgba(52, 211, 153, 0.3);
-  padding: 0.15rem 0.5rem;
-  border-radius: var(--radius-full);
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-}
-
 .hojokin-preview-link {
   display: block;
   position: relative;
@@ -5833,40 +6079,108 @@ button, input, textarea, select {
   height: auto;
   display: block;
   border-bottom: 1px solid var(--border-light);
-  transition: opacity 0.2s ease;
-}
-
-.hojokin-preview-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(15, 23, 42, 0.45);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.hojokin-preview-overlay span {
-  background: #ffffff;
-  color: var(--text-main);
-  font-weight: 700;
-  font-size: 0.875rem;
-  padding: 0.6rem 1.2rem;
-  border-radius: var(--radius-full);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.hojokin-preview-link:hover .hojokin-preview-overlay {
-  opacity: 1;
 }
 
 .hojokin-preview-caption {
-  padding: 1rem 1.25rem;
+  padding: 0.85rem 1.15rem;
   background: var(--bg-subtle);
-  font-size: 0.84375rem;
+  font-size: 0.8125rem;
   color: var(--text-secondary);
-  line-height: 1.6;
+  line-height: 1.55;
+}
+
+/* FAQ Accordion (details / summary) */
+.hojokin-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 2.5rem;
+}
+
+.hojokin-faq-item {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color 0.18s ease;
+}
+
+.hojokin-faq-item[open] {
+  border-color: var(--border-medium);
+}
+
+.hojokin-faq-question {
+  padding: 1.15rem 1.35rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-main);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  user-select: none;
+  outline: none;
+}
+
+.hojokin-faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.hojokin-faq-question::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+.hojokin-faq-item[open] .hojokin-faq-question::after {
+  transform: rotate(-135deg);
+}
+
+.hojokin-faq-question:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
+.hojokin-faq-answer {
+  padding: 0 1.35rem 1.25rem 1.35rem;
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  border-top: 1px solid var(--border-light);
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+/* Disclaimer Box (常時表示の注意書き) */
+.hojokin-disclaimer-box {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-left: 4px solid #f59e0b;
+  border-radius: var(--radius-sm);
+  padding: 1.15rem 1.35rem;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+}
+
+/* Final Re-CTA Container */
+.hojokin-final-cta-wrap {
+  background: #ffffff;
+  border: 1px solid var(--border-blueprint);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.5rem;
+  text-align: center;
+  box-shadow: var(--shadow-card);
+  margin-top: 2.5rem;
 }
 
 @media (max-width: 992px) {
@@ -5877,9 +6191,22 @@ button, input, textarea, select {
   .hojokin-hero-content {
     max-width: 100%;
   }
-  .hojokin-hero-preview {
-    max-width: 440px;
-    margin-left: 0;
+  .hojokin-cases-grid {
+    grid-template-columns: 1fr;
+  }
+  .hojokin-steps-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .hojokin-step-preview {
+    position: static;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .hojokin-concept-list li {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
   }
 }
+
 

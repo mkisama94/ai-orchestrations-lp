@@ -282,4 +282,64 @@ document.addEventListener('DOMContentLoaded', () => {
       closeModal();
     }
   });
+
+  // 6. Hojokin-AI Prompt Copy & Event Handlers
+  const copyBtns = document.querySelectorAll('.hojokin-copy-btn');
+  copyBtns.forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      const targetId = btn.getAttribute('data-copy-target');
+      const promptId = btn.getAttribute('data-prompt-id') || 'unknown';
+      let textToCopy = '';
+
+      if (targetId) {
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) textToCopy = targetEl.innerText.trim();
+      }
+
+      if (!textToCopy) {
+        const parent = btn.closest('.hojokin-case-prompt-box') || btn.closest('.hojokin-initial-prompt-card');
+        const textEl = parent ? (parent.querySelector('.hojokin-case-prompt-text') || parent.querySelector('.hojokin-initial-prompt-text')) : null;
+        if (textEl) textToCopy = textEl.innerText.trim();
+      }
+
+      if (!textToCopy) return;
+
+      const originalHtml = btn.innerHTML;
+      try {
+        await navigator.clipboard.writeText(textToCopy);
+        btn.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> コピーしました`;
+        btn.classList.add('copied');
+        btn.setAttribute('aria-live', 'polite');
+
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', 'hojokin_prompt_copy', { prompt_id: promptId });
+        }
+
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+          btn.classList.remove('copied');
+        }, 2000);
+      } catch (err) {
+        btn.innerHTML = `コピーできませんでした。質問文を選択してコピーしてください`;
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+        }, 3000);
+      }
+    });
+  });
+
+  // Hojokin Tracking: Link opens
+  document.querySelectorAll('a[data-hojokin-track]').forEach((link) => {
+    link.addEventListener('click', () => {
+      const trackType = link.getAttribute('data-hojokin-track');
+      const location = link.getAttribute('data-track-location') || 'unknown';
+      if (typeof window.gtag === 'function') {
+        if (trackType === 'open') {
+          window.gtag('event', 'hojokin_plugin_open', { location: location });
+        } else if (trackType === 'guide') {
+          window.gtag('event', 'hojokin_guide_open', { location: location });
+        }
+      }
+    });
+  });
 });
