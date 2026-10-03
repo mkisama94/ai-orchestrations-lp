@@ -342,4 +342,32 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // 7. Hojokin-AI Preview Tabs (Search vs Store)
+  const tabBtns = document.querySelectorAll('.hojokin-tab-btn');
+  const tabPanels = document.querySelectorAll('.hojokin-tab-panel');
+  if (tabBtns.length && tabPanels.length) {
+    tabBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-tab-target');
+        tabBtns.forEach((b) => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        tabPanels.forEach((p) => {
+          p.classList.remove('active');
+          p.style.display = 'none';
+        });
+
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+        const activePanel = document.getElementById(targetId);
+        if (activePanel) {
+          activePanel.classList.add('active');
+          activePanel.style.display = 'block';
+        }
+      });
+    });
+  }
 });
+
