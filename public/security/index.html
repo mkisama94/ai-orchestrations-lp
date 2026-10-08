@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQHRWTXHLC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YQHRWTXHLC');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI時代のMCPサーバー共通セキュリティ仕様｜公開MCP、商用MCP、ChatGPTプラグイン、共通バックエンドAPIにおけるゼロトラスト・最小権限・プロンプトインジェクション対策等の共通セキュリティ要件を定めています。">
+  <title>AI時代のMCPサーバー共通セキュリティ仕様｜AI Orchestration</title>
+  <link rel="canonical" href="https://ai-orchestration.jp/security/">
+  
+  <!-- Favicon / Icons -->
+  <link rel="icon" href="../images/icon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../images/icon.png">
+
+  <!-- OGP -->
+  <meta property="og:title" content="AI時代のMCPサーバー共通セキュリティ仕様｜AI Orchestration">
+  <meta property="og:description" content="AIエージェント向けMCPサーバーにおける共通セキュリティ仕様。ゼロトラスト、ツール権限管理、プロンプトインジェクション対策、データ保護要件を定めています。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://ai-orchestration.jp/security/">
+  <meta property="og:site_name" content="AI Orchestration">
+  <meta property="og:image" content="https://ai-orchestration.jp/images/ai-orchestration-logo.png">
+  <meta property="og:image:width" content="2048">
+  <meta property="og:image:height" content="768">
+  <meta property="og:image:alt" content="AI時代のMCPサーバー共通セキュリティ仕様">
+  <meta property="og:locale" content="ja_JP">
+  
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI時代のMCPサーバー共通セキュリティ仕様｜AI Orchestration">
+  <meta name="twitter:description" content="AIエージェント向けMCPサーバーにおける共通セキュリティ仕様。ゼロトラスト、ツール権限管理、プロンプトインジェクション対策、データ保護要件を定めています。">
+  <meta name="twitter:image" content="https://ai-orchestration.jp/images/ai-orchestration-logo.png">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../styles.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "ホーム",
+        "item": "https://ai-orchestration.jp/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "MCPサーバー共通セキュリティ仕様",
+        "item": "https://ai-orchestration.jp/security/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="blueprint-pattern">
+
+  <!-- Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="../index.html" class="site-logo" aria-label="AI Orchestration — 企業AIの設計事務所">
+        <span class="header-logo-frame">
+          <img class="header-logo-image" src="../images/ai-orchestration-logo.png" alt="AI Orchestration" width="2048" height="768" fetchpriority="high">
+        </span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav" id="mainNav">
+        <a href="../guide/index.html" class="nav-link">はじめての方へ</a>
+        <a href="../products/index.html" class="nav-link">Products</a>
+        <a href="../projects/index.html" class="nav-link">Projects</a>
+        <a href="../consulting/index.html" class="nav-link">Consulting</a>
+        <a href="../about/index.html" class="nav-link">About</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="../index.html#contact" class="nav-contact-link">お問い合わせ</a>
+        <a href="../guide/index.html" class="btn btn-primary btn-sm">はじめての方へ</a>
+        <button class="nav-toggle" id="navToggle" aria-label="メニュー開閉">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Legal / Specification Container -->
+  <main class="legal-container">
+    <nav class="breadcrumb" aria-label="パンくずリスト" style="margin-bottom: 2rem;">
+      <a href="../index.html">ホーム</a>
+      <span class="breadcrumb-separator">/</span>
+      <span style="color:var(--text-main); font-weight:600;">MCPサーバー共通セキュリティ仕様</span>
+    </nav>
+
+    <div class="legal-header">
+      <div class="section-meta">
+        <span class="section-num">SPECIFICATION / SECURITY</span>
+        <span class="section-tag">共通セキュリティ仕様</span>
+      </div>
+      <h1>AI時代のMCPサーバー共通セキュリティ仕様</h1>
+      <div class="legal-meta">
+        <span>文書バージョン：1.0 Draft</span>
+        <span>制定日：2026年10月9日</span>
+        <span>準拠基準：MCP Specification 2026-07-28</span>
+        <span>管理主体：AI Orchestration</span>
+      </div>
+    </div>
+
+    <!-- Document Meta Box -->
+    <div style="background: var(--bg-subtle); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; margin-bottom: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.85rem; font-size: 0.90625rem; line-height: 1.6;">
+      <div><strong>文書バージョン：</strong>1.0 Draft</div>
+      <div><strong>制定日：</strong>2026年10月9日</div>
+      <div><strong>準拠基準：</strong>MCP Specification 2026-07-28</div>
+      <div><strong>適用対象：</strong>公開MCP、商用MCP、ChatGPTプラグイン、共通バックエンドAPI</div>
+      <div><strong>管理主体：</strong>AI Orchestration</div>
+    </div>
+
+    <div class="legal-body">
+
+      <!-- Section 1 -->
+      <section class="legal-section">
+        <h2>1. 基本方針</h2>
+        <p>
+          本仕様は、MCPサーバーをAIエージェントが利用することを前提として、情報資産の機密性・完全性・可用性および知的財産の保護を図るための共通要件を定める。
+        </p>
+        <p style="margin-top: 1rem;">
+          MCPクライアントおよびAIモデルは信頼境界の外側に位置するものとし、モデルが正しい判断を行うことをセキュリティ上の前提としない。
+        </p>
+        <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem; color: var(--text-main);">基本原則</h3>
+        <ul>
+          <li><strong>ゼロトラスト：</strong>AIモデルの判断を認証・認可の根拠にしない。</li>
+          <li><strong>最小権限：</strong>ツール単位で許される操作を限定する。</li>
+          <li><strong>最小情報：</strong>目的に必要な情報だけを入出力する。</li>
+          <li><strong>多層防御：</strong>エッジ、認証、ツール、データの各層で防御する。</li>
+          <li><strong>検証可能性：</strong>セキュリティ機能は試験で有効性を確認する。</li>
+          <li><strong>正確性：</strong>防御を理由に計算結果や公的情報を改ざんしない。</li>
+        </ul>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="legal-section">
+        <h2>2. 想定する脅威</h2>
+        <div class="legal-table-wrap">
+          <table class="legal-table">
+            <thead>
+              <tr>
+                <th style="width: 28%;">脅威</th>
+                <th style="width: 40%;">内容</th>
+                <th style="width: 32%;">主な対策</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>不正アクセス</td>
+                <td>他人・他社の情報取得</td>
+                <td>OAuth、リソース単位認可</td>
+              </tr>
+              <tr>
+                <td>DoS・リソース枯渇</td>
+                <td>大量のツール実行</td>
+                <td>レート制限、実行予算</td>
+              </tr>
+              <tr>
+                <td>敵対的蒸留・機能模倣</td>
+                <td>大量照会による知識・ロジック再構築</td>
+                <td>取得量・取得範囲の制御</td>
+              </tr>
+              <tr>
+                <td>プロンプトインジェクション</td>
+                <td>AIを誘導して不適切なツール操作を行わせる</td>
+                <td>信頼境界の分離、入力検証</td>
+              </tr>
+              <tr>
+                <td>ツール悪用</td>
+                <td>AIが過剰な権限で操作する</td>
+                <td>権限分離、操作確認</td>
+              </tr>
+              <tr>
+                <td>データ持ち出し</td>
+                <td>機密情報を外部に送信</td>
+                <td>出力制限、送信先制限</td>
+              </tr>
+              <tr>
+                <td>ツール・依存ライブラリ改ざん</td>
+                <td>ツールの説明や動作を悪意あるものに変更</td>
+                <td>変更管理、署名・依存関係検査</td>
+              </tr>
+              <tr>
+                <td>SSRF・認証悪用</td>
+                <td>内部ネットワークや認証基盤を不正利用</td>
+                <td>URL検証、送信先制限</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 0.75rem;">
+          ※ 独自AIモデルを持たないMCPでは、厳密なモデル蒸留より、データ抽出・機能模倣が中心となる。
+        </p>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="legal-section">
+        <h2>3. 必須セキュリティ要件</h2>
+        <p>
+          以下のP0は適用対象における公開前必須要件とする。P1は保護価値・利用規模に応じて追加する。
+        </p>
+
+        <h3 style="margin-top: 2rem;">SEC-01 通信・プロトコル保護<span class="legal-badge-p0">P0</span></h3>
+        <ul>
+          <li>本番環境の通信はHTTPSを必須とする。</li>
+          <li>MCP Streamable HTTPを採用する。</li>
+          <li>対応するMCPプロトコル版を明示し、互換性を検証する。</li>
+          <li>ゲートウェイでリクエストサイズ、実行時間、接続数を制限する。</li>
+          <li>2026-07-28版のMcp-Method／Mcp-Nameヘッダーをルーティング・監視に活用する場合、リクエスト本文との整合性を検証する。</li>
+          <li>外部から内部APIやデータベースへ直接アクセスさせない。</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">SEC-02 認証・認可<span class="legal-badge-p0">P0</span></h3>
+        <ul>
+          <li>公開情報を読み出すだけのツールには匿名利用を許容する。</li>
+          <li>非公開情報・契約情報・更新操作には原則OAuth 2.1ベースの認証を要求する。</li>
+          <li>PKCEを使用する。</li>
+          <li>アクセストークンの署名、有効期限、issuer、audience、scopeを検証する。</li>
+          <li>他サービス向けに発行されたトークンを受け入れない。</li>
+          <li>他サービスへのアクセストークンの単純転送を禁止する。</li>
+          <li>すべてのツール実行時に、ユーザー・組織・対象リソースのアクセス権を再評価する。</li>
+          <li>リクエストの引数に含まれるユーザーIDや組織IDだけを信頼しない。</li>
+          <li>複数回の呼び出しで用いる状態ハンドルは、認証済み主体に紐付け、有効期限を設ける。</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">SEC-03 ツール権限管理<span class="legal-badge-p0">P0</span></h3>
+        <ul>
+          <li>ツールは単一の明確な業務目的に対応させる。</li>
+          <li>参照ツールと更新ツールを分離する。</li>
+          <li>Input SchemaとOutput Schemaを定義する。</li>
+          <li>文字数、配列件数、取得件数、数値範囲などを制限する。</li>
+          <li>原則として、外部から任意のSQL・OSコマンド・スクリプトを実行できる汎用ツールを公開しない。</li>
+          <li>readOnlyHint、destructiveHint、openWorldHintなどの属性を実際の動作と一致させる。</li>
+          <li>ツール属性をセキュリティ制御の代用とせず、サーバー側で権限を強制する。</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">SEC-04 プロンプトインジェクション対策<span class="legal-badge-p0">P0</span></h3>
+        <ul>
+          <li>AIが生成したツール引数は、信頼済み入力とみなさない。</li>
+          <li>MCPに渡された自然言語を、管理命令や認証済み操作の証明として解釈しない。</li>
+          <li>外部文書・検索結果・データベースの文章に含まれる命令を、システム権限へ昇格させない。</li>
+          <li>外部データには出典と信頼区分を付ける。</li>
+          <li>検証可能な構造化データを優先し、不要な自然言語指示をツール結果に混在させない。</li>
+          <li>機密情報の開示可否はプロンプトではなく、サーバー側ポリシーで判定する。</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">SEC-05 危険操作の保護<span class="legal-badge-p0">P0</span></h3>
+        <p>削除、外部送信、課金、契約変更、制御機器への命令などは高リスク操作として管理する。</p>
+        <ul style="margin-top: 0.75rem;">
+          <li>実行前に対象・変更内容・影響を確認する。</li>
+          <li>高リスク操作には独立した承認処理を設ける。</li>
+          <li>承認情報をユーザー、操作対象、パラメータ、有効期限に紐付ける。</li>
+          <li>モデルが送信した confirmed=true などの自己申告だけで承認済みと判断しない。</li>
+          <li>再試行による二重実行を防ぐため、冪等性キーを使用する。</li>
+          <li>操作履歴を監査可能な形で保存する。</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">SEC-06 データ保護<span class="legal-badge-p0">P0</span></h3>
+        <p>情報を以下の4分類で扱う。</p>
+        <div class="legal-table-wrap">
+          <table class="legal-table">
+            <thead>
+              <tr>
+                <th style="width: 25%;">区分</th>
+                <th style="width: 45%;">例</th>
+                <th style="width: 30%;">公開方針</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Public</td>
+                <td>公的補助金・公表料金</td>
+                <td>匿名公開可能</td>
+              </tr>
+              <tr>
+                <td>Customer</td>
+                <td>顧客の見積・設定情報</td>
+                <td>認証必須</td>
+              </tr>
+              <tr>
+                <td>Confidential</td>
+                <td>独自設計モデル・原価情報</td>
+                <td>契約・役割別に制限</td>
+              </tr>
+              <tr>
+                <td>Secret</td>
+                <td>APIキー・秘密鍵・認証情報</td>
+                <td>原則出力禁止</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ul style="margin-top: 1rem;">
+          <li>ツールごとに取得可能な情報区分を定義する。</li>
+          <li>内部の計算過程、秘密情報、不要な生データを返さない。</li>
+          <li>システムプロンプトに機密情報を保管しない。</li>
+          <li>ChatGPT側の会話全体を取得・復元しようとしない。</li>
+          <li>個人情報の保存期間と削除手順を定める。</li>
+          <li>内部ログに認証トークンや不要な生のプロンプトを保存しない。</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">SEC-07 DoS・リソース消費対策<span class="legal-badge-p0">P0</span></h3>
+        <ul>
+          <li>IP、認証主体、組織、ツールの各単位でレート制限を設ける。</li>
+          <li>短時間の集中利用と長期間の累積利用の両方を監視する。</li>
+          <li>実行時間、同時実行数、データ取得件数に上限を設ける。</li>
+          <li>AIの繰り返しツール呼び出しに対し、リクエスト単位・業務単位の予算を設ける。</li>
+          <li>上限超過時は適切なエラーと再試行条件を返す。</li>
+          <li>不正利用の疑いがある場合は、制限強化、追加認証、一時停止を段階的に適用する。</li>
+          <li>IPだけを利用者識別の根拠にしない。</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">SEC-08 敵対的蒸留・情報抽出対策<span class="legal-badge-p1">P1</span></h3>
+        <p>商用データ・独自ロジックを提供するMCPで必須とする。</p>
+        <ul style="margin-top: 0.75rem;">
+          <li>1回の問い合わせで取得できる情報を業務上必要な範囲に限定する。</li>
+          <li>大量ページング、全件ダウンロード、任意条件の網羅照会を無制限に公開しない。</li>
+          <li>一定期間に取得されたユニークなレコード数を記録する。</li>
+          <li>入力条件を系統的に変化させる大量照会を検知する。</li>
+          <li>API呼び出し回数とは別に、取得情報量・照会範囲の予算を管理する。</li>
+          <li>高価値なデータ取得は認証済み契約主体に紐付ける。</li>
+          <li>異常検知は警告、速度制限、調査、一時停止を段階的に行う。</li>
+          <li>正確性が求められる計算結果に、盗用防止目的のノイズや偽情報を混入させない。</li>
+        </ul>
+        <div style="background: rgba(30, 58, 138, 0.05); border-left: 3px solid var(--accent); padding: 1rem 1.25rem; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; margin-top: 1rem;">
+          <strong style="color: var(--text-main); font-size: 0.9375rem;">目的は模倣の完全防止ではなく、情報資産の大量再構築を困難にし、早期に検知できる状態を作ることとする。</strong>
+        </div>
+
+        <h3 style="margin-top: 2rem;">SEC-09 外部送信・SSRF対策<span class="legal-badge-p0">P0</span></h3>
+        <ul>
+          <li>HTTPリクエストの送信先は原則許可リストで制限する。</li>
+          <li>ローカルアドレス、プライベートIP、クラウドメタデータなどへの不正アクセスを防ぐ。</li>
+          <li>DNS再解決、リダイレクト、IPv6を考慮したURL検証を行う。</li>
+          <li>ユーザー入力を利用した無制限の外部送信機能を提供しない。</li>
+          <li>データ取得機能と外部送信機能の権限を分離する。</li>
+          <li>外部システムに送信する情報は、必要最小限とする。</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">SEC-10 ログ・異常検知<span class="legal-badge-p0">P0</span></h3>
+        <p>以下の情報を、必要最小限の範囲で記録する。</p>
+        <ul style="margin-top: 0.75rem;">
+          <li>リクエスト日時と内部追跡ID</li>
+          <li>認証済み主体・組織</li>
+          <li>ツール名・実行結果</li>
+          <li>処理時間・負荷</li>
+          <li>取得情報量</li>
+          <li>認可失敗・レート制限の発生</li>
+          <li>不審な問い合わせパターン</li>
+        </ul>
+        <p style="margin-top: 1rem;">
+          ログにはアクセス制限・保存期間・削除方針を設ける。ログの公開や、MCPクライアントへの不要な返却は禁止する。
+        </p>
+
+        <h3 style="margin-top: 2rem;">SEC-11 開発・供給網セキュリティ<span class="legal-badge-p0">P0</span></h3>
+        <ul>
+          <li>公式MCP SDKなど、保守されているライブラリを使用する。</li>
+          <li>依存関係を固定し、脆弱性検査を実施する。</li>
+          <li>ソースコード・依存パッケージ・コンテナの脆弱性を確認する。</li>
+          <li>秘密情報の混入検査をCI/CDに組み込む。</li>
+          <li>ツール定義・説明文の変更をソース管理し、レビュー対象とする。</li>
+          <li>デプロイしたコードとツール定義の対応を追跡可能にする。</li>
+          <li>セキュリティ更新に応じて計画的に依存関係を更新する。</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">SEC-12 プラグインUI・利用者保護<span class="legal-badge-p0">P0</span></h3>
+        <ul>
+          <li>必要な権限とデータ送信先を利用者に明示する。</li>
+          <li>認証を要求するツールを明確にする。</li>
+          <li>MCP AppsのUIではCSPと接続先制限を適用する。</li>
+          <li>クライアントに秘密鍵・認証トークンを不用意に返さない。</li>
+          <li>プライバシーポリシー、問い合わせ先、データ削除方針を公開する。</li>
+          <li>ツールの名称・説明・実際の動作を一致させる。</li>
+        </ul>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="legal-section">
+        <h2>4. 適用セキュリティレベル</h2>
+        <div class="legal-table-wrap">
+          <table class="legal-table">
+            <thead>
+              <tr>
+                <th style="width: 25%;">レベル</th>
+                <th style="width: 45%;">対象</th>
+                <th style="width: 30%;">必須要件</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A：公開情報型</td>
+                <td>公的データ検索、無料情報API</td>
+                <td>SEC-01〜07、09〜12</td>
+              </tr>
+              <tr>
+                <td>B：契約データ型</td>
+                <td>顧客専用データ、業務API</td>
+                <td>A＋強制認証、厳格な組織分離</td>
+              </tr>
+              <tr>
+                <td>C：知財保護型</td>
+                <td>独自AIモデル、電力インテリジェンス</td>
+                <td>B＋SEC-08</td>
+              </tr>
+              <tr>
+                <td>D：ローカル機密処理型</td>
+                <td>ソースコード検査、機密文書解析</td>
+                <td>B/C相当＋下記のローカル保護要件</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top: 1.25rem;"><strong>レベルDでは追加で以下を適用する。</strong></p>
+        <ul style="margin-top: 0.75rem;">
+          <li>ソースコード全体の外部転送を初期設定で禁止する。</li>
+          <li>ローカルで必要な検査を実行する。</li>
+          <li>外部送信する場合は、ユーザーの明示的な承認を求める。</li>
+          <li>結果の要約、ハッシュ値、検査証跡などだけを送信する構成を優先する。</li>
+          <li>通信経路と実際のデータ送信内容を検証可能にする。</li>
+          <li>ローカル実行コンポーネントには最小権限と実行環境の分離を適用する。</li>
+        </ul>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="legal-section">
+        <h2>5. リリース前セキュリティ試験</h2>
+        <p>以下を必須試験とする。</p>
+        <div class="legal-table-wrap">
+          <table class="legal-table">
+            <thead>
+              <tr>
+                <th style="width: 35%;">試験</th>
+                <th style="width: 65%;">合格条件</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>不正トークン</td>
+                <td>対象外・期限切れトークンでアクセス不可</td>
+              </tr>
+              <tr>
+                <td>組織間アクセス</td>
+                <td>他組織のデータを参照・更新できない</td>
+              </tr>
+              <tr>
+                <td>権限逸脱</td>
+                <td>参照権限から更新操作を実行できない</td>
+              </tr>
+              <tr>
+                <td>プロンプトインジェクション</td>
+                <td>外部データ内の命令で権限を突破できない</td>
+              </tr>
+              <tr>
+                <td>危険操作</td>
+                <td>未承認で高リスク操作が実行されない</td>
+              </tr>
+              <tr>
+                <td>SSRF</td>
+                <td>許可されない内部・外部宛通信が遮断される</td>
+              </tr>
+              <tr>
+                <td>DoS</td>
+                <td>設定した負荷上限が機能する</td>
+              </tr>
+              <tr>
+                <td>データ出力</td>
+                <td>機密項目・トークンの不要な露出がない</td>
+              </tr>
+              <tr>
+                <td>ログ</td>
+                <td>機密情報の不要な記録がない</td>
+              </tr>
+              <tr>
+                <td>敵対的蒸留（レベルC）</td>
+                <td>網羅的な照会が監視・制限される</td>
+              </tr>
+              <tr>
+                <td>ローカル送信（レベルD）</td>
+                <td>非承認の機密データ外部送信が発生しない</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p style="margin-top: 1rem;">
+          セキュリティ対策の合格判定は、実装の有無だけではなく、これらの試験結果によって行う。
+        </p>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="legal-section">
+        <h2>6. 運用・見直し</h2>
+        <ul>
+          <li>セキュリティ要件を変更した場合はバージョンを更新する。</li>
+          <li>重大な脆弱性を検知した場合に特定ツールを停止できるようにする。</li>
+          <li>インシデント時のアクセス遮断、トークン失効、ログ保全、利用者への連絡手順を定める。</li>
+          <li>MCP仕様・SDK・ChatGPTプラグイン審査要件の変更を定期的に確認する。</li>
+          <li>重要な権限変更、ツール追加、外部連携追加時には再評価する。</li>
+        </ul>
+      </section>
+
+      <!-- Final Principle -->
+      <section class="legal-section" style="margin-top: 3.5rem; border-top: 1px solid var(--border-subtle); padding-top: 2.5rem;">
+        <div style="background: var(--bg-subtle); border: 2px solid var(--border-blueprint); border-radius: var(--radius-md); padding: 2rem; position: relative;">
+          <h3 style="margin-top: 0; color: var(--accent); font-size: 1.15rem; margin-bottom: 1rem;">最終原則</h3>
+          <p style="font-size: 1.05rem; font-weight: 600; color: var(--text-main); line-height: 1.8; margin-bottom: 1rem;">
+            MCPサーバーは、AIに対して企業資産を公開する境界である。
+          </p>
+          <p style="font-size: 0.96875rem; color: var(--text-secondary); line-height: 1.85; margin: 0;">
+            AIが正しく判断することに依存せず、AIが誤解・誤作動・悪用された場合でも、サーバー自身が権限と情報の流出を制御できる設計を基本とする。
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-subtle); display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+      <a href="../privacy/index.html" class="link-arrow">プライバシーポリシーを見る</a>
+      <a href="../terms/index.html" class="link-arrow">利用規約を見る</a>
+      <a href="../index.html#contact" class="link-arrow">お問い合わせ</a>
+      <a href="../index.html" class="link-arrow">トップページへ戻る</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h4>AI Orchestration.</h4>
+          <p>
+            事業を構想し、AIプロダクトとして実装する。自らプロダクトを開発・提供する実践をもとに、企業の意思決定と事業づくりを支えます。
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul class="footer-links">
+            <li><a href="../guide/index.html">はじめての方へ</a></li>
+            <li><a href="../about/index.html">私たちについて</a></li>
+            <li><a href="../projects/index.html">プロジェクト事例</a></li>
+            <li><a href="../consulting/index.html">事業・開発支援</a></li>
+            <li><a href="../index.html#contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Products</h5>
+          <ul class="footer-links">
+            <li><a href="../products/index.html">プロダクト一覧</a></li>
+            <li><a href="../products/hojokin-ai/index.html">ChatGPTプラグイン - 日本の補助金・公的支援検索</a></li>
+            <li><a href="../products/hojokin-ai/support/index.html">ChatGPTプラグイン - 日本の補助金・公的支援検索 サポート</a></li>
+            <li><a href="../hojokin-ai.html">ChatGPTプラグイン - 日本の補助金・公的支援検索 開発事例</a></li>
+            <li><a href="../spaq-core.html">SPAQ CORE 開発事例</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <ul class="footer-links">
+            <li><a href="../privacy/index.html">プライバシーポリシー</a></li>
+            <li><a href="../terms/index.html">利用規約</a></li>
+            <li><a href="index.html" style="color:#ffffff; font-weight:700;">MCPサーバー共通セキュリティ仕様</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 AI Orchestration. All rights reserved.</div>
+        <div>AI時代のMCPサーバー共通セキュリティ仕様</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
