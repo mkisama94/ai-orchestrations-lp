@@ -112,17 +112,23 @@
         <span>文書バージョン：1.0 Draft</span>
         <span>制定日：2026年10月9日</span>
         <span>準拠基準：MCP Specification 2026-07-28</span>
-        <span>管理主体：AI Orchestration</span>
+        <span>管理・運営主体：AI Orchestration Inc.</span>
       </div>
     </div>
 
     <!-- Document Meta Box -->
-    <div style="background: var(--bg-subtle); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; margin-bottom: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.85rem; font-size: 0.90625rem; line-height: 1.6;">
+    <div style="background: var(--bg-subtle); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.85rem; font-size: 0.90625rem; line-height: 1.6;">
       <div><strong>文書バージョン：</strong>1.0 Draft</div>
       <div><strong>制定日：</strong>2026年10月9日</div>
       <div><strong>準拠基準：</strong>MCP Specification 2026-07-28</div>
       <div><strong>適用対象：</strong>公開MCP、商用MCP、ChatGPTプラグイン、共通バックエンドAPI</div>
-      <div><strong>管理主体：</strong>AI Orchestration</div>
+      <div><strong>管理・運営主体：</strong>AI Orchestration Inc.</div>
+      <div><strong>セキュリティに関する報告・お問い合わせ：</strong><a href="../index.html#contact" style="color: var(--accent); text-decoration: underline;">お問い合わせ窓口</a></div>
+    </div>
+
+    <!-- Document Positioning Note -->
+    <div style="background: rgba(30, 58, 138, 0.04); border: 1px solid var(--border-subtle); border-left: 3px solid var(--accent); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; padding: 1rem 1.25rem; margin-bottom: 3rem; font-size: 0.90625rem; color: var(--text-secondary); line-height: 1.75;">
+      本文書は、当社サービスの設計・実装・運用に適用する共通セキュリティ要件を定めるものです。個別サービスのすべての機能が実装済み、または検証済みであることを示すものではありません。提供状況や個別の制約は、各サービスの案内をご確認ください。
     </div>
 
     <div class="legal-body">
@@ -433,6 +439,9 @@
           <li>通信経路と実際のデータ送信内容を検証可能にする。</li>
           <li>ローカル実行コンポーネントには最小権限と実行環境の分離を適用する。</li>
         </ul>
+        <p style="margin-top: 1rem; font-size: 0.90625rem; color: var(--text-secondary); background: var(--bg-subtle); padding: 0.875rem 1.125rem; border-radius: var(--radius-sm); border-left: 3px solid var(--border-blueprint);">
+          Open Estimateのサーバーへの送信と、利用者が使用するAIサービスへの送信は別の経路です。ローカルで処理する場合でも、AIによる解析のためにコードの一部やツールの結果がモデル提供元へ送信される場合があります。各経路の取扱いは、製品の説明と利用するAIサービスの設定をご確認ください。
+        </p>
       </section>
 
       <!-- Section 5 -->
@@ -510,6 +519,66 @@
           <li>MCP仕様・SDK・ChatGPTプラグイン審査要件の変更を定期的に確認する。</li>
           <li>重要な権限変更、ツール追加、外部連携追加時には再評価する。</li>
         </ul>
+        <p style="margin-top: 1.25rem;">
+          ご報告いただいた内容は、影響範囲と緊急性を確認し、必要に応じて調査、機能の一時停止、アクセス制限、認証情報の無効化などを行います。
+        </p>
+        <p style="margin-top: 0.75rem;">
+          利用者への影響が確認された場合は、影響を受ける利用者への連絡や、対象サービスの案内ページでの告知など、状況に応じた方法でお知らせします。調査中の情報と確認済みの事実を区別し、必要に応じて内容を更新します。
+        </p>
+        <p style="margin-top: 0.75rem;">
+          報告内容および連絡先は、調査、対応、報告者への連絡に必要な範囲で取り扱います。報告者の連絡先や、悪用につながる詳細情報を、そのまま公開することはありません。個人情報の取扱いについては、当社の<a href="../privacy/index.html" style="color: var(--accent); text-decoration: underline;">プライバシーポリシー</a>をご確認ください。
+        </p>
+      </section>
+
+      <!-- Section 7 -->
+      <section class="legal-section" id="report-contact">
+        <h2>7. セキュリティに関する報告・お問い合わせ</h2>
+        <p>
+          AI Orchestration Inc.が提供するサービスについて、脆弱性、不正アクセス、情報の誤公開、認証・権限の不具合などにお気付きの場合は、以下の窓口へご連絡ください。
+        </p>
+        <ul style="margin-top: 0.75rem; margin-bottom: 1rem;">
+          <li><a href="../index.html#contact" style="color: var(--accent); font-weight: 600; text-decoration: underline;">お問い合わせ窓口</a></li>
+          <li><a href="https://tally.so/r/obPAq1" target="_blank" rel="noopener noreferrer" style="color: var(--accent); font-weight: 600; text-decoration: underline;">フォームを直接開く ↗</a></li>
+        </ul>
+        <p>
+          お問い合わせ内容の冒頭に「セキュリティ報告」と記載し、分かる範囲で以下をお知らせください。
+        </p>
+        <ul style="margin-top: 0.75rem; margin-bottom: 1rem;">
+          <li>対象のサービス名・ページURL</li>
+          <li>発生または確認した日時</li>
+          <li>問題の概要と、想定される影響</li>
+          <li>問題が発生する条件や、安全に説明できる範囲の再現手順</li>
+          <li>返信先</li>
+        </ul>
+        <p style="margin-top: 0.75rem;">
+          ソースコード、秘密鍵、APIキー、認証トークン、パスワード、第三者の個人情報や非公開情報は、フォームに入力・添付しないでください。詳細な情報が必要な場合は、受け渡し方法を当社からご案内します。
+        </p>
+        <p style="margin-top: 0.75rem;">
+          調査のために、第三者の情報を追加取得したり、情報を変更・削除したり、サービスに過大な負荷をかけたりする必要はありません。確認できた範囲でご報告ください。
+        </p>
+      </section>
+
+      <!-- Section 8 -->
+      <section class="legal-section" id="open-estimate-certificate">
+        <h2>8. Open Estimateの計算証明書に関する補足</h2>
+        <p>
+          Open Estimateの計算証明書の発行主体は、AI Orchestration Inc.です。
+        </p>
+        <p style="margin-top: 0.75rem;">
+          計算証明書は、利用者から申告された機能モデルに対する計算結果、適用した基準、および発行記録を確認するためのものです。電子署名により、当社の公開鍵に対応する署名であることと、署名対象のデータが変更されていないことを検証できます。
+        </p>
+        <p style="margin-top: 0.75rem;">
+          ソースコードの実在性・所有権・網羅性、AIによる意味解釈の正しさ、実際の開発工数、市場価格を独立に保証するものではありません。TEST基準を用いた結果は、その旨を表示します。
+        </p>
+        <p style="margin-top: 0.75rem;">
+          証明書の表示内容、署名の検証エラー、不正な発行の疑い、公開の取り下げ、証明書の失効に関するお問い合わせは、共通の<a href="../index.html#contact" style="color: var(--accent); text-decoration: underline;">お問い合わせ窓口</a>で受け付けます。「Open Estimate」と、対象の証明書IDまたは公開URLをご記載ください。
+        </p>
+        <p style="margin-top: 0.75rem;">
+          問い合わせの受付だけで、公開の取り下げや証明書の失効が確定するものではありません。対象と操作権限などを確認して対応します。
+        </p>
+        <p style="margin-top: 0.75rem;">
+          公開の取り下げは、当社Webサイトでの公開提供を停止する操作です。証明書の失効は、発行記録の有効性に関する状態を変更する操作です。既に保存・複製されたファイルや、外部サービスのキャッシュまで回収するものではありません。
+        </p>
       </section>
 
       <!-- Final Principle -->
@@ -581,7 +650,7 @@
       </div>
 
       <div class="footer-bottom">
-        <div>&copy; 2026 AI Orchestration. All rights reserved.</div>
+        <div>&copy; 2026 AI Orchestration Inc. All rights reserved.</div>
         <div>MCPサーバー共通セキュリティ仕様</div>
       </div>
     </div>
