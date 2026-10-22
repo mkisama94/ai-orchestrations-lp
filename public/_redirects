@@ -1,0 +1,7 @@
+# Phase 1 Site Structure Redirects (HTTP 301)
+/projects/ishikawa-datacenter /ai-infra/ishikawa-datacenter/ 301
+/projects/ishikawa-datacenter/ /ai-infra/ishikawa-datacenter/ 301
+/projects/ishikawa-datacenter/index.html /ai-infra/ishikawa-datacenter/ 301
+/projects /products/ 301
+/projects/ /products/ 301
+/projects/index.html /products/ 301
