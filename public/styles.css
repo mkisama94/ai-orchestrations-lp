@@ -3974,6 +3974,7 @@ button, input, textarea, select {
 .section-products-solutions {
   padding-top: 5.5rem;
   padding-bottom: 5.5rem;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .products-main-grid {
@@ -5417,7 +5418,6 @@ button, input, textarea, select {
 .section-solutions {
   padding-top: 5.5rem;
   padding-bottom: 5rem;
-  border-bottom: 1px solid var(--border-light);
 }
 
 /* 5 Cards Grid on Top Page */
