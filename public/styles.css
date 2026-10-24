@@ -6533,3 +6533,330 @@ button, input, textarea, select {
 
 
 
+/* ==========================================================================
+   Consulting Renewal Styles (2026-10-24) — Scoped to .consulting-*
+   ========================================================================== */
+.consulting-anchor-section {
+  scroll-margin-top: 5.5rem;
+}
+
+.consulting-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.consulting-page-toc {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.consulting-page-toc-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  margin-bottom: 0.75rem;
+}
+
+.consulting-page-toc-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.consulting-page-toc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-medium);
+  color: var(--text-main);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.consulting-page-toc-link:hover,
+.consulting-page-toc-link:focus-visible {
+  border-color: var(--accent);
+  color: var(--accent-deep);
+  background: var(--accent-light);
+}
+
+.consulting-page-toc-link:focus-visible,
+.consulting-menu-nav-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* 4-Step Process Grid */
+.consulting-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 2.25rem;
+}
+
+.consulting-process-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-top: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 1.75rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+}
+
+.consulting-process-step-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+}
+
+.consulting-process-num {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--accent);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.06em;
+}
+
+.consulting-process-arrow {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.consulting-process-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.35;
+}
+
+.consulting-process-value {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+  background: var(--accent-light);
+  border-left: 3px solid var(--accent);
+  padding: 0.45rem 0.75rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  margin: 0 0 1rem 0;
+  line-height: 1.45;
+}
+
+.consulting-process-desc {
+  font-size: 0.90625rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Process Feedback Loop Box */
+.consulting-process-loop {
+  background: #ffffff;
+  border: 1px solid rgba(9, 105, 218, 0.3);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  margin-top: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.consulting-process-loop-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.78125rem;
+  font-weight: 700;
+  color: var(--accent-deep);
+  background: var(--accent-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.65rem;
+}
+
+.consulting-process-loop-title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0 0 0.4rem 0;
+  line-height: 1.5;
+}
+
+.consulting-process-loop-text {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Quality 4 Check Grid & Collaboration 4 Grid */
+.consulting-quad-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.consulting-quad-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.consulting-quad-title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1.4;
+}
+
+.consulting-quad-title svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.consulting-quad-text {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Case Studies 2-Column Grid */
+.consulting-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.consulting-case-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.consulting-case-card:hover {
+  border-color: var(--accent);
+  box-shadow: var(--shadow-card);
+}
+
+.consulting-case-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.consulting-case-card-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main);
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.consulting-case-card-desc {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin: 0 0 1.5rem 0;
+  flex-grow: 1;
+}
+
+/* Engagement 3 Models Grid */
+.consulting-engagement-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.consulting-engagement-card {
+  background: #ffffff;
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.consulting-engagement-title {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0 0 0.5rem 0;
+  line-height: 1.4;
+}
+
+.consulting-engagement-text {
+  font-size: 0.90625rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin: 0;
+}
+
+@media (max-width: 1080px) {
+  .consulting-process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .consulting-quad-grid,
+  .consulting-cases-grid,
+  .consulting-engagement-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .consulting-process-grid {
+    grid-template-columns: 1fr;
+  }
+  .consulting-process-arrow {
+    display: none;
+  }
+  .consulting-hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
