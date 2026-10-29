@@ -41,7 +41,7 @@
 
   <!-- Center Wide Box -->
   <rect x="280" y="272" width="1040" height="150" rx="18" ry="18" fill="#e6f3fa" stroke="#1577a6" stroke-width="3.5"/>
-  <text x="800" y="334" text-anchor="middle" font-size="31" font-weight="700" fill="#1c2d3d">広域配分基盤（クラウド連携）</text>
+  <text x="800" y="334" text-anchor="middle" font-size="31" font-weight="700" fill="#1c2d3d">AI CITY JAPANの広域配分基盤</text>
   <text x="800" y="382" text-anchor="middle" font-size="24" fill="#4f6477">条件に適合する拠点から、電力の余裕を基準に新規処理を配分</text>
 
   <!-- Arrows between Center and Bottom Boxes -->
