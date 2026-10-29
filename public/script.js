@@ -240,50 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 4. Navigate only after our embedded Tally form confirms submission.
-  const contactFrame = document.getElementById('contactTallyFrame');
-  if (contactFrame) {
-    window.addEventListener('message', (event) => {
-      if (event.origin !== 'https://tally.so' || event.source !== contactFrame.contentWindow) return;
-      let message = event.data;
-      if (typeof message === 'string') {
-        try { message = JSON.parse(message); } catch { return; }
-      }
-      if (message?.event !== 'Tally.FormSubmitted' || message.payload?.formId !== 'obPAq1') return;
-      window.location.assign(new URL('thanks.html', window.location.href).href);
-    });
-  }
-
-  // 5. Privacy Policy Modal
-  const privacyModal = document.getElementById('privacyModal');
-  const openPrivacyBtn = document.getElementById('openPrivacyModal');
-  const footerPrivacyBtn = document.getElementById('footerPrivacyLink');
-  const closePrivacyBtn = document.getElementById('closePrivacyModal');
-
-  const openModal = () => {
-    if (privacyModal) privacyModal.classList.add('active');
-  };
-  const closeModal = () => {
-    if (privacyModal) privacyModal.classList.remove('active');
-  };
-
-  if (openPrivacyBtn) openPrivacyBtn.addEventListener('click', openModal);
-  if (footerPrivacyBtn) footerPrivacyBtn.addEventListener('click', openModal);
-  if (closePrivacyBtn) closePrivacyBtn.addEventListener('click', closeModal);
-
-  if (privacyModal) {
-    privacyModal.addEventListener('click', (e) => {
-      if (e.target === privacyModal) closeModal();
-    });
-  }
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && privacyModal && privacyModal.classList.contains('active')) {
-      closeModal();
-    }
-  });
-
-  // 6. Hojokin-AI Prompt Copy & Event Handlers
+  // 4. Hojokin-AI Prompt Copy & Event Handlers
   const copyBtns = document.querySelectorAll('.hojokin-copy-btn');
   copyBtns.forEach((btn) => {
     btn.addEventListener('click', async () => {

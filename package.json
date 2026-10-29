@@ -1,8 +1,13 @@
 {
   "name": "ai-orchestrations-lp",
   "private": true,
+  "type": "module",
   "scripts": {
-    "deploy": "wrangler deploy"
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:migrate:local": "wrangler d1 migrations apply ai-orchestrations-contact --local",
+    "db:migrate:remote": "wrangler d1 migrations apply ai-orchestrations-contact --remote",
+    "test": "node --test tests/contact/*.test.ts"
   },
   "devDependencies": {
     "wrangler": "4.122.0"

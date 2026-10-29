@@ -39,6 +39,7 @@
   
   <!-- Stylesheet -->
   <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="/contact.css">
   
   <!-- JSON-LD -->
   <script type="application/ld+json">
@@ -1081,52 +1082,456 @@
   </section>
 
   <!-- 10 / Contact Section -->
-  <section class="section-wrap-subtle" id="contact" style="padding: 6rem 0;">
-    <div class="container">
-      <div class="contact-container">
-        <div class="contact-header">
-          <span class="section-tag">CONTACT</span>
-          <h2 style="font-size:clamp(1.75rem, 3.2vw, 2.25rem); font-weight:700; color:var(--text-main); margin-bottom:0.75rem;">
-            まずは、何度も聞かれることを一つ。
-          </h2>
-          <p style="font-size:1.05rem; font-weight:700; color:var(--text-main); margin-bottom:0.75rem;">
-            「この説明を、毎回しています。」<br>
-            「この人がいないと、確認が止まります。」
+  <section
+    class="aio-contact"
+    id="contact"
+    data-contact-context="oshieai"
+    data-default-category="product"
+    data-default-service="oshieai"
+    data-turnstile-sitekey="1x00000000000000000000AA"
+    aria-labelledby="contactHeading"
+  >
+    <div class="aio-contact-container">
+      <div class="aio-contact-layout">
+
+        <!-- Left Column: Guidance -->
+        <div class="aio-contact-intro">
+          <span class="aio-contact-kicker">CONTACT</span>
+          <h2 class="aio-contact-heading" id="contactHeading">まずは、何度も聞かれることを一つ。</h2>
+          <p class="aio-contact-lead">
+            「この説明を、毎回しています。」「この人がいないと、確認が止まります。」<br>
+            そんな仕事から、教AIの使いどころを一緒に整理します。ご相談の段階で、資料を完璧にまとめていただく必要はありません。
           </p>
-          <p style="color:var(--text-secondary); line-height:1.8;">
-            そんな仕事から、教AIの使いどころを一緒に整理します。<br>
-            ご相談の段階で、資料を完璧にまとめていただく必要はありません。
-          </p>
-          <div style="background:var(--bg-page); border:1px solid var(--border-subtle); border-radius:var(--radius-md); padding:1rem 1.25rem; margin-top:1.25rem; font-size:0.875rem; color:var(--text-secondary); text-align:left;">
-            <p style="margin-bottom:0.35rem;">ご相談はAI Orchestrationが受け付けます。</p>
-            <p style="margin-bottom:0.35rem;">現場で困っていることや、引き継ぎたい知識の種類をお知らせください。</p>
-            <span class="oshieai-caution-text">※このフォームには、個人情報を含む業務資料や、機密情報を入力・添付しないでください。</span>
+
+          <div class="aio-contact-context-note">
+            <p><strong>ご相談はAI Orchestrationが受け付けます。</strong></p>
+            <p>現場で困っていることや、引き継ぎたい知識の種類をお知らせください。</p>
+          </div>
+
+          <div class="aio-contact-reply-box">
+            <p>内容を確認のうえ、ご入力のメールアドレスへご連絡します。</p>
+          </div>
+
+          <div class="aio-contact-support-box">
+            <p>すでに教AIをご利用中の方はこちら：<a href="https://oshieai.com/auth/signin" target="_blank" rel="noopener noreferrer" class="aio-contact-support-link">教AI ログイン画面 ↗</a></p>
+            <p style="margin-top:8px;">補助金検索プラグインの操作・不具合については、<a href="/products/hojokin-ai/support/index.html" class="aio-contact-support-link">専用サポート窓口へ ↗</a></p>
           </div>
         </div>
 
-        <p class="form-privacy-note contact-privacy" style="margin-top:1.5rem;">
-          送信前に<button type="button" class="privacy-link" id="openPrivacyModal">プライバシーポリシー</button>をご確認ください。
-        </p>
+        <!-- Right Column: Form Panel -->
+        <div class="aio-contact-panel">
+          <div class="aio-preset-banner" id="contactPresetBanner">
+            <span class="aio-preset-banner-label" id="contactPresetBannerText">選択中の窓口：製品・サービスについて ／ 教AI（おしえあい）</span>
+            <span class="aio-preset-banner-sub">種別・対象は変更できます</span>
+          </div>
 
-        <!-- Tally Form Embed -->
-        <iframe
-          id="contactTallyFrame"
-          class="contact-tally-frame"
-          src="https://tally.so/embed/obPAq1?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1&amp;product=oshieai"
-          loading="lazy"
-          width="100%"
-          height="1000"
-          title="教AI 活用相談・お問い合わせフォーム"
-        ></iframe>
+          <!-- Error Summary (focused on validation error) -->
+          <div
+            class="aio-error-summary"
+            id="contactErrorSummary"
+            role="alert"
+            aria-labelledby="contactErrorSummaryTitle"
+            tabindex="-1"
+            hidden
+          >
+            <p class="aio-error-summary-title" id="contactErrorSummaryTitle">
+              入力内容をご確認ください
+            </p>
+            <ul class="aio-error-summary-list" id="contactErrorSummaryList"></ul>
+          </div>
 
-        <p class="contact-form-fallback">
-          フォームが表示されない場合は、<a href="https://tally.so/r/obPAq1?product=oshieai" target="_blank" rel="noopener noreferrer">お問い合わせフォームを別のタブで開く</a>。
-        </p>
+          <!-- Status Banner -->
+          <div class="aio-status-banner" id="contactStatusBanner" role="status" aria-live="polite" hidden></div>
 
-        <!-- Existing user login note -->
-        <div style="text-align:center; font-size:0.875rem; color:var(--text-muted); margin-top:2.5rem; border-top:1px dashed var(--border-subtle); padding-top:1.5rem;">
-          すでに教AIをご利用中の方はこちら：<a href="https://oshieai.com/auth/signin" target="_blank" rel="noopener noreferrer" style="color:var(--accent); text-decoration:underline;">教AI ログイン画面 ↗</a>
+          <!-- Screen Reader Live Status -->
+          <div id="contactLiveStatus" class="aio-hp-wrap" aria-live="polite" aria-atomic="true"></div>
+
+          <!-- Noscript / JS Startup Failure Guidance -->
+          <noscript>
+            <div class="aio-noscript-fallback">
+              <strong>JavaScriptが無効のため、フォームから送信できません。</strong>
+              ブラウザーの設定でJavaScriptを有効にするか、下記の窓口メールアドレスへ直接ご連絡ください。<br>
+              代替連絡先：<a href="mailto:support@ai-orchestration.jp">support@ai-orchestration.jp</a>
+            </div>
+          </noscript>
+          <div class="aio-noscript-fallback" id="contactJsFallback">
+            <strong>フォームの起動を確認しています。</strong>
+            画面の読み込みが完了しない場合や送信ボタンが有効にならない場合は、お手数ですが <a href="mailto:support@ai-orchestration.jp">support@ai-orchestration.jp</a> までメールでご連絡ください。
+          </div>
+
+          <form id="aioContactForm" action="/api/contact" method="post" novalidate>
+            <!-- 1. Category (Required) -->
+            <fieldset class="aio-fieldset" id="contactCategoryFieldset">
+              <legend class="aio-legend">
+                <span>ご相談の種別</span>
+                <span class="aio-badge-required">必須</span>
+              </legend>
+
+              <div class="aio-category-grid">
+                <label class="aio-category-option" for="contactCategory-business">
+                  <input
+                    type="radio"
+                    class="aio-category-input"
+                    id="contactCategory-business"
+                    name="category"
+                    value="business"
+                  >
+                  <span class="aio-category-indicator" aria-hidden="true"></span>
+                  <span class="aio-category-text">事業・開発のご相談</span>
+                  <span class="aio-category-check" aria-hidden="true">✓</span>
+                </label>
+
+                <label class="aio-category-option" for="contactCategory-partnership">
+                  <input
+                    type="radio"
+                    class="aio-category-input"
+                    id="contactCategory-partnership"
+                    name="category"
+                    value="partnership"
+                  >
+                  <span class="aio-category-indicator" aria-hidden="true"></span>
+                  <span class="aio-category-text">協業・パートナーシップ</span>
+                  <span class="aio-category-check" aria-hidden="true">✓</span>
+                </label>
+
+                <label class="aio-category-option is-selected" for="contactCategory-product">
+                  <input
+                    type="radio"
+                    class="aio-category-input"
+                    id="contactCategory-product"
+                    name="category"
+                    value="product"
+                    checked
+                  >
+                  <span class="aio-category-indicator" aria-hidden="true"></span>
+                  <span class="aio-category-text">製品・サービスについて</span>
+                  <span class="aio-category-check" aria-hidden="true">✓</span>
+                </label>
+
+                <label class="aio-category-option" for="contactCategory-open_estimate">
+                  <input
+                    type="radio"
+                    class="aio-category-input"
+                    id="contactCategory-open_estimate"
+                    name="category"
+                    value="open_estimate"
+                  >
+                  <span class="aio-category-indicator" aria-hidden="true"></span>
+                  <span class="aio-category-text">Open Estimateについて</span>
+                  <span class="aio-category-check" aria-hidden="true">✓</span>
+                </label>
+
+                <label class="aio-category-option" for="contactCategory-security">
+                  <input
+                    type="radio"
+                    class="aio-category-input"
+                    id="contactCategory-security"
+                    name="category"
+                    value="security"
+                  >
+                  <span class="aio-category-indicator" aria-hidden="true"></span>
+                  <span class="aio-category-text">セキュリティに関する報告</span>
+                  <span class="aio-category-check" aria-hidden="true">✓</span>
+                </label>
+
+                <label class="aio-category-option" for="contactCategory-other">
+                  <input
+                    type="radio"
+                    class="aio-category-input"
+                    id="contactCategory-other"
+                    name="category"
+                    value="other"
+                  >
+                  <span class="aio-category-indicator" aria-hidden="true"></span>
+                  <span class="aio-category-text">その他</span>
+                  <span class="aio-category-check" aria-hidden="true">✓</span>
+                </label>
+              </div>
+
+              <p class="aio-field-error" id="contactCategoryError" hidden>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span class="aio-field-error-text"></span>
+              </p>
+            </fieldset>
+
+            <!-- 2a. Conditional Service Selector (for product & security) -->
+            <div class="aio-field" id="contactServiceField">
+              <div class="aio-label-row">
+                <label class="aio-label" for="contactService">対象のサービス</label>
+                <span class="aio-badge-required">必須</span>
+              </div>
+              <p class="aio-hint" id="contactServiceProductHint">
+                対象が未定の場合は「不明・まだ決まっていない」をお選びください。補助金検索プラグインは<a href="/products/hojokin-ai/support/index.html">専用サポート窓口</a>へ。
+              </p>
+              <div class="aio-select-wrap">
+                <select
+                  class="aio-select"
+                  id="contactService"
+                  name="service"
+                  data-base-describedby="contactServiceProductHint"
+                >
+                  <option value="">選択してください</option>
+                  <option value="oshieai" selected>教AI（おしえあい）</option>
+                  <option value="datacenter">低環境負荷＆分散型AIデータセンター</option>
+                  <option value="other">その他</option>
+                  <option value="unknown">不明・まだ決まっていない</option>
+                </select>
+                <span class="aio-select-icon" aria-hidden="true">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+                </span>
+              </div>
+              <p class="aio-field-error" id="contactServiceError" hidden>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span class="aio-field-error-text"></span>
+              </p>
+            </div>
+
+            <!-- 2b. Fixed Service Display (for Open Estimate) -->
+            <div class="aio-field" id="contactFixedServiceField" hidden>
+              <div class="aio-label-row">
+                <span class="aio-label">対象のサービス</span>
+                <span class="aio-badge-optional">固定</span>
+              </div>
+              <div class="aio-fixed-service-box">
+                <span>Open Estimate（計算証明書・公開内容）</span>
+                <span class="aio-fixed-service-tag">自動設定</span>
+              </div>
+            </div>
+
+            <!-- 3. Organization (Optional) -->
+            <div class="aio-field">
+              <div class="aio-label-row">
+                <label class="aio-label" for="contactOrganization">会社名・組織名</label>
+                <span class="aio-badge-optional">任意</span>
+              </div>
+              <input
+                type="text"
+                class="aio-input"
+                id="contactOrganization"
+                name="organization"
+                autocomplete="organization"
+                maxlength="100"
+              >
+              <p class="aio-field-error" id="contactOrganizationError" hidden>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span class="aio-field-error-text"></span>
+              </p>
+            </div>
+
+            <!-- 4. Name (Required) -->
+            <div class="aio-field">
+              <div class="aio-label-row">
+                <label class="aio-label" for="contactName">お名前</label>
+                <span class="aio-badge-required">必須</span>
+              </div>
+              <input
+                type="text"
+                class="aio-input"
+                id="contactName"
+                name="name"
+                autocomplete="name"
+                maxlength="100"
+                required
+              >
+              <p class="aio-field-error" id="contactNameError" hidden>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span class="aio-field-error-text"></span>
+              </p>
+            </div>
+
+            <!-- 5. Email (Required) -->
+            <div class="aio-field">
+              <div class="aio-label-row">
+                <label class="aio-label" for="contactEmail">メールアドレス</label>
+                <span class="aio-badge-required">必須</span>
+              </div>
+              <input
+                type="email"
+                class="aio-input"
+                id="contactEmail"
+                name="email"
+                autocomplete="email"
+                inputmode="email"
+                spellcheck="false"
+                placeholder="name@example.com"
+                maxlength="254"
+                required
+              >
+              <p class="aio-field-error" id="contactEmailError" hidden>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span class="aio-field-error-text"></span>
+              </p>
+            </div>
+
+            <!-- 6. Message (Required) -->
+            <div class="aio-field">
+              <div class="aio-label-row">
+                <label class="aio-label" for="contactMessage">ご相談内容</label>
+                <span class="aio-badge-required">必須</span>
+              </div>
+
+              <div class="aio-category-guide" id="contactCategoryGuide">
+                <p id="contactCategoryGuideText">対象サービスと、ご質問・ご相談の内容をお書きください。</p>
+                <div class="aio-category-guide-link-wrap" id="contactSecuritySpecLinkWrap" hidden>
+                  <a href="/security/index.html#report-contact" class="aio-category-guide-link">
+                    <span>MCPサーバー共通セキュリティ仕様（報告・お問い合わせ）を確認する</span>
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+
+              <textarea
+                class="aio-textarea"
+                id="contactMessage"
+                name="message"
+                rows="6"
+                maxlength="5000"
+                data-base-describedby="contactCategoryGuideText contactMessageCaution"
+                aria-describedby="contactCategoryGuideText contactMessageCaution"
+                required
+              ></textarea>
+
+              <div class="aio-message-footer">
+                <p class="aio-caution-note" id="contactMessageCaution">
+                  パスワードやAPIキー、機密資料などは入力しないでください。
+                </p>
+                <span class="aio-char-counter" id="contactCharCounter">0 / 5,000文字（残り 5,000文字）</span>
+              </div>
+
+              <p class="aio-field-error" id="contactMessageError" hidden>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span class="aio-field-error-text"></span>
+              </p>
+            </div>
+
+            <!-- 7. Conditional Reference (for Open Estimate & Security) -->
+            <div class="aio-field" id="contactReferenceField" hidden>
+              <div class="aio-label-row">
+                <label class="aio-label" for="contactReference">対象ページURL・証明書IDなど</label>
+                <span class="aio-badge-optional">任意</span>
+              </div>
+              <p class="aio-hint" id="contactReferenceHint">
+                対象の公開URLや証明書IDがお分かりの場合はご記入ください（500文字以内）。
+              </p>
+              <input
+                type="text"
+                class="aio-input"
+                id="contactReference"
+                name="reference"
+                maxlength="500"
+                data-base-describedby="contactReferenceHint"
+                aria-describedby="contactReferenceHint"
+              >
+              <p class="aio-field-error" id="contactReferenceError" hidden>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span class="aio-field-error-text"></span>
+              </p>
+            </div>
+
+            <!-- 8. Optional Phone in <details> -->
+            <details class="aio-phone-details" id="contactPhoneDetails">
+              <summary class="aio-phone-summary">
+                <span class="aio-phone-summary-icon" aria-hidden="true"></span>
+                <span>連絡先を補足する（任意）</span>
+              </summary>
+              <div class="aio-phone-body">
+                <div class="aio-label-row">
+                  <label class="aio-label" for="contactPhone">電話番号</label>
+                  <span class="aio-badge-optional">任意</span>
+                </div>
+                <p class="aio-hint" id="contactPhoneHint">
+                  お電話での連絡をご希望の場合のみご記入ください（ハイフン・国番号可、30文字以内）。
+                </p>
+                <input
+                  type="tel"
+                  class="aio-input"
+                  id="contactPhone"
+                  name="phone"
+                  autocomplete="tel"
+                  inputmode="tel"
+                  maxlength="30"
+                  data-base-describedby="contactPhoneHint"
+                  aria-describedby="contactPhoneHint"
+                >
+                <p class="aio-field-error" id="contactPhoneError" hidden>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                  <span class="aio-field-error-text"></span>
+                </p>
+              </div>
+            </details>
+
+            <!-- Honeypot -->
+            <div class="aio-hp-wrap" aria-hidden="true">
+              <label for="contactWebsite">Website</label>
+              <input
+                type="text"
+                id="contactWebsite"
+                name="website"
+                tabindex="-1"
+                autocomplete="new-password"
+              >
+            </div>
+
+            <!-- 9. Privacy Policy Consent (Required) -->
+            <div class="aio-privacy-section">
+              <p class="aio-privacy-notice" id="contactPrivacyNotice">
+                お問い合わせへの対応を目的として情報を取り扱います。内容の整理や返信案の作成に、OpenAIのChatGPTを利用する場合があります。詳しくは<a href="/privacy/index.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>をご確認ください。
+              </p>
+
+              <div class="aio-privacy-row" id="contactPrivacyRow">
+                <label class="aio-privacy-label" for="contactPrivacy">
+                  <input
+                    type="checkbox"
+                    class="aio-privacy-checkbox"
+                    id="contactPrivacy"
+                    name="privacyAccepted"
+                    data-base-describedby="contactPrivacyNotice"
+                    aria-describedby="contactPrivacyNotice"
+                    required
+                  >
+                  <span>プライバシーポリシーに同意する</span>
+                </label>
+                <div class="aio-privacy-meta">
+                  <a href="/privacy/index.html" target="_blank" rel="noopener noreferrer" class="aio-privacy-link">
+                    全文を開く ↗
+                  </a>
+                  <span class="aio-badge-required">必須</span>
+                </div>
+              </div>
+
+              <p class="aio-field-error" id="contactPrivacyError" hidden>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                <span class="aio-field-error-text"></span>
+              </p>
+            </div>
+
+            <!-- 10. Turnstile Anti-Abuse Verification -->
+            <div class="aio-turnstile-field">
+              <div class="aio-turnstile-header">
+                <span class="aio-turnstile-label">✓ 不正送信の確認</span>
+                <span class="aio-badge-required">必須</span>
+              </div>
+              <div class="aio-turnstile-slot" id="contactTurnstileSlot"></div>
+            </div>
+
+            <!-- 11. Submit Button -->
+            <div class="aio-submit-area">
+              <p class="aio-preparing-note" id="contactPreparingNote">
+                フォームを準備しています…
+              </p>
+              <button
+                type="submit"
+                class="aio-submit-btn"
+                id="contactSubmitBtn"
+                disabled
+              >
+                <span id="contactSubmitBtnLabel">この内容で送信する</span>
+                <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </form>
         </div>
+
       </div>
     </div>
   </section>
@@ -1184,36 +1589,9 @@
     </div>
   </footer>
 
-  <!-- Privacy Policy Modal (Contact Form Confirmation) -->
-  <div class="modal-overlay" id="privacyModal">
-    <div class="modal-dialog">
-      <button class="modal-close-btn" id="closePrivacyModal" aria-label="閉じる">✕</button>
-      <div class="modal-body">
-        <h4>プライバシーポリシー</h4>
-        <p>
-          AI Orchestration（以下「当事業者」）は、本ウェブサイトのお問い合わせ窓口を通じて取得した個人情報（お名前、貴社名、メールアドレス、電話番号、ご相談内容等）の重要性を認識し、適切に取り扱います。
-        </p>
-        <p><strong>1. 利用目的</strong><br>
-          取得した個人情報は、お問い合わせ・ご相談への回答、日程調整、プロジェクトのご提案、および当社サービスに関するご案内にのみ利用いたします。
-        </p>
-        <p><strong>2. 第三者提供の禁止</strong><br>
-          法令に基づく場合を除き、ご本人の事前の同意なく個人情報を第三者に提供・開示することは一切ございません。
-        </p>
-        <p><strong>3. 安全管理措置</strong><br>
-          個人情報の漏洩、滅失または毀損を防止するため、適切なセキュリティ管理を実施いたします。
-        </p>
-        <p><strong>4. お問い合わせ窓口</strong><br>
-          個人情報の訂正・削除等のご請求につきましては、support@ai-orchestration.jp までご連絡ください。
-        </p>
-        <p style="margin-top: 1rem; font-size: 0.875rem; border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
-          当事業者の詳細な情報取扱い方針については、<a href="../../privacy/index.html" style="color:var(--accent); text-decoration:underline;">AI Orchestration プライバシーポリシー</a>をご確認ください。
-        </p>
-      </div>
-    </div>
-  </div>
-
   <!-- JavaScript -->
   <script src="../../script.js"></script>
-  <script async src="https://tally.so/widgets/embed.js"></script>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" async defer></script>
+  <script src="/contact.js" defer></script>
 </body>
 </html>
