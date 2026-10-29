@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 800" width="1600" height="800" font-family="'Noto Sans JP', 'Hiragino Sans', 'Meiryo', sans-serif">
+  <defs>
+    <marker id="arrow-amber-down" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#b77932"/>
+    </marker>
+    <marker id="arrow-amber-up" viewBox="0 0 10 10" refX="3" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 10 1 L 2 5 L 10 9 z" fill="#b77932"/>
+    </marker>
+    <marker id="arrow-blue-down" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#0f5c99"/>
+    </marker>
+    <marker id="arrow-blue-up" viewBox="0 0 10 10" refX="3" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 10 1 L 2 5 L 10 9 z" fill="#0f5c99"/>
+    </marker>
+    <marker id="arrow-green-down" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 8 5 L 0 9 z" fill="#1b6e59"/>
+    </marker>
+    <marker id="arrow-green-up" viewBox="0 0 10 10" refX="3" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 10 1 L 2 5 L 10 9 z" fill="#1b6e59"/>
+    </marker>
+  </defs>
+
+  <rect width="1600" height="800" fill="#ffffff"/>
+
+  <!-- Top Left Box -->
+  <rect x="30" y="25" width="580" height="135" rx="18" ry="18" fill="#f7f1e8" stroke="#b77932" stroke-width="3"/>
+  <text x="320" y="78" text-anchor="middle" font-size="28" font-weight="700" fill="#1c2d3d">送配電事業者との連携</text>
+  <text x="320" y="122" text-anchor="middle" font-size="23" fill="#4f6477">系統の場所・時間ごとの制約情報</text>
+
+  <!-- Center Note -->
+  <text x="800" y="198" text-anchor="middle" font-size="22" fill="#4f6477">将来の開発・連携領域</text>
+
+  <!-- Top Right Box -->
+  <rect x="990" y="25" width="580" height="135" rx="18" ry="18" fill="#eef5fa" stroke="#0f5c99" stroke-width="3"/>
+  <text x="1280" y="78" text-anchor="middle" font-size="28" font-weight="700" fill="#1c2d3d">需要家の処理要求</text>
+  <text x="1280" y="122" text-anchor="middle" font-size="23" fill="#4f6477">期限　遅延　データ所在　GPU仕様</text>
+
+  <!-- Arrows from Top to Center -->
+  <path d="M 320 160 L 320 215 L 580 215 L 580 264" fill="none" stroke="#b77932" stroke-width="4" marker-end="url(#arrow-amber-down)"/>
+  <path d="M 1280 160 L 1280 215 L 1020 215 L 1020 264" fill="none" stroke="#0f5c99" stroke-width="4" marker-end="url(#arrow-blue-down)"/>
+
+  <!-- Center Wide Box -->
+  <rect x="280" y="272" width="1040" height="150" rx="18" ry="18" fill="#e6f3fa" stroke="#1577a6" stroke-width="3.5"/>
+  <text x="800" y="334" text-anchor="middle" font-size="31" font-weight="700" fill="#1c2d3d">広域配分基盤（クラウド連携）</text>
+  <text x="800" y="382" text-anchor="middle" font-size="24" fill="#4f6477">条件に適合する拠点から、電力の余裕を基準に新規処理を配分</text>
+
+  <!-- Arrows between Center and Bottom Boxes -->
+  <path d="M 420 430 L 420 485 L 260 485 L 260 528" fill="none" stroke="#b77932" stroke-width="4" marker-start="url(#arrow-amber-up)" marker-end="url(#arrow-amber-down)"/>
+  <path d="M 800 430 L 800 528" fill="none" stroke="#0f5c99" stroke-width="4" marker-start="url(#arrow-blue-up)" marker-end="url(#arrow-blue-down)"/>
+  <path d="M 1180 430 L 1180 485 L 1340 485 L 1340 528" fill="none" stroke="#1b6e59" stroke-width="4" marker-start="url(#arrow-green-up)" marker-end="url(#arrow-green-down)"/>
+
+  <!-- Bottom Box A -->
+  <rect x="30" y="536" width="460" height="135" rx="18" ry="18" fill="#f7f1e8" stroke="#b77932" stroke-width="3"/>
+  <text x="260" y="592" text-anchor="middle" font-size="30" font-weight="700" fill="#1c2d3d">拠点 A</text>
+  <text x="260" y="636" text-anchor="middle" font-size="23" fill="#4f6477">混雑地域　新規受付を絞る</text>
+  <text x="260" y="704" text-anchor="middle" font-size="22" fill="#4f6477">各拠点のCOREが</text>
+  <text x="260" y="736" text-anchor="middle" font-size="22" fill="#4f6477">持続可能な受付容量を通知</text>
+
+  <!-- Bottom Box B -->
+  <rect x="570" y="536" width="460" height="135" rx="18" ry="18" fill="#eef5fa" stroke="#0f5c99" stroke-width="3"/>
+  <text x="800" y="592" text-anchor="middle" font-size="30" font-weight="700" fill="#1c2d3d">拠点 B</text>
+  <text x="800" y="636" text-anchor="middle" font-size="23" fill="#4f6477">電力に余裕　新規処理を受ける</text>
+  <text x="800" y="704" text-anchor="middle" font-size="22" fill="#4f6477">各拠点のCOREが</text>
+  <text x="800" y="736" text-anchor="middle" font-size="22" fill="#4f6477">持続可能な受付容量を通知</text>
+
+  <!-- Bottom Box C -->
+  <rect x="1110" y="536" width="460" height="135" rx="18" ry="18" fill="#e8f5f0" stroke="#1b6e59" stroke-width="3"/>
+  <text x="1340" y="592" text-anchor="middle" font-size="30" font-weight="700" fill="#1c2d3d">拠点 C</text>
+  <text x="1340" y="636" text-anchor="middle" font-size="23" fill="#4f6477">再エネ余剰　処理時刻を寄せる</text>
+  <text x="1340" y="704" text-anchor="middle" font-size="22" fill="#4f6477">各拠点のCOREが</text>
+  <text x="1340" y="736" text-anchor="middle" font-size="22" fill="#4f6477">持続可能な受付容量を通知</text>
+
+  <!-- Bottom Caption -->
+  <text x="800" y="782" text-anchor="middle" font-size="21" fill="#4f6477">計算処理を通信網で配分　各拠点の受電は2MW以内　系統図は実系統を表しません</text>
+</svg>
