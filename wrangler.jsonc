@@ -1,60 +1,60 @@
 {
-  "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "ai-orchestrations-lp",
-  "main": "src/worker.ts",
-  "compatibility_date": "2026-08-13",
-  "workers_dev": true,
-  "preview_urls": true,
-  "observability": {
-    "enabled": true
-  },
-  "assets": {
-    "directory": "./public",
-    "binding": "ASSETS",
-    "run_worker_first": [
-      "/api/*"
-    ]
-  },
-  "triggers": {
-    "crons": [
-      "* * * * *"
-    ]
-  },
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "ai-orchestrations-contact",
-      "database_id": "00000000-0000-0000-0000-000000000000",
-      "migrations_dir": "migrations"
-    }
-  ],
-  "vars": {
-    "CONTACT_ENABLED": "true",
-    "ALLOWED_ORIGINS": "https://ai-orchestration.jp,http://localhost:8787,http://127.0.0.1:8787",
-    "CONTACT_FROM": "AI Orchestration フォーム通知 <notify@ai-orchestration.jp>",
-    "CONTACT_TO": "support@ai-orchestration.jp",
-    "TURNSTILE_SITE_KEY": "1x00000000000000000000AA",
-    "RETENTION_DAYS": "365"
-  },
-  "env": {
-    "preview": {
-      "name": "ai-orchestrations-lp-preview",
-      "d1_databases": [
-        {
-          "binding": "DB",
-          "database_name": "ai-orchestrations-contact-preview",
-          "database_id": "00000000-0000-0000-0000-000000000001",
-          "migrations_dir": "migrations"
-        }
-      ],
-      "vars": {
-        "CONTACT_ENABLED": "true",
-        "ALLOWED_ORIGINS": "http://localhost:8787,http://127.0.0.1:8787",
-        "CONTACT_FROM": "AI Orchestration 検証通知 <verify-notify@ai-orchestration.jp>",
-        "CONTACT_TO": "verify-contact@ai-orchestration.jp",
-        "TURNSTILE_SITE_KEY": "1x00000000000000000000AA",
-        "RETENTION_DAYS": "365"
-      }
-    }
-  }
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "ai-orchestrations-lp",
+	"main": "src/worker.ts",
+	"compatibility_date": "2026-08-13",
+	"workers_dev": true,
+	"preview_urls": true,
+	"observability": {
+		"enabled": true
+	},
+	"assets": {
+		"directory": "./public",
+		"binding": "ASSETS",
+		"run_worker_first": [
+			"/api/*"
+		]
+	},
+	"triggers": {
+		"crons": [
+			"* * * * *"
+		]
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "ai-orchestrations-contact",
+			"database_id": "05d9522f-cfe2-4ca9-9a8e-4cf29deb7738",
+			"migrations_dir": "migrations"
+		}
+	],
+	"vars": {
+		"CONTACT_ENABLED": "true",
+		"ALLOWED_ORIGINS": "https://ai-orchestration.jp,http://localhost:8787,http://127.0.0.1:8787",
+		"CONTACT_FROM": "AI Orchestration フォーム通知 <notify@ai-orchestration.jp>",
+		"CONTACT_TO": "support@ai-orchestration.jp",
+		"TURNSTILE_SITE_KEY": "1x00000000000000000000AA",
+		"RETENTION_DAYS": "365"
+	},
+	"env": {
+		"preview": {
+			"name": "ai-orchestrations-lp-preview",
+			"d1_databases": [
+				{
+					"binding": "DB",
+					"database_name": "ai-orchestrations-contact-preview",
+					"database_id": "e0fa59b8-7396-4d1a-872b-50c097b010e9",
+					"migrations_dir": "migrations"
+				}
+			],
+			"vars": {
+				"CONTACT_ENABLED": "true",
+				"ALLOWED_ORIGINS": "http://localhost:8787,http://127.0.0.1:8787",
+				"CONTACT_FROM": "AI Orchestration 検証通知 <verify-notify@ai-orchestration.jp>",
+				"CONTACT_TO": "verify-contact@ai-orchestration.jp",
+				"TURNSTILE_SITE_KEY": "1x00000000000000000000AA",
+				"RETENTION_DAYS": "365"
+			}
+		}
+	}
 }

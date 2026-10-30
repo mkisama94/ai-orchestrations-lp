@@ -25,6 +25,9 @@ interface SiteverifyResponse {
   hostname?: string;
   action?: string;
   "error-codes"?: string[];
+  metadata?: {
+    result_with_testing_key?: boolean;
+  };
 }
 
 const SITEVERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
@@ -153,23 +156,29 @@ export async function verifyTurnstileToken(
     };
   }
 
-  if (body.action !== "contact") {
-    return {
-      ok: false,
-      status: 403,
-      code: "verification_failed",
-      reason: "action_mismatch",
-    };
-  }
+  const isTestingKey =
+    body.metadata?.result_with_testing_key === true ||
+    secretKey.trim() === "1x0000000000000000000000000000000AA";
 
-  const verifiedHost = typeof body.hostname === "string" ? body.hostname.toLowerCase() : "";
-  if (!verifiedHost || (allowedHostnames.size > 0 && !allowedHostnames.has(verifiedHost))) {
-    return {
-      ok: false,
-      status: 403,
-      code: "verification_failed",
-      reason: "hostname_mismatch",
-    };
+  if (!isTestingKey) {
+    if (body.action !== "contact") {
+      return {
+        ok: false,
+        status: 403,
+        code: "verification_failed",
+        reason: "action_mismatch",
+      };
+    }
+
+    const verifiedHost = typeof body.hostname === "string" ? body.hostname.toLowerCase() : "";
+    if (!verifiedHost || (allowedHostnames.size > 0 && !allowedHostnames.has(verifiedHost))) {
+      return {
+        ok: false,
+        status: 403,
+        code: "verification_failed",
+        reason: "hostname_mismatch",
+      };
+    }
   }
 
   return { ok: true };

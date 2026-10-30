@@ -446,6 +446,32 @@ describe("Contact API Contract & Verification (API-01 to API-07)", () => {
       .prepare("SELECT COUNT(*) as cnt FROM inquiries")
       .get() as { cnt: number };
     assert.equal(inquiryCount.cnt, 0);
+
+    // Test official Cloudflare dummy testing key response (hostname: example.com, no action, metadata.result_with_testing_key: true)
+    const testKeyWorker = createWorkerHandler({
+      fetchImpl: async () =>
+        new Response(
+          JSON.stringify({
+            success: true,
+            hostname: "example.com",
+            metadata: { result_with_testing_key: true },
+          }),
+          { status: 200, headers: { "Content-Type": "application/json" } }
+        ),
+    });
+    const testKeyRes = await testKeyWorker.fetch(
+      new Request("https://ai-orchestration.jp/api/contact", {
+        method: "POST",
+        headers: {
+          Origin: VALID_ORIGIN,
+          "Content-Type": "application/json",
+          "Idempotency-Key": crypto.randomUUID(),
+        },
+        body: JSON.stringify(makeValidPayload()),
+      }),
+      env
+    );
+    assert.equal(testKeyRes.status, 201);
   });
 
   it("API-07: rejects wrong Origin (403), oversized body (413), non-JSON (415), rate-limited IPs (429), and unknown /api/* (404)", async () => {
